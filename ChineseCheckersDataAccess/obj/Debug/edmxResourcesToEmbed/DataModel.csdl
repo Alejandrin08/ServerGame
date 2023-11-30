@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChineseCheckersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="FriendPlayer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPlayer" Type="Int32" Nullable="false" />
+    <Property Name="IdFriend" Type="Int32" Nullable="false" />
+    <Property Name="RequestStatus" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Game">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Players" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WinnerUser" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IdUser" Type="Int32" />
+    <Property Name="DateCurrent" Type="DateTime" Precision="0" />
+    <Property Name="DateFinish" Type="DateTime" Precision="0" />
+    <Property Name="Counter" Type="Int32" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gamertag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PlayerStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GamesWon" Type="Int32" />
+    <Property Name="NumberGames" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageProfile" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ChineseCheckersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" />
+    <EntitySet Name="Game" EntityType="Self.Game" />
+    <EntitySet Name="Reports" EntityType="Self.Reports" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="UserAccount" EntityType="Self.UserAccount" />
+  </EntityContainer>
+</Schema>

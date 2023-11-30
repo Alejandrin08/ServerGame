@@ -1,0 +1,14 @@
+﻿C:\Users\alexs\Desktop\ChineseCheckers\UnitTest\Properties\AssemblyInfo.cs
+C:\Users\alexs\Desktop\ChineseCheckers\UnitTest\ReportControllerTest.cs
+C:\Users\alexs\Desktop\ChineseCheckers\UnitTest\UserControllerTest.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\_localization\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\net462\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\net462\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages\MSTest.TestAdapter.3.1.1\build\net462\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\alexs\Desktop\ChineseCheckers\UnitTest\App.config
+C:\Users\alexs\Desktop\ChineseCheckers\UnitTest\packages.config

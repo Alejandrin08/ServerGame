@@ -1,0 +1,12 @@
+﻿C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\FriendPlayer.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Game.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Properties\AssemblyInfo.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Reports.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\User.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\UserAccount.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.Context.tt
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.tt
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.edmx
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\App.Config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.edmx.diagram
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\packages.config

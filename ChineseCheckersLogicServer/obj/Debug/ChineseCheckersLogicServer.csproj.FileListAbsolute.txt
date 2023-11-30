@@ -1,0 +1,102 @@
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb

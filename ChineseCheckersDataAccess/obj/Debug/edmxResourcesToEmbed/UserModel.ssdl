@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChineseCheckersDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FriendPlayer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GamertagPlayer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GamertagFriend" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Game">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Players" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="WinnerUser" Type="nvarchar" MaxLength="255" />
+    <Property Name="GamertagUser" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" />
+    <Property Name="GamertagUser" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Gamertag" />
+    </Key>
+    <Property Name="Gamertag" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PlayerStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="GamesWon" Type="int" />
+    <Property Name="NumberGames" Type="int" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Email" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="GamertagUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImageProfile" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="fk_FriendPlayerUser">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="FriendPlayer" Type="Self.FriendPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Gamertag" />
+      </Principal>
+      <Dependent Role="FriendPlayer">
+        <PropertyRef Name="GamertagPlayer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_FriendPlayerUserFriend">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="FriendPlayer" Type="Self.FriendPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Gamertag" />
+      </Principal>
+      <Dependent Role="FriendPlayer">
+        <PropertyRef Name="GamertagFriend" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserGame">
+    <End Role="User" Type="Self.User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Game" Type="Self.Game" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Gamertag" />
+      </Principal>
+      <Dependent Role="Game">
+        <PropertyRef Name="GamertagUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserReports">
+    <End Role="User" Type="Self.User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Gamertag" />
+      </Principal>
+      <Dependent Role="Reports">
+        <PropertyRef Name="GamertagUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserUserAccount">
+    <End Role="User" Type="Self.User" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Gamertag" />
+      </Principal>
+      <Dependent Role="UserAccount">
+        <PropertyRef Name="GamertagUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ChineseCheckersDBModelStoreContainer">
+    <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Game" EntityType="Self.Game" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reports" EntityType="Self.Reports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAccount" EntityType="Self.UserAccount" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_FriendPlayerUser" Association="Self.fk_FriendPlayerUser">
+      <End Role="User" EntitySet="User" />
+      <End Role="FriendPlayer" EntitySet="FriendPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="fk_FriendPlayerUserFriend" Association="Self.fk_FriendPlayerUserFriend">
+      <End Role="User" EntitySet="User" />
+      <End Role="FriendPlayer" EntitySet="FriendPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserGame" Association="Self.fk_UserGame">
+      <End Role="User" EntitySet="User" />
+      <End Role="Game" EntitySet="Game" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserReports" Association="Self.fk_UserReports">
+      <End Role="User" EntitySet="User" />
+      <End Role="Reports" EntitySet="Reports" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserUserAccount" Association="Self.fk_UserUserAccount">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserAccount" EntitySet="UserAccount" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

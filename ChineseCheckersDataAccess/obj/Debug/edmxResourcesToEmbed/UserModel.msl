@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChineseCheckersDBModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
+    <EntitySetMapping Name="FriendPlayer">
+      <EntityTypeMapping TypeName="ChineseCheckersDBModel.FriendPlayer">
+        <MappingFragment StoreEntitySet="FriendPlayer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GamertagPlayer" ColumnName="GamertagPlayer" />
+          <ScalarProperty Name="GamertagFriend" ColumnName="GamertagFriend" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Game">
+      <EntityTypeMapping TypeName="ChineseCheckersDBModel.Game">
+        <MappingFragment StoreEntitySet="Game">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Players" ColumnName="Players" />
+          <ScalarProperty Name="WinnerUser" ColumnName="WinnerUser" />
+          <ScalarProperty Name="GamertagUser" ColumnName="GamertagUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="ChineseCheckersDBModel.Reports">
+        <MappingFragment StoreEntitySet="Reports">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="GamertagUser" ColumnName="GamertagUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="ChineseCheckersDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Gamertag" ColumnName="Gamertag" />
+          <ScalarProperty Name="PlayerStatus" ColumnName="PlayerStatus" />
+          <ScalarProperty Name="GamesWon" ColumnName="GamesWon" />
+          <ScalarProperty Name="NumberGames" ColumnName="NumberGames" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccount">
+      <EntityTypeMapping TypeName="ChineseCheckersDBModel.UserAccount">
+        <MappingFragment StoreEntitySet="UserAccount">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="GamertagUser" ColumnName="GamertagUser" />
+          <ScalarProperty Name="ImageProfile" ColumnName="ImageProfile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,60 @@
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.AssemblyReference.cache
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\OneDrive\Escritorio\Codigo programas\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.AssemblyReference.cache
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
+C:\Users\Palom\Desktop\Tecnologias\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.AssemblyReference.cache
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Downloads\ChineseCheckers\ChineseCheckers\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb

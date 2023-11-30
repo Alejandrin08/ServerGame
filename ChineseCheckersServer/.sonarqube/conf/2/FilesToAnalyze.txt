@@ -1,0 +1,4 @@
+﻿C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Program.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.cs
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\App.config
+C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\packages.config
