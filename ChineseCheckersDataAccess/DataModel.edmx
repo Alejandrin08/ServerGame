@@ -12,7 +12,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IdPlayer" Type="int" Nullable="false" />
           <Property Name="IdFriend" Type="int" Nullable="false" />
-          <Property Name="RequestStatus" Type="nvarchar" MaxLength="55" />
+          <Property Name="RequestStatus" Type="nvarchar" MaxLength="255" />
           <Property Name="TypeNotification" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="Game">
@@ -31,8 +31,8 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Reason" Type="nvarchar" MaxLength="255" />
           <Property Name="IdUser" Type="int" />
-          <Property Name="DateCurrent" Type="datetime" />
-          <Property Name="DateFinish" Type="datetime" />
+          <Property Name="DateCurrent" Type="date" />
+          <Property Name="DateFinish" Type="date" />
           <Property Name="Counter" Type="int" />
         </EntityType>
         <EntityType Name="User">
@@ -80,7 +80,7 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdPlayer" Type="Int32" Nullable="false" />
           <Property Name="IdFriend" Type="Int32" Nullable="false" />
-          <Property Name="RequestStatus" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+          <Property Name="RequestStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Game">
@@ -99,8 +99,8 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="IdUser" Type="Int32" />
-          <Property Name="DateCurrent" Type="DateTime" Precision="3" />
-          <Property Name="DateFinish" Type="DateTime" Precision="3" />
+          <Property Name="DateCurrent" Type="DateTime" Precision="0" />
+          <Property Name="DateFinish" Type="DateTime" Precision="0" />
           <Property Name="Counter" Type="Int32" />
         </EntityType>
         <EntityType Name="User">

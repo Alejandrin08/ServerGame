@@ -19,13 +19,13 @@ namespace ChineseCheckersLogicServer.Controller {
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public partial class ManagerController : IUser {
 
-        public int AddUserGame(UserModel userModel) {
+        public int AddUserGame(UserModel userModel) { 
             try {
                 using (var context = new ChineseCheckersEntities()) {
                     var userGame = new User {
                         Gamertag = userModel.Gamertag,
                         PlayerStatus = userModel.PlayerStatus,
-                    };
+                    }; 
                     context.User.Add(userGame);
                     return context.SaveChanges();
                 }
@@ -49,7 +49,7 @@ namespace ChineseCheckersLogicServer.Controller {
                 }
             } catch (EntityException ex) {
                 MessageBox.Show($"Error al agregar una cuenta de usuario: {ex.Message}");
-                return -1;
+                return -1; 
             }
         }
 
@@ -152,7 +152,7 @@ namespace ChineseCheckersLogicServer.Controller {
                 return -1;
             }
         }
-
+         
         public int ValidateGamertag(UserModel userModel) {
             int gamertagValidated = 0;
             try {
@@ -306,17 +306,23 @@ namespace ChineseCheckersLogicServer.Controller {
         public void GetSessionPlayer(int idUser) {
             try {
                 IUserSessionCallback context = OperationContext.Current.GetCallbackChannel<IUserSessionCallback>();
-                playerStatus.Add(idUser, context);
 
-                ICommunicationObject communicationObject = (ICommunicationObject)context;
-                communicationObject.Closed += (sender, e) => {
-                    RemoveClient(idUser);
-                };
-                 
-                communicationObject.Faulted += (sender, e) => {
-                    RemoveClient(idUser);
-                };
-                context.GetSessionPlayerCallback();
+                bool sessionOpened = playerStatus.ContainsKey(idUser);
+
+                if (!sessionOpened) {
+                    playerStatus.Add(idUser, context);
+
+                    ICommunicationObject communicationObject = (ICommunicationObject)context;
+                    communicationObject.Closed += (sender, e) => {
+                        RemoveClient(idUser);
+                    };
+
+                    communicationObject.Faulted += (sender, e) => {
+                        RemoveClient(idUser);
+                    };
+                }
+
+                context.GetSessionPlayerCallback(sessionOpened);
             } catch (CommunicationException ex) {
                 MessageBox.Show($"Error al obtener la sesión del jugador: {ex.Message}");
             }

@@ -51,7 +51,7 @@ namespace ChineseCheckersLogicServer.Contracts {
     }
 
     [ServiceContract(CallbackContract = typeof(IUserSessionCallback))]
-    public interface IUserSession {
+    public interface IUserSession { 
         [OperationContract(IsOneWay = true)]
         void GetSessionPlayer(int idUser);
     }
@@ -59,6 +59,6 @@ namespace ChineseCheckersLogicServer.Contracts {
     [ServiceContract]
     public interface IUserSessionCallback {
         [OperationContract]
-        void GetSessionPlayerCallback();
+        void GetSessionPlayerCallback(bool sessionOpened);
     }
 }

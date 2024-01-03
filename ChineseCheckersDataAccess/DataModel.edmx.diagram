@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="06f69a5404fc4335b770295119c9feed" Name="Diagram1">
+      <Diagram DiagramId="0a6f5779b63f43f1a086137d9eff6491" Name="Diagram1">
         <EntityTypeShape EntityType="ChineseCheckersModel.FriendPlayer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.Game" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.Reports" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

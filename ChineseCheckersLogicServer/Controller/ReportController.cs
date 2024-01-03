@@ -64,7 +64,7 @@ namespace ChineseCheckersLogicServer.Controller {
                 }
             } catch (EntityException ex) {
                 MessageBox.Show($"Error al eliminar el reporte: {ex.Message}");
-                return -1;
+                return -1; 
             }
         }
 

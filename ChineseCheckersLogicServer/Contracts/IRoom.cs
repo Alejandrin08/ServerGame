@@ -17,7 +17,9 @@ namespace ChineseCheckersLogicServer.Contracts {
         [OperationContract]
         void RemovePlayer(string gamertag, string idRoom);
         [OperationContract]
-        int ValidateRoom(string idRoom);
+        bool ValidateRoom(string idRoom);
+        [OperationContract]
+        bool ValidateBoardRoom(string idRoom);
     }
 
     [ServiceContract(CallbackContract = typeof(IMessageCallback))]
@@ -40,11 +42,21 @@ namespace ChineseCheckersLogicServer.Contracts {
         void GetPlayersRoom(string gamertag, string idRoom);
         [OperationContract]
         void AddPlayerRoom(string gamertag, string idRoom);
+        [OperationContract]
+        void RemovePlayerRoom(string gamertag, string idRoom);
+        [OperationContract(IsOneWay = true)]
+        void SendToBoard(string idRoom);
+        [OperationContract(IsOneWay = true)]
+        void AssignColors(string idRoom);
     }
 
     [ServiceContract]
     public interface IPlayersRoomCallback {
         [OperationContract]
         void GetPlayersRoomCallback(List<string> playersInRoom);
+        [OperationContract]
+        void SendToBoardCallback();
+        [OperationContract]
+        void AssignColorsCallback(Dictionary<string, char> dictionaryPlayersColor);
     }
 }

@@ -43,6 +43,7 @@ namespace ChineseCheckersLogicServer.Controller {
 
                 if (room.Players.Count > 1) {
                     room.Players.Remove(gamertag);
+
                 } else {
                     room.Players.Remove(gamertag);
                     _playersInRoom.Remove(idRoom);
@@ -51,14 +52,12 @@ namespace ChineseCheckersLogicServer.Controller {
             }
         }
 
-        public int ValidateRoom(string idRoom) {
-            int result;
-            if (_rooms.Contains(idRoom)) {
-                result = 1;
-            } else {
-                result = 0;
-            }
-            return result;
+        public bool ValidateRoom(string idRoom) {
+            return _rooms.Contains(idRoom);
+        }
+
+        public bool ValidateBoardRoom(string idRoom) {
+            return _playersRoom.ContainsKey(idRoom) && _playersRoom[idRoom].PlayersRoom.Count > 1;
         }
     }
 
@@ -101,29 +100,29 @@ namespace ChineseCheckersLogicServer.Controller {
 
     public partial class ManagerController : IPlayersRoom {
 
-        private static readonly Dictionary<string, RoomModel> playersRoom = new Dictionary<string, RoomModel>();
-        private static readonly Dictionary<string, List<String>> playersRoomDictionary = new Dictionary<string, List<String>>();
+        private static readonly Dictionary<string, RoomModel> _playersRoom = new Dictionary<string, RoomModel>();
+        private static readonly Dictionary<string, List<String>> _playersRoomDictionary = new Dictionary<string, List<String>>();
 
         public void AddPlayerRoom(string gamertag, string idRoom) {
             try {
                 IPlayersRoomCallback context = OperationContext.Current.GetCallbackChannel<IPlayersRoomCallback>();
 
                 if (_rooms.Contains(idRoom)) {
-                    if (playersRoom.ContainsKey(idRoom)) {
-                        RoomModel room = playersRoom[idRoom];
+                    if (_playersRoom.ContainsKey(idRoom)) {
+                        RoomModel room = _playersRoom[idRoom];
                         room.PlayersRoom.Add(gamertag, context);
-                        List<string> listPlayers = playersRoomDictionary[idRoom];
+                        List<string> listPlayers = _playersRoomDictionary[idRoom];
                         listPlayers.Add(gamertag);
-                        playersRoomDictionary[idRoom] = listPlayers;
+                        _playersRoomDictionary[idRoom] = listPlayers;
                     } else {
                         RoomModel room = new RoomModel {
                             IdRoom = idRoom
                         };
                         room.PlayersRoom.Add(gamertag, context);
-                        playersRoom.Add(idRoom, room);
+                        _playersRoom.Add(idRoom, room);
                         List<string> listPlayers = new List<string>();
                         listPlayers.Add(gamertag);
-                        playersRoomDictionary.Add(idRoom, listPlayers);
+                        _playersRoomDictionary.Add(idRoom, listPlayers);
 
                     }
                 }
@@ -134,10 +133,10 @@ namespace ChineseCheckersLogicServer.Controller {
 
         public void GetPlayersRoom(string gamertag, string idRoom) {
             try {
-                if (playersRoom.ContainsKey(idRoom)) {
-                    RoomModel room = playersRoom[idRoom];
+                if (_playersRoom.ContainsKey(idRoom)) {
+                    RoomModel room = _playersRoom[idRoom];
                     if (room != null && room.PlayersRoom != null) {
-                        List<string> listPlayers = playersRoomDictionary[idRoom];
+                        List<string> listPlayers = _playersRoomDictionary[idRoom];
                         foreach (var players in room.PlayersRoom.Values) {
                             players.GetPlayersRoomCallback(listPlayers);
                         }
@@ -145,6 +144,80 @@ namespace ChineseCheckersLogicServer.Controller {
                 }
             } catch (CommunicationException ex) {
                 MessageBox.Show($"Error al obtener la solicitud de amistad: {ex.Message}");
+            }
+        }
+
+        public void SendToBoard(string idRoom) {
+            try {
+                if (_playersRoom.ContainsKey(idRoom)) {
+                    RoomModel room = _playersRoom[idRoom];
+                    if (room != null && room.PlayersRoom != null) {
+                        foreach (var players in room.PlayersRoom.Values) {
+                            players.SendToBoardCallback();
+                        }
+                    }
+                }
+            } catch (CommunicationException ex) {
+                MessageBox.Show($"Error al obtener la solicitud de amistad: {ex.Message}");
+            }
+        }
+
+        public void RemovePlayerRoom(string gamertag, string idRoom) {
+            if (_playersRoom.ContainsKey(idRoom)) {
+                RoomModel room = _playersRoom[idRoom];
+
+                if (_playersRoomDictionary.ContainsKey(idRoom)) {
+                    List<string> listPlayers = _playersRoomDictionary[idRoom];
+                    listPlayers.Remove(gamertag);
+                    _playersRoomDictionary[idRoom] = listPlayers;
+                }
+                if (room.PlayersRoom.Count > 1) {
+                    room.PlayersRoom.Remove(gamertag);
+                } else {
+                    room.Players.Remove(gamertag);
+                    _playersRoom.Remove(idRoom);
+                    _rooms.Remove(idRoom);
+                }
+            }
+        }
+
+        public void AssignColors(string idRoom) {
+            Dictionary<string, char> dictionaryPlayersColor = new Dictionary<string, char>();
+            char[] colors = null;
+
+            if (_playersRoom.ContainsKey(idRoom)) {
+                RoomModel room = _playersRoom[idRoom];
+                if (room != null && room.PlayersRoom != null) {
+                    switch (room.PlayersRoom.Count) {
+                        case 2:
+                            colors = room.ColorForTwoPlayers;
+                            break;
+                        case 3:
+                            colors = room.ColorForThreePlayers;
+                            break;
+                        case 4:
+                            colors = room.ColorForFourPlayers;
+                            break;
+                        case 5:
+                            colors = room.ColorForFivePlayers;
+                            break;
+                        case 6:
+                            colors = room.ColorForSixPlayers;
+                            break;
+                    }
+                    if (colors != null) {
+                        foreach (var playerKey in room.PlayersRoom.Keys) {
+                            char colorType = colors[dictionaryPlayersColor.Keys.Count];
+                            dictionaryPlayersColor.Add(playerKey, colorType);
+                        }
+                        if (room != null && room.PlayersRoom != null) {
+                            foreach (var players in room.PlayersRoom.Values) {
+                                players.AssignColorsCallback(dictionaryPlayersColor);
+                            }
+                        }
+                        
+                    }
+                }
             }
         }
     }

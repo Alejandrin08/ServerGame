@@ -7,7 +7,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="IdPlayer" Type="Int32" Nullable="false" />
     <Property Name="IdFriend" Type="Int32" Nullable="false" />
-    <Property Name="RequestStatus" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="RequestStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Game">
@@ -26,8 +26,8 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="IdUser" Type="Int32" />
-    <Property Name="DateCurrent" Type="DateTime" Precision="3" />
-    <Property Name="DateFinish" Type="DateTime" Precision="3" />
+    <Property Name="DateCurrent" Type="DateTime" Precision="0" />
+    <Property Name="DateFinish" Type="DateTime" Precision="0" />
     <Property Name="Counter" Type="Int32" />
   </EntityType>
   <EntityType Name="User">

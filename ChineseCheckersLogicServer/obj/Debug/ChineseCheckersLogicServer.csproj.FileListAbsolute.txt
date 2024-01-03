@@ -100,3 +100,54 @@ C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\Chin
 C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
 C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
 C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll.config
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersLogicServer.pdb
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.pdb
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\ChineseCheckersDataAccess.dll.config
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\BCrypt.Net.xml
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.xml
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.AssemblyReference.cache
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CoreCompileInputs.cache
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.csproj.CopyComplete
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.dll
+C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\ChineseCheckersLogicServer.pdb

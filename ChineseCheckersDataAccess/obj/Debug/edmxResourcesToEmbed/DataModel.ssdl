@@ -7,7 +7,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IdPlayer" Type="int" Nullable="false" />
     <Property Name="IdFriend" Type="int" Nullable="false" />
-    <Property Name="RequestStatus" Type="nvarchar" MaxLength="55" />
+    <Property Name="RequestStatus" Type="nvarchar" MaxLength="255" />
     <Property Name="TypeNotification" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="Game">
@@ -26,8 +26,8 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Reason" Type="nvarchar" MaxLength="255" />
     <Property Name="IdUser" Type="int" />
-    <Property Name="DateCurrent" Type="datetime" />
-    <Property Name="DateFinish" Type="datetime" />
+    <Property Name="DateCurrent" Type="date" />
+    <Property Name="DateFinish" Type="date" />
     <Property Name="Counter" Type="int" />
   </EntityType>
   <EntityType Name="User">
