@@ -14,7 +14,7 @@ using System.Windows;
 namespace ChineseCheckersLogicServer.Controller {
     public partial class ManagerController : IReport {
 
-        public int AddReport(ReportModel reportModel) {
+        public int AddReport(ReportModel reportModel) { 
             try {
                 using (var context = new ChineseCheckersEntities()) {
                     var reportUser = new Reports {
@@ -28,7 +28,7 @@ namespace ChineseCheckersLogicServer.Controller {
                     return context.SaveChanges();
                 }
             } catch (EntityException ex) {
-                MessageBox.Show($"Error al validar una solicitud de amistad: {ex.Message}");
+                MessageBox.Show($"Error al agregar el reporte: {ex.Message}");
                 return -1;
             }
         }
@@ -48,22 +48,22 @@ namespace ChineseCheckersLogicServer.Controller {
                     return context.SaveChanges();
                 }
             } catch (EntityException ex) {
-                MessageBox.Show($"Error al validar una solicitud de amistad: {ex.Message}");
+                MessageBox.Show($"Error al actualizar el reporte: {ex.Message}"); 
                 return -1;
             }
         }
 
         public int DeleteReport(int idUser) {
-            try {
+            try { 
                 using (var context = new ChineseCheckersEntities()) {
-                    var reportToDelete = context.Reports.FirstOrDefault(r => r.Id == idUser);
+                    var reportToDelete = context.Reports.FirstOrDefault(r => r.IdUser == idUser);
                     if (reportToDelete != null) {
                         context.Reports.Remove(reportToDelete);
                     }
                     return context.SaveChanges();
                 }
             } catch (EntityException ex) {
-                MessageBox.Show($"Error al validar una solicitud de amistad: {ex.Message}");
+                MessageBox.Show($"Error al eliminar el reporte: {ex.Message}");
                 return -1;
             }
         }
@@ -80,8 +80,25 @@ namespace ChineseCheckersLogicServer.Controller {
                     return numReports;
                 }
             } catch (EntityException ex) {
-                MessageBox.Show($"Error al validar una solicitud de amistad: {ex.Message}");
+                MessageBox.Show($"Error al obtener la cantidad de reportes: {ex.Message}");
                 return -1;
+            }
+        }
+
+        public DateTime GetDateReport(int idUser) {
+            try {
+                DateTime dateTime = DateTime.Now;
+                using (var context = new ChineseCheckersEntities()) {
+                    var dateValues = context.Reports
+                        .FirstOrDefault(date => date.IdUser == idUser);
+                    if (dateValues != null) {
+                        dateTime = (DateTime)dateValues.DateFinish;
+                    }
+                    return dateTime;
+                }
+            } catch (EntityException ex) {
+                MessageBox.Show($"Error al validar la fecha: {ex.Message}");
+                return DateTime.Now;
             }
         }
     }

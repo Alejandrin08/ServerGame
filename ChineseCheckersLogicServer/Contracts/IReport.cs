@@ -17,5 +17,7 @@ namespace ChineseCheckersLogicServer.Contracts {
         int DeleteReport(int idUser);
         [OperationContract]
         int GetNumReports(int idUser);
+        [OperationContract]
+        DateTime GetDateReport(int idUser);
     }
 }
