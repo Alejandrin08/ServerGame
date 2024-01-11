@@ -196,6 +196,10 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\De
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+<<<<<<< HEAD
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\log4net.dll
+=======
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\BCrypt.Net.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\ChineseCheckersDataAccess.pdb
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\ChineseCheckersDataAccess.dll.config
@@ -205,6 +209,10 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\De
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+<<<<<<< HEAD
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\log4net.xml
+=======
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\BCrypt.Net.xml
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
@@ -223,6 +231,8 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\De
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.pdb
+<<<<<<< HEAD
+=======
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\es\Microsoft.TestPlatform.AdapterUtilities.resources.dll
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
@@ -268,3 +278,4 @@ C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\De
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.dll
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\obj\Debug\UnitTest.pdb
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99

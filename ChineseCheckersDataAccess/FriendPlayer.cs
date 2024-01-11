@@ -19,5 +19,7 @@ namespace ChineseCheckersDataAccess
         public int IdFriend { get; set; }
         public string RequestStatus { get; set; }
         public string TypeNotification { get; set; }
+    
+        public virtual UserAccount UserAccount { get; set; }
     }
 }

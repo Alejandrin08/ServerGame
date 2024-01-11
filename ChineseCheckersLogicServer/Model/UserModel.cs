@@ -10,24 +10,17 @@ namespace ChineseCheckersLogicServer.Model {
     [DataContract]
     public class UserModel {
 
-        private int _id;
-        private string _gamertag;
-        private string _email;
-        private string _password;
-        private string _imageProfile;
-        private string _playerStatus;
-       
         [DataMember]
-        public int Id { get { return _id; } set { _id = value; } }
+        public int Id { get; set; }
         [DataMember]
-        public string Gamertag { get { return _gamertag; } set { _gamertag = value; } }
+        public string Gamertag { get; set; }
         [DataMember]
-        public string Email { get { return _email; } set { _email = value; } }
+        public string Email { get; set; }
         [DataMember]
-        public string Password { get { return _password; } set { _password = value; } }
+        public string Password { get; set; }
         [DataMember]
-        public string ImageProfile { get { return _imageProfile; } set { _imageProfile = value; } }
+        public string ImageProfile { get; set; }
         [DataMember]
-        public string PlayerStatus { get {  return _playerStatus; } set { _playerStatus = value; } }
+        public string PlayerStatus { get; set; }
     }
 }

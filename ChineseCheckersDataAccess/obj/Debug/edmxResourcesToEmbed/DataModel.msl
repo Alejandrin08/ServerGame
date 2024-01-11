@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ChineseCheckersModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
+  <EntityContainerMapping StorageEntityContainer="ChineseCheckersTestModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
     <EntitySetMapping Name="FriendPlayer">
-      <EntityTypeMapping TypeName="ChineseCheckersModel.FriendPlayer">
+      <EntityTypeMapping TypeName="ChineseCheckersTestModel.FriendPlayer">
         <MappingFragment StoreEntitySet="FriendPlayer">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="IdPlayer" ColumnName="IdPlayer" />
@@ -12,18 +12,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Game">
-      <EntityTypeMapping TypeName="ChineseCheckersModel.Game">
-        <MappingFragment StoreEntitySet="Game">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Players" ColumnName="Players" />
-          <ScalarProperty Name="WinnerUser" ColumnName="WinnerUser" />
-          <ScalarProperty Name="GamertagUser" ColumnName="GamertagUser" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Reports">
-      <EntityTypeMapping TypeName="ChineseCheckersModel.Reports">
+      <EntityTypeMapping TypeName="ChineseCheckersTestModel.Reports">
         <MappingFragment StoreEntitySet="Reports">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Reason" ColumnName="Reason" />
@@ -35,7 +25,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="User">
-      <EntityTypeMapping TypeName="ChineseCheckersModel.User">
+      <EntityTypeMapping TypeName="ChineseCheckersTestModel.User">
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Gamertag" ColumnName="Gamertag" />
@@ -46,7 +36,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserAccount">
-      <EntityTypeMapping TypeName="ChineseCheckersModel.UserAccount">
+      <EntityTypeMapping TypeName="ChineseCheckersTestModel.UserAccount">
         <MappingFragment StoreEntitySet="UserAccount">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Email" ColumnName="Email" />

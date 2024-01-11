@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  id: ChineseCheckersLogicServer.Model
+  children:
+  - ChineseCheckersLogicServer.Model.BoardModel
+  - ChineseCheckersLogicServer.Model.FriendshipModel
+  - ChineseCheckersLogicServer.Model.ReportModel
+  - ChineseCheckersLogicServer.Model.RoomModel
+  - ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+  type: Namespace
+  assemblies:
+  - ChineseCheckersLogicServer
+references:
+- uid: ChineseCheckersLogicServer.Model.BoardModel
+  commentId: T:ChineseCheckersLogicServer.Model.BoardModel
+  name: BoardModel
+  nameWithType: BoardModel
+  fullName: ChineseCheckersLogicServer.Model.BoardModel
+- uid: ChineseCheckersLogicServer.Model.FriendshipModel
+  commentId: T:ChineseCheckersLogicServer.Model.FriendshipModel
+  parent: ChineseCheckersLogicServer.Model
+  name: FriendshipModel
+  nameWithType: FriendshipModel
+  fullName: ChineseCheckersLogicServer.Model.FriendshipModel
+- uid: ChineseCheckersLogicServer.Model.ReportModel
+  commentId: T:ChineseCheckersLogicServer.Model.ReportModel
+  parent: ChineseCheckersLogicServer.Model
+  name: ReportModel
+  nameWithType: ReportModel
+  fullName: ChineseCheckersLogicServer.Model.ReportModel
+- uid: ChineseCheckersLogicServer.Model.RoomModel
+  commentId: T:ChineseCheckersLogicServer.Model.RoomModel
+  name: RoomModel
+  nameWithType: RoomModel
+  fullName: ChineseCheckersLogicServer.Model.RoomModel
+- uid: ChineseCheckersLogicServer.Model.UserModel
+  commentId: T:ChineseCheckersLogicServer.Model.UserModel
+  parent: ChineseCheckersLogicServer.Model
+  name: UserModel
+  nameWithType: UserModel
+  fullName: ChineseCheckersLogicServer.Model.UserModel
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model

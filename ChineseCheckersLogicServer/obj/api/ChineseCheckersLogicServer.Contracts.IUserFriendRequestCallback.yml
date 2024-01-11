@@ -1,0 +1,269 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+  id: IUserFriendRequestCallback
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}})
+  langs:
+  - csharp
+  - vb
+  name: IUserFriendRequestCallback
+  nameWithType: IUserFriendRequestCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUserFriendRequestCallback
+    path: Contracts/IFriendship.cs
+    startLine: 27
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IUserFriendRequestCallback
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IUserFriendRequestCallback
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}})
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}})
+  id: GetFriendRequestCallback(System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}})
+  parent: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+  langs:
+  - csharp
+  - vb
+  name: GetFriendRequestCallback(Dictionary<String, (String, String, String)>)
+  nameWithType: IUserFriendRequestCallback.GetFriendRequestCallback(Dictionary<String, (String, String, String)>)
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback(System.Collections.Generic.Dictionary<System.String, System.ValueTuple<System.String, System.String, System.String>>)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetFriendRequestCallback
+    path: Contracts/IFriendship.cs
+    startLine: 29
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void GetFriendRequestCallback(Dictionary<string, (string, string, string)> friendPlayer)
+    parameters:
+    - id: friendPlayer
+      type: System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}}
+    content.vb: >-
+      <OperationContract>
+
+      Sub GetFriendRequestCallback(friendPlayer As Dictionary(Of String, (String, String, String)(Of String , String, String)))
+  overload: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+  nameWithType.vb: IUserFriendRequestCallback.GetFriendRequestCallback(Dictionary(Of String, (String, String, String)(Of String, String, String)))
+  fullName.vb: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback(System.Collections.Generic.Dictionary(Of System.String, System.ValueTuple(Of System.String, System.String, System.String)))
+  name.vb: GetFriendRequestCallback(Dictionary(Of String, (String, String, String)(Of String, String, String)))
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback
+  name: GetFriendRequestCallback
+  nameWithType: IUserFriendRequestCallback.GetFriendRequestCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.GetFriendRequestCallback
+- uid: System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.ValueTuple{System.String,System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, (T1, T2, T3)<String, String, String>>
+  nameWithType: Dictionary<String, (T1, T2, T3)<String, String, String>>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.ValueTuple<System.String, System.String, System.String>>
+  nameWithType.vb: Dictionary(Of String, (T1, T2, T3)(Of String, String, String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.ValueTuple(Of System.String, System.String, System.String))
+  name.vb: Dictionary(Of String, (T1, T2, T3)(Of String, String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ValueTuple`3
+    name: (T1, T2, T3)
+    nameWithType: (T1, T2, T3)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.ValueTuple`3
+    name: (T1, T2, T3)
+    nameWithType: (T1, T2, T3)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

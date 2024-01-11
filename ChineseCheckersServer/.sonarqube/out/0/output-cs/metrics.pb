@@ -1,3 +1,3 @@
-
-[C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Properties\AssemblyInfo.csj !"r	
+™
+uC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\Properties\AssemblyInfo.csj !"r	
 #$

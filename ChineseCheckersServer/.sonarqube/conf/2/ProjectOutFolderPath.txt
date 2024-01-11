@@ -1,1 +1,1 @@
-C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\.sonarqube\out\2
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\.sonarqube\out\2

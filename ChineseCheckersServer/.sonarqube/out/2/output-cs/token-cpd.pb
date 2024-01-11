@@ -1,43 +1,47 @@
-—	
-GC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Program.cs
+Ù	
+aC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Program.cs
 	namespace 	!
 ChineseCheckersServer
  
 {  !
-internal		 
-class		 
-Program		 
-{		 
+internal		 
+static		 
+class		 
+Program		 !
+{		" #
+public
+
+ 
 static
 
- 
+ 
 void
 
- 
+ 
 Main
 
- 
+ 
 (
 
- 
+  
 string
 
- 
+  &
 [
 
-  
+& '
 ]
 
-  !
+' (
 args
 
-" &
+) -
 )
 
-& '
+- .
 {
 
-( )
+/ 0
 using 
 ( 
 ServiceHost 
@@ -84,8 +88,8 @@ Controllerf p
 } 
 } 	
 } 
-} ‚
-WC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.cs
+} œ
+qC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.cs
 [ 
 assembly 	
 :	 

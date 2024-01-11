@@ -10,6 +10,20 @@ namespace ChineseCheckersLogicServer.Model {
     [DataContract]
     public class RoomModel {
 
+<<<<<<< HEAD
+        [DataMember]
+        public string IdRoom { get; set; }
+        [DataMember]
+        public Dictionary<string, IMessageCallback> Players { get; set; } = new Dictionary<string, IMessageCallback>();
+        [DataMember]
+        public Dictionary<string, IPlayersRoomCallback> PlayersRoom { get; set; } = new Dictionary<string, IPlayersRoomCallback>();
+
+        public char[] ColorForTwoPlayers { get; set; } = new char[] { 'B', 'G' };
+        public char[] ColorForThreePlayers { get; set; } = new char[] { 'B', 'G', 'Y' };
+        public char[] ColorForFourPlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O' };
+        public char[] ColorForFivePlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O', 'P' };
+        public char[] ColorForSixPlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O', 'P', 'R' };
+=======
         private string _idRoom { get; set; }
         private Dictionary<string, IMessageCallback> _players = new Dictionary<string, IMessageCallback>();
         private Dictionary<string, IPlayersRoomCallback> _playersRoom = new Dictionary<string, IPlayersRoomCallback>();
@@ -33,5 +47,6 @@ namespace ChineseCheckersLogicServer.Model {
         public Dictionary<string, IMessageCallback> Players { get { return _players; } set { _players = value; } }
         [DataMember]
         public Dictionary<string, IPlayersRoomCallback> PlayersRoom { get { return _playersRoom; } set { _playersRoom = value; } }
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
     }
 }

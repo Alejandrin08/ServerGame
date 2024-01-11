@@ -1,0 +1,815 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager
+  commentId: T:ChineseCheckersLogicServer.Controller.LoggerManager
+  id: LoggerManager
+  parent: ChineseCheckersLogicServer.Controller
+  children:
+  - ChineseCheckersLogicServer.Controller.LoggerManager.#ctor(System.Type)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger(System.Type)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug(System.Exception)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.Exception)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.String,System.Exception)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.Exception)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.String,System.Exception)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo(System.String)
+  - ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn(System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: LoggerManager
+  nameWithType: LoggerManager
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager
+  type: Class
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LoggerManager
+    path: Controller/LoggerManager.cs
+    startLine: 12
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  summary: "\nClase que se encarga de manejar los logs de la aplicación\n"
+  example: []
+  syntax:
+    content: public class LoggerManager
+    content.vb: Public Class LoggerManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+  commentId: P:ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+  id: Instance
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: LoggerManager.Instance
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Instance
+    path: Controller/LoggerManager.cs
+    startLine: 15
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public static LoggerManager Instance { get; }
+    parameters: []
+    return:
+      type: ChineseCheckersLogicServer.Controller.LoggerManager
+    content.vb: Public Shared ReadOnly Property Instance As LoggerManager
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+  commentId: P:ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+  id: Logger
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: LoggerManager.Logger
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Logger
+    path: Controller/LoggerManager.cs
+    startLine: 24
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public ILog Logger { get; set; }
+    parameters: []
+    return:
+      type: log4net.ILog
+    content.vb: Public Property Logger As ILog
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.Logger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.#ctor(System.Type)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LoggerManager(Type)
+  nameWithType: LoggerManager.LoggerManager(Type)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LoggerManager(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: .ctor
+    path: Controller/LoggerManager.cs
+    startLine: 26
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public LoggerManager(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    content.vb: Public Sub New(type As Type)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger(System.Type)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger(System.Type)
+  id: GetLogger(System.Type)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: GetLogger(Type)
+  nameWithType: LoggerManager.GetLogger(Type)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger(System.Type)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetLogger
+    path: Controller/LoggerManager.cs
+    startLine: 30
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public ILog GetLogger(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: log4net.ILog
+    content.vb: Public Function GetLogger(type As Type) As ILog
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo(System.String)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo(System.String)
+  id: LogInfo(System.String)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogInfo(String)
+  nameWithType: LoggerManager.LogInfo(String)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogInfo
+    path: Controller/LoggerManager.cs
+    startLine: 34
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogInfo(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub LogInfo(message As String)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.String,System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.String,System.Exception)
+  id: LogError(System.String,System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogError(String, Exception)
+  nameWithType: LoggerManager.LogError(String, Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogError
+    path: Controller/LoggerManager.cs
+    startLine: 38
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogError(string message, Exception ex)
+    parameters:
+    - id: message
+      type: System.String
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogError(message As String, ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogError*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.Exception)
+  id: LogError(System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogError(Exception)
+  nameWithType: LoggerManager.LogError(Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogError(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogError
+    path: Controller/LoggerManager.cs
+    startLine: 42
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogError(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogError(ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogError*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.Exception)
+  id: LogFatal(System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogFatal(Exception)
+  nameWithType: LoggerManager.LogFatal(Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogFatal
+    path: Controller/LoggerManager.cs
+    startLine: 46
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogFatal(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogFatal(ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.String,System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.String,System.Exception)
+  id: LogFatal(System.String,System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogFatal(String, Exception)
+  nameWithType: LoggerManager.LogFatal(String, Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal(System.String, System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogFatal
+    path: Controller/LoggerManager.cs
+    startLine: 50
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogFatal(string message, Exception ex)
+    parameters:
+    - id: message
+      type: System.String
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogFatal(message As String, ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn(System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn(System.Exception)
+  id: LogWarn(System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogWarn(Exception)
+  nameWithType: LoggerManager.LogWarn(Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogWarn
+    path: Controller/LoggerManager.cs
+    startLine: 54
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogWarn(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogWarn(ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug(System.Exception)
+  commentId: M:ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug(System.Exception)
+  id: LogDebug(System.Exception)
+  parent: ChineseCheckersLogicServer.Controller.LoggerManager
+  langs:
+  - csharp
+  - vb
+  name: LogDebug(Exception)
+  nameWithType: LoggerManager.LogDebug(Exception)
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/LoggerManager.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogDebug
+    path: Controller/LoggerManager.cs
+    startLine: 58
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public void LogDebug(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub LogDebug(ex As Exception)
+  overload: ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ChineseCheckersLogicServer.Controller
+  commentId: N:ChineseCheckersLogicServer.Controller
+  name: ChineseCheckersLogicServer.Controller
+  nameWithType: ChineseCheckersLogicServer.Controller
+  fullName: ChineseCheckersLogicServer.Controller
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.Instance*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+  name: Instance
+  nameWithType: LoggerManager.Instance
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.Instance
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager
+  commentId: T:ChineseCheckersLogicServer.Controller.LoggerManager
+  parent: ChineseCheckersLogicServer.Controller
+  name: LoggerManager
+  nameWithType: LoggerManager
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.Logger*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+  name: Logger
+  nameWithType: LoggerManager.Logger
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.Logger
+- uid: log4net.ILog
+  commentId: T:log4net.ILog
+  parent: log4net
+  isExternal: true
+  name: ILog
+  nameWithType: ILog
+  fullName: log4net.ILog
+- uid: log4net
+  commentId: N:log4net
+  isExternal: true
+  name: log4net
+  nameWithType: log4net
+  fullName: log4net
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.#ctor*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.#ctor
+  name: LoggerManager
+  nameWithType: LoggerManager.LoggerManager
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LoggerManager
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger
+  name: GetLogger
+  nameWithType: LoggerManager.GetLogger
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.GetLogger
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo
+  name: LogInfo
+  nameWithType: LoggerManager.LogInfo
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogError*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.LogError
+  name: LogError
+  nameWithType: LoggerManager.LogError
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal
+  name: LogFatal
+  nameWithType: LoggerManager.LogFatal
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogFatal
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn
+  name: LogWarn
+  nameWithType: LoggerManager.LogWarn
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogWarn
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug
+  name: LogDebug
+  nameWithType: LoggerManager.LogDebug
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager.LogDebug

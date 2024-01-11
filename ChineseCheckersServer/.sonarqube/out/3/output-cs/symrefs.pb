@@ -1,6 +1,6 @@
-L
-JC:\Users\alexs\Desktop\ChineseCheckers\UnitTest\Properties\AssemblyInfo.cs•
-GC:\Users\alexs\Desktop\ChineseCheckers\UnitTest\ReportControllerTest.cs
+f
+dC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\Properties\AssemblyInfo.cs¯
+aC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\ReportControllerTest.cs
 
  %
 
@@ -34,8 +34,8 @@ GC:\Users\alexs\Desktop\ChineseCheckers\UnitTest\ReportControllerTest.cs
 ;; >>0 6
 <<H L>> !
 == "??  .
->> ??0 6©	
-EC:\Users\alexs\Desktop\ChineseCheckers\UnitTest\UserControllerTest.cs
+>> ??0 6Ã	
+_C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\UnitTest\UserControllerTest.cs
 
  #
 

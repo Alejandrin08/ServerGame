@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="ChineseCheckersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="ChineseCheckersTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="FriendPlayer">
     <Key>
       <PropertyRef Name="Id" />
@@ -9,15 +9,7 @@
     <Property Name="IdFriend" Type="Int32" Nullable="false" />
     <Property Name="RequestStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-  </EntityType>
-  <EntityType Name="Game">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Players" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="WinnerUser" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserAccount" Relationship="Self.fk_FriendPlayer_UserAccount" FromRole="FriendPlayer" ToRole="UserAccount" />
   </EntityType>
   <EntityType Name="Reports">
     <Key>
@@ -26,16 +18,17 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="IdUser" Type="Int32" />
-    <Property Name="DateCurrent" Type="DateTime" Precision="0" />
-    <Property Name="DateFinish" Type="DateTime" Precision="0" />
+    <Property Name="DateCurrent" Type="DateTime" Precision="3" />
+    <Property Name="DateFinish" Type="DateTime" Precision="3" />
     <Property Name="Counter" Type="Int32" />
+    <NavigationProperty Name="UserAccount" Relationship="Self.fk_UserAccount_Reports" FromRole="Reports" ToRole="UserAccount" />
   </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Gamertag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gamertag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="PlayerStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GamesWon" Type="Int32" />
     <Property Name="NumberGames" Type="Int32" />
@@ -45,16 +38,53 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ImageProfile" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FriendPlayer" Relationship="Self.fk_FriendPlayer_UserAccount" FromRole="UserAccount" ToRole="FriendPlayer" />
+    <NavigationProperty Name="Reports" Relationship="Self.fk_UserAccount_Reports" FromRole="UserAccount" ToRole="Reports" />
   </EntityType>
+  <Association Name="fk_FriendPlayer_UserAccount">
+    <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FriendPlayer" Type="Self.FriendPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FriendPlayer">
+        <PropertyRef Name="IdPlayer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_UserAccount_Reports">
+    <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reports">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="ChineseCheckersEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" />
-    <EntitySet Name="Game" EntityType="Self.Game" />
     <EntitySet Name="Reports" EntityType="Self.Reports" />
     <EntitySet Name="User" EntityType="Self.User" />
     <EntitySet Name="UserAccount" EntityType="Self.UserAccount" />
+    <AssociationSet Name="fk_FriendPlayer_UserAccount" Association="Self.fk_FriendPlayer_UserAccount">
+      <End Role="UserAccount" EntitySet="UserAccount" />
+      <End Role="FriendPlayer" EntitySet="FriendPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="fk_UserAccount_Reports" Association="Self.fk_UserAccount_Reports">
+      <End Role="UserAccount" EntitySet="UserAccount" />
+      <End Role="Reports" EntitySet="Reports" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

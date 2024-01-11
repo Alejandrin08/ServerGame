@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUserSession
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUserSession
+  id: IUserSession
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IUserSession
+  nameWithType: IUserSession
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSession
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUserSession
+    path: Contracts/IUser.cs
+    startLine: 63
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract(CallbackContract = typeof(IUserSessionCallback))]
+
+      public interface IUserSession
+    content.vb: >-
+      <ServiceContract(CallbackContract:=GetType(IUserSessionCallback))>
+
+      Public Interface IUserSession
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: CallbackContract
+      type: System.Type
+      value: ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer(System.Int32)
+  id: GetSessionPlayer(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUserSession
+  langs:
+  - csharp
+  - vb
+  name: GetSessionPlayer(Int32)
+  nameWithType: IUserSession.GetSessionPlayer(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetSessionPlayer
+    path: Contracts/IUser.cs
+    startLine: 65
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void GetSessionPlayer(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub GetSessionPlayer(idUser As Integer)
+  overload: ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer
+  name: GetSessionPlayer
+  nameWithType: IUserSession.GetSessionPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSession.GetSessionPlayer
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

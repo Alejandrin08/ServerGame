@@ -1,0 +1,441 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass
+  commentId: T:ChineseCheckersLogicServer.Controller.SingletonClass
+  id: SingletonClass
+  parent: ChineseCheckersLogicServer.Controller
+  children:
+  - ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+  - ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+  langs:
+  - csharp
+  - vb
+  name: SingletonClass
+  nameWithType: SingletonClass
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass
+  type: Class
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/SingletonClass.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: SingletonClass
+    path: Controller/SingletonClass.cs
+    startLine: 10
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  summary: "\nClase que implementa el patrón Singleton y que se encarga de almacenar el id de la sala en la que se encuentra el jugador\n"
+  example: []
+  syntax:
+    content: public class SingletonClass
+    content.vb: Public Class SingletonClass
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+  commentId: P:ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+  id: Instance
+  parent: ChineseCheckersLogicServer.Controller.SingletonClass
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: SingletonClass.Instance
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/SingletonClass.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Instance
+    path: Controller/SingletonClass.cs
+    startLine: 12
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public static SingletonClass Instance { get; }
+    parameters: []
+    return:
+      type: ChineseCheckersLogicServer.Controller.SingletonClass
+    content.vb: Public Shared ReadOnly Property Instance As SingletonClass
+  overload: ChineseCheckersLogicServer.Controller.SingletonClass.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+  commentId: P:ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+  id: IdRoom
+  parent: ChineseCheckersLogicServer.Controller.SingletonClass
+  langs:
+  - csharp
+  - vb
+  name: IdRoom
+  nameWithType: SingletonClass.IdRoom
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Controller/SingletonClass.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IdRoom
+    path: Controller/SingletonClass.cs
+    startLine: 21
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Controller
+  syntax:
+    content: public string IdRoom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdRoom As String
+  overload: ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: ChineseCheckersLogicServer.Controller
+  commentId: N:ChineseCheckersLogicServer.Controller
+  name: ChineseCheckersLogicServer.Controller
+  nameWithType: ChineseCheckersLogicServer.Controller
+  fullName: ChineseCheckersLogicServer.Controller
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass.Instance*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+  name: Instance
+  nameWithType: SingletonClass.Instance
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass.Instance
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass
+  commentId: T:ChineseCheckersLogicServer.Controller.SingletonClass
+  parent: ChineseCheckersLogicServer.Controller
+  name: SingletonClass
+  nameWithType: SingletonClass
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom*
+  commentId: Overload:ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+  name: IdRoom
+  nameWithType: SingletonClass.IdRoom
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass.IdRoom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

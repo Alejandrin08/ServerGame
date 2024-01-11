@@ -1,14 +1,14 @@
-É
-GC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Program.cs
+ù
+aC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Program.cs
 
-		 
-
-
-
- 
+		 !
 
 
 
-" &
- 1 "Y
-WC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.cs
+ 
+
+
+
+) -
+ 1 "s
+qC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.cs

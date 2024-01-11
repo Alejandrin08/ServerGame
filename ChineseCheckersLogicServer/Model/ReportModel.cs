@@ -9,18 +9,13 @@ namespace ChineseCheckersLogicServer.Model {
     [DataContract]
     public class ReportModel {
 
-        private int _idUser;
-        private string _reason;
-        private DateTime _currentDate;
-        private DateTime _endDate;
-
         [DataMember]
-        public int IdUser { get { return _idUser; } set { _idUser = value; } }
+        public int IdUser { get; set; }
         [DataMember]
-        public string Reason { get { return _reason; } set { _reason = value; } }
+        public string Reason { get; set; }
         [DataMember]
-        public DateTime CurrentDate { get { return _currentDate; } set { _currentDate = value; } }
+        public DateTime CurrentDate { get; set; }
         [DataMember]
-        public DateTime EndDate { get { return _endDate; } set { _endDate = value; } }
+        public DateTime EndDate { get; set; }
     }
 }

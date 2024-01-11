@@ -1,11 +1,10 @@
-`
-UC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.Context.csutf-8X
-MC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.csutf-8a
-VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\DataModel.Designer.csutf-8[
-PC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\FriendPlayer.csutf-8S
-HC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Game.csutf-8d
-[C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Properties\AssemblyInfo.csutf-8V
-KC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\Reports.csutf-8S
-HC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\User.csutf-8Z
-OC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\UserAccount.csutf-8ˆ
-}C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.csutf-8
+z
+oC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.Context.csutf-8r
+gC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.csutf-8{
+pC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.Designer.csutf-8u
+jC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\FriendPlayer.csutf-8~
+uC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\Properties\AssemblyInfo.csutf-8p
+eC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\Reports.csutf-8m
+bC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\User.csutf-8t
+iC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\UserAccount.csutf-8£
+—C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.csutf-8

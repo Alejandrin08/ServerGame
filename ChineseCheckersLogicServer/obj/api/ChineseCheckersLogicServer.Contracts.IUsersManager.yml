@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUsersManager
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUsersManager
+  id: IUsersManager
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUsersManager
+  nameWithType: IUsersManager
+  fullName: ChineseCheckersLogicServer.Contracts.IUsersManager
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUsersManager
+    path: Contracts/IUser.cs
+    startLine: 51
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract(CallbackContract = typeof(IUserCallback))]
+
+      public interface IUsersManager
+    content.vb: >-
+      <ServiceContract(CallbackContract:=GetType(IUserCallback))>
+
+      Public Interface IUsersManager
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: CallbackContract
+      type: System.Type
+      value: ChineseCheckersLogicServer.Contracts.IUserCallback
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends(System.String)
+  id: GetFriends(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUsersManager
+  langs:
+  - csharp
+  - vb
+  name: GetFriends(String)
+  nameWithType: IUsersManager.GetFriends(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetFriends
+    path: Contracts/IUser.cs
+    startLine: 53
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void GetFriends(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub GetFriends(gamertag As String)
+  overload: ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends
+  name: GetFriends
+  nameWithType: IUsersManager.GetFriends
+  fullName: ChineseCheckersLogicServer.Contracts.IUsersManager.GetFriends
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

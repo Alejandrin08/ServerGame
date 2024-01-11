@@ -1,93 +1,191 @@
-î
-UC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IBoard.cs
-	namespace 	&
-ChineseCheckersLogicServer
+Ÿ
+oC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IBoard.cs
+	namespace		 	&
+ChineseCheckersLogicServer		
  $
-.$ %
-	Contracts% .
-{/ 0
-[		 
-ServiceContract		 
-(		 
-CallbackContract		 %
-=		& '
-typeof		( .
-(		. /
-IBoardCallback		/ =
-)		= >
-)		> ?
-]		? @
-public
+.		$ %
+	Contracts		% .
+{		/ 0
+[
 
- 
+ 
+ServiceContract
+
+ 
+]
+
+ 
+public 
 
-	interface
-
- 
-IBoard
-
- 
-{
-
- 
-[ 	
-OperationContract	 
-( 
-IsOneWay #
-=$ %
-true& *
-)* +
-]+ ,
-void 
-SendToBoard 
-( 
-string 
-idRoom  &
-)& '
-;' (
-[ 	
-OperationContract	 
-] 
-void 
-AddPlayerInBoard 
-( 
-string $
-gamertag% -
-,- .
-string/ 5
-idRoom6 <
-)< =
-;= >
-[ 	
-OperationContract	 
-] 
-bool 
-ValidateBoardRoom 
-( 
-string %
-idRoom& ,
-), -
-;- .
-} 
-[ 
-ServiceContract 
-] 
-public 
+	interface 
+IBoard 
+{ 
+[ 	
+OperationContract	 
+] 
+bool 
+ValidateGame 
+( 
+string  
+idRoom! '
+)' (
+;( )
+[ 	
+OperationContract	 
+] 
+bool 
+ValidateBoard 
+( 
+string !
+idRoom" (
+)( )
+;) *
+} 
+[ 
+ServiceContract 
+( 
+CallbackContract %
+=& '
+typeof( .
+(. /
+ITurnCallback/ <
+)< =
+)= >
+]> ?
+public 
 
-	interface 
-IBoardCallback #
-{$ %
-[ 	
-OperationContract	 
-] 
-void 
-SendToBoardCallback  
-(  !
-)! "
-;" #
-} 
-} °
-ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IFriendship.cs
+	interface 
+ITurn 
+{ 
+[ 	
+OperationContract	 
+( 
+IsOneWay #
+=$ %
+true& *
+)* +
+]+ ,
+void 
+
+SendToTurn 
+( 
+string 
+idRoom %
+)% &
+;& '
+[ 	
+OperationContract	 
+] 
+void 
+AddPlayerInGame 
+( 
+string #
+gamertag$ ,
+,, -
+string. 4
+idRoom5 ;
+); <
+;< =
+[ 	
+OperationContract	 
+] 
+void  
+RemovePlayerFromGame !
+(! "
+string" (
+gamertag) 1
+,1 2
+string3 9
+idRoom: @
+)@ A
+;A B
+[ 	
+OperationContract	 
+( 
+IsOneWay #
+=$ %
+true& *
+)* +
+]+ ,
+void 
+UpdateBoard 
+( 
+Point 
+marble %
+,% &
+Point' ,
+position- 5
+,5 6
+string7 =
+idRoom> D
+)D E
+;E F
+[ 	
+OperationContract	 
+( 
+IsOneWay #
+=$ %
+true& *
+)* +
+]+ ,
+void 
+WinningPlayer 
+( 
+string !
+idRoom" (
+,( )
+string* 0
+gamertag1 9
+)9 :
+;: ;
+} 
+[!! 
+ServiceContract!! 
+]!! 
+public"" 
+
+	interface"" 
+ITurnCallback"" "
+{""# $
+[## 	
+OperationContract##	 
+]## 
+void$$ 
+GameTurn$$ 
+($$ 
+string$$ 
+turn$$ !
+,$$! "
+int$$# &
+type$$' +
+)$$+ ,
+;$$, -
+[%% 	
+OperationContract%%	 
+]%% 
+void&& 
+UpdateBoardCallback&&  
+(&&  !
+Point&&! &
+marble&&' -
+,&&- .
+Point&&/ 4
+position&&5 =
+)&&= >
+;&&> ?
+['' 	
+OperationContract''	 
+]'' 
+void(( !
+WinningPlayerCallback(( "
+(((" #
+string((# )
+gamertag((* 2
+)((2 3
+;((3 4
+})) 
+}** ∫
+tC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IFriendship.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -156,10 +254,10 @@ ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IFr
 int. 1
 idFriend2 :
 ,: ;
-string< B
-resquestStatusC Q
-)Q R
-;R S
+string< B
+requestStatusC P
+)P Q
+;Q R
 } 
 [ 
 ServiceContract 
@@ -224,8 +322,8 @@ Dictionary& 0
 )_ `
 ;` a
 }   
-}!! 
-VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IReport.cs
+}!! ∫
+pC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IReport.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -286,9 +384,40 @@ VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IRe
 idUser $
 )$ %
 ;% &
-} 
-} Î
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IRoom.cs
+[ 	
+OperationContract	 
+] 
+DateTime 
+GetDateReport 
+( 
+int "
+idUser# )
+)) *
+;* +
+[ 	
+OperationContract	 
+] 
+bool 
+IsBanned 
+( 
+int 
+idUser  
+)  !
+;! "
+[ 	
+OperationContract	 
+] 
+bool 
+
+IsReported 
+( 
+int 
+idUser "
+)" #
+;# $
+} 
+} ≥)
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IRoom.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -338,160 +467,237 @@ GenerateId 
 ;9 :
 [ 	
 OperationContract	 
-] 
-int 
-ValidateRoom 
-( 
-string 
-idRoom  &
-)& '
-;' (
-} 
-[ 
-ServiceContract 
-( 
-CallbackContract %
-=& '
-typeof( .
-(. /
-IMessageCallback/ ?
-)? @
-)@ A
-]A B
-public 
+] 
+bool 
+ValidateRoom 
+( 
+string  
+idRoom! '
+)' (
+;( )
+[ 	
+OperationContract	 
+] 
+bool 
+ValidateBoardRoom 
+( 
+string %
+idRoom& ,
+), -
+;- .
+} 
+[ 
+ServiceContract 
+( 
+CallbackContract %
+=& '
+typeof( .
+(. /
+IMessageCallback/ ?
+)? @
+)@ A
+]A B
+public 
 
-	interface 
-IMessage 
-{ 
-[ 	
-OperationContract	 
-( 
-IsOneWay #
-=$ %
-true& *
-)* +
-]+ ,
-void 
-SendMessage 
-( 
-string 
-message  '
-,' (
-string) /
-gamertag0 8
-,8 9
-string: @
-idRoomA G
-)G H
-;H I
+	interface 
+IMessage 
+{ 
 [ 	
 OperationContract	 
-] 
-void 
-	AddPlayer 
-( 
-string 
-gamertag &
-,& '
-string( .
-idRoom/ 5
-)5 6
-;6 7
-} 
-[ 
-ServiceContract 
-] 
-public   
+( 
+IsOneWay #
+=$ %
+true& *
+)* +
+]+ ,
+void 
+SendMessage 
+( 
+string 
+message  '
+,' (
+string) /
+gamertag0 8
+,8 9
+string: @
+idRoomA G
+)G H
+;H I
+[ 	
+OperationContract	 
+] 
+void 
+	AddPlayer 
+( 
+string 
+gamertag &
+,& '
+string( .
+idRoom/ 5
+)5 6
+;6 7
+} 
+[!! 
+ServiceContract!! 
+]!! 
+public"" 
 
-	interface   
-IMessageCallback   %
-{  & '
-[!! 	
-OperationContract!!	 
-]!! 
-void"" 
-SendMessageCallback""  
-(""  !
-string""! '
-message""( /
-,""/ 0
-string""1 7
-gamertag""8 @
-)""@ A
-;""A B
-}## 
-[%% 
-ServiceContract%% 
-(%% 
-CallbackContract%% %
-=%%& '
-typeof%%( .
-(%%. / 
-IPlayersRoomCallback%%/ C
-)%%C D
-)%%D E
-]%%E F
-public&& 
+	interface"" 
+IMessageCallback"" %
+{""& '
+[## 	
+OperationContract##	 
+]## 
+void$$ 
+SendMessageCallback$$  
+($$  !
+string$$! '
+message$$( /
+,$$/ 0
+string$$1 7
+gamertag$$8 @
+)$$@ A
+;$$A B
+}%% 
+['' 
+ServiceContract'' 
+('' 
+CallbackContract'' %
+=''& '
+typeof''( .
+(''. / 
+IPlayersRoomCallback''/ C
+)''C D
+)''D E
+]''E F
+public(( 
 
-	interface&& 
-IPlayersRoom&& !
-{&&" #
-['' 	
-OperationContract''	 
-('' 
-IsOneWay'' #
-=''$ %
-true''& *
-)''* +
-]''+ ,
-void(( 
-GetPlayersRoom(( 
-((( 
-string(( "
-gamertag((# +
-,((+ ,
-string((- 3
-idRoom((4 :
-)((: ;
-;((; <
+	interface(( 
+IPlayersRoom(( !
+{((" #
 [)) 	
 OperationContract))	 
-])) 
-void** 
-AddPlayerRoom** 
-(** 
-string** !
-gamertag**" *
-,*** +
-string**, 2
-idRoom**3 9
-)**9 :
-;**: ;
-}++ 
-[-- 
-ServiceContract-- 
-]-- 
-public.. 
-
-	interface..  
-IPlayersRoomCallback.. )
-{..* +
+()) 
+IsOneWay)) #
+=))$ %
+true))& *
+)))* +
+]))+ ,
+void** 
+GetPlayersRoom** 
+(** 
+string** "
+gamertag**# +
+,**+ ,
+string**- 3
+idRoom**4 :
+)**: ;
+;**; <
+[++ 	
+OperationContract++	 
+]++ 
+void,, 
+AddPlayerRoom,, 
+(,, 
+string,, !
+gamertag,," *
+,,,* +
+string,,, 2
+idRoom,,3 9
+),,9 :
+;,,: ;
+[-- 	
+OperationContract--	 
+]-- 
+void.. 
+RemovePlayerRoom.. 
+(.. 
+string.. $
+gamertag..% -
+,..- .
+string../ 5
+idRoom..6 <
+)..< =
+;..= >
 [// 	
 OperationContract//	 
-]// 
-void00 "
-GetPlayersRoomCallback00 #
-(00# $
-List00$ (
-<00( )
-string00) /
->00/ 0
-playersInRoom001 >
-)00> ?
-;00? @
-}11 
-}22 ∂'
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IUser.cs
+(// 
+IsOneWay// #
+=//$ %
+true//& *
+)//* +
+]//+ ,
+void00 
+SendToBoard00 
+(00 
+string00 
+idRoom00  &
+)00& '
+;00' (
+[11 	
+OperationContract11	 
+(11 
+IsOneWay11 #
+=11$ %
+true11& *
+)11* +
+]11+ ,
+void22 
+AssignColors22 
+(22 
+string22  
+idRoom22! '
+)22' (
+;22( )
+}33 
+[55 
+ServiceContract55 
+]55 
+public66 
+
+	interface66  
+IPlayersRoomCallback66 )
+{66* +
+[77 	
+OperationContract77	 
+]77 
+void88 "
+GetPlayersRoomCallback88 #
+(88# $
+List88$ (
+<88( )
+string88) /
+>88/ 0
+playersInRoom881 >
+)88> ?
+;88? @
+[99 	
+OperationContract99	 
+]99 
+void:: 
+SendToBoardCallback::  
+(::  !
+)::! "
+;::" #
+[;; 	
+OperationContract;;	 
+];; 
+void<<  
+AssignColorsCallback<< !
+(<<! "
+
+Dictionary<<" ,
+<<<, -
+string<<- 3
+,<<3 4
+char<<5 9
+><<9 :"
+dictionaryPlayersColor<<; Q
+)<<Q R
+;<<R S
+}== 
+}>>  1
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IUser.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -554,514 +760,285 @@ TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IUs
 ;. /
 [ 	
 OperationContract	 
-] 
-void 
-
-LogoutUser 
-( 
-int 
-idUser "
-)" #
-;# $
+] 
+int 
+UpdateStatusPlayer 
+( 
+int "
+idUser# )
+,) *
+bool+ /
+status0 6
+)6 7
+;7 8
 [ 	
 OperationContract	 
-] 
-int 
-ValidateEmail 
-( 
-	UserModel #
-	userModel$ -
-)- .
-;. /
+] 
+void 
+
+LogoutUser 
+( 
+int 
+idUser "
+)" #
+;# $
 [ 	
 OperationContract	 
 ] 
-int 
-ValidateGamertag 
-( 
-	UserModel &
-	userModel' 0
-)0 1
-;1 2
+int 
+ValidateEmail 
+( 
+	UserModel #
+	userModel$ -
+)- .
+;. /
 [ 	
 OperationContract	 
 ] 
-int 
-UpdatePassword 
-( 
-	UserModel $
-	userModel% .
-). /
-;/ 0
+int 
+ValidateGamertag 
+( 
+	UserModel &
+	userModel' 0
+)0 1
+;1 2
 [ 	
 OperationContract	 
-] 
-	UserModel 
-InfoUser 
-( 
-string !
-gamertag" *
-)* +
-;+ ,
+] 
+int 
+UpdatePassword 
+( 
+	UserModel $
+	userModel% .
+). /
+;/ 0
 [ 	
 OperationContract	 
-] 
-int 
-UpdateInfoUser 
-( 
-	UserModel $
-	usermodel% .
-,. /
-string0 6
-gamertag7 ?
-)? @
-;@ A
+] 
+	UserModel 
+InfoUser 
+( 
+string !
+gamertag" *
+)* +
+;+ ,
 [   	
 OperationContract  	 
-]   
-string!! 
-FindGamertag!! 
-(!! 
-string!! "
-currentGamertag!!# 2
-,!!2 3
-string!!4 :
-friendGamertag!!; I
-)!!I J
-;!!J K
+]   
+int!! 
+UpdateInfoUser!! 
+(!! 
+	UserModel!! $
+	usermodel!!% .
+,!!. /
+string!!0 6
+gamertag!!7 ?
+)!!? @
+;!!@ A
 ["" 	
 OperationContract""	 
 ]"" 
-string## 
-GetEmail## 
-(## 
-string## 
-gamertag## '
-)##' (
-;##( )
+string## 
+FindGamertag## 
+(## 
+string## "
+currentGamertag### 2
+,##2 3
+string##4 :
+friendGamertag##; I
+)##I J
+;##J K
 [$$ 	
 OperationContract$$	 
-]$$ 
-int%% 
-GetId%% 
-(%% 
-string%% 
-gamertag%% !
-)%%! "
-;%%" #
-}&& 
-[)) 
-ServiceContract)) 
-()) 
-CallbackContract)) %
-=))& '
-typeof))( .
-()). /
-IUserCallback))/ <
-)))< =
-)))= >
-]))> ?
-public** 
+]$$ 
+string%% 
+GetEmail%% 
+(%% 
+string%% 
+gamertag%% '
+)%%' (
+;%%( )
+[&& 	
+OperationContract&&	 
+]&& 
+int'' 
+GetId'' 
+('' 
+string'' 
+gamertag'' !
+)''! "
+;''" #
+[(( 	
+OperationContract((	 
+](( 
+int)) 
+UpdateGamesWon)) 
+()) 
+int)) 
+idUser)) %
+)))% &
+;))& '
+[** 	
+OperationContract**	 
+]** 
+int++ 
+UpdateTotalGames++ 
+(++ 
+int++  
+idUser++! '
+)++' (
+;++( )
+[,, 	
+OperationContract,,	 
+],, 
+int-- 
+GetTotalGames-- 
+(-- 
+int-- 
+idUser-- $
+)--$ %
+;--% &
+[.. 	
+OperationContract..	 
+].. 
+int// 
+GetGamesWon// 
+(// 
+int// 
+idUser// "
+)//" #
+;//# $
+[00 	
+OperationContract00	 
+]00 
+
+Dictionary11 
+<11 
+string11 
+,11 
+int11 
+>11 
+GetGames11  (
+(11( )
+)11) *
+;11* +
+}22 
+[44 
+ServiceContract44 
+(44 
+CallbackContract44 %
+=44& '
+typeof44( .
+(44. /
+IUserCallback44/ <
+)44< =
+)44= >
+]44> ?
+public55 
 
-	interface** 
-IUsersManager** "
-{**# $
-[++ 	
-OperationContract++	 
-(++ 
-IsOneWay++ #
-=++$ %
-true++& *
-)++* +
-]+++ ,
-void,, 
+	interface55 
+IUsersManager55 "
+{55# $
+[66 	
+OperationContract66	 
+(66 
+IsOneWay66 #
+=66$ %
+true66& *
+)66* +
+]66+ ,
+void77 
 
-GetFriends,, 
-(,, 
-string,, 
-gamertag,, '
-),,' (
-;,,( )
-}-- 
-[// 
-ServiceContract// 
-]// 
-public00 
+GetFriends77 
+(77 
+string77 
+gamertag77 '
+)77' (
+;77( )
+}88 
+[:: 
+ServiceContract:: 
+]:: 
+public;; 
 
-	interface00 
-IUserCallback00 "
-{00# $
-[11 	
-OperationContract11	 
-]11 
-void22 
-GetFriendsCallback22 
-(22  
+	interface;; 
+IUserCallback;; "
+{;;# $
+[<< 	
+OperationContract<<	 
+]<< 
+void== 
+GetFriendsCallback== 
+(==  
 
-Dictionary22  *
-<22* +
-string22+ 1
-,221 2
-Tuple223 8
-<228 9
-string229 ?
-,22? @
-bool22A E
->22E F
->22F G
-stateFriend22H S
-)22S T
-;22T U
-}33 
-[55 
-ServiceContract55 
-(55 
-CallbackContract55 %
-=55& '
-typeof55( .
-(55. / 
-IUserSessionCallback55/ C
-)55C D
-)55D E
-]55E F
-public66 
+Dictionary==  *
+<==* +
+string==+ 1
+,==1 2
+Tuple==3 8
+<==8 9
+string==9 ?
+,==? @
+bool==A E
+>==E F
+>==F G
+stateFriend==H S
+)==S T
+;==T U
+}>> 
+[@@ 
+ServiceContract@@ 
+(@@ 
+CallbackContract@@ %
+=@@& '
+typeof@@( .
+(@@. / 
+IUserSessionCallback@@/ C
+)@@C D
+)@@D E
+]@@E F
+publicAA 
 
-	interface66 
-IUserSession66 !
-{66" #
-[77 	
-OperationContract77	 
-(77 
-IsOneWay77 #
-=77$ %
-true77& *
-)77* +
-]77+ ,
-void88 
-GetSessionPlayer88 
-(88 
-int88 !
-idUser88" (
-)88( )
-;88) *
-}99 
-[;; 
-ServiceContract;; 
-];; 
-public<< 
+	interfaceAA 
+IUserSessionAA !
+{AA" #
+[BB 	
+OperationContractBB	 
+(BB 
+IsOneWayBB #
+=BB$ %
+trueBB& *
+)BB* +
+]BB+ ,
+voidCC 
+GetSessionPlayerCC 
+(CC 
+intCC !
+idUserCC" (
+)CC( )
+;CC) *
+}DD 
+[FF 
+ServiceContractFF 
+]FF 
+publicGG 
 
-	interface<<  
-IUserSessionCallback<< )
-{<<* +
-[== 	
-OperationContract==	 
-]== 
-void>> $
-GetSessionPlayerCallback>> %
-(>>% &
-)>>& '
-;>>' (
-}?? 
-}@@ ¥)
-_C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\BoardController.cs
-	namespace 	&
-ChineseCheckersLogicServer
- $
-.$ %
-
-Controller% /
-{0 1
-public 
-
-partial 
-class 
-ManagerController *
-:+ ,
-IBoard- 3
-{4 5
-private 
-static 
-
-Dictionary !
-<! "
-string" (
-,( )
-	RoomModel* 3
->3 4
-_playersInBoard5 D
-=E F
-newG J
-
-DictionaryK U
-<U V
-stringV \
-,\ ]
-	RoomModel^ g
->g h
-(h i
-)i j
-;j k
-public 
-void 
-AddPlayerInBoard $
-($ %
-string% +
-gamertag, 4
-,4 5
-string6 <
-idRoom= C
-)C D
-{E F
-try 
-{ 
-IBoardCallback 
-context &
-=' (
-OperationContext) 9
-.9 :
-Current: A
-.A B
-GetCallbackChannelB T
-<T U
-IBoardCallbackU c
->c d
-(d e
-)e f
-;f g
-if 
-( 
-_rooms 
-. 
-Contains #
-(# $
-idRoom$ *
-)* +
-)+ ,
-{- .
-if 
-( 
-_playersInBoard '
-.' (
-ContainsKey( 3
-(3 4
-idRoom4 :
-): ;
-); <
-{= >
-	RoomModel !
-room" &
-=' (
-_playersInBoard) 8
-[8 9
-idRoom9 ?
-]? @
-;@ A
-room 
-. 
-BoardPlayers )
-.) *
-Add* -
-(- .
-gamertag. 6
-,6 7
-context8 ?
-)? @
-;@ A
-} 
-else 
-{ 
-	RoomModel !
-room" &
-=' (
-new) ,
-	RoomModel- 6
-{7 8
-IdRoom "
-=# $
-idRoom% +
-} 
-; 
-room 
-. 
-BoardPlayers )
-.) *
-Add* -
-(- .
-gamertag. 6
-,6 7
-context8 ?
-)? @
-;@ A
-_playersInBoard '
-.' (
-Add( +
-(+ ,
-idRoom, 2
-,2 3
-room4 8
-)8 9
-;9 :
-} 
-} 
-}   
-catch   
-(   "
-CommunicationException   +
-ex  , .
-)  . /
-{  0 1
-
-MessageBox!! 
-.!! 
-Show!! 
-(!!  
-$"!!  "
-$str!!" L
-{!!L M
-ex!!M O
-.!!O P
-Message!!P W
-}!!W X
-"!!X Y
-)!!Y Z
-;!!Z [
-}"" 
-}## 	
-public%% 
-void%% 
-SendToBoard%% 
-(%%  
-string%%  &
-idRoom%%' -
-)%%- .
-{%%/ 0
-try&& 
-{&& 
-if'' 
-('' 
-_playersInBoard'' #
-.''# $
-ContainsKey''$ /
-(''/ 0
-idRoom''0 6
-)''6 7
-)''7 8
-{''9 :
-	RoomModel(( 
-room(( "
-=((# $
-_playersInBoard((% 4
-[((4 5
-idRoom((5 ;
-]((; <
-;((< =
-if)) 
-()) 
-room)) 
-!=)) 
-null))  $
-&&))% '
-room))( ,
-.)), -
-BoardPlayers))- 9
-!=)): <
-null))= A
-)))A B
-{))C D
-foreach** 
-(**  !
-var**! $
-players**% ,
-in**- /
-room**0 4
-.**4 5
-BoardPlayers**5 A
-.**A B
-Values**B H
-)**H I
-{**J K
-players++ #
-.++# $
-SendToBoardCallback++$ 7
-(++7 8
-)++8 9
-;++9 :
-},, 
-}-- 
-}.. 
-}// 
-catch// 
-(// "
-CommunicationException// +
-ex//, .
-)//. /
-{//0 1
-
-MessageBox00 
-.00 
-Show00 
-(00  
-$"00  "
-$str00" L
-{00L M
-ex00M O
-.00O P
-Message00P W
-}00W X
-"00X Y
-)00Y Z
-;00Z [
-}11 
-}22 	
-public44 
-bool44 
-ValidateBoardRoom44 %
-(44% &
-string44& ,
-idRoom44- 3
-)443 4
-{445 6
-bool55 
-result55 
-;55 
-	RoomModel66 
-room66 
-=66 
-_playersInBoard66 ,
-[66, -
-idRoom66- 3
-]663 4
-;664 5
-if77 
-(77 
-room77 
-.77 
-BoardPlayers77 !
-.77! "
-Count77" '
->77( )
-$num77* +
-)77+ ,
-{77- .
-result88 
-=88 
-true88 
-;88 
-}99 
-else99 
-{99 
-result:: 
-=:: 
-false:: 
-;:: 
-};; 
-return<< 
-result<< 
-;<< 
-}== 	
-}>> 
-}?? ≤h
-dC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\FriendshipController.cs
+	interfaceGG  
+IUserSessionCallbackGG )
+{GG* +
+[HH 	
+OperationContractHH	 
+]HH 
+voidII $
+GetSessionPlayerCallbackII %
+(II% &
+boolII& *
+sessionOpenedII+ 8
+)II8 9
+;II9 :
+}JJ 
+}KK ®v
+yC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\BoardController.cs
 	namespace 	&
 ChineseCheckersLogicServer
  $
@@ -1069,480 +1046,2469 @@ dC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\Fr
 
 Controller% /
 {0 1
-public 
+public 
 
-partial 
-class 
-ManagerController *
-:+ ,
-IFriendship- 8
-{9 :
-public 
-int 
-AddFriendPlayer "
-(" #
-FriendshipModel# 2
-friendshipModel3 B
-)B C
-{D E
-int 
-result 
-= 
-$num 
-; 
-try 
-{ 
-using 
-( 
-var 
-context "
-=# $
-new% (#
-ChineseCheckersEntities) @
-(@ A
-)A B
-)B C
-{D E
-var 
-friendPlayer $
-=% &
-new' *
-FriendPlayer+ 7
-{8 9
-IdPlayer  
-=! "
-friendshipModel# 2
-.2 3
-IdUser3 9
-,9 :
-IdFriend  
-=! "
-friendshipModel# 2
-.2 3
-IdFriend3 ;
-,; <
-RequestStatus %
-=& '
-friendshipModel( 7
-.7 8
-RequestStatus8 E
-,E F
-TypeNotification (
-=) *
-friendshipModel+ :
-.: ;
-TypeNotification; K
-,K L
-} 
-; 
-SingletonClass "
-." #
-Instance# +
-.+ ,
-IdRoom, 2
-=3 4
-friendshipModel5 D
-.D E
-IdRoomE K
-;K L
-context 
-. 
-FriendPlayer (
-.( )
-Add) ,
-(, -
-friendPlayer- 9
-)9 :
-;: ;
-result 
-= 
-context $
-.$ %
-SaveChanges% 0
-(0 1
-)1 2
-;2 3
-} 
-return 
-result 
-; 
-}   
-catch   
-(   
-EntityException   $
-ex  % '
-)  ' (
-{  ) *
+partial 
+class 
+ManagerController *
+:+ ,
+IBoard- 3
+{4 5
+public 
+bool 
+ValidateGame  
+(  !
+string! '
+idRoom( .
+). /
+{0 1
+try 
+{ 
+if 
+( 
+string 
+. 
+IsNullOrEmpty (
+(( )
+idRoom) /
+)/ 0
+)0 1
+{2 3
+return 
+false  
+;  !
+} 
+return   
+_playersInGame   %
+.  % &
+ContainsKey  & 1
+(  1 2
+idRoom  2 8
+)  8 9
+;  9 :
+}!! 
+catch!! 
+(!! "
+CommunicationException!! +
+ex!!, .
+)!!. /
+{!!0 1
 
-MessageBox!! 
-.!! 
-Show!! 
-(!!  
-$"!!  "
-$str!!" @
-{!!@ A
-ex!!A C
-.!!C D
-Message!!D K
-}!!K L
-"!!L M
-)!!M N
-;!!N O
-return"" 
--"" 
-$num"" 
-;"" 
-}## 
-}$$ 	
-public&& 
-int&& 
-UpdateFriendPlayer&& %
-(&&% &
-int&&& )
-idUser&&* 0
-,&&0 1
-int&&2 5
-idFriend&&6 >
-,&&> ?
-string&&@ F
-requestStatus&&G T
-)&&T U
-{&&V W
-int'' 
-result'' 
-='' 
-$num'' 
-;'' 
-try(( 
-{(( 
-using)) 
-()) 
-var)) 
-context)) "
-=))# $
-new))% (#
-ChineseCheckersEntities))) @
-())@ A
-)))A B
-)))B C
-{))D E
-var** 
-friendPlayer** $
-=**% &
-context**' .
-.**. /
-FriendPlayer**/ ;
-.++ 
-FirstOrDefault++ '
-(++' (
-friend++( .
-=>++/ 1
-(,, 
-friend,, #
-.,,# $
-IdPlayer,,$ ,
-==,,- /
-idUser,,0 6
-&&,,7 9
-friend,,: @
-.,,@ A
-IdFriend,,A I
-==,,J L
-idFriend,,M U
-),,U V
-),,V W
-;,,W X
-if-- 
-(-- 
-friendPlayer-- $
-!=--% '
-null--( ,
-)--, -
-{--. /
-friendPlayer.. $
-...$ %
-RequestStatus..% 2
-=..3 4
-requestStatus..5 B
-;..B C
-result// 
-=//  
-context//! (
-.//( )
-SaveChanges//) 4
-(//4 5
-)//5 6
-;//6 7
-}00 
-}11 
-return22 
-result22 
-;22 
-}33 
-catch33 
-(33 
-EntityException33 $
-ex33% '
-)33' (
-{33) *
+MessageBox"" 
+."" 
+Show"" 
+(""  
+$"""  "
+$str""" ?
+{""? @
+ex""@ B
+.""B C
+Message""C J
+}""J K
+"""K L
+)""L M
+;""M N
+return## 
+false## 
+;## 
+}$$ 
+}%% 	
+public-- 
+bool-- 
+ValidateBoard-- !
+(--! "
+string--" (
+idRoom--) /
+)--/ 0
+{--1 2
+try.. 
+{.. 
+const// 
+int// 
+MIN_PLAYERS_ROOM// *
+=//+ ,
+$num//- .
+;//. /
+return00 
+_playersInGame00 %
+.00% &
+ContainsKey00& 1
+(001 2
+idRoom002 8
+)008 9
+&&00: <
+_playersInGame00= K
+[00K L
+idRoom00L R
+]00R S
+.00S T
+GamePlayers00T _
+.00_ `
+Count00` e
+>00f g
+MIN_PLAYERS_ROOM00h x
+;00x y
+}11 
+catch11 
+(11 "
+CommunicationException11 +
+ex11, .
+)11. /
+{110 1
 
-MessageBox44 
-.44 
-Show44 
-(44  
-$"44  "
-$str44" C
-{44C D
-ex44D F
-.44F G
-Message44G N
-}44N O
-"44O P
-)44P Q
-;44Q R
-return55 
--55 
-$num55 
-;55 
-}66 
-}77 	
-public99 
-int99 
-DeleteFriendPlayer99 %
-(99% &
-FriendshipModel99& 5
-friendshipModel996 E
-)99E F
-{99G H
-int:: 
-result:: 
-=:: 
-$num:: 
-;:: 
-try;; 
-{;; 
-using<< 
-(<< 
-var<< 
-context<< "
-=<<# $
-new<<% (#
-ChineseCheckersEntities<<) @
-(<<@ A
-)<<A B
-)<<B C
-{<<D E
-var== 
-friendPlayer== $
-===% &
-context==' .
-.==. /
-FriendPlayer==/ ;
-.>> 
-Where>> 
-(>> 
-friend>> %
-=>>>& (
-friend>>) /
-.>>/ 0
-IdPlayer>>0 8
-==>>9 ;
-friendshipModel>>< K
-.>>K L
-IdUser>>L R
-&&>>S U
-friend>>V \
-.>>\ ]
-IdFriend>>] e
-==>>f h
-friendshipModel>>i x
-.>>x y
-IdFriend	>>y Å
-&&
->>Ç Ñ
-friend
->>Ö ã
+MessageBox22 
+.22 
+Show22 
+(22  
+$"22  "
+$str22" ?
+{22? @
+ex22@ B
+.22B C
+Message22C J
+}22J K
+"22K L
+)22L M
+;22M N
+return33 
+false33 
+;33 
+}44 
+}55 	
+}66 
+public:: 
+
+partial:: 
+class:: 
+ManagerController:: *
+:::+ ,
+ITurn::- 2
+{::3 4
+privateBB 
+staticBB 
+
+DictionaryBB !
+<BB! "
+stringBB" (
+,BB( )
+intBB* -
+>BB- .
+_turnTrackerBB/ ;
+=BB< =
+newBB> A
+
+DictionaryBBB L
+<BBL M
+stringBBM S
+,BBS T
+intBBU X
+>BBX Y
+(BBY Z
+)BBZ [
+;BB[ \
+privateCC 
+staticCC 
+
+DictionaryCC !
+<CC! "
+stringCC" (
+,CC( )
+
+BoardModelCC* 4
+>CC4 5
+_playersInGameCC6 D
+=CCE F
+newCCG J
+
+DictionaryCCK U
+<CCU V
+stringCCV \
+,CC\ ]
+
+BoardModelCC^ h
+>CCh i
+(CCi j
+)CCj k
+;CCk l
+publicEE 
+voidEE 
+
+SendToTurnEE 
+(EE 
+stringEE %
+idRoomEE& ,
+)EE, -
+{EE. /
+constFF 
+intFF 
+IS_TURNFF 
+=FF 
+$numFF  !
+;FF! "
+constGG 
+intGG 
+IS_NOT_TURNGG !
+=GG" #
+$numGG$ %
+;GG% &
+tryHH 
+{HH 
+ifII 
+(II 
+_playersInGameII "
+.II" #
+TryGetValueII# .
+(II. /
+idRoomII/ 5
+,II5 6
+outII7 :
+varII; >
+boardII? D
+)IID E
+)IIE F
+{IIG H
+ifJJ 
+(JJ 
+!JJ 
+_turnTrackerJJ %
+.JJ% &
+ContainsKeyJJ& 1
+(JJ1 2
+idRoomJJ2 8
+)JJ8 9
+)JJ9 :
+{JJ; <
+_turnTrackerKK $
+[KK$ %
+idRoomKK% +
+]KK+ ,
+=KK- .
+$numKK/ 0
+;KK0 1
+}LL 
+intMM 
+nextTurnMM  
+=MM! "
+_turnTrackerMM# /
+[MM/ 0
+idRoomMM0 6
+]MM6 7
+;MM7 8
+varNN 
+keysNN 
+=NN 
+boardNN $
+.NN$ %
+GamePlayersNN% 0
+.NN0 1
+KeysNN1 5
+.NN5 6
+ToListNN6 <
+(NN< =
+)NN= >
+;NN> ?
+ifOO 
+(OO 
+keysOO 
+.OO 
+CountOO "
+>OO# $
+$numOO% &
+)OO& '
+{OO( )
+stringPP 
+nextGamertagPP +
+=PP, -
+keysPP. 2
+[PP2 3
+nextTurnPP3 ;
+%PP< =
+keysPP> B
+.PPB C
+CountPPC H
+]PPH I
+;PPI J
+_turnTrackerQQ $
+[QQ$ %
+idRoomQQ% +
+]QQ+ ,
+=QQ- .
+(QQ/ 0
+nextTurnQQ0 8
++QQ9 :
+IS_TURNQQ; B
+)QQB C
+%QQD E
+keysQQF J
+.QQJ K
+CountQQK P
+;QQP Q
+foreachRR 
+(RR  !
+varRR! $
+gamePlayersRR% 0
+inRR1 3
+boardRR4 9
+.RR9 :
+GamePlayersRR: E
+)RRE F
+{RRG H
+varSS 
+gamertagSS  (
+=SS) *
+gamePlayersSS+ 6
+.SS6 7
+KeySS7 :
+.SS: ;
+ToStringSS; C
+(SSC D
+)SSD E
+;SSE F
+varTT 
+contextTT  '
+=TT( )
+gamePlayersTT* 5
+.TT5 6
+ValueTT6 ;
+;TT; <
+varUU 
+isTurnUU  &
+=UU' (
+gamertagUU) 1
+==UU2 4
+nextGamertagUU5 A
+?UUB C
+IS_TURNUUD K
+:UUL M
+IS_NOT_TURNUUN Y
+;UUY Z
+contextVV #
+.VV# $
+GameTurnVV$ ,
+(VV, -
+nextGamertagVV- 9
+,VV9 :
+isTurnVV; A
+)VVA B
+;VVB C
+}WW 
+}XX 
+}YY 
+}ZZ 
+catchZZ 
+(ZZ "
+CommunicationExceptionZZ +
+exZZ, .
+)ZZ. /
+{ZZ0 1
+
+MessageBox[[ 
+.[[ 
+Show[[ 
+([[  
+$"[[  "
+$str[[" O
+{[[O P
+ex[[P R
+.[[R S
+Message[[S Z
+}[[Z [
+"[[[ \
+)[[\ ]
+;[[] ^
+}\\ 
+}]] 	
+publicff 
+voidff 
+UpdateBoardff 
+(ff  
+Pointff  %
+marbleff& ,
+,ff, -
+Pointff. 3
+positionff4 <
+,ff< =
+stringff> D
+idRoomffE K
+)ffK L
+{ffM N
+trygg 
+{gg 
+ifhh 
+(hh 
+_playersInGamehh "
+.hh" #
+ContainsKeyhh# .
+(hh. /
+idRoomhh/ 5
+)hh5 6
+)hh6 7
+{hh8 9
+
+BoardModelii 
+boardii $
+=ii% &
+_playersInGameii' 5
+[ii5 6
+idRoomii6 <
+]ii< =
+;ii= >
+ifjj 
+(jj 
+boardjj 
+!=jj  
+nulljj! %
+&&jj& (
+boardjj) .
+.jj. /
+GamePlayersjj/ :
+!=jj; =
+nulljj> B
+)jjB C
+{jjD E
+foreachkk 
+(kk  !
+varkk! $
+gamePlayerskk% 0
+inkk1 3
+boardkk4 9
+.kk9 :
+GamePlayerskk: E
+.kkE F
+ValueskkF L
+)kkL M
+{kkN O
+gamePlayersll '
+.ll' (
+UpdateBoardCallbackll( ;
+(ll; <
+marblell< B
+,llB C
+positionllD L
+)llL M
+;llM N
+}mm 
+}nn 
+}oo 
+}pp 
+catchpp 
+(pp "
+CommunicationExceptionpp +
+expp, .
+)pp. /
+{pp0 1
+
+MessageBoxqq 
+.qq 
+Showqq 
+(qq  
+$"qq  "
+$strqq" B
+{qqB C
+exqqC E
+.qqE F
+MessageqqF M
+}qqM N
+"qqN O
+)qqO P
+;qqP Q
+}rr 
+}ss 	
+public|| 
+void|| 
+AddPlayerInGame|| #
+(||# $
+string||$ *
+gamertag||+ 3
+,||3 4
+string||5 ;
+idRoom||< B
+)||B C
+{||D E
+try}} 
+{}} 
+ITurnCallback~~ 
+context~~ %
+=~~& '
+OperationContext~~( 8
+.~~8 9
+Current~~9 @
+.~~@ A
+GetCallbackChannel~~A S
+<~~S T
+ITurnCallback~~T a
+>~~a b
+(~~b c
+)~~c d
+;~~d e
+if
+ÄÄ 
+(
+ÄÄ 
+_rooms
+ÄÄ 
 .
->>ã å
-TypeNotification
->>å ú
-==
->>ù ü
-friendshipModel
->>† Ø
-.
->>Ø ∞
-TypeNotification
->>∞ ¿
+ÄÄ 
+Contains
+ÄÄ #
+(
+ÄÄ# $
+idRoom
+ÄÄ$ *
 )
->>¿ ¡
-.?? 
-FirstOrDefault?? '
-(??' (
-)??( )
-;??) *
-if@@ 
-(@@ 
-friendPlayer@@ $
-!=@@% '
-null@@( ,
-)@@, -
-{@@. /
-contextAA 
-.AA  
-FriendPlayerAA  ,
-.AA, -
-RemoveAA- 3
-(AA3 4
-friendPlayerAA4 @
-)AA@ A
-;AAA B
-resultBB 
-=BB  
-contextBB! (
-.BB( )
-SaveChangesBB) 4
-(BB4 5
-)BB5 6
-;BB6 7
-}CC 
-}DD 
-returnEE 
-resultEE 
-;EE 
-}FF 
-catchFF 
-(FF 
-EntityExceptionFF $
-exFF% '
-)FF' (
-{FF) *
-
-MessageBoxGG 
-.GG 
-ShowGG 
-(GG  
-$"GG  "
-$strGG" A
-{GGA B
-exGGB D
-.GGD E
-MessageGGE L
-}GGL M
-"GGM N
-)GGN O
-;GGO P
-returnHH 
--HH 
-$numHH 
-;HH 
-}II 
-}JJ 	
-publicLL 
-intLL !
-ValidateFriendRequestLL (
-(LL( )
-intLL) ,
-idUserLL- 3
-,LL3 4
-intLL5 8
-idFriendLL9 A
-,LLA B
-stringLLC I
-resquestStatusLLJ X
-)LLX Y
-{LLZ [
-intMM !
-friendRequestValidateMM %
-=MM& '
-$numMM( )
-;MM) *
-tryNN 
-{NN 
-usingOO 
-(OO 
-varOO 
-contextOO "
-=OO# $
-newOO% (#
-ChineseCheckersEntitiesOO) @
-(OO@ A
-)OOA B
-)OOB C
-{OOD E
-varPP 
-validatedRequestPP (
-=PP) *
-(PP+ ,
-fromPP, 0
-
-userFriendPP1 ;
-inPP< >
-contextPP? F
-.PPF G
-FriendPlayerPPG S
-joinQQ, 0
-userQQ1 5
-inQQ6 8
-contextQQ9 @
-.QQ@ A
-UserAccountQQA L
-onQQM O
-
-userFriendQQP Z
-.QQZ [
-IdPlayerQQ[ c
-equalsQQd j
-userQQk o
-.QQo p
-IdQQp r
-whereRR, 1
-
-userFriendRR2 <
-.RR< =
-IdPlayerRR= E
-==RRF H
-idUserRRI O
-&&RRP R
-
-userFriendRRS ]
-.RR] ^
-IdFriendRR^ f
-==RRg i
-idFriendRRj r
-&&RRs u
-
-userFriend	RRv Ä
+ÄÄ* +
+)
+ÄÄ+ ,
+{
+ÄÄ- .
+if
+ÅÅ 
+(
+ÅÅ 
+_playersInGame
+ÅÅ &
 .
-RRÄ Å
-RequestStatus
-RRÅ é
+ÅÅ& '
+ContainsKey
+ÅÅ' 2
+(
+ÅÅ2 3
+idRoom
+ÅÅ3 9
+)
+ÅÅ9 :
+)
+ÅÅ: ;
+{
+ÅÅ< =
+
+BoardModel
+ÇÇ "
+board
+ÇÇ# (
+=
+ÇÇ) *
+_playersInGame
+ÇÇ+ 9
+[
+ÇÇ9 :
+idRoom
+ÇÇ: @
+]
+ÇÇ@ A
+;
+ÇÇA B
+board
+ÉÉ 
+.
+ÉÉ 
+GamePlayers
+ÉÉ )
+.
+ÉÉ) *
+Add
+ÉÉ* -
+(
+ÉÉ- .
+gamertag
+ÉÉ. 6
+,
+ÉÉ6 7
+context
+ÉÉ8 ?
+)
+ÉÉ? @
+;
+ÉÉ@ A
+}
+ÑÑ 
+else
+ÑÑ 
+{
+ÑÑ 
+
+BoardModel
+ÖÖ "
+board
+ÖÖ# (
+=
+ÖÖ) *
+new
+ÖÖ+ .
+
+BoardModel
+ÖÖ/ 9
+{
+ÖÖ: ;
+IdRoom
+ÜÜ "
+=
+ÜÜ# $
+idRoom
+ÜÜ% +
+}
+áá 
+;
+áá 
+board
+àà 
+.
+àà 
+GamePlayers
+àà )
+.
+àà) *
+Add
+àà* -
+(
+àà- .
+gamertag
+àà. 6
+,
+àà6 7
+context
+àà8 ?
+)
+àà? @
+;
+àà@ A
+_playersInGame
+ââ &
+.
+ââ& '
+Add
+ââ' *
+(
+ââ* +
+idRoom
+ââ+ 1
+,
+ââ1 2
+board
+ââ3 8
+)
+ââ8 9
+;
+ââ9 :
+}
+ää 
+}
+ãã 
+}
+åå 
+catch
+åå 
+(
+åå $
+CommunicationException
+åå +
+ex
+åå, .
+)
+åå. /
+{
+åå0 1
+
+MessageBox
+çç 
+.
+çç 
+Show
+çç 
+(
+çç  
+$"
+çç  "
+$str
+çç" L
+{
+ççL M
+ex
+ççM O
+.
+ççO P
+Message
+ççP W
+}
+ççW X
+"
+ççX Y
+)
+ççY Z
+;
+ççZ [
+}
+éé 
+}
+èè 	
+public
+òò 
+void
+òò "
+RemovePlayerFromGame
+òò (
+(
+òò( )
+string
+òò) /
+gamertag
+òò0 8
+,
+òò8 9
+string
+òò: @
+idRoom
+òòA G
+)
+òòG H
+{
+òòI J
+const
+ôô 
+int
+ôô 
+MIN_PLAYERS_ROOM
+ôô &
+=
+ôô' (
+$num
+ôô) *
+;
+ôô* +
+try
+öö 
+{
+öö 
+if
+õõ 
+(
+õõ 
+_playersInGame
+õõ "
+.
+õõ" #
+ContainsKey
+õõ# .
+(
+õõ. /
+idRoom
+õõ/ 5
+)
+õõ5 6
+)
+õõ6 7
+{
+õõ8 9
+
+BoardModel
+úú 
+board
+úú $
+=
+úú% &
+_playersInGame
+úú' 5
+[
+úú5 6
+idRoom
+úú6 <
+]
+úú< =
+;
+úú= >
+if
+ûû 
+(
+ûû 
+board
+ûû 
+.
+ûû 
+GamePlayers
+ûû )
+.
+ûû) *
+Count
+ûû* /
+>
+ûû0 1
+MIN_PLAYERS_ROOM
+ûû2 B
+)
+ûûB C
+{
+ûûD E
+board
+üü 
+.
+üü 
+GamePlayers
+üü )
+.
+üü) *
+Remove
+üü* 0
+(
+üü0 1
+gamertag
+üü1 9
+)
+üü9 :
+;
+üü: ;
+}
+†† 
+else
+†† 
+{
+†† 
+board
+°° 
+.
+°° 
+GamePlayers
+°° )
+.
+°°) *
+Remove
+°°* 0
+(
+°°0 1
+gamertag
+°°1 9
+)
+°°9 :
+;
+°°: ;
+_playersInGame
+¢¢ &
+.
+¢¢& '
+Remove
+¢¢' -
+(
+¢¢- .
+idRoom
+¢¢. 4
+)
+¢¢4 5
+;
+¢¢5 6
+}
+££ 
+}
+§§ 
+}
+•• 
+catch
+•• 
+(
+•• $
+CommunicationException
+•• +
+ex
+••, .
+)
+••. /
+{
+••0 1
+
+MessageBox
+¶¶ 
+.
+¶¶ 
+Show
+¶¶ 
+(
+¶¶  
+$"
+¶¶  "
+$str
+¶¶" M
+{
+¶¶M N
+ex
+¶¶N P
+.
+¶¶P Q
+Message
+¶¶Q X
+}
+¶¶X Y
+"
+¶¶Y Z
+)
+¶¶Z [
+;
+¶¶[ \
+}
+ßß 
+}
+®® 	
+public
+±± 
+void
+±± 
+WinningPlayer
+±± !
+(
+±±! "
+string
+±±" (
+idRoom
+±±) /
+,
+±±/ 0
+string
+±±1 7
+gamertag
+±±8 @
+)
+±±@ A
+{
+±±B C
+try
+≤≤ 
+{
+≤≤ 
+const
+≥≥ 
+int
+≥≥ 
+MIN_PLAYERS_ROOM
+≥≥ *
+=
+≥≥+ ,
+$num
+≥≥- .
+;
+≥≥. /
+string
+¥¥ 
+winningGamertag
+¥¥ &
+=
+¥¥' (
+gamertag
+¥¥) 1
+;
+¥¥1 2
+if
+µµ 
+(
+µµ 
+_playersInGame
+µµ "
+.
+µµ" #
+ContainsKey
+µµ# .
+(
+µµ. /
+idRoom
+µµ/ 5
+)
+µµ5 6
+)
+µµ6 7
+{
+µµ8 9
+
+BoardModel
+∑∑ 
+board
+∑∑ $
+=
+∑∑% &
+_playersInGame
+∑∑' 5
+[
+∑∑5 6
+idRoom
+∑∑6 <
+]
+∑∑< =
+;
+∑∑= >
+if
+∏∏ 
+(
+∏∏ 
+board
+∏∏ 
+.
+∏∏ 
+GamePlayers
+∏∏ )
+.
+∏∏) *
+Count
+∏∏* /
 ==
-RRè ë
-resquestStatus
-RRí †
-selectSS, 2
-userSS3 7
-)SS7 8
+∏∏0 2
+MIN_PLAYERS_ROOM
+∏∏3 C
+)
+∏∏C D
+{
+∏∏E F
+winningGamertag
+ππ '
+=
+ππ( )
+board
+ππ* /
+.
+ππ/ 0
+GamePlayers
+ππ0 ;
+.
+ππ; <
+Keys
+ππ< @
+.
+ππ@ A
+FirstOrDefault
+ππA O
+(
+ππO P
+)
+ππP Q
+?
+ππQ R
+.
+ππR S
+ToString
+ππS [
+(
+ππ[ \
+)
+ππ\ ]
+;
+ππ] ^
+}
+∫∫ 
+foreach
+ªª 
+(
+ªª 
+var
+ªª  
+gamePlayers
+ªª! ,
+in
+ªª- /
+board
+ªª0 5
+.
+ªª5 6
+GamePlayers
+ªª6 A
+.
+ªªA B
+Values
+ªªB H
+)
+ªªH I
+{
+ªªJ K
+gamePlayers
+ºº #
+.
+ºº# $#
+WinningPlayerCallback
+ºº$ 9
+(
+ºº9 :
+winningGamertag
+ºº: I
+)
+ººI J
+;
+ººJ K
+}
+ΩΩ 
+}
+ææ 
+}
+øø 
+catch
+øø 
+(
+øø $
+CommunicationException
+øø +
+ex
+øø, .
+)
+øø. /
+{
+øø0 1
+
+MessageBox
+¿¿ 
+.
+¿¿ 
+Show
+¿¿ 
+(
+¿¿  
+$"
+¿¿  "
+$str
+¿¿" A
+{
+¿¿A B
+ex
+¿¿B D
+.
+¿¿D E
+Message
+¿¿E L
+}
+¿¿L M
+"
+¿¿M N
+)
+¿¿N O
+;
+¿¿O P
+}
+¡¡ 
+}
+¬¬ 	
+}
+√√ 
+}ƒƒ ão
+~C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\FriendshipController.cs
+	namespace 	&
+ChineseCheckersLogicServer
+ $
+.$ %
+
+Controller% /
+{0 1
+public 
+
+partial 
+class 
+ManagerController *
+:+ ,
+IFriendship- 8
+{9 :
+public 
+int 
+AddFriendPlayer "
+(" #
+FriendshipModel# 2
+friendshipModel3 B
+)B C
+{D E
+try 
+{ 
+using 
+( 
+var 
+context "
+=# $
+new% (#
+ChineseCheckersEntities) @
+(@ A
+)A B
+)B C
+{D E
+bool 
+friendshipExists )
+=* +
+context, 3
+.3 4
+FriendPlayer4 @
+.@ A
+AnyA D
+(D E
+friendPlayerE Q
+=>R T
+friendPlayer $
+.$ %
+IdPlayer% -
+==. 0
+friendshipModel1 @
+.@ A
+IdUserA G
+&&H J
+friendPlayer   $
+.  $ %
+IdFriend  % -
+==  . 0
+friendshipModel  1 @
+.  @ A
+IdFriend  A I
+&&  J L
+friendPlayer!! $
+.!!$ %
+TypeNotification!!% 5
+==!!6 8
+friendshipModel!!9 H
+.!!H I
+TypeNotification!!I Y
+)!!Y Z
+;!!Z [
+if## 
+(## 
+!## 
+friendshipExists## )
+)##) *
+{##+ ,
+var$$ 
+friendPlayer$$ (
+=$$) *
+new$$+ .
+FriendPlayer$$/ ;
+{$$< =
+IdPlayer%% $
+=%%% &
+friendshipModel%%' 6
+.%%6 7
+IdUser%%7 =
+,%%= >
+IdFriend&& $
+=&&% &
+friendshipModel&&' 6
+.&&6 7
+IdFriend&&7 ?
+,&&? @
+RequestStatus'' )
+=''* +
+friendshipModel'', ;
+.''; <
+RequestStatus''< I
+,''I J
+TypeNotification(( ,
+=((- .
+friendshipModel((/ >
+.((> ?
+TypeNotification((? O
+,((O P
+})) 
+;)) 
+SingletonClass** &
+.**& '
+Instance**' /
+.**/ 0
+IdRoom**0 6
+=**7 8
+friendshipModel**9 H
+.**H I
+IdRoom**I O
+;**O P
+context++ 
+.++  
+FriendPlayer++  ,
+.++, -
+Add++- 0
+(++0 1
+friendPlayer++1 =
+)++= >
+;++> ?
+return,, 
+context,, &
+.,,& '
+SaveChanges,,' 2
+(,,2 3
+),,3 4
+;,,4 5
+}-- 
+else-- 
+{-- 
+return.. 
+-..  
+$num..  !
+;..! "
+}// 
+}00 
+}11 
+catch11 
+(11 
+EntityException11 $
+ex11% '
+)11' (
+{11) *
+
+MessageBox22 
+.22 
+Show22 
+(22  
+$"22  "
+$str22" @
+{22@ A
+ex22A C
+.22C D
+Message22D K
+}22K L
+"22L M
+)22M N
+;22N O
+return33 
+-33 
+$num33 
+;33 
+}44 
+}55 	
+public?? 
+int?? 
+UpdateFriendPlayer?? %
+(??% &
+int??& )
+idUser??* 0
+,??0 1
+int??2 5
+idFriend??6 >
+,??> ?
+string??@ F
+requestStatus??G T
+)??T U
+{??V W
+try@@ 
+{@@ 
+usingAA 
+(AA 
+varAA 
+contextAA "
+=AA# $
+newAA% (#
+ChineseCheckersEntitiesAA) @
+(AA@ A
+)AAA B
+)AAB C
+{AAD E
+varBB 
+friendPlayerBB $
+=BB% &
+contextBB' .
+.BB. /
+FriendPlayerBB/ ;
+.CC 
+FirstOrDefaultCC '
+(CC' (
+friendCC( .
+=>CC/ 1
+friendDD "
+.DD" #
+IdPlayerDD# +
+==DD, .
+idUserDD/ 5
+&&DD6 8
+friendDD9 ?
+.DD? @
+IdFriendDD@ H
+==DDI K
+idFriendDDL T
+)DDT U
+;DDU V
+ifFF 
+(FF 
+friendPlayerFF $
+!=FF% '
+nullFF( ,
+)FF, -
+{FF. /
+friendPlayerGG $
+.GG$ %
+RequestStatusGG% 2
+=GG3 4
+requestStatusGG5 B
+;GGB C
+returnHH 
+contextHH &
+.HH& '
+SaveChangesHH' 2
+(HH2 3
+)HH3 4
+;HH4 5
+}II 
+elseII 
+{II 
+returnJJ 
+-JJ  
+$numJJ  !
+;JJ! "
+}KK 
+}LL 
+}MM 
+catchMM 
+(MM 
+EntityExceptionMM $
+exMM% '
+)MM' (
+{MM) *
+
+MessageBoxNN 
+.NN 
+ShowNN 
+(NN  
+$"NN  "
+$strNN" C
+{NNC D
+exNND F
+.NNF G
+MessageNNG N
+}NNN O
+"NNO P
+)NNP Q
+;NNQ R
+returnOO 
+-OO 
+$numOO 
+;OO 
+}PP 
+}QQ 	
+publicYY 
+intYY 
+DeleteFriendPlayerYY %
+(YY% &
+FriendshipModelYY& 5
+friendshipModelYY6 E
+)YYE F
+{YYG H
+tryZZ 
+{ZZ 
+using[[ 
+([[ 
+var[[ 
+context[[ "
+=[[# $
+new[[% (#
+ChineseCheckersEntities[[) @
+([[@ A
+)[[A B
+)[[B C
+{[[D E
+var\\ 
+friendPlayer\\ $
+=\\% &
+context\\' .
+.\\. /
+FriendPlayer\\/ ;
+.]] 
+FirstOrDefault]] '
+(]]' (
+friend]]( .
+=>]]/ 1
+friend^^ "
+.^^" #
+IdPlayer^^# +
+==^^, .
+friendshipModel^^/ >
+.^^> ?
+IdUser^^? E
+&&^^F H
+friend__ "
+.__" #
+IdFriend__# +
+==__, .
+friendshipModel__/ >
+.__> ?
+IdFriend__? G
+&&__H J
+friend`` "
+.``" #
+TypeNotification``# 3
+==``4 6
+friendshipModel``7 F
+.``F G
+TypeNotification``G W
+)``W X
+;``X Y
+ifbb 
+(bb 
+friendPlayerbb $
+!=bb% '
+nullbb( ,
+)bb, -
+{bb. /
+contextcc 
+.cc  
+FriendPlayercc  ,
+.cc, -
+Removecc- 3
+(cc3 4
+friendPlayercc4 @
+)cc@ A
+;ccA B
+returndd 
+contextdd &
+.dd& '
+SaveChangesdd' 2
+(dd2 3
+)dd3 4
+;dd4 5
+}ee 
+elseee 
+{ee 
+returnff 
+-ff  
+$numff  !
+;ff! "
+}gg 
+}hh 
+}ii 
+catchii 
+(ii 
+EntityExceptionii $
+exii% '
+)ii' (
+{ii) *
+
+MessageBoxjj 
+.jj 
+Showjj 
+(jj  
+$"jj  "
+$strjj" A
+{jjA B
+exjjB D
+.jjD E
+MessagejjE L
+}jjL M
+"jjM N
+)jjN O
+;jjO P
+returnkk 
+-kk 
+$numkk 
+;kk 
+}ll 
+}mm 	
+privateww 
+staticww 
+readonlyww 
+objectww  &
+validationLockww' 5
+=ww6 7
+newww8 ;
+objectww< B
+(wwB C
+)wwC D
+;wwD E
+publicxx 
+intxx !
+ValidateFriendRequestxx (
+(xx( )
+intxx) ,
+idUserxx- 3
+,xx3 4
+intxx5 8
+idFriendxx9 A
+,xxA B
+stringxxC I
+requestStatusxxJ W
+)xxW X
+{xxY Z
+tryyy 
+{yy 
+lockzz 
+(zz 
+validationLockzz $
+)zz$ %
+{zz& '
+using{{ 
+({{ 
+var{{ 
+context{{ &
+={{' (
+new{{) ,#
+ChineseCheckersEntities{{- D
+({{D E
+){{E F
+){{F G
+{{{H I
+bool|| 
+isValidatedRequest|| /
+=||0 1
+context||2 9
+.||9 :
+FriendPlayer||: F
+.}} 
+Any}}  
+(}}  !
+
+userFriend}}! +
+=>}}, .
+
+userFriend}}/ 9
+.}}9 :
+IdPlayer}}: B
+==}}C E
+idUser}}F L
+&&}}M O
+
+userFriend~~/ 9
+.~~9 :
+IdFriend~~: B
+==~~C E
+idFriend~~F N
+&&~~O Q
+
+userFriend/ 9
+.9 :
+RequestStatus: G
+==H J
+requestStatusK X
+)X Y
+;Y Z
+return
+ÄÄ  
+isValidatedRequest
+ÄÄ 1
+?
+ÄÄ2 3
+$num
+ÄÄ4 5
+:
+ÄÄ6 7
+-
+ÄÄ8 9
+$num
+ÄÄ9 :
+;
+ÄÄ: ;
+}
+ÅÅ 
+}
+ÇÇ 
+}
+ÉÉ 
+catch
+ÉÉ 
+(
+ÉÉ 
+EntityException
+ÉÉ $
+ex
+ÉÉ% '
+)
+ÉÉ' (
+{
+ÉÉ) *
+
+MessageBox
+ÑÑ 
+.
+ÑÑ 
+Show
+ÑÑ 
+(
+ÑÑ  
+$"
+ÑÑ  "
+$str
+ÑÑ" M
+{
+ÑÑM N
+ex
+ÑÑN P
+.
+ÑÑP Q
+Message
+ÑÑQ X
+}
+ÑÑX Y
+"
+ÑÑY Z
+)
+ÑÑZ [
+;
+ÑÑ[ \
+return
+ÖÖ 
+-
+ÖÖ 
+$num
+ÖÖ 
+;
+ÖÖ 
+}
+ÜÜ 
+}
+áá 	
+}
+àà 
+public
+åå 
+
+partial
+åå 
+class
+åå 
+ManagerController
+åå *
+:
+åå+ , 
+IUserFriendRequest
+åå- ?
+{
+åå@ A
+public
+ìì 
+void
+ìì 
+GetFriendRequest
+ìì $
+(
+ìì$ %
+int
+ìì% (
+idUser
+ìì) /
+)
+ìì/ 0
+{
+ìì1 2
+
+Dictionary
+îî 
+<
+îî 
+string
+îî 
+,
+îî 
+(
+îî  
+string
+îî  &
+,
+îî& '
+string
+îî( .
+,
+îî. /
+string
+îî0 6
+)
+îî6 7
+>
+îî7 8
+friendsDictionary
+îî9 J
+=
+îîK L
+new
+îîM P
+
+Dictionary
+îîQ [
+<
+îî[ \
+string
+îî\ b
+,
+îîb c
+(
+îîd e
+string
+îîe k
+,
+îîk l
+string
+îîm s
+,
+îîs t
+string
+îîu {
+)
+îî{ |
+>
+îî| }
+(
+îî} ~
+)
+îî~ 
+;îî Ä
+try
+ïï 
+{
+ïï 
+const
+ññ 
+string
+ññ 
+FRIEND_REQUEST
+ññ +
+=
+ññ, -
+$str
+ññ. 7
+;
+ññ7 8
+using
+óó 
+(
+óó 
+var
+óó 
+context
+óó "
+=
+óó# $
+new
+óó% (%
+ChineseCheckersEntities
+óó) @
+(
+óó@ A
+)
+óóA B
+)
+óóB C
+{
+óóD E
+var
+òò 
+
+friendData
+òò "
+=
+òò# $
+(
+òò% &
+from
+òò& *
+friend
+òò+ 1
+in
+òò2 4
+context
+òò5 <
+.
+òò< =
+FriendPlayer
+òò= I
+join
+ôô& *
+user
+ôô+ /
+in
+ôô0 2
+context
+ôô3 :
+.
+ôô: ;
+UserAccount
+ôô; F
+on
+ôôG I
+friend
+ôôJ P
+.
+ôôP Q
+IdPlayer
+ôôQ Y
+equals
+ôôZ `
+user
+ôôa e
+.
+ôôe f
+Id
+ôôf h
+where
+öö& +
+friend
+öö, 2
+.
+öö2 3
+RequestStatus
+öö3 @
+==
+ööA C
+FRIEND_REQUEST
+ööD R
+&&
+ööS U
+friend
+ööV \
+.
+öö\ ]
+IdFriend
+öö] e
+==
+ööf h
+idUser
+ööi o
+select
+õõ& ,
+new
+õõ- 0
+{
+õõ1 2
+user
+úú* .
+.
+úú. /
+Id
+úú/ 1
+,
+úú1 2
+Gamertag
+ùù* 2
+=
+ùù3 4
+user
+ùù5 9
+.
+ùù9 :
+GamertagUser
+ùù: F
+,
+ùùF G
+user
+ûû* .
+.
+ûû. /
+ImageProfile
+ûû/ ;
+,
+ûû; <
+friend
+üü* 0
+.
+üü0 1
+TypeNotification
+üü1 A
+,
+üüA B
+SingletonClass
+††* 8
+.
+††8 9
+Instance
+††9 A
+.
+††A B
+IdRoom
+††B H
+}
+°°& '
+)
+°°' (
+.
+°°( )
+ToList
+°°) /
+(
+°°/ 0
+)
+°°0 1
+;
+°°1 2
+foreach
+¢¢ 
+(
+¢¢ 
+var
+¢¢  
+friend
+¢¢! '
+in
+¢¢( *
+
+friendData
+¢¢+ 5
+)
+¢¢5 6
+{
+¢¢7 8
+friendsDictionary
+££ )
+[
+££) *
+friend
+££* 0
+.
+££0 1
+Gamertag
+££1 9
+]
+££9 :
+=
+££; <
+(
+££= >
+friend
+££> D
+.
+££D E
+ImageProfile
+££E Q
+,
+££Q R
+friend
+££S Y
+.
+££Y Z
+TypeNotification
+££Z j
+,
+££j k
+friend
+££l r
+.
+££r s
+IdRoom
+££s y
+)
+££y z
+;
+££z {
+}
+§§ (
+IUserFriendRequestCallback
+•• .
+callback
+••/ 7
+=
+••8 9
+OperationContext
+••: J
+.
+••J K
+Current
+••K R
+.
+••R S 
+GetCallbackChannel
+••S e
+<
+••e f)
+IUserFriendRequestCallback••f Ä
+>••Ä Å
+(••Å Ç
+)••Ç É
+;••É Ñ
+callback
+¶¶ 
+.
+¶¶ &
+GetFriendRequestCallback
+¶¶ 5
+(
+¶¶5 6
+friendsDictionary
+¶¶6 G
+)
+¶¶G H
+;
+¶¶H I
+}
+ßß 
+}
+®® 
+catch
+®® 
+(
+®® $
+CommunicationException
+®® +
+ex
+®®, .
+)
+®®. /
+{
+®®0 1
+
+MessageBox
+©© 
+.
+©© 
+Show
+©© 
+(
+©©  
+$"
+©©  "
+$str
+©©" G
+{
+©©G H
+ex
+©©H J
+.
+©©J K
+Message
+©©K R
+}
+©©R S
+"
+©©S T
+)
+©©T U
+;
+©©U V
+}
+™™ 
+catch
+™™ 
+(
+™™ 
+EntityException
+™™ $
+ex
+™™% '
+)
+™™' (
+{
+™™) *
+
+MessageBox
+´´ 
+.
+´´ 
+Show
+´´ 
+(
+´´  
+$"
+´´  "
+$str
+´´" G
+{
+´´G H
+ex
+´´H J
+.
+´´J K
+Message
+´´K R
+}
+´´R S
+"
+´´S T
+)
+´´T U
+;
+´´U V
+}
+¨¨ 
+}
+≠≠ 	
+}
+ÆÆ 
+}ØØ ±j
+zC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\ReportController.cs
+	namespace 	&
+ChineseCheckersLogicServer
+ $
+.$ %
+
+Controller% /
+{0 1
+public 
+
+partial 
+class 
+ManagerController *
+:+ ,
+IReport- 4
+{5 6
+public 
+int 
+	AddReport 
+( 
+ReportModel (
+reportModel) 4
+)4 5
+{6 7
+try 
+{ 
+const 
+int 
+INITIAL_COUNTER )
+=* +
+$num, -
+;- .
+using 
+( 
+var 
+context "
+=# $
+new% (#
+ChineseCheckersEntities) @
+(@ A
+)A B
+)B C
+{D E
+var 
+
+reportUser "
+=# $
+new% (
+Reports) 0
+{1 2
+IdUser   
+=    
+reportModel  ! ,
+.  , -
+IdUser  - 3
+,  3 4
+Counter!! 
+=!!  !
+INITIAL_COUNTER!!" 1
+,!!1 2
+Reason"" 
+=""  
+reportModel""! ,
+."", -
+Reason""- 3
+,""3 4
+DateCurrent## #
+=##$ %
+reportModel##& 1
+.##1 2
+CurrentDate##2 =
+,##= >
+
+DateFinish$$ "
+=$$# $
+reportModel$$% 0
+.$$0 1
+EndDate$$1 8
+,$$8 9
+}%% 
+;%% 
+context&& 
+.&& 
+Reports&& #
+.&&# $
+Add&&$ '
+(&&' (
+
+reportUser&&( 2
+)&&2 3
+;&&3 4
+return'' 
+context'' "
+.''" #
+SaveChanges''# .
+(''. /
+)''/ 0
+;''0 1
+}(( 
+})) 
+catch)) 
+()) 
+EntityException)) $
+ex))% '
+)))' (
+{))) *
+
+MessageBox** 
+.** 
+Show** 
+(**  
+$"**  "
+$str**" ?
+{**? @
+ex**@ B
+.**B C
+Message**C J
+}**J K
+"**K L
+)**L M
+;**M N
+return++ 
+-++ 
+$num++ 
+;++ 
+},, 
+}-- 	
+public66 
+int66 
+UpdateReport66 
+(66  
+ReportModel66  +
+reportModel66, 7
+)667 8
+{669 :
+try77 
+{77 
+using88 
+(88 
+var88 
+context88 "
+=88# $
+new88% (#
+ChineseCheckersEntities88) @
+(88@ A
+)88A B
+)88B C
+{88D E
+var99 
+
+userReport99 "
+=99# $
+context99% ,
+.99, -
+Reports99- 4
+.:: 
+Where:: 
+(:: 
+user:: #
+=>::$ &
+user::' +
+.::+ ,
+IdUser::, 2
+==::3 5
+reportModel::6 A
+.::A B
+IdUser::B H
+)::H I
+.;; 
+FirstOrDefault;; '
+(;;' (
+);;( )
+;;;) *
+if<< 
+(<< 
+
+userReport<< "
+!=<<# %
+null<<& *
+)<<* +
+{<<, -
+
+userReport== "
+.==" #
+Counter==# *
+++==* ,
+;==, -
+
+userReport>> "
+.>>" #
+Reason>># )
+=>>* +
+reportModel>>, 7
+.>>7 8
+Reason>>8 >
+;>>> ?
+
+userReport?? "
+.??" #
+DateCurrent??# .
+=??/ 0
+reportModel??1 <
+.??< =
+CurrentDate??= H
+;??H I
+
+userReport@@ "
+.@@" #
+
+DateFinish@@# -
+=@@. /
+reportModel@@0 ;
+.@@; <
+EndDate@@< C
+;@@C D
+}AA 
+returnBB 
+contextBB "
+.BB" #
+SaveChangesBB# .
+(BB. /
+)BB/ 0
+;BB0 1
+}CC 
+}DD 
+catchDD 
+(DD 
+EntityExceptionDD $
+exDD% '
+)DD' (
+{DD) *
+
+MessageBoxEE 
+.EE 
+ShowEE 
+(EE  
+$"EE  "
+$strEE" B
+{EEB C
+exEEC E
+.EEE F
+MessageEEF M
+}EEM N
+"EEN O
+)EEO P
+;EEP Q
+returnFF 
+-FF 
+$numFF 
+;FF 
+}GG 
+}HH 	
+publicPP 
+intPP 
+DeleteReportPP 
+(PP  
+intPP  #
+idUserPP$ *
+)PP* +
+{PP, -
+tryQQ 
+{QQ 
+usingRR 
+(RR 
+varRR 
+contextRR "
+=RR# $
+newRR% (#
+ChineseCheckersEntitiesRR) @
+(RR@ A
+)RRA B
+)RRB C
+{RRD E
+varSS 
+reportToDeleteSS &
+=SS' (
+contextSS) 0
+.SS0 1
+ReportsSS1 8
 .SS8 9
 FirstOrDefaultSS9 G
-(SSG H
-)SSH I
-;SSI J
+(SSG H
+reportSSH N
+=>SSO Q
+reportSSR X
+.SSX Y
+IdUserSSY _
+==SS` b
+idUserSSc i
+)SSi j
+;SSj k
 ifTT 
-(TT 
-validatedRequestTT (
-!=TT) +
-nullTT, 0
-)TT0 1
-{TT2 3!
-friendRequestValidateUU -
-=UU. /
-$numUU0 1
-;UU1 2
+(TT 
+reportToDeleteTT &
+!=TT' )
+nullTT* .
+)TT. /
+{TT0 1
+contextUU 
+.UU  
+ReportsUU  '
+.UU' (
+RemoveUU( .
+(UU. /
+reportToDeleteUU/ =
+)UU= >
+;UU> ?
 }VV 
-returnWW !
-friendRequestValidateWW 0
+returnWW 
+contextWW "
+.WW" #
+SaveChangesWW# .
+(WW. /
+)WW/ 0
 ;WW0 1
 }XX 
 }YY 
@@ -1558,3026 +3524,661 @@ MessageBoxZZ 
 ShowZZ 
 (ZZ  
 $"ZZ  "
-$strZZ" M
-{ZZM N
-exZZN P
-.ZZP Q
-MessageZZQ X
-}ZZX Y
-"ZZY Z
-)ZZZ [
-;ZZ[ \
+$strZZ" @
+{ZZ@ A
+exZZA C
+.ZZC D
+MessageZZD K
+}ZZK L
+"ZZL M
+)ZZM N
+;ZZN O
 return[[ 
 -[[ 
 $num[[ 
 ;[[ 
 }\\ 
-}]] 	
-}^^ 
-public`` 
-
-partial`` 
-class`` 
-ManagerController`` *
-:``+ ,
-IUserFriendRequest``- ?
-{``@ A
-publicaa 
-voidaa 
-GetFriendRequestaa $
-(aa$ %
-intaa% (
-idUseraa) /
-)aa/ 0
-{aa1 2
+}]] 	
+publicee 
+intee 
+GetNumReportsee  
+(ee  !
+intee! $
+idUseree% +
+)ee+ ,
+{ee- .
+tryff 
+{ff 
+intgg 
 
-Dictionarybb 
-<bb 
-stringbb 
-,bb 
-(bb  
-stringbb  &
-,bb& '
-stringbb( .
-,bb. /
-stringbb0 6
-)bb6 7
->bb7 8
-friendsDictionarybb9 J
-=bbK L
-newbbM P
+numReportsgg 
+=gg  
+-gg! "
+$numgg" #
+;gg# $
+usinghh 
+(hh 
+varhh 
+contexthh "
+=hh# $
+newhh% (#
+ChineseCheckersEntitieshh) @
+(hh@ A
+)hhA B
+)hhB C
+{hhD E
+varii 
+counterValuesii %
+=ii& '
+contextii( /
+.ii/ 0
+Reportsii0 7
+.jj 
+FirstOrDefaultjj '
+(jj' (
+counterjj( /
+=>jj0 2
+counterjj3 :
+.jj: ;
+IdUserjj; A
+==jjB D
+idUserjjE K
+)jjK L
+;jjL M
+ifkk 
+(kk 
+counterValueskk %
+!=kk& (
+nullkk) -
+)kk- .
+{kk/ 0
 
-DictionarybbQ [
-<bb[ \
-stringbb\ b
-,bbb c
-(bbd e
-stringbbe k
-,bbk l
-stringbbm s
-,bbs t
-stringbbu {
-)bb{ |
->bb| }
-(bb} ~
-)bb~ 
-;	bb Ä
-trycc 
-{cc 
-usingdd 
-(dd 
-vardd 
-contextdd "
-=dd# $
-newdd% (#
-ChineseCheckersEntitiesdd) @
-(dd@ A
-)ddA B
-)ddB C
-{ddD E
-varee 
+numReportsll "
+=ll# $
+(ll% &
+intll& )
+)ll) *
+counterValuesll* 7
+.ll7 8
+Counterll8 ?
+;ll? @
+}mm 
+returnnn 
 
-friendDataee "
-=ee# $
-(ee% &
-fromee& *
-friendee+ 1
-inee2 4
-contextee5 <
-.ee< =
-FriendPlayeree= I
-joinff& *
-userff+ /
-inff0 2
-contextff3 :
-.ff: ;
-UserAccountff; F
-onffG I
-friendffJ P
-.ffP Q
-IdPlayerffQ Y
-equalsffZ `
-userffa e
-.ffe f
-Idfff h
-wheregg& +
-friendgg, 2
-.gg2 3
-RequestStatusgg3 @
-==ggA C
-$strggD M
-&&ggN P
-friendggQ W
-.ggW X
-IdFriendggX `
-==gga c
-idUserggd j
-selecthh& ,
-newhh- 0
-{hh1 2
-userii* .
-.ii. /
-Idii/ 1
-,ii1 2
-Gamertagjj* 2
-=jj3 4
-userjj5 9
-.jj9 :
-GamertagUserjj: F
-,jjF G
-userkk* .
-.kk. /
-ImageProfilekk/ ;
-,kk; <
-friendll* 0
-.ll0 1
-TypeNotificationll1 A
-,llA B
-SingletonClassmm* 8
-.mm8 9
-Instancemm9 A
-.mmA B
-IdRoommmB H
-}nn& '
-)nn' (
-.nn( )
-ToListnn) /
-(nn/ 0
-)nn0 1
-;nn1 2
-ifpp 
-(pp 
+numReportsnn %
+;nn% &
+}oo 
+}pp 
+catchpp 
+(pp 
+EntityExceptionpp $
+expp% '
+)pp' (
+{pp) *
 
-friendDatapp "
-!=pp# %
-nullpp& *
-)pp* +
-{pp, -
-foreachqq 
-(qq  !
-varqq! $
-friendqq% +
-inqq, .
-
-friendDataqq/ 9
-)qq9 :
-{qq; <
-friendsDictionaryrr -
-[rr- .
-friendrr. 4
-.rr4 5
-Gamertagrr5 =
-]rr= >
-=rr? @
-(rrA B
-friendrrB H
-.rrH I
-ImageProfilerrI U
-,rrU V
-friendrrW ]
-.rr] ^
-TypeNotificationrr^ n
-,rrn o
-friendrrp v
-.rrv w
-IdRoomrrw }
-)rr} ~
-;rr~ 
-}ss &
-IUserFriendRequestCallbacktt 2
-callbacktt3 ;
-=tt< =
-OperationContexttt> N
-.ttN O
-CurrentttO V
-.ttV W
-GetCallbackChannelttW i
-<tti j'
-IUserFriendRequestCallback	ttj Ñ
->
-ttÑ Ö
-(
-ttÖ Ü
-)
-ttÜ á
-;
-ttá à
-callbackuu  
-.uu  !$
-GetFriendRequestCallbackuu! 9
-(uu9 :
-friendsDictionaryuu: K
-)uuK L
-;uuL M
-}vv 
-}ww 
-}xx 
-catchxx 
-(xx "
-CommunicationExceptionxx +
-exxx, .
-)xx. /
-{xx0 1
-
-MessageBoxyy 
-.yy 
-Showyy 
-(yy  
-$"yy  "
-$stryy" L
-{yyL M
-exyyM O
-.yyO P
-MessageyyP W
-}yyW X
-"yyX Y
-)yyY Z
-;yyZ [
-}zz 
-catchzz 
-(zz 
-EntityExceptionzz $
-exzz% '
-)zz' (
-{zz) *
-
-MessageBox{{ 
-.{{ 
-Show{{ 
-({{  
-$"{{  "
-$str{{" L
-{{{L M
-ex{{M O
-.{{O P
-Message{{P W
-}{{W X
-"{{X Y
-){{Y Z
-;{{Z [
-}|| 
-}}} 	
-}~~ 
-} Â:
-`C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\ReportController.cs
-	namespace 	&
-ChineseCheckersLogicServer
- $
-.$ %
-
-Controller% /
-{0 1
-public 
-
-partial 
-class 
-ManagerController *
-:+ ,
-IReport- 4
-{5 6
-public 
-int 
-	AddReport 
-( 
-ReportModel (
-reportModel) 4
-)4 5
-{6 7
-try 
-{ 
-using 
-( 
-var 
-context "
-=# $
-new% (#
-ChineseCheckersEntities) @
-(@ A
-)A B
-)B C
-{D E
-var 
-
-reportUser "
-=# $
-new% (
-Reports) 0
-{1 2
-IdUser 
-=  
-reportModel! ,
-., -
-IdUser- 3
-,3 4
-Counter 
-=  !
-$num" #
-,# $
-Reason 
-=  
-reportModel! ,
-., -
-Reason- 3
-,3 4
-DateCurrent #
-=$ %
-reportModel& 1
-.1 2
-CurrentDate2 =
-,= >
-
-DateFinish "
-=# $
-reportModel% 0
-.0 1
-EndDate1 8
-,8 9
-} 
-; 
-context 
-. 
-Reports #
-.# $
-Add$ '
-(' (
-
-reportUser( 2
-)2 3
-;3 4
-return 
-context "
-." #
-SaveChanges# .
-(. /
-)/ 0
-;0 1
-} 
-} 
-catch 
-( 
-EntityException $
-ex% '
-)' (
-{) *
-
-MessageBox 
-. 
-Show 
-(  
-$"  "
-$str" M
-{M N
-exN P
-.P Q
-MessageQ X
-}X Y
-"Y Z
-)Z [
-;[ \
-return   
--   
-$num   
-;   
-}!! 
-}"" 	
-public$$ 
-int$$ 
-UpdateReport$$ 
-($$  
-ReportModel$$  +
-reportModel$$, 7
-)$$7 8
-{$$9 :
-try%% 
-{%% 
-using&& 
-(&& 
-var&& 
-context&& "
-=&&# $
-new&&% (#
-ChineseCheckersEntities&&) @
-(&&@ A
-)&&A B
-)&&B C
-{&&D E
-var'' 
-
-userReport'' "
-=''# $
-context''% ,
-.'', -
-Reports''- 4
-.(( 
-Where(( 
-((( 
-u((  
-=>((! #
-u(($ %
-.((% &
-IdUser((& ,
-==((- /
-reportModel((0 ;
-.((; <
-IdUser((< B
-)((B C
-.)) 
-FirstOrDefault)) '
-())' (
-)))( )
-;))) *
-if** 
-(** 
-
-userReport** "
-!=**# %
-null**& *
-)*** +
-{**, -
-
-userReport++ "
-.++" #
-Counter++# *
-++++* ,
-;++, -
-
-userReport,, "
-.,," #
-Reason,,# )
-=,,* +
-reportModel,,, 7
-.,,7 8
-Reason,,8 >
-;,,> ?
-
-userReport-- "
-.--" #
-DateCurrent--# .
-=--/ 0
-reportModel--1 <
-.--< =
-CurrentDate--= H
-;--H I
-
-userReport.. "
-..." #
-
-DateFinish..# -
-=... /
-reportModel..0 ;
-...; <
-EndDate..< C
-;..C D
-}// 
-return00 
-context00 "
-.00" #
-SaveChanges00# .
-(00. /
-)00/ 0
-;000 1
-}11 
-}22 
-catch22 
-(22 
-EntityException22 $
-ex22% '
-)22' (
-{22) *
-
-MessageBox33 
-.33 
-Show33 
-(33  
-$"33  "
-$str33" M
-{33M N
-ex33N P
-.33P Q
-Message33Q X
-}33X Y
-"33Y Z
-)33Z [
-;33[ \
-return44 
--44 
-$num44 
-;44 
-}55 
-}66 	
-public88 
-int88 
-DeleteReport88 
-(88  
-int88  #
-idUser88$ *
-)88* +
-{88, -
-try99 
-{99 
-using:: 
-(:: 
-var:: 
-context:: "
-=::# $
-new::% (#
-ChineseCheckersEntities::) @
-(::@ A
-)::A B
-)::B C
-{::D E
-var;; 
-reportToDelete;; &
-=;;' (
-context;;) 0
-.;;0 1
-Reports;;1 8
-.;;8 9
-FirstOrDefault;;9 G
-(;;G H
-r;;H I
-=>;;J L
-r;;M N
-.;;N O
-Id;;O Q
-==;;R T
-idUser;;U [
-);;[ \
-;;;\ ]
-if<< 
-(<< 
-reportToDelete<< &
-!=<<' )
-null<<* .
-)<<. /
-{<<0 1
-context== 
-.==  
-Reports==  '
-.==' (
-Remove==( .
-(==. /
-reportToDelete==/ =
-)=== >
-;==> ?
-}>> 
-return?? 
-context?? "
-.??" #
-SaveChanges??# .
-(??. /
-)??/ 0
-;??0 1
-}@@ 
-}AA 
-catchAA 
-(AA 
-EntityExceptionAA $
-exAA% '
-)AA' (
-{AA) *
-
-MessageBoxBB 
-.BB 
-ShowBB 
-(BB  
-$"BB  "
-$strBB" M
-{BBM N
-exBBN P
-.BBP Q
-MessageBBQ X
-}BBX Y
-"BBY Z
-)BBZ [
-;BB[ \
-returnCC 
--CC 
-$numCC 
-;CC 
-}DD 
-}EE 	
-publicGG 
-intGG 
-GetNumReportsGG  
-(GG  !
-intGG! $
-idUserGG% +
-)GG+ ,
-{GG- .
-tryHH 
-{HH 
-intII 
-
-numReportsII 
-=II  
--II! "
-$numII" #
-;II# $
-usingJJ 
-(JJ 
-varJJ 
-contextJJ "
-=JJ# $
-newJJ% (#
-ChineseCheckersEntitiesJJ) @
-(JJ@ A
-)JJA B
-)JJB C
-{JJD E
-varKK 
-counterValuesKK %
-=KK& '
-contextKK( /
-.KK/ 0
-ReportsKK0 7
-.LL 
-FirstOrDefaultLL '
-(LL' (
-counterLL( /
-=>LL0 2
-counterLL3 :
-.LL: ;
-IdUserLL; A
-==LLB D
-idUserLLE K
-)LLK L
-;LLL M
-ifMM 
-(MM 
-counterValuesMM %
-!=MM& (
-nullMM) -
-)MM- .
-{MM/ 0
-
-numReportsNN "
-=NN# $
-(NN% &
-intNN& )
-)NN) *
-counterValuesNN* 7
-.NN7 8
-CounterNN8 ?
-;NN? @
-}OO 
-returnPP 
-
-numReportsPP %
-;PP% &
-}QQ 
-}RR 
-catchRR 
-(RR 
-EntityExceptionRR $
-exRR% '
-)RR' (
-{RR) *
-
-MessageBoxSS 
-.SS 
-ShowSS 
-(SS  
-$"SS  "
-$strSS" M
-{SSM N
-exSSN P
-.SSP Q
-MessageSSQ X
-}SSX Y
-"SSY Z
-)SSZ [
-;SS[ \
-returnTT 
--TT 
-$numTT 
-;TT 
-}UU 
-}VV 	
-}WW 
-}XX ïw
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\RoomController.cs
-	namespace 	&
-ChineseCheckersLogicServer
- $
-.$ %
-
-Controller% /
-{0 1
-public 
-
-partial 
-class 
-ManagerController *
-:+ ,
-IRoom- 2
-{3 4
-private 
-static 
-readonly 
-List  $
-<$ %
-string% +
->+ ,
-_rooms- 3
-=4 5
-new6 9
-List: >
-<> ?
-string? E
->E F
-(F G
-)G H
-;H I
-public 
-string 
-
-CreateRoom  
-(  !
-string! '
-gamertag( 0
-)0 1
-{2 3
-string 
-idRoom 
-; 
-do 
-{ 
-idRoom 
-= 
-
-GenerateId #
-(# $
-)$ %
-;% &
-} 
-while 
-( 
-_rooms 
-. 
-Contains $
-($ %
-idRoom% +
-)+ ,
-), -
-;- .
-_rooms 
-. 
-Add 
-( 
-idRoom 
-) 
-; 
-return 
-idRoom 
-; 
-} 	
-public 
-string 
-
-GenerateId  
-(  !
-)! "
-{# $
-const 
-string 
-
-CHARACTERS #
-=$ %
-$str& 2
-;2 3
-StringBuilder 
-id 
-= 
-new "
-StringBuilder# 0
-(0 1
-)1 2
-;2 3
-Random 
-random 
-= 
-new 
-Random  &
-(& '
-)' (
-;( )
-for!! 
-(!! 
-int!! 
-i!! 
-=!! 
-$num!! 
-;!! 
-i!! 
-<!! 
-$num!!  !
-;!!! "
-i!!# $
-++!!$ &
-)!!& '
-{!!( )
-int"" 
-index"" 
-="" 
-random"" "
-.""" #
-Next""# '
-(""' (
-$num""( )
-,"") *
-
-CHARACTERS""+ 5
-.""5 6
-Length""6 <
-)""< =
-;""= >
-id## 
-.## 
-Append## 
-(## 
-
-CHARACTERS## $
-[##$ %
-index##% *
-]##* +
-)##+ ,
-;##, -
-}$$ 
-return%% 
-id%% 
-.%% 
-ToString%% 
-(%% 
-)%%  
-;%%  !
-}&& 	
-public(( 
-void(( 
-RemovePlayer((  
-(((  !
-string((! '
-gamertag((( 0
-,((0 1
-string((2 8
-idRoom((9 ?
-)((? @
-{((A B
-if)) 
-()) 
-_playersInRoom)) 
-.)) 
-ContainsKey)) *
-())* +
-idRoom))+ 1
-)))1 2
-)))2 3
-{))4 5
-	RoomModel** 
-room** 
-=**  
-_playersInRoom**! /
-[**/ 0
-idRoom**0 6
-]**6 7
-;**7 8
-if,, 
-(,, 
-room,, 
-.,, 
-Players,,  
-.,,  !
-Count,,! &
->,,' (
-$num,,) *
-),,* +
-{,,, -
-room-- 
-.-- 
-Players--  
-.--  !
-Remove--! '
-(--' (
-gamertag--( 0
-)--0 1
-;--1 2
-}.. 
-else.. 
-{.. 
-room// 
-.// 
-Players//  
-.//  !
-Remove//! '
-(//' (
-gamertag//( 0
-)//0 1
-;//1 2
-_playersInRoom00 "
-.00" #
-Remove00# )
-(00) *
-idRoom00* 0
-)000 1
-;001 2
-_rooms11 
-.11 
-Remove11 !
-(11! "
-idRoom11" (
-)11( )
-;11) *
-}22 
-}33 
-}44 	
-public66 
-int66 
-ValidateRoom66 
-(66  
-string66  &
-idRoom66' -
-)66- .
-{66/ 0
-int77 
-result77 
-;77 
-if88 
-(88 
-_rooms88 
-.88 
-Contains88 
-(88  
-idRoom88  &
-)88& '
-)88' (
-{88) *
-result99 
-=99 
-$num99 
-;99 
-}:: 
-else:: 
-{:: 
-result;; 
-=;; 
-$num;; 
-;;; 
-}<< 
-return== 
-result== 
-;== 
-}>> 	
-}?? 
-publicAA 
-
-partialAA 
-classAA 
-ManagerControllerAA *
-:AA+ ,
-IMessageAA- 5
-{AA6 7
-privateCC 
-staticCC 
-readonlyCC 
-
-DictionaryCC  *
-<CC* +
-stringCC+ 1
-,CC1 2
-	RoomModelCC3 <
->CC< =
-_playersInRoomCC> L
-=CCM N
-newCCO R
-
-DictionaryCCS ]
-<CC] ^
-stringCC^ d
-,CCd e
-	RoomModelCCf o
->CCo p
-(CCp q
-)CCq r
-;CCr s
-publicDD 
-voidDD 
-SendMessageDD 
-(DD  
-stringDD  &
-messageDD' .
-,DD. /
-stringDD0 6
-gamertagDD7 ?
-,DD? @
-stringDDA G
-idRoomDDH N
-)DDN O
-{DDP Q
-tryEE 
-{EE 
-ifFF 
-(FF 
-_playersInRoomFF "
-.FF" #
-ContainsKeyFF# .
-(FF. /
-idRoomFF/ 5
-)FF5 6
-)FF6 7
-{FF8 9
-	RoomModelGG 
-roomGG "
-=GG# $
-_playersInRoomGG% 3
-[GG3 4
-idRoomGG4 :
-]GG: ;
-;GG; <
-ifHH 
-(HH 
-roomHH 
-!=HH 
-nullHH  $
-&&HH% '
-roomHH( ,
-.HH, -
-PlayersHH- 4
-!=HH5 7
-nullHH8 <
-)HH< =
-{HH> ?
-foreachII 
-(II  !
-varII! $
-playersII% ,
-inII- /
-roomII0 4
-.II4 5
-PlayersII5 <
-.II< =
-ValuesII= C
-)IIC D
-{IIE F
-playersJJ #
-.JJ# $
-SendMessageCallbackJJ$ 7
-(JJ7 8
-messageJJ8 ?
-,JJ? @
-gamertagJJA I
-)JJI J
-;JJJ K
-}KK 
-}LL 
-}MM 
-}NN 
-catchNN 
-(NN "
-CommunicationExceptionNN +
-exNN, .
-)NN. /
-{NN0 1
-
-MessageBoxOO 
-.OO 
-ShowOO 
-(OO  
-$"OO  "
-$strOO" L
-{OOL M
-exOOM O
-.OOO P
-MessageOOP W
-}OOW X
-"OOX Y
-)OOY Z
-;OOZ [
-}PP 
-}QQ 	
-publicSS 
-voidSS 
-	AddPlayerSS 
-(SS 
-stringSS $
-gamertagSS% -
-,SS- .
-stringSS/ 5
-idRoomSS6 <
-)SS< =
-{SS> ?
-tryTT 
-{TT 
-IMessageCallbackUU  
-contextUU! (
-=UU) *
-OperationContextUU+ ;
-.UU; <
-CurrentUU< C
-.UUC D
-GetCallbackChannelUUD V
-<UUV W
-IMessageCallbackUUW g
->UUg h
-(UUh i
-)UUi j
-;UUj k
-ifVV 
-(VV 
-_playersInRoomVV "
-.VV" #
-ContainsKeyVV# .
-(VV. /
-idRoomVV/ 5
-)VV5 6
-)VV6 7
-{VV8 9
-	RoomModelWW 
-roomWW "
-=WW# $
-_playersInRoomWW% 3
-[WW3 4
-idRoomWW4 :
-]WW: ;
-;WW; <
-roomXX 
-.XX 
-PlayersXX  
-.XX  !
-AddXX! $
-(XX$ %
-gamertagXX% -
-,XX- .
-contextXX/ 6
-)XX6 7
-;XX7 8
-}YY 
-elseYY 
-{YY 
-	RoomModelZZ 
-roomZZ "
-=ZZ# $
-newZZ% (
-	RoomModelZZ) 2
-{ZZ3 4
-IdRoom[[ 
-=[[  
-idRoom[[! '
-}\\ 
-;\\ 
-room]] 
-.]] 
-Players]]  
-.]]  !
-Add]]! $
-(]]$ %
-gamertag]]% -
-,]]- .
-context]]/ 6
-)]]6 7
-;]]7 8
-_playersInRoom^^ "
-.^^" #
-Add^^# &
-(^^& '
-idRoom^^' -
-,^^- .
-room^^/ 3
-)^^3 4
-;^^4 5
-}__ 
-}`` 
-catch`` 
-(`` "
-CommunicationException`` +
-ex``, .
-)``. /
-{``0 1
-
-MessageBoxaa 
-.aa 
-Showaa 
-(aa  
-$"aa  "
-$straa" L
-{aaL M
-exaaM O
-.aaO P
-MessageaaP W
-}aaW X
-"aaX Y
-)aaY Z
-;aaZ [
-}bb 
-}cc 	
-}dd 
-publicff 
-
-partialff 
-classff 
-ManagerControllerff *
-:ff+ ,
-IPlayersRoomff- 9
-{ff: ;
-privatehh 
-statichh 
-readonlyhh 
-
-Dictionaryhh  *
-<hh* +
-stringhh+ 1
-,hh1 2
-	RoomModelhh3 <
->hh< =
-playersRoomhh> I
-=hhJ K
-newhhL O
-
-DictionaryhhP Z
-<hhZ [
-stringhh[ a
-,hha b
-	RoomModelhhc l
->hhl m
-(hhm n
-)hhn o
-;hho p
-privateii 
-staticii 
-readonlyii 
-
-Dictionaryii  *
-<ii* +
-stringii+ 1
-,ii1 2
-Listii3 7
-<ii7 8
-Stringii8 >
->ii> ?
->ii? @!
-playersRoomDictionaryiiA V
-=iiW X
-newiiY \
-
-Dictionaryii] g
-<iig h
-stringiih n
-,iin o
-Listiip t
-<iit u
-Stringiiu {
->ii{ |
->ii| }
-(ii} ~
-)ii~ 
-;	ii Ä
-publickk 
-voidkk 
-AddPlayerRoomkk !
-(kk! "
-stringkk" (
-gamertagkk) 1
-,kk1 2
-stringkk3 9
-idRoomkk: @
-)kk@ A
-{kkB C
-tryll 
-{ll  
-IPlayersRoomCallbackmm $
-contextmm% ,
-=mm- .
-OperationContextmm/ ?
-.mm? @
-Currentmm@ G
-.mmG H
-GetCallbackChannelmmH Z
-<mmZ [ 
-IPlayersRoomCallbackmm[ o
->mmo p
-(mmp q
-)mmq r
-;mmr s
-ifoo 
-(oo 
-_roomsoo 
-.oo 
-Containsoo #
-(oo# $
-idRoomoo$ *
-)oo* +
-)oo+ ,
-{oo- .
-ifpp 
-(pp 
-playersRoompp #
-.pp# $
-ContainsKeypp$ /
-(pp/ 0
-idRoompp0 6
-)pp6 7
-)pp7 8
-{pp9 :
-	RoomModelqq !
-roomqq" &
-=qq' (
-playersRoomqq) 4
-[qq4 5
-idRoomqq5 ;
-]qq; <
-;qq< =
-roomrr 
-.rr 
-PlayersRoomrr (
-.rr( )
-Addrr) ,
-(rr, -
-gamertagrr- 5
-,rr5 6
-contextrr7 >
-)rr> ?
-;rr? @
-Listss 
-<ss 
-stringss #
->ss# $
-listPlayersss% 0
-=ss1 2!
-playersRoomDictionaryss3 H
-[ssH I
-idRoomssI O
-]ssO P
-;ssP Q
-listPlayerstt #
-.tt# $
-Addtt$ '
-(tt' (
-gamertagtt( 0
-)tt0 1
-;tt1 2!
-playersRoomDictionaryuu -
-[uu- .
-idRoomuu. 4
-]uu4 5
-=uu6 7
-listPlayersuu8 C
-;uuC D
-}vv 
-elsevv 
-{vv 
-	RoomModelww !
-roomww" &
-=ww' (
-newww) ,
-	RoomModelww- 6
-{ww7 8
-IdRoomxx "
-=xx# $
-idRoomxx% +
-}yy 
-;yy 
-roomzz 
-.zz 
-PlayersRoomzz (
-.zz( )
-Addzz) ,
-(zz, -
-gamertagzz- 5
-,zz5 6
-contextzz7 >
-)zz> ?
-;zz? @
-playersRoom{{ #
-.{{# $
-Add{{$ '
-({{' (
-idRoom{{( .
-,{{. /
-room{{0 4
-){{4 5
-;{{5 6
-List|| 
-<|| 
-string|| #
->||# $
-listPlayers||% 0
-=||1 2
-new||3 6
-List||7 ;
-<||; <
-string||< B
->||B C
-(||C D
-)||D E
-;||E F
-listPlayers}} #
-.}}# $
-Add}}$ '
-(}}' (
-gamertag}}( 0
-)}}0 1
-;}}1 2!
-playersRoomDictionary~~ -
-.~~- .
-Add~~. 1
-(~~1 2
-idRoom~~2 8
-,~~8 9
-listPlayers~~: E
-)~~E F
-;~~F G
-}
-ÄÄ 
-}
-ÅÅ 
-}
-ÇÇ 
-catch
-ÇÇ 
-(
-ÇÇ $
-CommunicationException
-ÇÇ +
-ex
-ÇÇ, .
-)
-ÇÇ. /
-{
-ÇÇ0 1
-
-MessageBox
-ÉÉ 
-.
-ÉÉ 
-Show
-ÉÉ 
-(
-ÉÉ  
-$"
-ÉÉ  "
-$str
-ÉÉ" L
-{
-ÉÉL M
-ex
-ÉÉM O
-.
-ÉÉO P
-Message
-ÉÉP W
-}
-ÉÉW X
-"
-ÉÉX Y
-)
-ÉÉY Z
-;
-ÉÉZ [
-}
-ÑÑ 
-}
-ÖÖ 	
-public
-áá 
-void
-áá 
-GetPlayersRoom
-áá "
-(
-áá" #
-string
-áá# )
-gamertag
-áá* 2
-,
-áá2 3
-string
-áá4 :
-idRoom
-áá; A
-)
-ááA B
-{
-ááC D
-try
-àà 
-{
-àà 
-if
-ââ 
-(
-ââ 
-playersRoom
-ââ 
-.
-ââ  
-ContainsKey
-ââ  +
-(
-ââ+ ,
-idRoom
-ââ, 2
-)
-ââ2 3
-)
-ââ3 4
-{
-ââ5 6
-	RoomModel
-ää 
-room
-ää "
-=
-ää# $
-playersRoom
-ää% 0
-[
-ää0 1
-idRoom
-ää1 7
-]
-ää7 8
-;
-ää8 9
-if
-ãã 
-(
-ãã 
-room
-ãã 
-!=
-ãã 
-null
-ãã  $
-&&
-ãã% '
-room
-ãã( ,
-.
-ãã, -
-PlayersRoom
-ãã- 8
-!=
-ãã9 ;
-null
-ãã< @
-)
-ãã@ A
-{
-ããB C
-List
-åå 
-<
-åå 
-string
-åå #
->
-åå# $
-listPlayers
-åå% 0
-=
-åå1 2#
-playersRoomDictionary
-åå3 H
-[
-ååH I
-idRoom
-ååI O
-]
-ååO P
-;
-ååP Q
-foreach
-çç 
-(
-çç  !
+MessageBoxqq 
+.qq 
+Showqq 
+(qq  
+$"qq  "
+$strqq" L
+{qqL M
+exqqM O
+.qqO P
+MessageqqP W
+}qqW X
+"qqX Y
+)qqY Z
+;qqZ [
+returnrr 
+-rr 
+$numrr 
+;rr 
+}ss 
+}tt 	
+public|| 
+DateTime|| 
+GetDateReport|| %
+(||% &
+int||& )
+idUser||* 0
+)||0 1
+{||2 3
+try}} 
+{}} 
+DateTime~~ 
+dateTime~~ !
+=~~" #
+DateTime~~$ ,
+.~~, -
+Now~~- 0
+;~~0 1
+using 
+( 
+var 
+context "
+=# $
+new% (#
+ChineseCheckersEntities) @
+(@ A
+)A B
+)B C
+{D E
 var
-çç! $
-players
-çç% ,
-in
-çç- /
-room
-çç0 4
-.
-çç4 5
-PlayersRoom
-çç5 @
-.
-çç@ A
-Values
-ççA G
-)
-ççG H
-{
-ççI J
-players
-éé #
-.
-éé# $$
-GetPlayersRoomCallback
-éé$ :
-(
-éé: ;
-listPlayers
-éé; F
-)
-ééF G
-;
-ééG H
-}
-èè 
-}
-êê 
-}
-ëë 
-}
-íí 
-catch
-íí 
-(
-íí $
-CommunicationException
-íí +
-ex
-íí, .
-)
-íí. /
-{
-íí0 1
+ÄÄ 
 
-MessageBox
-ìì 
-.
-ìì 
-Show
-ìì 
-(
-ìì  
-$"
-ìì  "
-$str
-ìì" L
-{
-ììL M
-ex
-ììM O
-.
-ììO P
-Message
-ììP W
-}
-ììW X
-"
-ììX Y
-)
-ììY Z
-;
-ììZ [
-}
-îî 
-}
-ïï 	
-}
-ññ 
-}óó ¨
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\SingletonClass.cs
-	namespace 	&
-ChineseCheckersLogicServer
- $
-.$ %
-
-Controller% /
-{0 1
-public 
-
-class 
-SingletonClass 
-{  !
-private
-
- 
-static
-
- 
-SingletonClass
-
- %
-	_instance
-
-& /
-;
-
-/ 0
-public 
-static 
-SingletonClass $
-Instance% -
-{. /
-get 
-{ 
-if 
-( 
-	_instance 
-==  
-null! %
-)% &
-{' (
-	_instance 
-= 
-new  #
-SingletonClass$ 2
-(2 3
-)3 4
-;4 5
-} 
-return 
-	_instance  
-;  !
-} 
-} 	
-public 
-string 
-IdRoom 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-} 
-} Õé
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\UserController.cs
-	namespace 	&
-ChineseCheckersLogicServer
- $
-.$ %
-
-Controller% /
-{0 1
-[ 
-ServiceBehavior 
-( 
-ConcurrencyMode $
-=% &
-ConcurrencyMode' 6
-.6 7
-	Reentrant7 @
-)@ A
-]A B
-public 
-
-partial 
-class 
-ManagerController *
-:+ ,
-IUser- 2
-{3 4
-public 
-int 
-AddUserGame 
-( 
-	UserModel (
-	userModel) 2
-)2 3
-{4 5
-try 
-{ 
-using 
-( 
-var 
-context "
-=# $
-new% (#
-ChineseCheckersEntities) @
-(@ A
-)A B
-)B C
-{D E
-var 
-userGame  
-=! "
-new# &
-User' +
-{, -
-Gamertag  
-=! "
-	userModel# ,
-., -
-Gamertag- 5
-,5 6
-PlayerStatus $
-=% &
-	userModel' 0
-.0 1
-PlayerStatus1 =
-,= >
-} 
-; 
-context 
-. 
-User  
-.  !
-Add! $
-($ %
-userGame% -
-)- .
-;. /
-return 
-context "
-." #
-SaveChanges# .
-(. /
-)/ 0
-;0 1
-} 
-}   
-catch   
-(   
-EntityException   $
-ex  % '
-)  ' (
-{  ) *
-
-MessageBox!! 
-.!! 
-Show!! 
-(!!  
-$"!!  "
-$str!!" ?
-{!!? @
-ex!!@ B
-.!!B C
-Message!!C J
-}!!J K
-"!!K L
-)!!L M
-;!!M N
-return"" 
--"" 
-$num"" 
-;"" 
-}## 
-}$$ 	
-public&& 
-int&& 
-AddUserAccount&& !
-(&&! "
-	UserModel&&" +
-	userModel&&, 5
-)&&5 6
-{&&7 8
-try'' 
-{'' 
-using(( 
-((( 
-var(( 
-context(( "
-=((# $
-new((% (#
-ChineseCheckersEntities(() @
-(((@ A
-)((A B
-)((B C
-{((D E
-var)) 
-userAccountGame)) '
-=))( )
-new))* -
-UserAccount)). 9
-{)): ;
-GamertagUser** $
-=**% &
-	userModel**' 0
-.**0 1
-Gamertag**1 9
-,**9 :
-Email++ 
-=++ 
-	userModel++  )
-.++) *
-Email++* /
-,++/ 0
-Password,,  
-=,,! "
-BCrypt,,# )
-.,,) *
-Net,,* -
-.,,- .
-BCrypt,,. 4
-.,,4 5
-HashPassword,,5 A
-(,,A B
-	userModel,,B K
-.,,K L
-Password,,L T
-),,T U
-,,,U V
-ImageProfile-- $
-=--% &
-	userModel--' 0
-.--0 1
-ImageProfile--1 =
-,--= >
-}.. 
-;.. 
-context// 
-.// 
-UserAccount// '
-.//' (
-Add//( +
-(//+ ,
-userAccountGame//, ;
-)//; <
-;//< =
-return00 
-context00 "
-.00" #
-SaveChanges00# .
-(00. /
-)00/ 0
-;000 1
-}11 
-}22 
-catch22 
-(22 
-EntityException22 $
-ex22% '
-)22' (
-{22) *
-
-MessageBox33 
-.33 
-Show33 
-(33  
-$"33  "
-$str33" J
-{33J K
-ex33K M
-.33M N
-Message33N U
-}33U V
-"33V W
-)33W X
-;33X Y
-return44 
--44 
-$num44 
-;44 
-}55 
-}66 	
-public88 
-	UserModel88 
-InfoUser88 !
-(88! "
-string88" (
-gamertag88) 1
-)881 2
-{883 4
-	UserModel99 
-	userModel99 
-=99  !
-new99" %
-	UserModel99& /
-(99/ 0
-)990 1
-;991 2
-try:: 
-{:: 
-using;; 
-(;; 
-var;; 
-context;; "
-=;;# $
-new;;% (#
-ChineseCheckersEntities;;) @
-(;;@ A
-);;A B
-);;B C
-{;;D E
-var<< 
-	userFound<< !
-=<<" #
-context<<$ +
-.<<+ ,
-UserAccount<<, 7
-.== 
-Where== 
-(== 
-u==  
-=>==! #
-u==$ %
-.==% &
-GamertagUser==& 2
-====3 5
-gamertag==6 >
-)==> ?
-.>> 
-Select>> 
-(>>  
-u>>  !
-=>>>" $
-new>>% (
-{>>) *
-u?? 
-.?? 
-GamertagUser?? *
-,??* +
-u@@ 
-.@@ 
-ImageProfile@@ *
-,@@* +
-uAA 
-.AA 
-EmailAA #
-}BB 
-)BB 
-.CC 
-FirstOrDefaultCC '
-(CC' (
-)CC( )
-;CC) *
-ifEE 
-(EE 
-	userFoundEE !
-!=EE" $
-nullEE% )
-)EE) *
-{EE+ ,
-	userModelFF !
-.FF! "
-GamertagFF" *
-=FF+ ,
-	userFoundFF- 6
-.FF6 7
-GamertagUserFF7 C
-;FFC D
-	userModelGG !
-.GG! "
-ImageProfileGG" .
-=GG/ 0
-	userFoundGG1 :
-.GG: ;
-ImageProfileGG; G
-;GGG H
-	userModelHH !
-.HH! "
-EmailHH" '
-=HH( )
-	userFoundHH* 3
-.HH3 4
-EmailHH4 9
-;HH9 :
-}II 
-returnJJ 
-	userModelJJ $
-;JJ$ %
-}KK 
-}LL 
-catchLL 
-(LL 
-EntityExceptionLL $
-exLL% '
-)LL' (
-{LL) *
-
-MessageBoxMM 
-.MM 
-ShowMM 
-(MM  
-$"MM  "
-$strMM" O
-{MMO P
-exMMP R
-.MMR S
-MessageMMS Z
-}MMZ [
-"MM[ \
-)MM\ ]
-;MM] ^
-returnNN 
-nullNN 
-;NN 
-}OO 
-}PP 	
-publicRR 
-intRR 
-UpdateInfoUserRR !
-(RR! "
-	UserModelRR" +
-	usermodelRR, 5
-,RR5 6
-stringRR7 =
-gamertagRR> F
-)RRF G
-{RRH I
-trySS 
-{SS 
-usingTT 
-(TT 
-varTT 
-contextTT "
-=TT# $
-newTT% (#
-ChineseCheckersEntitiesTT) @
-(TT@ A
-)TTA B
-)TTB C
-{TTD E
-varUU 
-userUU 
-=UU 
-contextUU &
-.UU& '
-UserAccountUU' 2
-.VV 
-WhereVV 
-(VV 
-uVV  
-=>VV! #
-uVV$ %
-.VV% &
-GamertagUserVV& 2
-==VV3 5
-gamertagVV6 >
-)VV> ?
-.WW 
-FirstOrDefaultWW '
-(WW' (
-)WW( )
-;WW) *
-ifXX 
-(XX 
-userXX 
-!=XX 
-nullXX  $
-)XX$ %
-{XX& '
-userYY 
-.YY 
-IdYY 
-=YY  !
-	usermodelYY" +
-.YY+ ,
-IdYY, .
-;YY. /
-userZZ 
-.ZZ 
-GamertagUserZZ )
-=ZZ* +
-	usermodelZZ, 5
-.ZZ5 6
-GamertagZZ6 >
-;ZZ> ?
-user[[ 
-.[[ 
-ImageProfile[[ )
-=[[* +
-	usermodel[[, 5
-.[[5 6
-ImageProfile[[6 B
-;[[B C
-user\\ 
-.\\ 
-Email\\ "
-=\\# $
-	usermodel\\% .
-.\\. /
-Email\\/ 4
-;\\4 5
-RemoveClient]] $
-(]]$ %
-	usermodel]]% .
-.]]. /
-Id]]/ 1
-)]]1 2
-;]]2 3
-}^^ 
-return__ 
-context__ "
-.__" #
-SaveChanges__# .
-(__. /
-)__/ 0
-;__0 1
-}`` 
-}aa 
-catchaa 
-(aa 
-EntityExceptionaa $
-exaa% '
-)aa' (
-{aa) *
-
-MessageBoxbb 
-.bb 
-Showbb 
-(bb  
-$"bb  "
-$strbb" R
-{bbR S
-exbbS U
-.bbU V
-MessagebbV ]
-}bb] ^
-"bb^ _
-)bb_ `
-;bb` a
-returncc 
--cc 
-$numcc 
-;cc 
-}dd 
-}ee 	
-publicgg 
-intgg 
-UpdatePasswordgg !
-(gg! "
-	UserModelgg" +
-	userModelgg, 5
-)gg5 6
-{gg7 8
-tryhh 
-{hh 
-usingii 
-(ii 
-varii 
-contextii "
-=ii# $
-newii% (#
-ChineseCheckersEntitiesii) @
-(ii@ A
-)iiA B
-)iiB C
-{iiD E
-varjj 
-userAccountUpdatejj )
-=jj* +
-contextjj, 3
-.jj3 4
-UserAccountjj4 ?
-.kk( )
-Wherekk) .
-(kk. /
-userkk/ 3
-=>kk4 6
-userkk7 ;
-.kk; <
-Emailkk< A
-==kkB D
-	userModelkkE N
-.kkN O
-EmailkkO T
-)kkT U
-.ll( )
-FirstOrDefaultll) 7
-(ll7 8
-)ll8 9
-;ll9 :
-ifmm 
-(mm 
-userAccountUpdatemm )
-!=mm* ,
-nullmm- 1
-)mm1 2
-{mm3 4
-userAccountUpdatenn )
-.nn) *
-Passwordnn* 2
-=nn3 4
-BCryptnn5 ;
-.nn; <
-Netnn< ?
-.nn? @
-BCryptnn@ F
-.nnF G
-HashPasswordnnG S
-(nnS T
-	userModelnnT ]
-.nn] ^
-Passwordnn^ f
-)nnf g
-;nng h
-}oo 
-returnpp 
-contextpp "
-.pp" #
-SaveChangespp# .
-(pp. /
-)pp/ 0
-;pp0 1
-}qq 
-}rr 
-catchrr 
-(rr 
-EntityExceptionrr $
-exrr% '
-)rr' (
-{rr) *
-
-MessageBoxss 
-.ss 
-Showss 
-(ss  
-$"ss  "
-$strss" E
-{ssE F
-exssF H
-.ssH I
-MessagessI P
-}ssP Q
-"ssQ R
-)ssR S
-;ssS T
-returntt 
--tt 
-$numtt 
-;tt 
-}uu 
-}vv 	
-publicxx 
-intxx 
-ValidateUserxx 
-(xx  
-	UserModelxx  )
-	userModelxx* 3
-)xx3 4
-{xx5 6
-tryyy 
-{yy 
-intzz 
-userValidatedzz !
-=zz" #
-$numzz$ %
-;zz% &
-using{{ 
-({{ 
-var{{ 
-context{{ "
-={{# $
-new{{% (#
-ChineseCheckersEntities{{) @
-({{@ A
-){{A B
-){{B C
-{{{D E
-var|| 
-validateUser|| $
-=||% &
-(||' (
-from||( ,
-user||- 1
-in||2 4
-context||5 <
-.||< =
-UserAccount||= H
-where}}( -
-string}}. 4
-.}}4 5
-Equals}}5 ;
-(}}; <
-user}}< @
-.}}@ A
-GamertagUser}}A M
-,}}M N
-	userModel}}O X
-.}}X Y
-Gamertag}}Y a
-)}}a b
-select~~( .
-user~~/ 3
-)~~3 4
-.~~4 5
-FirstOrDefault~~5 C
-(~~C D
-)~~D E
-;~~E F
-if 
-( 
-validateUser (
-!=) +
-null, 0
-&&1 3
-BCrypt4 :
-.: ;
-Net; >
-.> ?
-BCrypt? E
-.E F
-VerifyF L
-(L M
-	userModelM V
-.V W
-PasswordW _
-,_ `
-validateUsera m
-.m n
-Passwordn v
-)v w
-)w x
-{y z
-userValidated
-ÄÄ )
+dateValues
+ÄÄ "
 =
-ÄÄ* +
-$num
-ÄÄ, -
-;
-ÄÄ- .
-}
-ÅÅ 
-return
-ÇÇ 
-userValidated
-ÇÇ (
-;
-ÇÇ( )
-}
-ÉÉ 
-}
-ÑÑ 
-catch
-ÑÑ 
-(
-ÑÑ 
-EntityException
-ÑÑ $
-ex
-ÑÑ% '
-)
-ÑÑ' (
-{
-ÑÑ) *
-
-MessageBox
-ÖÖ 
-.
-ÖÖ 
-Show
-ÖÖ 
-(
-ÖÖ  
-$"
-ÖÖ  "
-$str
-ÖÖ" ?
-{
-ÖÖ? @
-ex
-ÖÖ@ B
-.
-ÖÖB C
-Message
-ÖÖC J
-}
-ÖÖJ K
-"
-ÖÖK L
-)
-ÖÖL M
-;
-ÖÖM N
-return
-ÜÜ 
--
-ÜÜ 
-$num
-ÜÜ 
-;
-ÜÜ 
-}
-áá 
-}
-àà 	
-public
-ää 
-int
-ää 
-ValidateEmail
-ää  
-(
-ää  !
-	UserModel
-ää! *
-	userModel
-ää+ 4
-)
-ää4 5
-{
-ää6 7
-int
-ãã 
-emailValidated
-ãã 
-=
-ãã  
-$num
-ãã! "
-;
-ãã" #
-try
-åå 
-{
-åå 
-using
-çç 
-(
-çç 
-var
-çç 
+ÄÄ# $
 context
-çç "
-=
-çç# $
-new
-çç% (%
-ChineseCheckersEntities
-çç) @
-(
-çç@ A
-)
-ççA B
-)
-ççB C
-{
-ççD E
-var
-éé 
-validatedEmail
-éé &
-=
-éé' (
-(
-éé) *
-from
-éé* .
-user
-éé/ 3
-in
-éé4 6
-context
-éé7 >
+ÄÄ% ,
 .
-éé> ?
-UserAccount
-éé? J
-where
-èè* /
-user
-èè0 4
+ÄÄ, -
+Reports
+ÄÄ- 4
 .
-èè4 5
-Email
-èè5 :
+ÅÅ 
+FirstOrDefault
+ÅÅ '
+(
+ÅÅ' (
+date
+ÅÅ( ,
+=>
+ÅÅ- /
+date
+ÅÅ0 4
+.
+ÅÅ4 5
+IdUser
+ÅÅ5 ;
 ==
-èè; =
-	userModel
-èè> G
-.
-èèG H
-Email
-èèH M
-select
-êê* 0
-user
-êê1 5
+ÅÅ< >
+idUser
+ÅÅ? E
 )
-êê5 6
-.
-êê6 7
-FirstOrDefault
-êê7 E
-(
-êêE F
-)
-êêF G
+ÅÅE F
 ;
-êêG H
+ÅÅF G
 if
-ëë 
+ÇÇ 
 (
-ëë 
-validatedEmail
-ëë &
+ÇÇ 
+
+dateValues
+ÇÇ "
 !=
-ëë' )
+ÇÇ# %
 null
-ëë* .
+ÇÇ& *
 )
-ëë. /
+ÇÇ* +
 {
-ëë0 1
-emailValidated
-íí &
+ÇÇ, -
+dateTime
+ÉÉ  
 =
-íí' (
-$num
-íí) *
-;
-íí* +
-}
-ìì 
-return
-îî 
-emailValidated
-îî )
-;
-îî) *
-}
-ïï 
-}
-ññ 
-catch
-ññ 
+ÉÉ! "
 (
-ññ 
-EntityException
-ññ $
-ex
-ññ% '
+ÉÉ# $
+DateTime
+ÉÉ$ ,
 )
-ññ' (
+ÉÉ, -
+
+dateValues
+ÉÉ- 7
+.
+ÉÉ7 8
+
+DateFinish
+ÉÉ8 B
+;
+ÉÉB C
+}
+ÑÑ 
+return
+ÖÖ 
+dateTime
+ÖÖ #
+;
+ÖÖ# $
+}
+ÜÜ 
+}
+áá 
+catch
+áá 
+(
+áá 
+EntityException
+áá $
+ex
+áá% '
+)
+áá' (
 {
-ññ) *
+áá) *
 
 MessageBox
-óó 
+àà 
 .
-óó 
+àà 
 Show
-óó 
+àà 
 (
-óó  
+àà  
 $"
-óó  "
+àà  "
 $str
-óó" =
+àà" H
 {
-óó= >
+ààH I
 ex
-óó> @
+ààI K
 .
-óó@ A
+ààK L
 Message
-óóA H
+ààL S
 }
-óóH I
+ààS T
 "
-óóI J
+ààT U
 )
-óóJ K
+ààU V
 ;
-óóK L
+ààV W
 return
-òò 
--
-òò 
-$num
-òò 
+ââ 
+DateTime
+ââ 
+.
+ââ  
+Now
+ââ  #
 ;
-òò 
+ââ# $
 }
-ôô 
+ää 
 }
-öö 	
+ãã 	
 public
-úú 
-int
-úú 
-ValidateGamertag
-úú #
+ìì 
+bool
+ìì 
+
+IsReported
+ìì 
 (
-úú# $
-	UserModel
-úú$ -
-	userModel
-úú. 7
-)
-úú7 8
-{
-úú9 :
+ìì 
 int
-ùù 
-gamertagValidated
-ùù !
-=
-ùù" #
-$num
-ùù$ %
-;
-ùù% &
+ìì "
+idUser
+ìì# )
+)
+ìì) *
+{
+ìì+ ,
 try
-ûû 
+îî 
 {
-ûû 
+îî 
+bool
+ïï 
+
+isReported
+ïï 
+=
+ïï  !
+true
+ïï" &
+;
+ïï& '
+DateTime
+ññ 
+dateTime
+ññ !
+;
+ññ! "
 using
-üü 
+óó 
 (
-üü 
+óó 
 var
-üü 
+óó 
 context
-üü "
+óó "
 =
-üü# $
+óó# $
 new
-üü% (%
+óó% (%
 ChineseCheckersEntities
-üü) @
+óó) @
 (
-üü@ A
+óó@ A
 )
-üüA B
+óóA B
 )
-üüB C
+óóB C
 {
-üüD E
+óóD E
 var
-†† 
-validatedEmail
-†† &
+òò 
+
+dateValues
+òò "
 =
-††' (
-(
-††) *
-from
-††* .
-user
-††/ 3
-in
-††4 6
+òò# $
 context
-††7 >
+òò% ,
 .
-††> ?
-UserAccount
-††? J
-where
-°°* /
-user
-°°0 4
+òò, -
+Reports
+òò- 4
 .
-°°4 5
-GamertagUser
-°°5 A
+ôô 
+FirstOrDefault
+ôô '
+(
+ôô' (
+date
+ôô( ,
+=>
+ôô- /
+date
+ôô0 4
+.
+ôô4 5
+IdUser
+ôô5 ;
 ==
-°°B D
-	userModel
-°°E N
-.
-°°N O
-Gamertag
-°°O W
-select
-¢¢* 0
-user
-¢¢1 5
+ôô< >
+idUser
+ôô? E
 )
-¢¢5 6
-.
-¢¢6 7
-FirstOrDefault
-¢¢7 E
-(
-¢¢E F
-)
-¢¢F G
+ôôE F
 ;
-¢¢G H
+ôôF G
 if
-££ 
+öö 
 (
-££ 
-validatedEmail
-££ &
+öö 
+
+dateValues
+öö "
 !=
-££' )
+öö# %
 null
-££* .
+öö& *
 )
-££. /
+öö* +
 {
-££0 1
-gamertagValidated
-§§ )
+öö, -
+dateTime
+õõ  
 =
-§§* +
-$num
-§§, -
-;
-§§- .
-}
-•• 
-return
-¶¶ 
-gamertagValidated
-¶¶ ,
-;
-¶¶, -
-}
-ßß 
-}
-®® 
-catch
-®® 
+õõ! "
 (
-®® 
-EntityException
-®® $
-ex
-®®% '
+õõ# $
+DateTime
+õõ$ ,
 )
-®®' (
+õõ, -
+
+dateValues
+õõ- 7
+.
+õõ7 8
+
+DateFinish
+õõ8 B
+;
+õõB C
+if
+úú 
+(
+úú 
+dateTime
+úú $
+>
+úú% &
+DateTime
+úú' /
+.
+úú/ 0
+Now
+úú0 3
+)
+úú3 4
 {
-®®) *
+úú5 6
+
+isReported
+ùù &
+=
+ùù' (
+false
+ùù) .
+;
+ùù. /
+}
+ûû 
+}
+üü 
+return
+†† 
+
+isReported
+†† %
+;
+††% &
+}
+°° 
+}
+¢¢ 
+catch
+¢¢ 
+(
+¢¢ 
+EntityException
+¢¢ $
+ex
+¢¢% '
+)
+¢¢' (
+{
+¢¢) *
 
 MessageBox
-©© 
+££ 
 .
-©© 
+££ 
 Show
-©© 
+££ 
 (
-©©  
+££  
 $"
-©©  "
+££  "
 $str
-©©" @
+££" ?
 {
-©©@ A
+££? @
 ex
-©©A C
+££@ B
 .
-©©C D
+££B C
 Message
-©©D K
+££C J
 }
-©©K L
+££J K
 "
-©©L M
+££K L
 )
-©©M N
+££L M
 ;
-©©N O
+££M N
 return
-™™ 
--
-™™ 
-$num
-™™ 
+§§ 
+false
+§§ 
 ;
-™™ 
+§§ 
 }
-´´ 
+•• 
 }
-¨¨ 	
+¶¶ 	
 public
-ÆÆ 
-string
-ÆÆ 
-GetPlayerImage
-ÆÆ $
+ÆÆ 
+bool
+ÆÆ 
+IsBanned
+ÆÆ 
 (
-ÆÆ$ %
-string
-ÆÆ% +
-gamertag
-ÆÆ, 4
+ÆÆ 
+int
+ÆÆ  
+idUser
+ÆÆ! '
 )
-ÆÆ4 5
+ÆÆ' (
 {
-ÆÆ6 7
-string
-ØØ 
-path
-ØØ 
-=
-ØØ 
-$str
-ØØ 
-;
-ØØ 
+ÆÆ) *
 try
-∞∞ 
+ØØ 
 {
-∞∞ 
-using
-±± 
-(
-±± 
-var
-±± 
-context
-±± "
-=
-±±# $
-new
-±±% (%
-ChineseCheckersEntities
-±±) @
-(
-±±@ A
-)
-±±A B
-)
-±±B C
-{
-±±D E
-var
-≤≤ 
-playerImage
-≤≤ #
-=
-≤≤$ %
-(
-≤≤& '
-from
-≤≤' +
-user
-≤≤, 0
-in
-≤≤1 3
-context
-≤≤4 ;
-.
-≤≤; <
-UserAccount
-≤≤< G
-where
-≥≥' ,
+ØØ 
+const
+∞∞ 
 string
-≥≥- 3
-.
-≥≥3 4
-Equals
-≥≥4 :
-(
-≥≥: ;
-user
-≥≥; ?
-.
-≥≥? @
-GamertagUser
-≥≥@ L
-,
-≥≥L M
-gamertag
-≥≥N V
-)
-≥≥V W
-select
-¥¥' -
-user
-¥¥. 2
-)
-¥¥2 3
-.
-¥¥3 4
-FirstOrDefault
-¥¥4 B
-(
-¥¥B C
-)
-¥¥C D
+∞∞ 
+BANNED
+∞∞ #
+=
+∞∞$ %
+$str
+∞∞& )
 ;
-¥¥D E
+∞∞) *
+bool
+±± 
+isBanned
+±± 
+=
+±± 
+false
+±±  %
+;
+±±% &
+using
+≤≤ 
+(
+≤≤ 
+var
+≤≤ 
+context
+≤≤ "
+=
+≤≤# $
+new
+≤≤% (%
+ChineseCheckersEntities
+≤≤) @
+(
+≤≤@ A
+)
+≤≤A B
+)
+≤≤B C
+{
+≤≤D E
+var
+≥≥ 
+
+userBanned
+≥≥ "
+=
+≥≥# $
+context
+≥≥% ,
+.
+≥≥, -
+User
+≥≥- 1
+.
+¥¥ 
+FirstOrDefault
+¥¥ '
+(
+¥¥' (
+banned
+¥¥( .
+=>
+¥¥/ 1
+banned
+¥¥2 8
+.
+¥¥8 9
+Id
+¥¥9 ;
+==
+¥¥< >
+idUser
+¥¥? E
+)
+¥¥E F
+;
+¥¥F G
 if
 µµ 
 (
-µµ 
-playerImage
-µµ #
+µµ 
+
+userBanned
+µµ "
 !=
-µµ$ &
+µµ# %
 null
-µµ' +
-)
-µµ+ ,
-{
-µµ- .
-path
-∂∂ 
-=
-∂∂ 
-$str
-∂∂ 3
-+
-∂∂4 5
-playerImage
-∂∂6 A
+µµ& *
+&&
+µµ+ -
+
+userBanned
+µµ. 8
 .
-∂∂A B
-ImageProfile
-∂∂B N
+µµ8 9
+PlayerStatus
+µµ9 E
+.
+µµE F
+Equals
+µµF L
+(
+µµL M
+BANNED
+µµM S
+)
+µµS T
+)
+µµT U
+{
+µµV W
+isBanned
+∂∂  
+=
+∂∂! "
+true
+∂∂# '
 ;
-∂∂N O
+∂∂' (
 }
 ∑∑ 
 return
-∏∏ 
-path
-∏∏ 
+∏∏ 
+isBanned
+∏∏ #
 ;
-∏∏  
+∏∏# $
 }
 ππ 
 }
@@ -4606,1630 +4207,4879 @@ MessageBox
 $"
 ªª  "
 $str
-ªª" H
+ªª" =
 {
-ªªH I
+ªª= >
 ex
-ªªI K
+ªª> @
 .
-ªªK L
+ªª@ A
 Message
-ªªL S
+ªªA H
 }
-ªªS T
+ªªH I
 "
-ªªT U
+ªªI J
 )
-ªªU V
+ªªJ K
 ;
-ªªV W
+ªªK L
 return
-ºº 
-null
-ºº 
+ºº 
+false
+ºº 
 ;
-ºº 
+ºº 
 }
 ΩΩ 
 }
-ææ 	
-public
-¿¿ 
-void
-¿¿ 
-
-LogoutUser
-¿¿ 
-(
-¿¿ 
-int
-¿¿ "
-idUser
-¿¿# )
-)
-¿¿) *
-{
-¿¿+ ,
-RemoveClient
-¡¡ 
-(
-¡¡ 
-idUser
-¡¡ 
-)
-¡¡  
-;
-¡¡  !
+ææ 	
 }
-¬¬ 	
+øø 
+}¿¿ ﬂ›
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\RoomController.cs
+	namespace 	&
+ChineseCheckersLogicServer
+ $
+.$ %
+
+Controller% /
+{0 1
+public 
+
+partial 
+class 
+ManagerController *
+:+ ,
+IRoom- 2
+{3 4
+private 
+static 
+readonly 
+List  $
+<$ %
+string% +
+>+ ,
+_rooms- 3
+=4 5
+new6 9
+List: >
+<> ?
+string? E
+>E F
+(F G
+)G H
+;H I
+public 
+string 
+
+CreateRoom  
+(  !
+string! '
+gamertag( 0
+)0 1
+{2 3
+try 
+{ 
+string 
+idRoom 
+; 
+do 
+{ 
+idRoom   
+=   
+
+GenerateId   '
+(  ' (
+)  ( )
+;  ) *
+}!! 
+while!! 
+(!! 
+_rooms!! 
+.!!  
+Contains!!  (
+(!!( )
+idRoom!!) /
+)!!/ 0
+)!!0 1
+;!!1 2
+_rooms"" 
+."" 
+Add"" 
+("" 
+idRoom"" !
+)""! "
+;""" #
+return## 
+idRoom## 
+;## 
+}$$ 
+catch$$ 
+($$ "
+CommunicationException$$ +
+ex$$, .
+)$$. /
+{$$0 1
+
+MessageBox%% 
+.%% 
+Show%% 
+(%%  
+$"%%  "
+$str%%" :
+{%%: ;
+ex%%; =
+.%%= >
+Message%%> E
+}%%E F
+"%%F G
+)%%G H
+;%%H I
+return&& 
+null&& 
+;&& 
+}'' 
+}(( 	
+public// 
+string// 
+
+GenerateId//  
+(//  !
+)//! "
+{//# $
+try00 
+{00 
+const11 
+string11 
+
+CHARACTERS11 '
+=11( )
+$str11* 6
+;116 7
+const22 
+int22 
+MAX_PLAYERS22 %
+=22& '
+$num22( )
+;22) *
+StringBuilder33 
+id33  
+=33! "
+new33# &
+StringBuilder33' 4
+(334 5
+)335 6
+;336 7
+using55 
+(55 
+var55 
+randomGenerator55 *
+=55+ ,!
+RandomNumberGenerator55- B
+.55B C
+Create55C I
+(55I J
+)55J K
+)55K L
+{55M N
+byte66 
+[66 
+]66 
+data66 
+=66  !
+new66" %
+byte66& *
+[66* +
+MAX_PLAYERS66+ 6
+]666 7
+;667 8
+randomGenerator88 #
+.88# $
+GetBytes88$ ,
+(88, -
+data88- 1
+)881 2
+;882 3
+for:: 
+(:: 
+int:: 
+i:: 
+=::  
+$num::! "
+;::" #
+i::$ %
+<::& '
+MAX_PLAYERS::( 3
+;::3 4
+i::5 6
+++::6 8
+)::8 9
+{::: ;
+int;; 
+index;; !
+=;;" #
+data;;$ (
+[;;( )
+i;;) *
+];;* +
+%;;, -
+
+CHARACTERS;;. 8
+.;;8 9
+Length;;9 ?
+;;;? @
+id<< 
+.<< 
+Append<< !
+(<<! "
+
+CHARACTERS<<" ,
+[<<, -
+index<<- 2
+]<<2 3
+)<<3 4
+;<<4 5
+}== 
+}>> 
+return?? 
+id?? 
+.?? 
+ToString?? "
+(??" #
+)??# $
+;??$ %
+}@@ 
+catch@@ 
+(@@ "
+CommunicationException@@ +
+ex@@, .
+)@@. /
+{@@0 1
+
+MessageBoxAA 
+.AA 
+ShowAA 
+(AA  
+$"AA  "
+$strAA" :
+{AA: ;
+exAA; =
+.AA= >
+MessageAA> E
+}AAE F
+"AAF G
+)AAG H
+;AAH I
+returnBB 
+nullBB 
+;BB 
+}CC 
+}DD 	
+publicLL 
+voidLL 
+RemovePlayerLL  
+(LL  !
+stringLL! '
+gamertagLL( 0
+,LL0 1
+stringLL2 8
+idRoomLL9 ?
+)LL? @
+{LLA B
+tryMM 
+{MM 
+constNN 
+intNN 
+MIN_PLAYERSNN %
+=NN& '
+$numNN( )
+;NN) *
+ifOO 
+(OO 
+_playersInRoomOO "
+.OO" #
+ContainsKeyOO# .
+(OO. /
+idRoomOO/ 5
+)OO5 6
+)OO6 7
+{OO8 9
+	RoomModelPP 
+roomPP "
+=PP# $
+_playersInRoomPP% 3
+[PP3 4
+idRoomPP4 :
+]PP: ;
+;PP; <
+ifRR 
+(RR 
+roomRR 
+.RR 
+PlayersRR $
+.RR$ %
+CountRR% *
+>RR+ ,
+MIN_PLAYERSRR- 8
+)RR8 9
+{RR: ;
+roomSS 
+.SS 
+PlayersSS $
+.SS$ %
+RemoveSS% +
+(SS+ ,
+gamertagSS, 4
+)SS4 5
+;SS5 6
+}UU 
+elseUU 
+{UU 
+roomVV 
+.VV 
+PlayersVV $
+.VV$ %
+RemoveVV% +
+(VV+ ,
+gamertagVV, 4
+)VV4 5
+;VV5 6
+_playersInRoomWW &
+.WW& '
+RemoveWW' -
+(WW- .
+idRoomWW. 4
+)WW4 5
+;WW5 6
+_roomsXX 
+.XX 
+RemoveXX %
+(XX% &
+idRoomXX& ,
+)XX, -
+;XX- .
+}YY 
+}ZZ 
+}[[ 
+catch[[ 
+([[ "
+CommunicationException[[ +
+ex[[, .
+)[[. /
+{[[0 1
+
+MessageBox\\ 
+.\\ 
+Show\\ 
+(\\  
+$"\\  "
+$str\\" I
+{\\I J
+ex\\J L
+.\\L M
+Message\\M T
+}\\T U
+"\\U V
+)\\V W
+;\\W X
+}]] 
+}^^ 	
+publicff 
+boolff 
+ValidateRoomff  
+(ff  !
+stringff! '
+idRoomff( .
+)ff. /
+{ff0 1
+trygg 
+{gg 
+returnhh 
+_roomshh 
+.hh 
+Containshh "
+(hh" #
+idRoomhh# )
+)hh) *
+;hh* +
+}ii 
+catchii 
+(ii "
+CommunicationExceptionii +
+exii, .
+)ii. /
+{ii0 1
+
+MessageBoxjj 
+.jj 
+Showjj 
+(jj  
+$"jj  "
+$strjj" <
+{jj< =
+exjj= ?
+.jj? @
+Messagejj@ G
+}jjG H
+"jjH I
+)jjI J
+;jjJ K
+returnkk 
+falsekk 
+;kk 
+}ll 
+}mm 	
+publicuu 
+booluu 
+ValidateBoardRoomuu %
+(uu% &
+stringuu& ,
+idRoomuu- 3
+)uu3 4
+{uu5 6
+tryvv 
+{vv 
+constww 
+intww 
+MAX_PLAYERSww %
+=ww& '
+$numww( )
+;ww) *
+constxx 
+intxx 
+MIN_PLAYERSxx %
+=xx& '
+$numxx( )
+;xx) *
+returnyy 
+_playersRoomyy #
+.yy# $
+ContainsKeyyy$ /
+(yy/ 0
+idRoomyy0 6
+)yy6 7
+&&yy8 :
+_playersRoomyy; G
+[yyG H
+idRoomyyH N
+]yyN O
+.yyO P
+PlayersRoomyyP [
+.yy[ \
+Countyy\ a
+>yyb c
+MIN_PLAYERSyyd o
+&&yyp r
+_playersRoomyys 
+[	yy Ä
+idRoom
+yyÄ Ü
+]
+yyÜ á
+.
+yyá à
+PlayersRoom
+yyà ì
+.
+yyì î
+Count
+yyî ô
+<=
+yyö ú
+MAX_PLAYERS
+yyù ®
+;
+yy® ©
+}zz 
+catchzz 
+(zz "
+CommunicationExceptionzz +
+exzz, .
+)zz. /
+{zz0 1
+
+MessageBox{{ 
+.{{ 
+Show{{ 
+({{  
+$"{{  "
+$str{{" <
+{{{< =
+ex{{= ?
+.{{? @
+Message{{@ G
+}{{G H
+"{{H I
+){{I J
+;{{J K
+return|| 
+false|| 
+;|| 
+}}} 
+}~~ 	
+} 
 public
-ƒƒ 
+ÉÉ 
+
+partial
+ÉÉ 
+class
+ÉÉ 
+ManagerController
+ÉÉ *
+:
+ÉÉ+ ,
+IMessage
+ÉÉ- 5
+{
+ÉÉ6 7
+private
+åå 
+static
+åå 
+readonly
+åå 
+
+Dictionary
+åå  *
+<
+åå* +
 string
-ƒƒ 
-FindGamertag
-ƒƒ "
-(
-ƒƒ" #
-string
-ƒƒ# )
-currentGamertag
-ƒƒ* 9
+åå+ 1
 ,
-ƒƒ9 :
-string
-ƒƒ; A
-friendGamertag
-ƒƒB P
-)
-ƒƒP Q
-{
-ƒƒR S
-string
-≈≈ 
-gamertagToFound
-≈≈ "
+åå1 2
+	RoomModel
+åå3 <
+>
+åå< =
+_playersInRoom
+åå> L
 =
-≈≈# $
-$str
-≈≈% '
-;
-≈≈' (
-try
-∆∆ 
-{
-∆∆ 
-using
-«« 
-(
-«« 
-var
-«« 
-context
-«« "
-=
-««# $
+ååM N
 new
-««% (%
-ChineseCheckersEntities
-««) @
-(
-««@ A
-)
-««A B
-)
-««B C
-{
-««D E
-var
-»» 
-currentUser
-»» #
-=
-»»$ %
-context
-»»& -
-.
-»»- .
-UserAccount
-»». 9
-.
-»»9 :
-FirstOrDefault
-»»: H
-(
-»»H I
-user
-»»I M
-=>
-»»N P
-user
-»»Q U
-.
-»»U V
-GamertagUser
-»»V b
-==
-»»c e
-currentGamertag
-»»f u
-)
-»»u v
-;
-»»v w
-var
-…… 
+ååO R
 
-friendUser
-…… "
-=
-……# $
-context
-……% ,
-.
-……, -
-UserAccount
-……- 8
-.
-……8 9
-FirstOrDefault
-……9 G
+Dictionary
+ååS ]
+<
+åå] ^
+string
+åå^ d
+,
+ååd e
+	RoomModel
+ååf o
+>
+ååo p
 (
-……G H
-user
-……H L
-=>
-……M O
-user
-……P T
-.
-……T U
-GamertagUser
-……U a
-==
-……b d
-friendGamertag
-……e s
+ååp q
 )
-……s t
+ååq r
 ;
-……t u
+åår s
+public
+çç 
+void
+çç 
+SendMessage
+çç 
+(
+çç  
+string
+çç  &
+message
+çç' .
+,
+çç. /
+string
+çç0 6
+gamertag
+çç7 ?
+,
+çç? @
+string
+ççA G
+idRoom
+ççH N
+)
+ççN O
+{
+ççP Q
+try
+éé 
+{
+éé 
 if
-ÀÀ 
+èè 
 (
-ÀÀ 
-currentUser
-ÀÀ #
-!=
-ÀÀ$ &
-null
-ÀÀ' +
-&&
-ÀÀ, .
-
-friendUser
-ÀÀ/ 9
-!=
-ÀÀ: <
-null
-ÀÀ= A
-&&
-ÀÀB D
-currentGamertag
-ÀÀE T
-!=
-ÀÀU W
-friendGamertag
-ÀÀX f
+èè 
+_playersInRoom
+èè "
+.
+èè" #
+ContainsKey
+èè# .
+(
+èè. /
+idRoom
+èè/ 5
 )
-ÀÀf g
+èè5 6
+)
+èè6 7
 {
-ÀÀh i
-var
-ÃÃ 
-
-areFriends
-ÃÃ &
+èè8 9
+	RoomModel
+êê 
+room
+êê "
 =
-ÃÃ' (
-context
-ÃÃ) 0
-.
-ÃÃ0 1
-FriendPlayer
-ÃÃ1 =
-.
-ÃÃ= >
-Any
-ÃÃ> A
-(
-ÃÃA B
-friend
-ÃÃB H
-=>
-ÃÃI K
-(
-ÕÕ 
-friend
-ÕÕ #
-.
-ÕÕ# $
-IdPlayer
-ÕÕ$ ,
-==
-ÕÕ- /
-currentUser
-ÕÕ0 ;
-.
-ÕÕ; <
-Id
-ÕÕ< >
-&&
-ÕÕ? A
-friend
-ÕÕB H
-.
-ÕÕH I
-IdFriend
-ÕÕI Q
-==
-ÕÕR T
-
-friendUser
-ÕÕU _
-.
-ÕÕ_ `
-Id
-ÕÕ` b
-&&
-ÕÕc e
-friend
-ÕÕf l
-.
-ÕÕl m
-RequestStatus
-ÕÕm z
-==
-ÕÕ{ }
-$strÕÕ~ à
-)ÕÕà â
-||ÕÕä å
-(
-ŒŒ 
-friend
-ŒŒ #
-.
-ŒŒ# $
-IdPlayer
-ŒŒ$ ,
-==
-ŒŒ- /
-
-friendUser
-ŒŒ0 :
-.
-ŒŒ: ;
-Id
-ŒŒ; =
-&&
-ŒŒ> @
-friend
-ŒŒA G
-.
-ŒŒG H
-IdFriend
-ŒŒH P
-==
-ŒŒQ S
-currentUser
-ŒŒT _
-.
-ŒŒ_ `
-Id
-ŒŒ` b
-&&
-ŒŒc e
-friend
-ŒŒf l
-.
-ŒŒl m
-RequestStatus
-ŒŒm z
-==
-ŒŒ{ }
-$strŒŒ~ à
-)ŒŒà â
-)ŒŒâ ä
-;ŒŒä ã
+êê# $
+_playersInRoom
+êê% 3
+[
+êê3 4
+idRoom
+êê4 :
+]
+êê: ;
+;
+êê; <
 if
-–– 
+ëë 
 (
-–– 
-!
-–– 
-
-areFriends
-–– '
+ëë 
+room
+ëë 
+!=
+ëë 
+null
+ëë  $
+&&
+ëë% '
+room
+ëë( ,
+.
+ëë, -
+Players
+ëë- 4
+!=
+ëë5 7
+null
+ëë8 <
 )
-––' (
+ëë< =
 {
-––) *
-gamertagToFound
-—— +
-=
-——, -
-friendGamertag
-——. <
+ëë> ?
+foreach
+íí 
+(
+íí  !
+var
+íí! $
+players
+íí% ,
+in
+íí- /
+room
+íí0 4
+.
+íí4 5
+Players
+íí5 <
+.
+íí< =
+Values
+íí= C
+)
+ííC D
+{
+ííE F
+players
+ìì #
+.
+ìì# $!
+SendMessageCallback
+ìì$ 7
+(
+ìì7 8
+message
+ìì8 ?
+,
+ìì? @
+gamertag
+ììA I
+)
+ììI J
 ;
-——< =
+ììJ K
 }
-““ 
+îî 
 }
-”” 
-return
-‘‘ 
-gamertagToFound
-‘‘ *
-;
-‘‘* +
+ïï 
 }
-’’ 
+ññ 
 }
-÷÷ 
+óó 
 catch
-÷÷ 
+óó 
 (
-÷÷ 
-EntityException
-÷÷ $
+óó $
+CommunicationException
+óó +
 ex
-÷÷% '
+óó, .
 )
-÷÷' (
+óó. /
 {
-÷÷) *
+óó0 1
 
 MessageBox
-◊◊ 
+òò 
 .
-◊◊ 
+òò 
 Show
-◊◊ 
+òò 
 (
-◊◊  
+òò  
 $"
-◊◊  "
+òò  "
 $str
-◊◊" ?
+òò" >
 {
-◊◊? @
+òò> ?
 ex
-◊◊@ B
+òò? A
 .
-◊◊B C
+òòA B
 Message
-◊◊C J
+òòB I
 }
-◊◊J K
+òòI J
 "
-◊◊K L
+òòJ K
 )
-◊◊L M
+òòK L
 ;
-◊◊M N
-return
-ÿÿ 
-null
-ÿÿ 
+òòL M
+}
+ôô 
+}
+öö 	
+public
+¢¢ 
+void
+¢¢ 
+	AddPlayer
+¢¢ 
+(
+¢¢ 
+string
+¢¢ $
+gamertag
+¢¢% -
+,
+¢¢- .
+string
+¢¢/ 5
+idRoom
+¢¢6 <
+)
+¢¢< =
+{
+¢¢> ?
+try
+££ 
+{
+££ 
+IMessageCallback
+§§  
+context
+§§! (
+=
+§§) *
+OperationContext
+§§+ ;
+.
+§§; <
+Current
+§§< C
+.
+§§C D 
+GetCallbackChannel
+§§D V
+<
+§§V W
+IMessageCallback
+§§W g
+>
+§§g h
+(
+§§h i
+)
+§§i j
 ;
-ÿÿ 
+§§j k
+if
+•• 
+(
+•• 
+_playersInRoom
+•• "
+.
+••" #
+ContainsKey
+••# .
+(
+••. /
+idRoom
+••/ 5
+)
+••5 6
+)
+••6 7
+{
+••8 9
+	RoomModel
+¶¶ 
+room
+¶¶ "
+=
+¶¶# $
+_playersInRoom
+¶¶% 3
+[
+¶¶3 4
+idRoom
+¶¶4 :
+]
+¶¶: ;
+;
+¶¶; <
+room
+ßß 
+.
+ßß 
+Players
+ßß  
+.
+ßß  !
+Add
+ßß! $
+(
+ßß$ %
+gamertag
+ßß% -
+,
+ßß- .
+context
+ßß/ 6
+)
+ßß6 7
+;
+ßß7 8
+}
+®® 
+else
+®® 
+{
+®® 
+	RoomModel
+©© 
+room
+©© "
+=
+©©# $
+new
+©©% (
+	RoomModel
+©©) 2
+{
+©©3 4
+IdRoom
+™™ 
+=
+™™  
+idRoom
+™™! '
+}
+´´ 
+;
+´´ 
+room
+¨¨ 
+.
+¨¨ 
+Players
+¨¨  
+.
+¨¨  !
+Add
+¨¨! $
+(
+¨¨$ %
+gamertag
+¨¨% -
+,
+¨¨- .
+context
+¨¨/ 6
+)
+¨¨6 7
+;
+¨¨7 8
+_playersInRoom
+≠≠ "
+.
+≠≠" #
+Add
+≠≠# &
+(
+≠≠& '
+idRoom
+≠≠' -
+,
+≠≠- .
+room
+≠≠/ 3
+)
+≠≠3 4
+;
+≠≠4 5
+}
+ÆÆ 
+}
+ØØ 
+catch
+ØØ 
+(
+ØØ $
+CommunicationException
+ØØ +
+ex
+ØØ, .
+)
+ØØ. /
+{
+ØØ0 1
+
+MessageBox
+∞∞ 
+.
+∞∞ 
+Show
+∞∞ 
+(
+∞∞  
+$"
+∞∞  "
+$str
+∞∞" G
+{
+∞∞G H
+ex
+∞∞H J
+.
+∞∞J K
+Message
+∞∞K R
+}
+∞∞R S
+"
+∞∞S T
+)
+∞∞T U
+;
+∞∞U V
+}
+±± 
+}
+≤≤ 	
+}
+≥≥ 
+public
+∑∑ 
+
+partial
+∑∑ 
+class
+∑∑ 
+ManagerController
+∑∑ *
+:
+∑∑+ ,
+IPlayersRoom
+∑∑- 9
+{
+∑∑: ;
+private
+øø 
+static
+øø 
+readonly
+øø 
+
+Dictionary
+øø  *
+<
+øø* +
+string
+øø+ 1
+,
+øø1 2
+	RoomModel
+øø3 <
+>
+øø< =
+_playersRoom
+øø> J
+=
+øøK L
+new
+øøM P
+
+Dictionary
+øøQ [
+<
+øø[ \
+string
+øø\ b
+,
+øøb c
+	RoomModel
+øød m
+>
+øøm n
+(
+øøn o
+)
+øøo p
+;
+øøp q
+private
+¿¿ 
+static
+¿¿ 
+readonly
+¿¿ 
+
+Dictionary
+¿¿  *
+<
+¿¿* +
+string
+¿¿+ 1
+,
+¿¿1 2
+List
+¿¿3 7
+<
+¿¿7 8
+String
+¿¿8 >
+>
+¿¿> ?
+>
+¿¿? @$
+_playersRoomDictionary
+¿¿A W
+=
+¿¿X Y
+new
+¿¿Z ]
+
+Dictionary
+¿¿^ h
+<
+¿¿h i
+string
+¿¿i o
+,
+¿¿o p
+List
+¿¿q u
+<
+¿¿u v
+String
+¿¿v |
+>
+¿¿| }
+>
+¿¿} ~
+(
+¿¿~ 
+)¿¿ Ä
+;¿¿Ä Å
+public
+¡¡ 
+void
+¡¡ 
+AddPlayerRoom
+¡¡ !
+(
+¡¡! "
+string
+¡¡" (
+gamertag
+¡¡) 1
+,
+¡¡1 2
+string
+¡¡3 9
+idRoom
+¡¡: @
+)
+¡¡@ A
+{
+¡¡B C
+try
+¬¬ 
+{
+¬¬ "
+IPlayersRoomCallback
+√√ $
+context
+√√% ,
+=
+√√- .
+OperationContext
+√√/ ?
+.
+√√? @
+Current
+√√@ G
+.
+√√G H 
+GetCallbackChannel
+√√H Z
+<
+√√Z ["
+IPlayersRoomCallback
+√√[ o
+>
+√√o p
+(
+√√p q
+)
+√√q r
+;
+√√r s
+if
+≈≈ 
+(
+≈≈ 
+_rooms
+≈≈ 
+.
+≈≈ 
+Contains
+≈≈ #
+(
+≈≈# $
+idRoom
+≈≈$ *
+)
+≈≈* +
+)
+≈≈+ ,
+{
+≈≈- .
+if
+∆∆ 
+(
+∆∆ 
+_playersRoom
+∆∆ $
+.
+∆∆$ %
+ContainsKey
+∆∆% 0
+(
+∆∆0 1
+idRoom
+∆∆1 7
+)
+∆∆7 8
+)
+∆∆8 9
+{
+∆∆: ;
+	RoomModel
+«« !
+room
+««" &
+=
+««' (
+_playersRoom
+««) 5
+[
+««5 6
+idRoom
+««6 <
+]
+««< =
+;
+««= >
+room
+»» 
+.
+»» 
+PlayersRoom
+»» (
+.
+»»( )
+Add
+»») ,
+(
+»», -
+gamertag
+»»- 5
+,
+»»5 6
+context
+»»7 >
+)
+»»> ?
+;
+»»? @
+List
+…… 
+<
+…… 
+string
+…… #
+>
+……# $
+listPlayers
+……% 0
+=
+……1 2$
+_playersRoomDictionary
+……3 I
+[
+……I J
+idRoom
+……J P
+]
+……P Q
+;
+……Q R
+listPlayers
+   #
+.
+  # $
+Add
+  $ '
+(
+  ' (
+gamertag
+  ( 0
+)
+  0 1
+;
+  1 2$
+_playersRoomDictionary
+ÀÀ .
+[
+ÀÀ. /
+idRoom
+ÀÀ/ 5
+]
+ÀÀ5 6
+=
+ÀÀ7 8
+listPlayers
+ÀÀ9 D
+;
+ÀÀD E
+}
+ÃÃ 
+else
+ÃÃ 
+{
+ÃÃ 
+	RoomModel
+ÕÕ !
+room
+ÕÕ" &
+=
+ÕÕ' (
+new
+ÕÕ) ,
+	RoomModel
+ÕÕ- 6
+{
+ÕÕ7 8
+IdRoom
+ŒŒ "
+=
+ŒŒ# $
+idRoom
+ŒŒ% +
+}
+œœ 
+;
+œœ 
+room
+–– 
+.
+–– 
+PlayersRoom
+–– (
+.
+––( )
+Add
+––) ,
+(
+––, -
+gamertag
+––- 5
+,
+––5 6
+context
+––7 >
+)
+––> ?
+;
+––? @
+_playersRoom
+—— $
+.
+——$ %
+Add
+——% (
+(
+——( )
+idRoom
+——) /
+,
+——/ 0
+room
+——1 5
+)
+——5 6
+;
+——6 7
+List
+““ 
+<
+““ 
+string
+““ #
+>
+““# $
+listPlayers
+““% 0
+=
+““1 2
+new
+““3 6
+List
+““7 ;
+<
+““; <
+string
+““< B
+>
+““B C
+(
+““C D
+)
+““D E
+;
+““E F
+listPlayers
+”” #
+.
+””# $
+Add
+””$ '
+(
+””' (
+gamertag
+””( 0
+)
+””0 1
+;
+””1 2$
+_playersRoomDictionary
+‘‘ .
+.
+‘‘. /
+Add
+‘‘/ 2
+(
+‘‘2 3
+idRoom
+‘‘3 9
+,
+‘‘9 :
+listPlayers
+‘‘; F
+)
+‘‘F G
+;
+‘‘G H
+}
+’’ 
+}
+÷÷ 
+}
+◊◊ 
+catch
+◊◊ 
+(
+◊◊ $
+CommunicationException
+◊◊ +
+ex
+◊◊, .
+)
+◊◊. /
+{
+◊◊0 1
+
+MessageBox
+ÿÿ 
+.
+ÿÿ 
+Show
+ÿÿ 
+(
+ÿÿ  
+$"
+ÿÿ  "
+$str
+ÿÿ" U
+{
+ÿÿU V
+ex
+ÿÿV X
+.
+ÿÿX Y
+Message
+ÿÿY `
+}
+ÿÿ` a
+"
+ÿÿa b
+)
+ÿÿb c
+;
+ÿÿc d
 }
 ŸŸ 
 }
 ⁄⁄ 	
 public
-‹‹ 
-string
-‹‹ 
-GetEmail
-‹‹ 
-(
-‹‹ 
-string
-‹‹ %
-gamertag
-‹‹& .
-)
-‹‹. /
-{
-‹‹0 1
-string
-›› 
-email
-›› 
-=
-›› 
-$str
-›› 
-;
-›› 
-try
-ﬁﬁ 
-{
-ﬁﬁ 
-using
-ﬂﬂ 
-(
-ﬂﬂ 
-var
-ﬂﬂ 
-context
-ﬂﬂ "
-=
-ﬂﬂ# $
-new
-ﬂﬂ% (%
-ChineseCheckersEntities
-ﬂﬂ) @
-(
-ﬂﬂ@ A
-)
-ﬂﬂA B
-)
-ﬂﬂB C
-{
-ﬂﬂD E
-var
-‡‡ 
-user
-‡‡ 
-=
-‡‡ 
-context
-‡‡ &
-.
-‡‡& '
-UserAccount
-‡‡' 2
-.
-·· 
-FirstOrDefault
-·· '
-(
-··' (
-	userEmail
-··( 1
-=>
-··2 4
-	userEmail
-··5 >
-.
-··> ?
-GamertagUser
-··? K
-==
-··L N
-gamertag
-··O W
-)
-··W X
-;
-··X Y
-if
-„„ 
-(
-„„ 
-user
-„„ 
-!=
-„„ 
-null
-„„  $
-)
-„„$ %
-{
-„„& '
-email
-‰‰ 
-=
-‰‰ 
-user
-‰‰  $
-.
-‰‰$ %
-Email
-‰‰% *
-;
-‰‰* +
-}
-ÂÂ 
-return
-ÊÊ 
-email
-ÊÊ  
-;
-ÊÊ  !
-}
-ÁÁ 
-}
-ËË 
-catch
-ËË 
-(
-ËË 
-EntityException
-ËË $
-ex
-ËË% '
-)
-ËË' (
-{
-ËË) *
-
-MessageBox
-ÈÈ 
-.
-ÈÈ 
-Show
-ÈÈ 
-(
-ÈÈ  
-$"
-ÈÈ  "
-$str
-ÈÈ" >
-{
-ÈÈ> ?
-ex
-ÈÈ? A
-.
-ÈÈA B
-Message
-ÈÈB I
-}
-ÈÈI J
-"
-ÈÈJ K
-)
-ÈÈK L
-;
-ÈÈL M
-return
-ÍÍ 
-null
-ÍÍ 
-;
-ÍÍ 
-}
-ÎÎ 
-}
-ÏÏ 	
-public
-ÓÓ 
-int
-ÓÓ 
-GetId
-ÓÓ 
-(
-ÓÓ 
-string
-ÓÓ 
-gamertag
-ÓÓ  (
-)
-ÓÓ( )
-{
-ÓÓ* +
-int
-ÔÔ 
-id
-ÔÔ 
-=
-ÔÔ 
-$num
-ÔÔ 
-;
-ÔÔ 
-try
- 
-{
- 
-using
-ÒÒ 
-(
-ÒÒ 
-var
-ÒÒ 
-context
-ÒÒ "
-=
-ÒÒ# $
-new
-ÒÒ% (%
-ChineseCheckersEntities
-ÒÒ) @
-(
-ÒÒ@ A
-)
-ÒÒA B
-)
-ÒÒB C
-{
-ÒÒD E
-var
-ÚÚ 
-user
-ÚÚ 
-=
-ÚÚ 
-context
-ÚÚ &
-.
-ÚÚ& '
-UserAccount
-ÚÚ' 2
-.
-ÛÛ 
-FirstOrDefault
-ÛÛ '
-(
-ÛÛ' (
-userId
-ÛÛ( .
-=>
-ÛÛ/ 1
-userId
-ÛÛ2 8
-.
-ÛÛ8 9
-GamertagUser
-ÛÛ9 E
-==
-ÛÛF H
-gamertag
-ÛÛI Q
-)
-ÛÛQ R
-;
-ÛÛR S
-if
-ıı 
-(
-ıı 
-user
-ıı 
-!=
-ıı 
-null
-ıı  $
-)
-ıı$ %
-{
-ıı& '
-id
-ˆˆ 
-=
-ˆˆ 
-user
-ˆˆ !
-.
-ˆˆ! "
-Id
-ˆˆ" $
-;
-ˆˆ$ %
-}
-˜˜ 
-return
-¯¯ 
-id
-¯¯ 
-;
-¯¯ 
-}
-˘˘ 
-}
-˙˙ 
-catch
-˙˙ 
-(
-˙˙ 
-EntityException
-˙˙ $
-ex
-˙˙% '
-)
-˙˙' (
-{
-˙˙) *
-
-MessageBox
-˚˚ 
-.
-˚˚ 
-Show
-˚˚ 
-(
-˚˚  
-$"
-˚˚  "
-$str
-˚˚" :
-{
-˚˚: ;
-ex
-˚˚; =
-.
-˚˚= >
-Message
-˚˚> E
-}
-˚˚E F
-"
-˚˚F G
-)
-˚˚G H
-;
-˚˚H I
-return
-¸¸ 
--
-¸¸ 
-$num
-¸¸ 
-;
-¸¸ 
-}
-˝˝ 
-}
-˛˛ 	
-}
-ˇˇ 
-public
-ÅÅ 
-
-partial
-ÅÅ 
-class
-ÅÅ 
-ManagerController
-ÅÅ *
-:
-ÅÅ+ ,
-IUsersManager
-ÅÅ- :
-{
-ÅÅ; <
-private
-ÉÉ 
-static
-ÉÉ 
-readonly
-ÉÉ 
-
-Dictionary
-ÉÉ  *
-<
-ÉÉ* +
-int
-ÉÉ+ .
-,
-ÉÉ. /"
-IUserSessionCallback
-ÉÉ0 D
->
-ÉÉD E
-playerStatus
-ÉÉF R
-=
-ÉÉS T
-new
-ÉÉU X
-
-Dictionary
-ÉÉY c
-<
-ÉÉc d
-int
-ÉÉd g
-,
-ÉÉg h"
-IUserSessionCallback
-ÉÉi }
->
-ÉÉ} ~
-(
-ÉÉ~ 
-)ÉÉ Ä
-;ÉÉÄ Å
-public
-ÖÖ 
+‚‚ 
 void
-ÖÖ 
-
-GetFriends
-ÖÖ 
+‚‚ 
+GetPlayersRoom
+‚‚ "
 (
-ÖÖ 
+‚‚" #
 string
-ÖÖ %
+‚‚# )
 gamertag
-ÖÖ& .
+‚‚* 2
+,
+‚‚2 3
+string
+‚‚4 :
+idRoom
+‚‚; A
 )
-ÖÖ. /
+‚‚A B
 {
-ÖÖ0 1
-
-Dictionary
-ÜÜ 
-<
-ÜÜ 
-string
-ÜÜ 
-,
-ÜÜ 
-Tuple
-ÜÜ $
-<
-ÜÜ$ %
-string
-ÜÜ% +
-,
-ÜÜ+ ,
-bool
-ÜÜ- 1
->
-ÜÜ1 2
->
-ÜÜ2 3
-friendsDictionary
-ÜÜ4 E
-=
-ÜÜF G
-new
-ÜÜH K
-
-Dictionary
-ÜÜL V
-<
-ÜÜV W
-string
-ÜÜW ]
-,
-ÜÜ] ^
-Tuple
-ÜÜ_ d
-<
-ÜÜd e
-string
-ÜÜe k
-,
-ÜÜk l
-bool
-ÜÜm q
->
-ÜÜq r
->
-ÜÜr s
-(
-ÜÜs t
-)
-ÜÜt u
-;
-ÜÜu v
+‚‚C D
 try
-áá 
+„„ 
 {
-áá 
-using
-àà 
-(
-àà 
-var
-àà 
-context
-àà "
-=
-àà# $
-new
-àà% (%
-ChineseCheckersEntities
-àà) @
-(
-àà@ A
-)
-ààA B
-)
-ààB C
-{
-ààD E
-int
-ââ 
-userId
-ââ 
-=
-ââ  
-context
-ââ! (
-.
-ââ( )
-UserAccount
-ââ) 4
-.
-ää 
-Where
-ää 
-(
-ää 
-user
-ää #
-=>
-ää$ &
-user
-ää' +
-.
-ää+ ,
-GamertagUser
-ää, 8
-==
-ää9 ;
-gamertag
-ää< D
-)
-ääD E
-.
-ãã 
-Select
-ãã 
-(
-ãã  
-user
-ãã  $
-=>
-ãã% '
-user
-ãã( ,
-.
-ãã, -
-Id
-ãã- /
-)
-ãã/ 0
-.
-åå 
-FirstOrDefault
-åå '
-(
-åå' (
-)
-åå( )
-;
-åå) *
+„„ 
 if
-éé 
+‰‰ 
 (
-éé 
-userId
-éé 
->
-éé  
-$num
-éé! "
-)
-éé" #
-{
-éé$ %
-var
-èè 
-
-friendData
-èè &
-=
-èè' (
-(
-èè) *
-from
-èè* .
-friend
-èè/ 5
-in
-èè6 8
-context
-èè9 @
+‰‰ 
+_playersRoom
+‰‰  
 .
-èè@ A
-FriendPlayer
-èèA M
-join
-êê* .
-user
-êê/ 3
-in
-êê4 6
-context
-êê7 >
-.
-êê> ?
-UserAccount
-êê? J
-on
-êêK M
-friend
-êêN T
-.
-êêT U
-IdFriend
-êêU ]
-equals
-êê^ d
-user
-êêe i
-.
-êêi j
-Id
-êêj l
-where
-ëë* /
-friend
-ëë0 6
-.
-ëë6 7
-IdPlayer
-ëë7 ?
-==
-ëë@ B
-userId
-ëëC I
-&&
-ëëJ L
-friend
-ëëM S
-.
-ëëS T
-RequestStatus
-ëëT a
-==
-ëëb d
-$str
-ëëe o
-select
-íí* 0
-new
-íí1 4
-{
-íí5 6
-user
-ìì. 2
-.
-ìì2 3
-Id
-ìì3 5
-,
-ìì5 6
-Gamertag
-îî. 6
-=
-îî7 8
-user
-îî9 =
-.
-îî= >
-GamertagUser
-îî> J
-,
-îîJ K
-user
-ïï. 2
-.
-ïï2 3
-ImageProfile
-ïï3 ?
-,
-ïï? @
-}
-ññ* +
-)
-ññ+ ,
-.
-ññ, -
-ToList
-ññ- 3
-(
-ññ3 4
-)
-ññ4 5
-;
-ññ5 6
-if
-òò 
-(
-òò 
-
-friendData
-òò &
-!=
-òò' )
-null
-òò* .
-)
-òò. /
-{
-òò0 1
-foreach
-ôô #
-(
-ôô$ %
-var
-ôô% (
-friend
-ôô) /
-in
-ôô0 2
-
-friendData
-ôô3 =
-)
-ôô= >
-{
-ôô? @
-bool
-öö  $
-isOnline
-öö% -
-=
-öö. /
-playerStatus
-öö0 <
-.
-öö< =
+‰‰  !
 ContainsKey
-öö= H
+‰‰! ,
 (
-ööH I
-friend
-ööI O
-.
-ööO P
-Id
-ööP R
+‰‰, -
+idRoom
+‰‰- 3
 )
-ööR S
-;
-ööS T
-friendsDictionary
-õõ  1
+‰‰3 4
+)
+‰‰4 5
+{
+‰‰6 7
+	RoomModel
+ÂÂ 
+room
+ÂÂ "
+=
+ÂÂ# $
+_playersRoom
+ÂÂ% 1
 [
-õõ1 2
-friend
-õõ2 8
-.
-õõ8 9
-Gamertag
-õõ9 A
+ÂÂ1 2
+idRoom
+ÂÂ2 8
 ]
-õõA B
-=
-õõC D
-new
-õõE H
-Tuple
-õõI N
-<
-õõN O
-string
-õõO U
-,
-õõU V
-bool
-õõW [
->
-õõ[ \
-(
-õõ\ ]
-friend
-õõ] c
-.
-õõc d
-ImageProfile
-õõd p
-,
-õõp q
-isOnline
-õõr z
-)
-õõz {
+ÂÂ8 9
 ;
-õõ{ |
-}
-úú 
-IUserCallback
-ûû )
-callback
-ûû* 2
-=
-ûû3 4
-OperationContext
-ûû5 E
-.
-ûûE F
-Current
-ûûF M
-.
-ûûM N 
-GetCallbackChannel
-ûûN `
-<
-ûû` a
-IUserCallback
-ûûa n
->
-ûûn o
-(
-ûûo p
-)
-ûûp q
-;
-ûûq r
-callback
-üü $
-.
-üü$ % 
-GetFriendsCallback
-üü% 7
-(
-üü7 8
-friendsDictionary
-üü8 I
-)
-üüI J
-;
-üüJ K
-}
-†† 
-}
-°° 
-}
-¢¢ 
-}
-££ 
-catch
-££ 
-(
-££ 
-EntityException
-££ $
-ex
-££% '
-)
-££' (
-{
-££) *
-
-MessageBox
-§§ 
-.
-§§ 
-Show
-§§ 
-(
-§§  
-$"
-§§  "
-$str
-§§" G
-{
-§§G H
-ex
-§§H J
-.
-§§J K
-Message
-§§K R
-}
-§§R S
-"
-§§S T
-)
-§§T U
-;
-§§U V
-}
-•• 
-catch
-•• 
-(
-•• $
-CommunicationException
-•• +
-ex
-••, .
-)
-••. /
-{
-••0 1
-
-MessageBox
-¶¶ 
-.
-¶¶ 
-Show
-¶¶ 
-(
-¶¶  
-$"
-¶¶  "
-$str
-¶¶" G
-{
-¶¶G H
-ex
-¶¶H J
-.
-¶¶J K
-Message
-¶¶K R
-}
-¶¶R S
-"
-¶¶S T
-)
-¶¶T U
-;
-¶¶U V
-}
-ßß 
-}
-®® 	
-private
-™™ 
-void
-™™ 
-RemoveClient
-™™ !
-(
-™™! "
-int
-™™" %
-idUser
-™™& ,
-)
-™™, -
-{
-™™. /
+ÂÂ9 :
 if
-´´ 
+ÊÊ 
 (
-´´ 
-playerStatus
-´´ 
+ÊÊ 
+room
+ÊÊ 
+!=
+ÊÊ 
+null
+ÊÊ  $
+&&
+ÊÊ% '
+room
+ÊÊ( ,
 .
-´´ 
-ContainsKey
-´´ (
-(
-´´( )
-idUser
-´´) /
+ÊÊ, -
+PlayersRoom
+ÊÊ- 8
+!=
+ÊÊ9 ;
+null
+ÊÊ< @
 )
-´´/ 0
-)
-´´0 1
+ÊÊ@ A
 {
-´´2 3
-playerStatus
-¨¨ 
-.
-¨¨ 
-Remove
-¨¨ #
-(
-¨¨# $
-idUser
-¨¨$ *
-)
-¨¨* +
-;
-¨¨+ ,
-}
-≠≠ 
-}
-ÆÆ 	
-}
-ØØ 
-public
-±± 
-
-partial
-±± 
-class
-±± 
-ManagerController
-±± *
-:
-±±+ ,
-IUserSession
-±±- 9
-{
-±±: ;
-public
-≤≤ 
-void
-≤≤ 
-GetSessionPlayer
-≤≤ $
-(
-≤≤$ %
-int
-≤≤% (
-idUser
-≤≤) /
-)
-≤≤/ 0
-{
-≤≤1 2
-try
-≥≥ 
-{
-≥≥ "
-IUserSessionCallback
-¥¥ $
-context
-¥¥% ,
-=
-¥¥- .
-OperationContext
-¥¥/ ?
-.
-¥¥? @
-Current
-¥¥@ G
-.
-¥¥G H 
-GetCallbackChannel
-¥¥H Z
+ÊÊB C
+List
+ÁÁ 
 <
-¥¥Z ["
-IUserSessionCallback
-¥¥[ o
+ÁÁ 
+string
+ÁÁ #
 >
-¥¥o p
-(
-¥¥p q
-)
-¥¥q r
-;
-¥¥r s
-playerStatus
-µµ 
-.
-µµ 
-Add
-µµ  
-(
-µµ  !
-idUser
-µµ! '
-,
-µµ' (
-context
-µµ) 0
-)
-µµ0 1
-;
-µµ1 2"
-ICommunicationObject
-∑∑ $!
-communicationObject
-∑∑% 8
+ÁÁ# $
+listPlayers
+ÁÁ% 0
 =
-∑∑9 :
-(
-∑∑; <"
-ICommunicationObject
-∑∑< P
-)
-∑∑P Q
-context
-∑∑Q X
+ÁÁ1 2$
+_playersRoomDictionary
+ÁÁ3 I
+[
+ÁÁI J
+idRoom
+ÁÁJ P
+]
+ÁÁP Q
 ;
-∑∑X Y!
-communicationObject
-∏∏ #
-.
-∏∏# $
-Closed
-∏∏$ *
-+=
-∏∏+ -
+ÁÁQ R
+foreach
+ËË 
 (
-∏∏. /
-sender
-∏∏/ 5
-,
-∏∏5 6
-e
-∏∏7 8
+ËË  !
+var
+ËË! $
+players
+ËË% ,
+in
+ËË- /
+room
+ËË0 4
+.
+ËË4 5
+PlayersRoom
+ËË5 @
+.
+ËË@ A
+Values
+ËËA G
 )
-∏∏8 9
-=>
-∏∏: <
+ËËG H
 {
-∏∏= >
-RemoveClient
-ππ  
-(
-ππ  !
-idUser
-ππ! '
-)
-ππ' (
-;
-ππ( )
-}
-∫∫ 
-;
-∫∫ !
-communicationObject
-ºº #
+ËËI J
+players
+ÈÈ #
 .
-ºº# $
-Faulted
-ºº$ +
-+=
-ºº, .
+ÈÈ# $$
+GetPlayersRoomCallback
+ÈÈ$ :
 (
-ºº/ 0
-sender
-ºº0 6
-,
-ºº6 7
-e
-ºº8 9
+ÈÈ: ;
+listPlayers
+ÈÈ; F
 )
-ºº9 :
-=>
-ºº; =
+ÈÈF G
+;
+ÈÈG H
+}
+ÍÍ 
+}
+ÎÎ 
+}
+ÏÏ 
+}
+ÌÌ 
+catch
+ÌÌ 
+(
+ÌÌ $
+CommunicationException
+ÌÌ +
+ex
+ÌÌ, .
+)
+ÌÌ. /
 {
-ºº> ?
-RemoveClient
-ΩΩ  
-(
-ΩΩ  !
-idUser
-ΩΩ! '
-)
-ΩΩ' (
-;
-ΩΩ( )
-}
-ææ 
-;
-ææ 
-context
-øø 
+ÌÌ0 1
+
+MessageBox
+ÓÓ 
 .
-øø &
-GetSessionPlayerCallback
-øø 0
+ÓÓ 
+Show
+ÓÓ 
 (
-øø0 1
+ÓÓ  
+$"
+ÓÓ  "
+$str
+ÓÓ" M
+{
+ÓÓM N
+ex
+ÓÓN P
+.
+ÓÓP Q
+Message
+ÓÓQ X
+}
+ÓÓX Y
+"
+ÓÓY Z
 )
-øø1 2
+ÓÓZ [
 ;
-øø2 3
+ÓÓ[ \
+}
+ÔÔ 
+}
+ 	
+public
+˜˜ 
+void
+˜˜ 
+SendToBoard
+˜˜ 
+(
+˜˜  
+string
+˜˜  &
+idRoom
+˜˜' -
+)
+˜˜- .
+{
+˜˜/ 0
+try
+¯¯ 
+{
+¯¯ 
+if
+˘˘ 
+(
+˘˘ 
+_playersRoom
+˘˘  
+.
+˘˘  !
+ContainsKey
+˘˘! ,
+(
+˘˘, -
+idRoom
+˘˘- 3
+)
+˘˘3 4
+)
+˘˘4 5
+{
+˘˘6 7
+	RoomModel
+˙˙ 
+room
+˙˙ "
+=
+˙˙# $
+_playersRoom
+˙˙% 1
+[
+˙˙1 2
+idRoom
+˙˙2 8
+]
+˙˙8 9
+;
+˙˙9 :
+if
+˚˚ 
+(
+˚˚ 
+room
+˚˚ 
+!=
+˚˚ 
+null
+˚˚  $
+&&
+˚˚% '
+room
+˚˚( ,
+.
+˚˚, -
+PlayersRoom
+˚˚- 8
+!=
+˚˚9 ;
+null
+˚˚< @
+)
+˚˚@ A
+{
+˚˚B C
+foreach
+¸¸ 
+(
+¸¸  !
+var
+¸¸! $
+players
+¸¸% ,
+in
+¸¸- /
+room
+¸¸0 4
+.
+¸¸4 5
+PlayersRoom
+¸¸5 @
+.
+¸¸@ A
+Values
+¸¸A G
+)
+¸¸G H
+{
+¸¸I J
+players
+˝˝ #
+.
+˝˝# $!
+SendToBoardCallback
+˝˝$ 7
+(
+˝˝7 8
+)
+˝˝8 9
+;
+˝˝9 :
+}
+˛˛ 
+}
+ˇˇ 
+}
+ÄÄ 
+}
+ÅÅ 
+catch
+ÅÅ 
+(
+ÅÅ $
+CommunicationException
+ÅÅ +
+ex
+ÅÅ, .
+)
+ÅÅ. /
+{
+ÅÅ0 1
+
+MessageBox
+ÇÇ 
+.
+ÇÇ 
+Show
+ÇÇ 
+(
+ÇÇ  
+$"
+ÇÇ  "
+$str
+ÇÇ" P
+{
+ÇÇP Q
+ex
+ÇÇQ S
+.
+ÇÇS T
+Message
+ÇÇT [
+}
+ÇÇ[ \
+"
+ÇÇ\ ]
+)
+ÇÇ] ^
+;
+ÇÇ^ _
+}
+ÉÉ 
+}
+ÑÑ 	
+public
+åå 
+void
+åå 
+RemovePlayerRoom
+åå $
+(
+åå$ %
+string
+åå% +
+gamertag
+åå, 4
+,
+åå4 5
+string
+åå6 <
+idRoom
+åå= C
+)
+ååC D
+{
+ååE F
+try
+çç 
+{
+çç 
+const
+éé 
+int
+éé 
+MIN_PLAYERS
+éé %
+=
+éé& '
+$num
+éé( )
+;
+éé) *
+if
+èè 
+(
+èè 
+_playersRoom
+èè  
+.
+èè  !
+ContainsKey
+èè! ,
+(
+èè, -
+idRoom
+èè- 3
+)
+èè3 4
+)
+èè4 5
+{
+èè6 7
+	RoomModel
+êê 
+room
+êê "
+=
+êê# $
+_playersRoom
+êê% 1
+[
+êê1 2
+idRoom
+êê2 8
+]
+êê8 9
+;
+êê9 :
+if
+íí 
+(
+íí $
+_playersRoomDictionary
+íí .
+.
+íí. /
+ContainsKey
+íí/ :
+(
+íí: ;
+idRoom
+íí; A
+)
+ííA B
+)
+ííB C
+{
+ííD E
+List
+ìì 
+<
+ìì 
+string
+ìì #
+>
+ìì# $
+listPlayers
+ìì% 0
+=
+ìì1 2$
+_playersRoomDictionary
+ìì3 I
+[
+ììI J
+idRoom
+ììJ P
+]
+ììP Q
+;
+ììQ R
+listPlayers
+îî #
+.
+îî# $
+Remove
+îî$ *
+(
+îî* +
+gamertag
+îî+ 3
+)
+îî3 4
+;
+îî4 5$
+_playersRoomDictionary
+ïï .
+[
+ïï. /
+idRoom
+ïï/ 5
+]
+ïï5 6
+=
+ïï7 8
+listPlayers
+ïï9 D
+;
+ïïD E
+}
+ññ 
+if
+óó 
+(
+óó 
+room
+óó 
+.
+óó 
+PlayersRoom
+óó (
+.
+óó( )
+Count
+óó) .
+>
+óó/ 0
+MIN_PLAYERS
+óó1 <
+)
+óó< =
+{
+óó> ?
+room
+òò 
+.
+òò 
+PlayersRoom
+òò (
+.
+òò( )
+Remove
+òò) /
+(
+òò/ 0
+gamertag
+òò0 8
+)
+òò8 9
+;
+òò9 :
+}
+ôô 
+else
+ôô 
+{
+ôô 
+room
+öö 
+.
+öö 
+Players
+öö $
+.
+öö$ %
+Remove
+öö% +
+(
+öö+ ,
+gamertag
+öö, 4
+)
+öö4 5
+;
+öö5 6
+_playersRoom
+õõ $
+.
+õõ$ %
+Remove
+õõ% +
+(
+õõ+ ,
+idRoom
+õõ, 2
+)
+õõ2 3
+;
+õõ3 4
+_rooms
+úú 
+.
+úú 
+Remove
+úú %
+(
+úú% &
+idRoom
+úú& ,
+)
+úú, -
+;
+úú- .
+}
+ùù 
+}
+ûû 
+}
+üü 
+catch
+üü 
+(
+üü $
+CommunicationException
+üü +
+ex
+üü, .
+)
+üü. /
+{
+üü0 1
+
+MessageBox
+†† 
+.
+†† 
+Show
+†† 
+(
+††  
+$"
+††  "
+$str
+††" I
+{
+††I J
+ex
+††J L
+.
+††L M
+Message
+††M T
+}
+††T U
+"
+††U V
+)
+††V W
+;
+††W X
+}
+°° 
+}
+¢¢ 	
+public
+©© 
+void
+©© 
+AssignColors
+©©  
+(
+©©  !
+string
+©©! '
+idRoom
+©©( .
+)
+©©. /
+{
+©©0 1
+
+Dictionary
+™™ 
+<
+™™ 
+string
+™™ 
+,
+™™ 
+char
+™™ #
+>
+™™# $$
+dictionaryPlayersColor
+™™% ;
+=
+™™< =
+new
+™™> A
+
+Dictionary
+™™B L
+<
+™™L M
+string
+™™M S
+,
+™™S T
+char
+™™U Y
+>
+™™Y Z
+(
+™™Z [
+)
+™™[ \
+;
+™™\ ]
+try
+´´ 
+{
+´´ 
+if
+¨¨ 
+(
+¨¨ 
+_playersRoom
+¨¨  
+.
+¨¨  !
+TryGetValue
+¨¨! ,
+(
+¨¨, -
+idRoom
+¨¨- 3
+,
+¨¨3 4
+out
+¨¨5 8
+var
+¨¨9 <
+room
+¨¨= A
+)
+¨¨A B
+&&
+¨¨C E
+room
+¨¨F J
+!=
+¨¨K M
+null
+¨¨N R
+&&
+¨¨S U
+room
+¨¨V Z
+.
+¨¨Z [
+PlayersRoom
+¨¨[ f
+!=
+¨¨g i
+null
+¨¨j n
+)
+¨¨n o
+{
+¨¨p q
+char
+≠≠ 
+[
+≠≠ 
+]
+≠≠ 
+colors
+≠≠ !
+=
+≠≠" #
+null
+≠≠$ (
+;
+≠≠( )
+switch
+ÆÆ 
+(
+ÆÆ 
+room
+ÆÆ  
+.
+ÆÆ  !
+PlayersRoom
+ÆÆ! ,
+.
+ÆÆ, -
+Count
+ÆÆ- 2
+)
+ÆÆ2 3
+{
+ÆÆ4 5
+case
+ØØ 
+$num
+ØØ 
+:
+ØØ 
+colors
+∞∞ "
+=
+∞∞# $
+room
+∞∞% )
+.
+∞∞) * 
+ColorForTwoPlayers
+∞∞* <
+;
+∞∞< =
+break
+±± !
+;
+±±! "
+case
+≤≤ 
+$num
+≤≤ 
+:
+≤≤ 
+colors
+≥≥ "
+=
+≥≥# $
+room
+≥≥% )
+.
+≥≥) *"
+ColorForThreePlayers
+≥≥* >
+;
+≥≥> ?
+break
+¥¥ !
+;
+¥¥! "
+case
+µµ 
+$num
+µµ 
+:
+µµ 
+colors
+∂∂ "
+=
+∂∂# $
+room
+∂∂% )
+.
+∂∂) *!
+ColorForFourPlayers
+∂∂* =
+;
+∂∂= >
+break
+∑∑ !
+;
+∑∑! "
+case
+∏∏ 
+$num
+∏∏ 
+:
+∏∏ 
+colors
+ππ "
+=
+ππ# $
+room
+ππ% )
+.
+ππ) *!
+ColorForFivePlayers
+ππ* =
+;
+ππ= >
+break
+∫∫ !
+;
+∫∫! "
+case
+ªª 
+$num
+ªª 
+:
+ªª 
+colors
+ºº "
+=
+ºº# $
+room
+ºº% )
+.
+ºº) * 
+ColorForSixPlayers
+ºº* <
+;
+ºº< =
+break
+ΩΩ !
+;
+ΩΩ! "
+}
+ææ 
+if
+øø 
+(
+øø 
+colors
+øø 
+!=
+øø !
+null
+øø" &
+)
+øø& '
+{
+øø( )
+foreach
+¿¿ 
+(
+¿¿  !
+var
+¿¿! $
+	playerKey
+¿¿% .
+in
+¿¿/ 1
+room
+¿¿2 6
+.
+¿¿6 7
+PlayersRoom
+¿¿7 B
+.
+¿¿B C
+Keys
+¿¿C G
+)
+¿¿G H
+{
+¿¿I J
+char
+¡¡  
+	colorType
+¡¡! *
+=
+¡¡+ ,
+colors
+¡¡- 3
+[
+¡¡3 4$
+dictionaryPlayersColor
+¡¡4 J
+.
+¡¡J K
+Count
+¡¡K P
+]
+¡¡P Q
+;
+¡¡Q R$
+dictionaryPlayersColor
+¬¬ 2
+.
+¬¬2 3
+Add
+¬¬3 6
+(
+¬¬6 7
+	playerKey
+¬¬7 @
+,
+¬¬@ A
+	colorType
+¬¬B K
+)
+¬¬K L
+;
+¬¬L M
+}
+√√ 
+foreach
+ƒƒ 
+(
+ƒƒ  !
+var
+ƒƒ! $
+players
+ƒƒ% ,
+in
+ƒƒ- /
+room
+ƒƒ0 4
+.
+ƒƒ4 5
+PlayersRoom
+ƒƒ5 @
+.
+ƒƒ@ A
+Values
+ƒƒA G
+)
+ƒƒG H
+{
+ƒƒI J
+players
+≈≈ #
+.
+≈≈# $"
+AssignColorsCallback
+≈≈$ 8
+(
+≈≈8 9$
+dictionaryPlayersColor
+≈≈9 O
+)
+≈≈O P
+;
+≈≈P Q
+}
+∆∆ 
+}
+«« 
+}
+»» 
+}
+…… 
+catch
+…… 
+(
+…… $
+CommunicationException
+…… +
+ex
+……, .
+)
+……. /
+{
+……0 1
+
+MessageBox
+   
+.
+   
+Show
+   
+(
+    
+$"
+    "
+$str
+  " @
+{
+  @ A
+ex
+  A C
+.
+  C D
+Message
+  D K
+}
+  K L
+"
+  L M
+)
+  M N
+;
+  N O
+}
+ÀÀ 
+}
+ÃÃ 	
+}
+ÕÕ 
+}ŒŒ ∆
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\SingletonClass.cs
+	namespace 	&
+ChineseCheckersLogicServer
+ $
+.$ %
+
+Controller% /
+{0 1
+public 
+
+class 
+SingletonClass 
+{  !
+private 
+static 
+SingletonClass %
+	_instance& /
+;/ 0
+public 
+static 
+SingletonClass $
+Instance% -
+{. /
+get 
+{ 
+if 
+( 
+	_instance 
+==  
+null! %
+)% &
+{' (
+	_instance 
+= 
+new  #
+SingletonClass$ 2
+(2 3
+)3 4
+;4 5
+} 
+return 
+	_instance  
+;  !
+} 
+} 	
+public 
+string 
+IdRoom 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+} 
+} Û†
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\UserController.cs
+	namespace 	&
+ChineseCheckersLogicServer
+ $
+.$ %
+
+Controller% /
+{0 1
+[ 
+ServiceBehavior 
+( 
+ConcurrencyMode $
+=% &
+ConcurrencyMode' 6
+.6 7
+	Reentrant7 @
+)@ A
+]A B
+public 
+
+partial 
+class 
+ManagerController *
+:+ ,
+IUser- 2
+{3 4
+public## 
+int## 
+AddUserGame## 
+(## 
+	UserModel## (
+	userModel##) 2
+)##2 3
+{##4 5
+try$$ 
+{$$ 
+using%% 
+(%% 
+var%% 
+context%% "
+=%%# $
+new%%% (#
+ChineseCheckersEntities%%) @
+(%%@ A
+)%%A B
+)%%B C
+using&& 
+(&& 
+var&& 
+transaction&& &
+=&&' (
+context&&) 0
+.&&0 1
+Database&&1 9
+.&&9 :
+BeginTransaction&&: J
+(&&J K
+)&&K L
+)&&L M
+{&&N O
+var'' 
+userGame''  
+=''! "
+new''# &
+User''' +
+{'', -
+Gamertag((  
+=((! "
+	userModel((# ,
+.((, -
+Gamertag((- 5
+,((5 6
+PlayerStatus)) $
+=))% &
+	userModel))' 0
+.))0 1
+PlayerStatus))1 =
+,))= >
+}** 
+;** 
+context++ 
+.++ 
+User++  
+.++  !
+Add++! $
+(++$ %
+userGame++% -
+)++- .
+;++. /
+try,, 
+{,, 
+context-- 
+.--  
+SaveChanges--  +
+(--+ ,
+)--, -
+;--- .
+}.. 
+catch.. 
+(.. 
+DbUpdateException.. .
+ex../ 1
+)..1 2
+{..3 4
+transaction// #
+.//# $
+Rollback//$ ,
+(//, -
+)//- .
+;//. /
+
+MessageBox00 "
+.00" #
+Show00# '
+(00' (
+$"00( *
+$str00* W
+{00W X
+ex00X Z
+.00Z [
+Message00[ b
+}00b c
+"00c d
+)00d e
+;00e f
+return11 
+-11  
+$num11  !
+;11! "
+}22 
+transaction33 
+.33  
+Commit33  &
+(33& '
+)33' (
+;33( )
+}44 
+}55 
+catch55 
+(55 
+EntityException55 $
+ex55% '
+)55' (
+{55) *
+
+MessageBox66 
+.66 
+Show66 
+(66  
+$"66  "
+$str66" ?
+{66? @
+ex66@ B
+.66B C
+Message66C J
+}66J K
+"66K L
+)66L M
+;66M N
+return77 
+-77 
+$num77 
+;77 
+}88 
+return99 
+$num99 
+;99 
+}:: 	
+publicBB 
+intBB 
+AddUserAccountBB !
+(BB! "
+	UserModelBB" +
+	userModelBB, 5
+)BB5 6
+{BB7 8
+tryCC 
+{CC 
+usingDD 
+(DD 
+varDD 
+contextDD "
+=DD# $
+newDD% (#
+ChineseCheckersEntitiesDD) @
+(DD@ A
+)DDA B
+)DDB C
+usingEE 
+(EE 
+varEE 
+transactionEE &
+=EE' (
+contextEE) 0
+.EE0 1
+DatabaseEE1 9
+.EE9 :
+BeginTransactionEE: J
+(EEJ K
+)EEK L
+)EEL M
+{EEN O
+varFF 
+userAccountGameFF '
+=FF( )
+newFF* -
+UserAccountFF. 9
+{FF: ;
+GamertagUserGG $
+=GG% &
+	userModelGG' 0
+.GG0 1
+GamertagGG1 9
+,GG9 :
+EmailHH 
+=HH 
+	userModelHH  )
+.HH) *
+EmailHH* /
+,HH/ 0
+PasswordII  
+=II! "
+BCryptII# )
+.II) *
+NetII* -
+.II- .
+BCryptII. 4
+.II4 5
+HashPasswordII5 A
+(IIA B
+	userModelIIB K
+.IIK L
+PasswordIIL T
+)IIT U
+,IIU V
+ImageProfileJJ $
+=JJ% &
+	userModelJJ' 0
+.JJ0 1
+ImageProfileJJ1 =
+,JJ= >
+}KK 
+;KK 
+contextLL 
+.LL 
+UserAccountLL '
+.LL' (
+AddLL( +
+(LL+ ,
+userAccountGameLL, ;
+)LL; <
+;LL< =
+tryMM 
+{MM 
+contextNN 
+.NN  
+SaveChangesNN  +
+(NN+ ,
+)NN, -
+;NN- .
+}OO 
+catchOO 
+(OO 
+DbUpdateExceptionOO .
+exOO/ 1
+)OO1 2
+{OO3 4
+transactionPP #
+.PP# $
+RollbackPP$ ,
+(PP, -
+)PP- .
+;PP. /
+
+MessageBoxQQ "
+.QQ" #
+ShowQQ# '
+(QQ' (
+$"QQ( *
+$strQQ* W
+{QQW X
+exQQX Z
+.QQZ [
+MessageQQ[ b
+}QQb c
+"QQc d
+)QQd e
+;QQe f
+returnRR 
+-RR  
+$numRR  !
+;RR! "
+}SS 
+transactionTT 
+.TT  
+CommitTT  &
+(TT& '
+)TT' (
+;TT( )
+}UU 
+}VV 
+catchVV 
+(VV 
+EntityExceptionVV $
+exVV% '
+)VV' (
+{VV) *
+
+MessageBoxWW 
+.WW 
+ShowWW 
+(WW  
+$"WW  "
+$strWW" I
+{WWI J
+exWWJ L
+.WWL M
+MessageWWM T
+}WWT U
+"WWU V
+)WWV W
+;WWW X
+returnXX 
+-XX 
+$numXX 
+;XX 
+}YY 
+returnZZ 
+$numZZ 
+;ZZ 
+}[[ 	
+publiccc 
+	UserModelcc 
+InfoUsercc !
+(cc! "
+stringcc" (
+gamertagcc) 1
+)cc1 2
+{cc3 4
+	UserModeldd 
+	userModeldd 
+=dd  !
+newdd" %
+	UserModeldd& /
+(dd/ 0
+)dd0 1
+;dd1 2
+tryee 
+{ee 
+usingff 
+(ff 
+varff 
+contextff "
+=ff# $
+newff% (#
+ChineseCheckersEntitiesff) @
+(ff@ A
+)ffA B
+)ffB C
+{ffD E
+vargg 
+	userFoundgg !
+=gg" #
+contextgg$ +
+.gg+ ,
+UserAccountgg, 7
+.hh 
+Wherehh 
+(hh 
+userhh #
+=>hh$ &
+userhh' +
+.hh+ ,
+GamertagUserhh, 8
+==hh9 ;
+gamertaghh< D
+)hhD E
+.ii 
+Selectii 
+(ii  
+userii  $
+=>ii% '
+newii( +
+{ii, -
+userjj  
+.jj  !
+GamertagUserjj! -
+,jj- .
+userkk  
+.kk  !
+ImageProfilekk! -
+,kk- .
+userll  
+.ll  !
+Emailll! &
+}mm 
+)mm 
+.nn 
+FirstOrDefaultnn '
+(nn' (
+)nn( )
+;nn) *
+ifpp 
+(pp 
+	userFoundpp !
+!=pp" $
+nullpp% )
+)pp) *
+{pp+ ,
+	userModelqq !
+.qq! "
+Gamertagqq" *
+=qq+ ,
+	userFoundqq- 6
+.qq6 7
+GamertagUserqq7 C
+;qqC D
+	userModelrr !
+.rr! "
+ImageProfilerr" .
+=rr/ 0
+	userFoundrr1 :
+.rr: ;
+ImageProfilerr; G
+;rrG H
+	userModelss !
+.ss! "
+Emailss" '
+=ss( )
+	userFoundss* 3
+.ss3 4
+Emailss4 9
+;ss9 :
+}tt 
+returnuu 
+	userModeluu $
+;uu$ %
+}vv 
+}ww 
+catchww 
+(ww 
+EntityExceptionww $
+exww% '
+)ww' (
+{ww) *
+
+MessageBoxxx 
+.xx 
+Showxx 
+(xx  
+$"xx  "
+$strxx" O
+{xxO P
+exxxP R
+.xxR S
+MessagexxS Z
+}xxZ [
+"xx[ \
+)xx\ ]
+;xx] ^
+returnyy 
+nullyy 
+;yy 
+}zz 
+}{{ 	
+public
+ÑÑ 
+int
+ÑÑ 
+UpdateInfoUser
+ÑÑ !
+(
+ÑÑ! "
+	UserModel
+ÑÑ" +
+	usermodel
+ÑÑ, 5
+,
+ÑÑ5 6
+string
+ÑÑ7 =
+gamertag
+ÑÑ> F
+)
+ÑÑF G
+{
+ÑÑH I
+try
+ÖÖ 
+{
+ÖÖ 
+using
+ÜÜ 
+(
+ÜÜ 
+var
+ÜÜ 
+context
+ÜÜ "
+=
+ÜÜ# $
+new
+ÜÜ% (%
+ChineseCheckersEntities
+ÜÜ) @
+(
+ÜÜ@ A
+)
+ÜÜA B
+)
+ÜÜB C
+using
+áá 
+(
+áá 
+var
+áá 
+transaction
+áá &
+=
+áá' (
+context
+áá) 0
+.
+áá0 1
+Database
+áá1 9
+.
+áá9 :
+BeginTransaction
+áá: J
+(
+ááJ K
+)
+ááK L
+)
+ááL M
+{
+ááN O
+try
+àà 
+{
+àà 
+var
+ââ 
+user
+ââ  
+=
+ââ! "
+context
+ââ# *
+.
+ââ* +
+UserAccount
+ââ+ 6
+.
+ää 
+Where
+ää "
+(
+ää" #
+
+userUpdate
+ää# -
+=>
+ää. 0
+
+userUpdate
+ää1 ;
+.
+ää; <
+GamertagUser
+ää< H
+==
+ääI K
+gamertag
+ääL T
+)
+ääT U
+.
+ãã 
+FirstOrDefault
+ãã +
+(
+ãã+ ,
+)
+ãã, -
+;
+ãã- .
+if
+çç 
+(
+çç 
+user
+çç  
+!=
+çç! #
+null
+çç$ (
+)
+çç( )
+{
+çç* +
+user
+éé  
+.
+éé  !
+Id
+éé! #
+=
+éé$ %
+	usermodel
+éé& /
+.
+éé/ 0
+Id
+éé0 2
+;
+éé2 3
+user
+èè  
+.
+èè  !
+GamertagUser
+èè! -
+=
+èè. /
+	usermodel
+èè0 9
+.
+èè9 :
+Gamertag
+èè: B
+;
+èèB C
+user
+êê  
+.
+êê  !
+ImageProfile
+êê! -
+=
+êê. /
+	usermodel
+êê0 9
+.
+êê9 :
+ImageProfile
+êê: F
+;
+êêF G
+user
+ëë  
+.
+ëë  !
+Email
+ëë! &
+=
+ëë' (
+	usermodel
+ëë) 2
+.
+ëë2 3
+Email
+ëë3 8
+;
+ëë8 9
+RemoveClient
+íí (
+(
+íí( )
+	usermodel
+íí) 2
+.
+íí2 3
+Id
+íí3 5
+)
+íí5 6
+;
+íí6 7
+context
+ìì #
+.
+ìì# $
+SaveChanges
+ìì$ /
+(
+ìì/ 0
+)
+ìì0 1
+;
+ìì1 2
+}
+îî 
+transaction
+ïï #
+.
+ïï# $
+Commit
+ïï$ *
+(
+ïï* +
+)
+ïï+ ,
+;
+ïï, -
+return
+ññ 
+$num
+ññ  
+;
+ññ  !
+}
+óó 
+catch
+óó 
+(
+óó 
+DbUpdateException
+óó .
+ex
+óó/ 1
+)
+óó1 2
+{
+óó3 4
+transaction
+òò #
+.
+òò# $
+Rollback
+òò$ ,
+(
+òò, -
+)
+òò- .
+;
+òò. /
+
+MessageBox
+ôô "
+.
+ôô" #
+Show
+ôô# '
+(
+ôô' (
+$"
+ôô( *
+$str
+ôô* j
+{
+ôôj k
+ex
+ôôk m
+.
+ôôm n
+Message
+ôôn u
+}
+ôôu v
+"
+ôôv w
+)
+ôôw x
+;
+ôôx y
+return
+öö 
+-
+öö  
+$num
+öö  !
+;
+öö! "
+}
+õõ 
+}
+úú 
+}
+ùù 
+catch
+ùù 
+(
+ùù 
+EntityException
+ùù $
+ex
+ùù% '
+)
+ùù' (
+{
+ùù) *
+
+MessageBox
+ûû 
+.
+ûû 
+Show
+ûû 
+(
+ûû  
+$"
+ûû  "
+$str
+ûû" R
+{
+ûûR S
+ex
+ûûS U
+.
+ûûU V
+Message
+ûûV ]
+}
+ûû] ^
+"
+ûû^ _
+)
+ûû_ `
+;
+ûû` a
+return
+üü 
+-
+üü 
+$num
+üü 
+;
+üü 
+}
+†† 
+}
+°° 	
+public
+©© 
+int
+©© 
+UpdatePassword
+©© !
+(
+©©! "
+	UserModel
+©©" +
+	userModel
+©©, 5
+)
+©©5 6
+{
+©©7 8
+try
+™™ 
+{
+™™ 
+using
+´´ 
+(
+´´ 
+var
+´´ 
+context
+´´ "
+=
+´´# $
+new
+´´% (%
+ChineseCheckersEntities
+´´) @
+(
+´´@ A
+)
+´´A B
+)
+´´B C
+{
+´´D E
+var
+¨¨ 
+userAccountUpdate
+¨¨ )
+=
+¨¨* +
+context
+¨¨, 3
+.
+¨¨3 4
+UserAccount
+¨¨4 ?
+.
+≠≠( )
+Where
+≠≠) .
+(
+≠≠. /
+user
+≠≠/ 3
+=>
+≠≠4 6
+user
+≠≠7 ;
+.
+≠≠; <
+Email
+≠≠< A
+==
+≠≠B D
+	userModel
+≠≠E N
+.
+≠≠N O
+Email
+≠≠O T
+)
+≠≠T U
+.
+ÆÆ( )
+FirstOrDefault
+ÆÆ) 7
+(
+ÆÆ7 8
+)
+ÆÆ8 9
+;
+ÆÆ9 :
+if
+ØØ 
+(
+ØØ 
+userAccountUpdate
+ØØ )
+!=
+ØØ* ,
+null
+ØØ- 1
+)
+ØØ1 2
+{
+ØØ3 4
+userAccountUpdate
+∞∞ )
+.
+∞∞) *
+Password
+∞∞* 2
+=
+∞∞3 4
+BCrypt
+∞∞5 ;
+.
+∞∞; <
+Net
+∞∞< ?
+.
+∞∞? @
+BCrypt
+∞∞@ F
+.
+∞∞F G
+HashPassword
+∞∞G S
+(
+∞∞S T
+	userModel
+∞∞T ]
+.
+∞∞] ^
+Password
+∞∞^ f
+)
+∞∞f g
+;
+∞∞g h
+}
+±± 
+return
+≤≤ 
+context
+≤≤ "
+.
+≤≤" #
+SaveChanges
+≤≤# .
+(
+≤≤. /
+)
+≤≤/ 0
+;
+≤≤0 1
+}
+≥≥ 
+}
+¥¥ 
+catch
+¥¥ 
+(
+¥¥ 
+EntityException
+¥¥ $
+ex
+¥¥% '
+)
+¥¥' (
+{
+¥¥) *
+
+MessageBox
+µµ 
+.
+µµ 
+Show
+µµ 
+(
+µµ  
+$"
+µµ  "
+$str
+µµ" E
+{
+µµE F
+ex
+µµF H
+.
+µµH I
+Message
+µµI P
+}
+µµP Q
+"
+µµQ R
+)
+µµR S
+;
+µµS T
+return
+∂∂ 
+-
+∂∂ 
+$num
+∂∂ 
+;
+∂∂ 
+}
+∑∑ 
+}
+∏∏ 	
+public
+¿¿ 
+int
+¿¿ 
+ValidateUser
+¿¿ 
+(
+¿¿  
+	UserModel
+¿¿  )
+	userModel
+¿¿* 3
+)
+¿¿3 4
+{
+¿¿5 6
+try
+¡¡ 
+{
+¡¡ 
+int
+¬¬ 
+userValidated
+¬¬ !
+=
+¬¬" #
+$num
+¬¬$ %
+;
+¬¬% &
+using
+√√ 
+(
+√√ 
+var
+√√ 
+context
+√√ "
+=
+√√# $
+new
+√√% (%
+ChineseCheckersEntities
+√√) @
+(
+√√@ A
+)
+√√A B
+)
+√√B C
+{
+√√D E
+var
+ƒƒ 
+validateUser
+ƒƒ $
+=
+ƒƒ% &
+(
+ƒƒ' (
+from
+ƒƒ( ,
+user
+ƒƒ- 1
+in
+ƒƒ2 4
+context
+ƒƒ5 <
+.
+ƒƒ< =
+UserAccount
+ƒƒ= H
+where
+≈≈( -
+string
+≈≈. 4
+.
+≈≈4 5
+Equals
+≈≈5 ;
+(
+≈≈; <
+user
+≈≈< @
+.
+≈≈@ A
+GamertagUser
+≈≈A M
+,
+≈≈M N
+	userModel
+≈≈O X
+.
+≈≈X Y
+Gamertag
+≈≈Y a
+)
+≈≈a b
+select
+∆∆( .
+user
+∆∆/ 3
+)
+∆∆3 4
+.
+∆∆4 5
+FirstOrDefault
+∆∆5 C
+(
+∆∆C D
+)
+∆∆D E
+;
+∆∆E F
+if
+«« 
+(
+«« 
+validateUser
+«« $
+!=
+««% '
+null
+««( ,
+&&
+««- /
+BCrypt
+««0 6
+.
+««6 7
+Net
+««7 :
+.
+««: ;
+BCrypt
+««; A
+.
+««A B
+Verify
+««B H
+(
+««H I
+	userModel
+««I R
+.
+««R S
+Password
+««S [
+,
+««[ \
+validateUser
+««] i
+.
+««i j
+Password
+««j r
+)
+««r s
+)
+««s t
+{
+««u v
+userValidated
+»» %
+=
+»»& '
+$num
+»»( )
+;
+»») *
+}
+…… 
+return
+   
+userValidated
+   (
+;
+  ( )
+}
+ÀÀ 
+}
+ÃÃ 
+catch
+ÃÃ 
+(
+ÃÃ 
+EntityException
+ÃÃ $
+ex
+ÃÃ% '
+)
+ÃÃ' (
+{
+ÃÃ) *
+
+MessageBox
+ÕÕ 
+.
+ÕÕ 
+Show
+ÕÕ 
+(
+ÕÕ  
+$"
+ÕÕ  "
+$str
+ÕÕ" ?
+{
+ÕÕ? @
+ex
+ÕÕ@ B
+.
+ÕÕB C
+Message
+ÕÕC J
+}
+ÕÕJ K
+"
+ÕÕK L
+)
+ÕÕL M
+;
+ÕÕM N
+return
+ŒŒ 
+-
+ŒŒ 
+$num
+ŒŒ 
+;
+ŒŒ 
+}
+œœ 
+}
+–– 	
+public
+ÿÿ 
+int
+ÿÿ 
+ValidateEmail
+ÿÿ  
+(
+ÿÿ  !
+	UserModel
+ÿÿ! *
+	userModel
+ÿÿ+ 4
+)
+ÿÿ4 5
+{
+ÿÿ6 7
+int
+ŸŸ 
+emailValidated
+ŸŸ 
+=
+ŸŸ  
+$num
+ŸŸ! "
+;
+ŸŸ" #
+try
+⁄⁄ 
+{
+⁄⁄ 
+using
+€€ 
+(
+€€ 
+var
+€€ 
+context
+€€ "
+=
+€€# $
+new
+€€% (%
+ChineseCheckersEntities
+€€) @
+(
+€€@ A
+)
+€€A B
+)
+€€B C
+{
+€€D E
+var
+‹‹ 
+validatedEmail
+‹‹ &
+=
+‹‹' (
+(
+‹‹) *
+from
+‹‹* .
+user
+‹‹/ 3
+in
+‹‹4 6
+context
+‹‹7 >
+.
+‹‹> ?
+UserAccount
+‹‹? J
+where
+››* /
+user
+››0 4
+.
+››4 5
+Email
+››5 :
+==
+››; =
+	userModel
+››> G
+.
+››G H
+Email
+››H M
+select
+ﬁﬁ* 0
+user
+ﬁﬁ1 5
+)
+ﬁﬁ5 6
+.
+ﬁﬁ6 7
+FirstOrDefault
+ﬁﬁ7 E
+(
+ﬁﬁE F
+)
+ﬁﬁF G
+;
+ﬁﬁG H
+if
+ﬂﬂ 
+(
+ﬂﬂ 
+validatedEmail
+ﬂﬂ &
+!=
+ﬂﬂ' )
+null
+ﬂﬂ* .
+)
+ﬂﬂ. /
+{
+ﬂﬂ0 1
+emailValidated
+‡‡ &
+=
+‡‡' (
+$num
+‡‡) *
+;
+‡‡* +
+}
+·· 
+return
+‚‚ 
+emailValidated
+‚‚ )
+;
+‚‚) *
+}
+„„ 
+}
+‰‰ 
+catch
+‰‰ 
+(
+‰‰ 
+EntityException
+‰‰ $
+ex
+‰‰% '
+)
+‰‰' (
+{
+‰‰) *
+
+MessageBox
+ÂÂ 
+.
+ÂÂ 
+Show
+ÂÂ 
+(
+ÂÂ  
+$"
+ÂÂ  "
+$str
+ÂÂ" =
+{
+ÂÂ= >
+ex
+ÂÂ> @
+.
+ÂÂ@ A
+Message
+ÂÂA H
+}
+ÂÂH I
+"
+ÂÂI J
+)
+ÂÂJ K
+;
+ÂÂK L
+return
+ÊÊ 
+-
+ÊÊ 
+$num
+ÊÊ 
+;
+ÊÊ 
+}
+ÁÁ 
+}
+ËË 	
+public
+ 
+int
+ 
+ValidateGamertag
+ #
+(
+# $
+	UserModel
+$ -
+	userModel
+. 7
+)
+7 8
+{
+9 :
+int
+ÒÒ 
+gamertagValidated
+ÒÒ !
+=
+ÒÒ" #
+$num
+ÒÒ$ %
+;
+ÒÒ% &
+try
+ÚÚ 
+{
+ÚÚ 
+using
+ÛÛ 
+(
+ÛÛ 
+var
+ÛÛ 
+context
+ÛÛ "
+=
+ÛÛ# $
+new
+ÛÛ% (%
+ChineseCheckersEntities
+ÛÛ) @
+(
+ÛÛ@ A
+)
+ÛÛA B
+)
+ÛÛB C
+{
+ÛÛD E
+var
+ÙÙ 
+validatedEmail
+ÙÙ &
+=
+ÙÙ' (
+(
+ÙÙ) *
+from
+ÙÙ* .
+user
+ÙÙ/ 3
+in
+ÙÙ4 6
+context
+ÙÙ7 >
+.
+ÙÙ> ?
+UserAccount
+ÙÙ? J
+where
+ıı* /
+user
+ıı0 4
+.
+ıı4 5
+GamertagUser
+ıı5 A
+==
+ııB D
+	userModel
+ııE N
+.
+ııN O
+Gamertag
+ııO W
+select
+ˆˆ* 0
+user
+ˆˆ1 5
+)
+ˆˆ5 6
+.
+ˆˆ6 7
+FirstOrDefault
+ˆˆ7 E
+(
+ˆˆE F
+)
+ˆˆF G
+;
+ˆˆG H
+if
+˜˜ 
+(
+˜˜ 
+validatedEmail
+˜˜ &
+!=
+˜˜' )
+null
+˜˜* .
+)
+˜˜. /
+{
+˜˜0 1
+gamertagValidated
+¯¯ )
+=
+¯¯* +
+$num
+¯¯, -
+;
+¯¯- .
+}
+˘˘ 
+return
+˙˙ 
+gamertagValidated
+˙˙ ,
+;
+˙˙, -
+}
+˚˚ 
+}
+¸¸ 
+catch
+¸¸ 
+(
+¸¸ 
+EntityException
+¸¸ $
+ex
+¸¸% '
+)
+¸¸' (
+{
+¸¸) *
+
+MessageBox
+˝˝ 
+.
+˝˝ 
+Show
+˝˝ 
+(
+˝˝  
+$"
+˝˝  "
+$str
+˝˝" @
+{
+˝˝@ A
+ex
+˝˝A C
+.
+˝˝C D
+Message
+˝˝D K
+}
+˝˝K L
+"
+˝˝L M
+)
+˝˝M N
+;
+˝˝N O
+return
+˛˛ 
+-
+˛˛ 
+$num
+˛˛ 
+;
+˛˛ 
+}
+ˇˇ 
+}
+ÄÄ 	
+public
+àà 
+string
+àà 
+GetPlayerImage
+àà $
+(
+àà$ %
+string
+àà% +
+gamertag
+àà, 4
+)
+àà4 5
+{
+àà6 7
+string
+ââ 
+path
+ââ 
+=
+ââ 
+$str
+ââ 
+;
+ââ 
+try
+ää 
+{
+ää 
+using
+ãã 
+(
+ãã 
+var
+ãã 
+context
+ãã "
+=
+ãã# $
+new
+ãã% (%
+ChineseCheckersEntities
+ãã) @
+(
+ãã@ A
+)
+ããA B
+)
+ããB C
+{
+ããD E
+var
+åå 
+playerImage
+åå #
+=
+åå$ %
+(
+åå& '
+from
+åå' +
+user
+åå, 0
+in
+åå1 3
+context
+åå4 ;
+.
+åå; <
+UserAccount
+åå< G
+where
+çç' ,
+string
+çç- 3
+.
+çç3 4
+Equals
+çç4 :
+(
+çç: ;
+user
+çç; ?
+.
+çç? @
+GamertagUser
+çç@ L
+,
+ççL M
+gamertag
+ççN V
+)
+ççV W
+select
+éé' -
+user
+éé. 2
+)
+éé2 3
+.
+éé3 4
+FirstOrDefault
+éé4 B
+(
+ééB C
+)
+ééC D
+;
+ééD E
+if
+èè 
+(
+èè 
+playerImage
+èè #
+!=
+èè$ &
+null
+èè' +
+)
+èè+ ,
+{
+èè- .
+path
+êê 
+=
+êê 
+$str
+êê 3
++
+êê4 5
+playerImage
+êê6 A
+.
+êêA B
+ImageProfile
+êêB N
+;
+êêN O
+}
+ëë 
+return
+íí 
+path
+íí 
+;
+íí  
+}
+ìì 
+}
+îî 
+catch
+îî 
+(
+îî 
+EntityException
+îî $
+ex
+îî% '
+)
+îî' (
+{
+îî) *
+
+MessageBox
+ïï 
+.
+ïï 
+Show
+ïï 
+(
+ïï  
+$"
+ïï  "
+$str
+ïï" H
+{
+ïïH I
+ex
+ïïI K
+.
+ïïK L
+Message
+ïïL S
+}
+ïïS T
+"
+ïïT U
+)
+ïïU V
+;
+ïïV W
+return
+ññ 
+null
+ññ 
+;
+ññ 
+}
+óó 
+}
+òò 	
+public
+üü 
+void
+üü 
+
+LogoutUser
+üü 
+(
+üü 
+int
+üü "
+idUser
+üü# )
+)
+üü) *
+{
+üü+ ,
+try
+†† 
+{
+†† 
+RemoveClient
+°° 
+(
+°° 
+idUser
+°° #
+)
+°°# $
+;
+°°$ %
+}
+¢¢ 
+catch
+¢¢ 
+(
+¢¢ $
+CommunicationException
+¢¢ +
+ex
+¢¢, .
+)
+¢¢. /
+{
+¢¢0 1
+
+MessageBox
+££ 
+.
+££ 
+Show
+££ 
+(
+££  
+$"
+££  "
+$str
+££" :
+{
+££: ;
+ex
+££; =
+.
+££= >
+Message
+££> E
+}
+££E F
+"
+££F G
+)
+££G H
+;
+££H I
+}
+§§ 
+}
+•• 	
+public
+ÆÆ 
+string
+ÆÆ 
+FindGamertag
+ÆÆ "
+(
+ÆÆ" #
+string
+ÆÆ# )
+currentGamertag
+ÆÆ* 9
+,
+ÆÆ9 :
+string
+ÆÆ; A
+friendGamertag
+ÆÆB P
+)
+ÆÆP Q
+{
+ÆÆR S
+string
+ØØ 
+gamertagToFound
+ØØ "
+=
+ØØ# $
+$str
+ØØ% '
+;
+ØØ' (
+try
+∞∞ 
+{
+∞∞ 
+using
+±± 
+(
+±± 
+var
+±± 
+context
+±± "
+=
+±±# $
+new
+±±% (%
+ChineseCheckersEntities
+±±) @
+(
+±±@ A
+)
+±±A B
+)
+±±B C
+{
+±±D E
+var
+≤≤ 
+currentUser
+≤≤ #
+=
+≤≤$ %
+context
+≤≤& -
+.
+≤≤- .
+UserAccount
+≤≤. 9
+.
+≤≤9 :
+FirstOrDefault
+≤≤: H
+(
+≤≤H I
+user
+≤≤I M
+=>
+≤≤N P
+user
+≤≤Q U
+.
+≤≤U V
+GamertagUser
+≤≤V b
+==
+≤≤c e
+currentGamertag
+≤≤f u
+)
+≤≤u v
+;
+≤≤v w
+var
+≥≥ 
+
+friendUser
+≥≥ "
+=
+≥≥# $
+context
+≥≥% ,
+.
+≥≥, -
+UserAccount
+≥≥- 8
+.
+≥≥8 9
+FirstOrDefault
+≥≥9 G
+(
+≥≥G H
+user
+≥≥H L
+=>
+≥≥M O
+user
+≥≥P T
+.
+≥≥T U
+GamertagUser
+≥≥U a
+==
+≥≥b d
+friendGamertag
+≥≥e s
+)
+≥≥s t
+;
+≥≥t u
+if
+µµ 
+(
+µµ 
+currentUser
+µµ #
+!=
+µµ$ &
+null
+µµ' +
+&&
+µµ, .
+
+friendUser
+µµ/ 9
+!=
+µµ: <
+null
+µµ= A
+&&
+µµB D
+currentGamertag
+µµE T
+!=
+µµU W
+friendGamertag
+µµX f
+)
+µµf g
+{
+µµh i
+var
+∂∂ 
+
+areFriends
+∂∂ &
+=
+∂∂' (
+context
+∂∂) 0
+.
+∂∂0 1
+FriendPlayer
+∂∂1 =
+.
+∂∂= >
+Any
+∂∂> A
+(
+∂∂A B
+friend
+∂∂B H
+=>
+∂∂I K
+(
+∑∑ 
+friend
+∑∑ #
+.
+∑∑# $
+IdPlayer
+∑∑$ ,
+==
+∑∑- /
+currentUser
+∑∑0 ;
+.
+∑∑; <
+Id
+∑∑< >
+&&
+∑∑? A
+friend
+∑∑B H
+.
+∑∑H I
+IdFriend
+∑∑I Q
+==
+∑∑R T
+
+friendUser
+∑∑U _
+.
+∑∑_ `
+Id
+∑∑` b
+&&
+∑∑c e
+friend
+∑∑f l
+.
+∑∑l m
+RequestStatus
+∑∑m z
+==
+∑∑{ }
+$str∑∑~ à
+)∑∑à â
+||∑∑ä å
+(
+∏∏ 
+friend
+∏∏ #
+.
+∏∏# $
+IdPlayer
+∏∏$ ,
+==
+∏∏- /
+
+friendUser
+∏∏0 :
+.
+∏∏: ;
+Id
+∏∏; =
+&&
+∏∏> @
+friend
+∏∏A G
+.
+∏∏G H
+IdFriend
+∏∏H P
+==
+∏∏Q S
+currentUser
+∏∏T _
+.
+∏∏_ `
+Id
+∏∏` b
+&&
+∏∏c e
+friend
+∏∏f l
+.
+∏∏l m
+RequestStatus
+∏∏m z
+==
+∏∏{ }
+$str∏∏~ à
+)∏∏à â
+)∏∏â ä
+;∏∏ä ã
+if
+∫∫ 
+(
+∫∫ 
+!
+∫∫ 
+
+areFriends
+∫∫ '
+)
+∫∫' (
+{
+∫∫) *
+gamertagToFound
+ªª +
+=
+ªª, -
+friendGamertag
+ªª. <
+;
+ªª< =
+}
+ºº 
+}
+ΩΩ 
+return
+ææ 
+gamertagToFound
+ææ *
+;
+ææ* +
+}
+øø 
 }
 ¿¿ 
 catch
 ¿¿ 
 (
-¿¿ $
-CommunicationException
-¿¿ +
+¿¿ 
+EntityException
+¿¿ $
 ex
-¿¿, .
+¿¿% '
 )
-¿¿. /
+¿¿' (
 {
-¿¿0 1
+¿¿) *
 
 MessageBox
 ¡¡ 
@@ -6242,31 +9092,2850 @@ MessageBox
 $"
 ¡¡  "
 $str
-¡¡" J
+¡¡" ?
 {
-¡¡J K
+¡¡? @
 ex
-¡¡K M
+¡¡@ B
 .
-¡¡M N
+¡¡B C
 Message
-¡¡N U
+¡¡C J
 }
-¡¡U V
+¡¡J K
 "
-¡¡V W
+¡¡K L
 )
-¡¡W X
+¡¡L M
 ;
-¡¡X Y
+¡¡M N
+return
+¬¬ 
+null
+¬¬ 
+;
+¬¬ 
 }
-¬¬ 
+√√ 
 }
-√√ 	
+ƒƒ 	
+public
+ÃÃ 
+string
+ÃÃ 
+GetEmail
+ÃÃ 
+(
+ÃÃ 
+string
+ÃÃ %
+gamertag
+ÃÃ& .
+)
+ÃÃ. /
+{
+ÃÃ0 1
+string
+ÕÕ 
+email
+ÕÕ 
+=
+ÕÕ 
+$str
+ÕÕ 
+;
+ÕÕ 
+try
+ŒŒ 
+{
+ŒŒ 
+using
+œœ 
+(
+œœ 
+var
+œœ 
+context
+œœ "
+=
+œœ# $
+new
+œœ% (%
+ChineseCheckersEntities
+œœ) @
+(
+œœ@ A
+)
+œœA B
+)
+œœB C
+{
+œœD E
+var
+–– 
+user
+–– 
+=
+–– 
+context
+–– &
+.
+––& '
+UserAccount
+––' 2
+.
+—— 
+FirstOrDefault
+—— '
+(
+——' (
+	userEmail
+——( 1
+=>
+——2 4
+	userEmail
+——5 >
+.
+——> ?
+GamertagUser
+——? K
+==
+——L N
+gamertag
+——O W
+)
+——W X
+;
+——X Y
+if
+”” 
+(
+”” 
+user
+”” 
+!=
+”” 
+null
+””  $
+)
+””$ %
+{
+””& '
+email
+‘‘ 
+=
+‘‘ 
+user
+‘‘  $
+.
+‘‘$ %
+Email
+‘‘% *
+;
+‘‘* +
 }
-ƒƒ 
-}≈≈ Œ
-ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\FriendshipModel.cs
+’’ 
+return
+÷÷ 
+email
+÷÷  
+;
+÷÷  !
+}
+◊◊ 
+}
+ÿÿ 
+catch
+ÿÿ 
+(
+ÿÿ 
+EntityException
+ÿÿ $
+ex
+ÿÿ% '
+)
+ÿÿ' (
+{
+ÿÿ) *
+
+MessageBox
+ŸŸ 
+.
+ŸŸ 
+Show
+ŸŸ 
+(
+ŸŸ  
+$"
+ŸŸ  "
+$str
+ŸŸ" >
+{
+ŸŸ> ?
+ex
+ŸŸ? A
+.
+ŸŸA B
+Message
+ŸŸB I
+}
+ŸŸI J
+"
+ŸŸJ K
+)
+ŸŸK L
+;
+ŸŸL M
+return
+⁄⁄ 
+null
+⁄⁄ 
+;
+⁄⁄ 
+}
+€€ 
+}
+‹‹ 	
+public
+‰‰ 
+int
+‰‰ 
+GetId
+‰‰ 
+(
+‰‰ 
+string
+‰‰ 
+gamertag
+‰‰  (
+)
+‰‰( )
+{
+‰‰* +
+int
+ÂÂ 
+id
+ÂÂ 
+=
+ÂÂ 
+$num
+ÂÂ 
+;
+ÂÂ 
+try
+ÊÊ 
+{
+ÊÊ 
+using
+ÁÁ 
+(
+ÁÁ 
+var
+ÁÁ 
+context
+ÁÁ "
+=
+ÁÁ# $
+new
+ÁÁ% (%
+ChineseCheckersEntities
+ÁÁ) @
+(
+ÁÁ@ A
+)
+ÁÁA B
+)
+ÁÁB C
+{
+ÁÁD E
+var
+ËË 
+user
+ËË 
+=
+ËË 
+context
+ËË &
+.
+ËË& '
+UserAccount
+ËË' 2
+.
+ÈÈ 
+FirstOrDefault
+ÈÈ '
+(
+ÈÈ' (
+userId
+ÈÈ( .
+=>
+ÈÈ/ 1
+userId
+ÈÈ2 8
+.
+ÈÈ8 9
+GamertagUser
+ÈÈ9 E
+==
+ÈÈF H
+gamertag
+ÈÈI Q
+)
+ÈÈQ R
+;
+ÈÈR S
+if
+ÎÎ 
+(
+ÎÎ 
+user
+ÎÎ 
+!=
+ÎÎ 
+null
+ÎÎ  $
+)
+ÎÎ$ %
+{
+ÎÎ& '
+id
+ÏÏ 
+=
+ÏÏ 
+user
+ÏÏ !
+.
+ÏÏ! "
+Id
+ÏÏ" $
+;
+ÏÏ$ %
+}
+ÌÌ 
+return
+ÓÓ 
+id
+ÓÓ 
+;
+ÓÓ 
+}
+ÔÔ 
+}
+ 
+catch
+ 
+(
+ 
+EntityException
+ $
+ex
+% '
+)
+' (
+{
+) *
+
+MessageBox
+ÒÒ 
+.
+ÒÒ 
+Show
+ÒÒ 
+(
+ÒÒ  
+$"
+ÒÒ  "
+$str
+ÒÒ" :
+{
+ÒÒ: ;
+ex
+ÒÒ; =
+.
+ÒÒ= >
+Message
+ÒÒ> E
+}
+ÒÒE F
+"
+ÒÒF G
+)
+ÒÒG H
+;
+ÒÒH I
+return
+ÚÚ 
+-
+ÚÚ 
+$num
+ÚÚ 
+;
+ÚÚ 
+}
+ÛÛ 
+}
+ÙÙ 	
+public
+¸¸ 
+int
+¸¸ 
+UpdateGamesWon
+¸¸ !
+(
+¸¸! "
+int
+¸¸" %
+idUser
+¸¸& ,
+)
+¸¸, -
+{
+¸¸. /
+try
+˝˝ 
+{
+˝˝ 
+const
+˛˛ 
+int
+˛˛ 
+	MIN_GAMES
+˛˛ #
+=
+˛˛$ %
+$num
+˛˛& '
+;
+˛˛' (
+using
+ˇˇ 
+(
+ˇˇ 
+var
+ˇˇ 
+context
+ˇˇ "
+=
+ˇˇ# $
+new
+ˇˇ% (%
+ChineseCheckersEntities
+ˇˇ) @
+(
+ˇˇ@ A
+)
+ˇˇA B
+)
+ˇˇB C
+{
+ˇˇD E
+var
+ÄÄ 
+user
+ÄÄ 
+=
+ÄÄ 
+context
+ÄÄ &
+.
+ÄÄ& '
+User
+ÄÄ' +
+.
+ÅÅ 
+FirstOrDefault
+ÅÅ '
+(
+ÅÅ' (
+userId
+ÅÅ( .
+=>
+ÅÅ/ 1
+userId
+ÅÅ2 8
+.
+ÅÅ8 9
+Id
+ÅÅ9 ;
+==
+ÅÅ< >
+idUser
+ÅÅ? E
+)
+ÅÅE F
+;
+ÅÅF G
+if
+ÇÇ 
+(
+ÇÇ 
+user
+ÇÇ 
+!=
+ÇÇ 
+null
+ÇÇ  $
+)
+ÇÇ$ %
+{
+ÇÇ& '
+if
+ÉÉ 
+(
+ÉÉ 
+user
+ÉÉ  
+.
+ÉÉ  !
+GamesWon
+ÉÉ! )
+==
+ÉÉ* ,
+null
+ÉÉ- 1
+)
+ÉÉ1 2
+{
+ÉÉ3 4
+user
+ÑÑ  
+.
+ÑÑ  !
+GamesWon
+ÑÑ! )
+=
+ÑÑ* +
+	MIN_GAMES
+ÑÑ, 5
+;
+ÑÑ5 6
+}
+ÖÖ 
+else
+ÖÖ 
+{
+ÖÖ  
+user
+ÜÜ  
+.
+ÜÜ  !
+GamesWon
+ÜÜ! )
+++
+ÜÜ) +
+;
+ÜÜ+ ,
+}
+áá 
+}
+àà 
+return
+ââ 
+context
+ââ "
+.
+ââ" #
+SaveChanges
+ââ# .
+(
+ââ. /
+)
+ââ/ 0
+;
+ââ0 1
+}
+ää 
+}
+ãã 
+catch
+ãã 
+(
+ãã 
+EntityException
+ãã $
+ex
+ãã% '
+)
+ãã' (
+{
+ãã) *
+
+MessageBox
+åå 
+.
+åå 
+Show
+åå 
+(
+åå  
+$"
+åå  "
+$str
+åå" J
+{
+ååJ K
+ex
+ååK M
+.
+ååM N
+Message
+ååN U
+}
+ååU V
+"
+ååV W
+)
+ååW X
+;
+ååX Y
+return
+çç 
+-
+çç 
+$num
+çç 
+;
+çç 
+}
+éé 
+}
+èè 	
+public
+óó 
+int
+óó 
+UpdateTotalGames
+óó #
+(
+óó# $
+int
+óó$ '
+idUser
+óó( .
+)
+óó. /
+{
+óó0 1
+try
+òò 
+{
+òò 
+const
+ôô 
+int
+ôô 
+	MIN_GAMES
+ôô #
+=
+ôô$ %
+$num
+ôô& '
+;
+ôô' (
+using
+öö 
+(
+öö 
+var
+öö 
+context
+öö "
+=
+öö# $
+new
+öö% (%
+ChineseCheckersEntities
+öö) @
+(
+öö@ A
+)
+ööA B
+)
+ööB C
+{
+ööD E
+var
+õõ 
+user
+õõ 
+=
+õõ 
+context
+õõ &
+.
+õõ& '
+User
+õõ' +
+.
+úú 
+FirstOrDefault
+úú '
+(
+úú' (
+userId
+úú( .
+=>
+úú/ 1
+userId
+úú2 8
+.
+úú8 9
+Id
+úú9 ;
+==
+úú< >
+idUser
+úú? E
+)
+úúE F
+;
+úúF G
+if
+ùù 
+(
+ùù 
+user
+ùù 
+!=
+ùù 
+null
+ùù  $
+)
+ùù$ %
+{
+ùù& '
+if
+ûû 
+(
+ûû 
+user
+ûû  
+.
+ûû  !
+NumberGames
+ûû! ,
+==
+ûû- /
+null
+ûû0 4
+)
+ûû4 5
+{
+ûû6 7
+user
+üü  
+.
+üü  !
+NumberGames
+üü! ,
+=
+üü- .
+	MIN_GAMES
+üü/ 8
+;
+üü8 9
+}
+†† 
+else
+†† 
+{
+††  
+user
+°°  
+.
+°°  !
+NumberGames
+°°! ,
+++
+°°, .
+;
+°°. /
+}
+¢¢ 
+}
+££ 
+return
+§§ 
+context
+§§ "
+.
+§§" #
+SaveChanges
+§§# .
+(
+§§. /
+)
+§§/ 0
+;
+§§0 1
+}
+•• 
+}
+¶¶ 
+catch
+¶¶ 
+(
+¶¶ 
+EntityException
+¶¶ $
+ex
+¶¶% '
+)
+¶¶' (
+{
+¶¶) *
+
+MessageBox
+ßß 
+.
+ßß 
+Show
+ßß 
+(
+ßß  
+$"
+ßß  "
+$str
+ßß" J
+{
+ßßJ K
+ex
+ßßK M
+.
+ßßM N
+Message
+ßßN U
+}
+ßßU V
+"
+ßßV W
+)
+ßßW X
+;
+ßßX Y
+return
+®® 
+-
+®® 
+$num
+®® 
+;
+®® 
+}
+©© 
+}
+™™ 	
+public
+≤≤ 
+int
+≤≤ 
+GetTotalGames
+≤≤  
+(
+≤≤  !
+int
+≤≤! $
+idUser
+≤≤% +
+)
+≤≤+ ,
+{
+≤≤- .
+int
+≥≥ 
+
+totalGames
+≥≥ 
+=
+≥≥ 
+$num
+≥≥ 
+;
+≥≥ 
+try
+¥¥ 
+{
+¥¥ 
+const
+µµ 
+int
+µµ 
+	MIN_GAMES
+µµ #
+=
+µµ$ %
+$num
+µµ& '
+;
+µµ' (
+using
+∂∂ 
+(
+∂∂ 
+var
+∂∂ 
+context
+∂∂ "
+=
+∂∂# $
+new
+∂∂% (%
+ChineseCheckersEntities
+∂∂) @
+(
+∂∂@ A
+)
+∂∂A B
+)
+∂∂B C
+{
+∂∂D E
+var
+∑∑ 
+user
+∑∑ 
+=
+∑∑ 
+context
+∑∑ &
+.
+∑∑& '
+User
+∑∑' +
+.
+∏∏ 
+FirstOrDefault
+∏∏ '
+(
+∏∏' (
+userId
+∏∏( .
+=>
+∏∏/ 1
+userId
+∏∏2 8
+.
+∏∏8 9
+Id
+∏∏9 ;
+==
+∏∏< >
+idUser
+∏∏? E
+)
+∏∏E F
+;
+∏∏F G
+if
+ππ 
+(
+ππ 
+user
+ππ 
+!=
+ππ 
+null
+ππ  $
+)
+ππ$ %
+{
+ππ& '
+if
+∫∫ 
+(
+∫∫ 
+user
+∫∫  
+.
+∫∫  !
+NumberGames
+∫∫! ,
+==
+∫∫- /
+null
+∫∫0 4
+)
+∫∫4 5
+{
+∫∫6 7
+user
+ªª  
+.
+ªª  !
+NumberGames
+ªª! ,
+=
+ªª- .
+	MIN_GAMES
+ªª/ 8
+;
+ªª8 9
+}
+ºº 
+else
+ºº 
+{
+ºº  
+
+totalGames
+ΩΩ &
+=
+ΩΩ' (
+(
+ΩΩ) *
+int
+ΩΩ* -
+)
+ΩΩ- .
+user
+ΩΩ. 2
+.
+ΩΩ2 3
+NumberGames
+ΩΩ3 >
+;
+ΩΩ> ?
+}
+ææ 
+}
+øø 
+}
+¿¿ 
+}
+¡¡ 
+catch
+¡¡ 
+(
+¡¡ 
+EntityException
+¡¡ $
+ex
+¡¡% '
+)
+¡¡' (
+{
+¡¡) *
+
+MessageBox
+¬¬ 
+.
+¬¬ 
+Show
+¬¬ 
+(
+¬¬  
+$"
+¬¬  "
+$str
+¬¬" G
+{
+¬¬G H
+ex
+¬¬H J
+.
+¬¬J K
+Message
+¬¬K R
+}
+¬¬R S
+"
+¬¬S T
+)
+¬¬T U
+;
+¬¬U V
+return
+√√ 
+-
+√√ 
+$num
+√√ 
+;
+√√ 
+}
+ƒƒ 
+return
+≈≈ 
+
+totalGames
+≈≈ 
+;
+≈≈ 
+}
+∆∆ 	
+public
+ŒŒ 
+int
+ŒŒ 
+GetGamesWon
+ŒŒ 
+(
+ŒŒ 
+int
+ŒŒ "
+idUser
+ŒŒ# )
+)
+ŒŒ) *
+{
+ŒŒ+ ,
+int
+œœ 
+gamesWon
+œœ 
+=
+œœ 
+$num
+œœ 
+;
+œœ 
+try
+–– 
+{
+–– 
+const
+—— 
+int
+—— 
+	MIN_GAMES
+—— #
+=
+——$ %
+$num
+——& '
+;
+——' (
+using
+““ 
+(
+““ 
+var
+““ 
+context
+““ "
+=
+““# $
+new
+““% (%
+ChineseCheckersEntities
+““) @
+(
+““@ A
+)
+““A B
+)
+““B C
+{
+““D E
+var
+”” 
+user
+”” 
+=
+”” 
+context
+”” &
+.
+””& '
+User
+””' +
+.
+‘‘ 
+FirstOrDefault
+‘‘ '
+(
+‘‘' (
+userId
+‘‘( .
+=>
+‘‘/ 1
+userId
+‘‘2 8
+.
+‘‘8 9
+Id
+‘‘9 ;
+==
+‘‘< >
+idUser
+‘‘? E
+)
+‘‘E F
+;
+‘‘F G
+if
+’’ 
+(
+’’ 
+user
+’’ 
+!=
+’’ 
+null
+’’  $
+)
+’’$ %
+{
+’’& '
+if
+÷÷ 
+(
+÷÷ 
+user
+÷÷  
+.
+÷÷  !
+GamesWon
+÷÷! )
+==
+÷÷* ,
+null
+÷÷- 1
+)
+÷÷1 2
+{
+÷÷3 4
+user
+◊◊  
+.
+◊◊  !
+GamesWon
+◊◊! )
+=
+◊◊* +
+	MIN_GAMES
+◊◊, 5
+;
+◊◊5 6
+}
+ÿÿ 
+else
+ÿÿ 
+{
+ÿÿ  
+gamesWon
+ŸŸ $
+=
+ŸŸ% &
+(
+ŸŸ' (
+int
+ŸŸ( +
+)
+ŸŸ+ ,
+user
+ŸŸ, 0
+.
+ŸŸ0 1
+GamesWon
+ŸŸ1 9
+;
+ŸŸ9 :
+}
+⁄⁄ 
+}
+€€ 
+}
+‹‹ 
+}
+›› 
+catch
+›› 
+(
+›› 
+EntityException
+›› $
+ex
+››% '
+)
+››' (
+{
+››) *
+
+MessageBox
+ﬁﬁ 
+.
+ﬁﬁ 
+Show
+ﬁﬁ 
+(
+ﬁﬁ  
+$"
+ﬁﬁ  "
+$str
+ﬁﬁ" G
+{
+ﬁﬁG H
+ex
+ﬁﬁH J
+.
+ﬁﬁJ K
+Message
+ﬁﬁK R
+}
+ﬁﬁR S
+"
+ﬁﬁS T
+)
+ﬁﬁT U
+;
+ﬁﬁU V
+return
+ﬂﬂ 
+-
+ﬂﬂ 
+$num
+ﬂﬂ 
+;
+ﬂﬂ 
+}
+‡‡ 
+return
+·· 
+gamesWon
+·· 
+;
+·· 
+}
+‚‚ 	
+public
+ÎÎ 
+int
+ÎÎ  
+UpdateStatusPlayer
+ÎÎ %
+(
+ÎÎ% &
+int
+ÎÎ& )
+idUser
+ÎÎ* 0
+,
+ÎÎ0 1
+bool
+ÎÎ2 6
+status
+ÎÎ7 =
+)
+ÎÎ= >
+{
+ÎÎ? @
+try
+ÏÏ 
+{
+ÏÏ 
+const
+ÌÌ 
+string
+ÌÌ "
+PLAYER_STATUS_BANNED
+ÌÌ 1
+=
+ÌÌ2 3
+$str
+ÌÌ4 7
+;
+ÌÌ7 8
+const
+ÓÓ 
+string
+ÓÓ "
+PLAYER_STATUS_ACTIVE
+ÓÓ 1
+=
+ÓÓ2 3
+$str
+ÓÓ4 7
+;
+ÓÓ7 8
+using
+ÔÔ 
+(
+ÔÔ 
+var
+ÔÔ 
+context
+ÔÔ "
+=
+ÔÔ# $
+new
+ÔÔ% (%
+ChineseCheckersEntities
+ÔÔ) @
+(
+ÔÔ@ A
+)
+ÔÔA B
+)
+ÔÔB C
+{
+ÔÔD E
+var
+ 
+user
+ 
+=
+ 
+context
+ &
+.
+& '
+User
+' +
+.
+ÒÒ 
+FirstOrDefault
+ÒÒ '
+(
+ÒÒ' (
+userId
+ÒÒ( .
+=>
+ÒÒ/ 1
+userId
+ÒÒ2 8
+.
+ÒÒ8 9
+Id
+ÒÒ9 ;
+==
+ÒÒ< >
+idUser
+ÒÒ? E
+)
+ÒÒE F
+;
+ÒÒF G
+if
+ÚÚ 
+(
+ÚÚ 
+user
+ÚÚ 
+!=
+ÚÚ 
+null
+ÚÚ  $
+)
+ÚÚ$ %
+{
+ÚÚ& '
+if
+ÛÛ 
+(
+ÛÛ 
+status
+ÛÛ "
+)
+ÛÛ" #
+{
+ÛÛ$ %
+user
+ÙÙ  
+.
+ÙÙ  !
+PlayerStatus
+ÙÙ! -
+=
+ÙÙ. /"
+PLAYER_STATUS_ACTIVE
+ÙÙ0 D
+;
+ÙÙD E
+}
+ıı 
+else
+ıı 
+{
+ıı  
+user
+ˆˆ  
+.
+ˆˆ  !
+PlayerStatus
+ˆˆ! -
+=
+ˆˆ. /"
+PLAYER_STATUS_BANNED
+ˆˆ0 D
+;
+ˆˆD E
+}
+˜˜ 
+}
+¯¯ 
+return
+˘˘ 
+context
+˘˘ "
+.
+˘˘" #
+SaveChanges
+˘˘# .
+(
+˘˘. /
+)
+˘˘/ 0
+;
+˘˘0 1
+}
+˙˙ 
+}
+˚˚ 
+catch
+˚˚ 
+(
+˚˚ 
+EntityException
+˚˚ $
+ex
+˚˚% '
+)
+˚˚' (
+{
+˚˚) *
+
+MessageBox
+¸¸ 
+.
+¸¸ 
+Show
+¸¸ 
+(
+¸¸  
+$"
+¸¸  "
+$str
+¸¸" M
+{
+¸¸M N
+ex
+¸¸N P
+.
+¸¸P Q
+Message
+¸¸Q X
+}
+¸¸X Y
+"
+¸¸Y Z
+)
+¸¸Z [
+;
+¸¸[ \
+return
+˝˝ 
+-
+˝˝ 
+$num
+˝˝ 
+;
+˝˝ 
+}
+˛˛ 
+}
+ˇˇ 	
+public
+ÜÜ 
+
+Dictionary
+ÜÜ 
+<
+ÜÜ 
+string
+ÜÜ  
+,
+ÜÜ  !
+int
+ÜÜ" %
+>
+ÜÜ% &
+GetGames
+ÜÜ' /
+(
+ÜÜ/ 0
+)
+ÜÜ0 1
+{
+ÜÜ2 3
+
+Dictionary
+áá 
+<
+áá 
+string
+áá 
+,
+áá 
+int
+áá "
+>
+áá" #
+_bestPlayers
+áá$ 0
+=
+áá1 2
+new
+áá3 6
+
+Dictionary
+áá7 A
+<
+ááA B
+string
+ááB H
+,
+ááH I
+int
+ááJ M
+>
+ááM N
+(
+ááN O
+)
+ááO P
+;
+ááP Q
+try
+àà 
+{
+àà 
+const
+ââ 
+int
+ââ 
+BEST_PLAYERS
+ââ &
+=
+ââ' (
+$num
+ââ) *
+;
+ââ* +
+using
+ää 
+(
+ää 
+var
+ää 
+context
+ää "
+=
+ää# $
+new
+ää% (%
+ChineseCheckersEntities
+ää) @
+(
+ää@ A
+)
+ääA B
+)
+ääB C
+{
+ääD E
+var
+ãã 
+bestPlayers
+ãã #
+=
+ãã$ %
+context
+ãã& -
+.
+ãã- .
+User
+ãã. 2
+.
+åå 
+Where
+åå 
+(
+åå 
+user
+åå #
+=>
+åå$ &
+user
+åå' +
+.
+åå+ ,
+GamesWon
+åå, 4
+!=
+åå5 7
+null
+åå8 <
+)
+åå< =
+.
+çç 
+OrderByDescending
+çç *
+(
+çç* +
+user
+çç+ /
+=>
+çç0 2
+user
+çç3 7
+.
+çç7 8
+GamesWon
+çç8 @
+)
+çç@ A
+.
+éé 
+Take
+éé 
+(
+éé 
+BEST_PLAYERS
+éé *
+)
+éé* +
+.
+èè 
+ToList
+èè 
+(
+èè  
+)
+èè  !
+;
+èè! "
+_bestPlayers
+êê  
+=
+êê! "
+bestPlayers
+êê# .
+.
+êê. /
+ToDictionary
+êê/ ;
+(
+êê; <
+user
+êê< @
+=>
+êêA C
+user
+êêD H
+.
+êêH I
+Gamertag
+êêI Q
+,
+êêQ R
+user
+êêS W
+=>
+êêX Z
+user
+êê[ _
+.
+êê_ `
+GamesWon
+êê` h
+.
+êêh i
+Value
+êêi n
+)
+êên o
+;
+êêo p
+}
+ëë 
+}
+íí 
+catch
+íí 
+(
+íí 
+EntityException
+íí $
+ex
+íí% '
+)
+íí' (
+{
+íí) *
+
+MessageBox
+ìì 
+.
+ìì 
+Show
+ìì 
+(
+ìì  
+$"
+ìì  "
+$str
+ìì" D
+{
+ììD E
+ex
+ììE G
+.
+ììG H
+Message
+ììH O
+}
+ììO P
+"
+ììP Q
+)
+ììQ R
+;
+ììR S
+}
+îî 
+return
+ïï 
+_bestPlayers
+ïï 
+;
+ïï  
+}
+ññ 	
+}
+óó 
+public
+õõ 
+
+partial
+õõ 
+class
+õõ 
+ManagerController
+õõ *
+:
+õõ+ ,
+IUsersManager
+õõ- :
+{
+õõ; <
+private
+¢¢ 
+static
+¢¢ 
+readonly
+¢¢ 
+
+Dictionary
+¢¢  *
+<
+¢¢* +
+int
+¢¢+ .
+,
+¢¢. /"
+IUserSessionCallback
+¢¢0 D
+>
+¢¢D E
+playerStatus
+¢¢F R
+=
+¢¢S T
+new
+¢¢U X
+
+Dictionary
+¢¢Y c
+<
+¢¢c d
+int
+¢¢d g
+,
+¢¢g h"
+IUserSessionCallback
+¢¢i }
+>
+¢¢} ~
+(
+¢¢~ 
+)¢¢ Ä
+;¢¢Ä Å
+public
+££ 
+void
+££ 
+
+GetFriends
+££ 
+(
+££ 
+string
+££ %
+gamertag
+££& .
+)
+££. /
+{
+££0 1
+
+Dictionary
+§§ 
+<
+§§ 
+string
+§§ 
+,
+§§ 
+Tuple
+§§ $
+<
+§§$ %
+string
+§§% +
+,
+§§+ ,
+bool
+§§- 1
+>
+§§1 2
+>
+§§2 3
+friendsDictionary
+§§4 E
+=
+§§F G
+new
+§§H K
+
+Dictionary
+§§L V
+<
+§§V W
+string
+§§W ]
+,
+§§] ^
+Tuple
+§§_ d
+<
+§§d e
+string
+§§e k
+,
+§§k l
+bool
+§§m q
+>
+§§q r
+>
+§§r s
+(
+§§s t
+)
+§§t u
+;
+§§u v
+try
+•• 
+{
+•• 
+const
+¶¶ 
+string
+¶¶ 
+FRIEND_REQUEST
+¶¶ +
+=
+¶¶, -
+$str
+¶¶. 8
+;
+¶¶8 9
+using
+ßß 
+(
+ßß 
+var
+ßß 
+context
+ßß "
+=
+ßß# $
+new
+ßß% (%
+ChineseCheckersEntities
+ßß) @
+(
+ßß@ A
+)
+ßßA B
+)
+ßßB C
+{
+ßßD E
+int
+®® 
+userId
+®® 
+=
+®®  
+context
+®®! (
+.
+®®( )
+UserAccount
+®®) 4
+.
+©© 
+Where
+©© 
+(
+©© 
+user
+©© #
+=>
+©©$ &
+user
+©©' +
+.
+©©+ ,
+GamertagUser
+©©, 8
+==
+©©9 ;
+gamertag
+©©< D
+)
+©©D E
+.
+™™ 
+Select
+™™ 
+(
+™™  
+user
+™™  $
+=>
+™™% '
+user
+™™( ,
+.
+™™, -
+Id
+™™- /
+)
+™™/ 0
+.
+´´ 
+FirstOrDefault
+´´ '
+(
+´´' (
+)
+´´( )
+;
+´´) *
+if
+¨¨ 
+(
+¨¨ 
+userId
+¨¨ 
+>
+¨¨  
+$num
+¨¨! "
+)
+¨¨" #
+{
+¨¨$ %
+var
+≠≠ 
+
+friendData
+≠≠ &
+=
+≠≠' (
+(
+≠≠) *
+from
+≠≠* .
+friend
+≠≠/ 5
+in
+≠≠6 8
+context
+≠≠9 @
+.
+≠≠@ A
+FriendPlayer
+≠≠A M
+join
+ÆÆ* .
+user
+ÆÆ/ 3
+in
+ÆÆ4 6
+context
+ÆÆ7 >
+.
+ÆÆ> ?
+UserAccount
+ÆÆ? J
+on
+ÆÆK M
+friend
+ÆÆN T
+.
+ÆÆT U
+IdFriend
+ÆÆU ]
+equals
+ÆÆ^ d
+user
+ÆÆe i
+.
+ÆÆi j
+Id
+ÆÆj l
+where
+ØØ* /
+friend
+ØØ0 6
+.
+ØØ6 7
+IdPlayer
+ØØ7 ?
+==
+ØØ@ B
+userId
+ØØC I
+&&
+ØØJ L
+friend
+ØØM S
+.
+ØØS T
+RequestStatus
+ØØT a
+==
+ØØb d
+FRIEND_REQUEST
+ØØe s
+select
+∞∞* 0
+new
+∞∞1 4
+{
+∞∞5 6
+user
+±±. 2
+.
+±±2 3
+Id
+±±3 5
+,
+±±5 6
+Gamertag
+≤≤. 6
+=
+≤≤7 8
+user
+≤≤9 =
+.
+≤≤= >
+GamertagUser
+≤≤> J
+,
+≤≤J K
+user
+≥≥. 2
+.
+≥≥2 3
+ImageProfile
+≥≥3 ?
+,
+≥≥? @
+}
+¥¥* +
+)
+¥¥+ ,
+.
+¥¥, -
+ToList
+¥¥- 3
+(
+¥¥3 4
+)
+¥¥4 5
+;
+¥¥5 6
+foreach
+µµ 
+(
+µµ  !
+var
+µµ! $
+friend
+µµ% +
+in
+µµ, .
+
+friendData
+µµ/ 9
+)
+µµ9 :
+{
+µµ; <
+bool
+∂∂  
+isOnline
+∂∂! )
+=
+∂∂* +
+playerStatus
+∂∂, 8
+.
+∂∂8 9
+ContainsKey
+∂∂9 D
+(
+∂∂D E
+friend
+∂∂E K
+.
+∂∂K L
+Id
+∂∂L N
+)
+∂∂N O
+;
+∂∂O P
+friendsDictionary
+∑∑ -
+[
+∑∑- .
+friend
+∑∑. 4
+.
+∑∑4 5
+Gamertag
+∑∑5 =
+]
+∑∑= >
+=
+∑∑? @
+new
+∑∑A D
+Tuple
+∑∑E J
+<
+∑∑J K
+string
+∑∑K Q
+,
+∑∑Q R
+bool
+∑∑S W
+>
+∑∑W X
+(
+∑∑X Y
+friend
+∑∑Y _
+.
+∑∑_ `
+ImageProfile
+∑∑` l
+,
+∑∑l m
+isOnline
+∑∑n v
+)
+∑∑v w
+;
+∑∑w x
+}
+∏∏ 
+IUserCallback
+ππ %
+callback
+ππ& .
+=
+ππ/ 0
+OperationContext
+ππ1 A
+.
+ππA B
+Current
+ππB I
+.
+ππI J 
+GetCallbackChannel
+ππJ \
+<
+ππ\ ]
+IUserCallback
+ππ] j
+>
+ππj k
+(
+ππk l
+)
+ππl m
+;
+ππm n
+callback
+∫∫  
+.
+∫∫  ! 
+GetFriendsCallback
+∫∫! 3
+(
+∫∫3 4
+friendsDictionary
+∫∫4 E
+)
+∫∫E F
+;
+∫∫F G
+}
+ªª 
+}
+ºº 
+}
+ΩΩ 
+catch
+ΩΩ 
+(
+ΩΩ 
+EntityException
+ΩΩ $
+ex
+ΩΩ% '
+)
+ΩΩ' (
+{
+ΩΩ) *
+
+MessageBox
+ææ 
+.
+ææ 
+Show
+ææ 
+(
+ææ  
+$"
+ææ  "
+$str
+ææ" G
+{
+ææG H
+ex
+ææH J
+.
+ææJ K
+Message
+ææK R
+}
+ææR S
+"
+ææS T
+)
+ææT U
+;
+ææU V
+}
+øø 
+catch
+øø 
+(
+øø $
+CommunicationException
+øø +
+ex
+øø, .
+)
+øø. /
+{
+øø0 1
+
+MessageBox
+¿¿ 
+.
+¿¿ 
+Show
+¿¿ 
+(
+¿¿  
+$"
+¿¿  "
+$str
+¿¿" G
+{
+¿¿G H
+ex
+¿¿H J
+.
+¿¿J K
+Message
+¿¿K R
+}
+¿¿R S
+"
+¿¿S T
+)
+¿¿T U
+;
+¿¿U V
+}
+¡¡ 
+}
+¬¬ 	
+private
+…… 
+void
+…… 
+RemoveClient
+…… !
+(
+……! "
+int
+……" %
+idUser
+……& ,
+)
+……, -
+{
+……. /
+try
+   
+{
+   
+if
+ÀÀ 
+(
+ÀÀ 
+playerStatus
+ÀÀ  
+.
+ÀÀ  !
+ContainsKey
+ÀÀ! ,
+(
+ÀÀ, -
+idUser
+ÀÀ- 3
+)
+ÀÀ3 4
+)
+ÀÀ4 5
+{
+ÀÀ6 7
+playerStatus
+ÃÃ  
+.
+ÃÃ  !
+Remove
+ÃÃ! '
+(
+ÃÃ' (
+idUser
+ÃÃ( .
+)
+ÃÃ. /
+;
+ÃÃ/ 0
+}
+ÕÕ 
+}
+ŒŒ 
+catch
+ŒŒ 
+(
+ŒŒ $
+CommunicationException
+ŒŒ +
+ex
+ŒŒ, .
+)
+ŒŒ. /
+{
+ŒŒ0 1
+
+MessageBox
+œœ 
+.
+œœ 
+Show
+œœ 
+(
+œœ  
+$"
+œœ  "
+$str
+œœ" ?
+{
+œœ? @
+ex
+œœ@ B
+.
+œœB C
+Message
+œœC J
+}
+œœJ K
+"
+œœK L
+)
+œœL M
+;
+œœM N
+}
+–– 
+}
+—— 	
+}
+““ 
+public
+÷÷ 
+
+partial
+÷÷ 
+class
+÷÷ 
+ManagerController
+÷÷ *
+:
+÷÷+ ,
+IUserSession
+÷÷- 9
+{
+÷÷: ;
+public
+›› 
+void
+›› 
+GetSessionPlayer
+›› $
+(
+››$ %
+int
+››% (
+idUser
+››) /
+)
+››/ 0
+{
+››1 2
+try
+ﬁﬁ 
+{
+ﬁﬁ "
+IUserSessionCallback
+ﬂﬂ $
+context
+ﬂﬂ% ,
+=
+ﬂﬂ- .
+OperationContext
+ﬂﬂ/ ?
+.
+ﬂﬂ? @
+Current
+ﬂﬂ@ G
+.
+ﬂﬂG H 
+GetCallbackChannel
+ﬂﬂH Z
+<
+ﬂﬂZ ["
+IUserSessionCallback
+ﬂﬂ[ o
+>
+ﬂﬂo p
+(
+ﬂﬂp q
+)
+ﬂﬂq r
+;
+ﬂﬂr s
+bool
+·· 
+sessionOpened
+·· "
+=
+··# $
+playerStatus
+··% 1
+.
+··1 2
+ContainsKey
+··2 =
+(
+··= >
+idUser
+··> D
+)
+··D E
+;
+··E F
+if
+„„ 
+(
+„„ 
+!
+„„ 
+sessionOpened
+„„ "
+)
+„„" #
+{
+„„$ %
+playerStatus
+‰‰  
+.
+‰‰  !
+Add
+‰‰! $
+(
+‰‰$ %
+idUser
+‰‰% +
+,
+‰‰+ ,
+context
+‰‰- 4
+)
+‰‰4 5
+;
+‰‰5 6"
+ICommunicationObject
+ÊÊ (!
+communicationObject
+ÊÊ) <
+=
+ÊÊ= >
+(
+ÊÊ? @"
+ICommunicationObject
+ÊÊ@ T
+)
+ÊÊT U
+context
+ÊÊU \
+;
+ÊÊ\ ]!
+communicationObject
+ÁÁ '
+.
+ÁÁ' (
+Closed
+ÁÁ( .
++=
+ÁÁ/ 1
+(
+ÁÁ2 3
+sender
+ÁÁ3 9
+,
+ÁÁ9 :
+e
+ÁÁ; <
+)
+ÁÁ< =
+=>
+ÁÁ> @
+{
+ÁÁA B
+RemoveClient
+ËË $
+(
+ËË$ %
+idUser
+ËË% +
+)
+ËË+ ,
+;
+ËË, -
+}
+ÈÈ 
+;
+ÈÈ !
+communicationObject
+ÎÎ '
+.
+ÎÎ' (
+Faulted
+ÎÎ( /
++=
+ÎÎ0 2
+(
+ÎÎ3 4
+sender
+ÎÎ4 :
+,
+ÎÎ: ;
+e
+ÎÎ< =
+)
+ÎÎ= >
+=>
+ÎÎ? A
+{
+ÎÎB C
+RemoveClient
+ÏÏ $
+(
+ÏÏ$ %
+idUser
+ÏÏ% +
+)
+ÏÏ+ ,
+;
+ÏÏ, -
+}
+ÌÌ 
+;
+ÌÌ 
+}
+ÓÓ 
+context
+ 
+.
+ &
+GetSessionPlayerCallback
+ 0
+(
+0 1
+sessionOpened
+1 >
+)
+> ?
+;
+? @
+}
+ÒÒ 
+catch
+ÒÒ 
+(
+ÒÒ $
+CommunicationException
+ÒÒ +
+ex
+ÒÒ, .
+)
+ÒÒ. /
+{
+ÒÒ0 1
+
+MessageBox
+ÚÚ 
+.
+ÚÚ 
+Show
+ÚÚ 
+(
+ÚÚ  
+$"
+ÚÚ  "
+$str
+ÚÚ" J
+{
+ÚÚJ K
+ex
+ÚÚK M
+.
+ÚÚM N
+Message
+ÚÚN U
+}
+ÚÚU V
+"
+ÚÚV W
+)
+ÚÚW X
+;
+ÚÚX Y
+}
+ÛÛ 
+}
+ÙÙ 	
+}
+ıı 
+}ˆˆ «
+oC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\BoardModel.cs
+	namespace		 	&
+ChineseCheckersLogicServer		
+ $
+.		$ %
+Model		% *
+{		+ ,
+[
+
+ 
+DataContract
+
+ 
+]
+
+ 
+public 
+
+class 
+
+BoardModel 
+{ 
+[ 	
+
+DataMember	 
+] 
+public 
+
+Dictionary 
+< 
+string  
+,  !
+ITurnCallback" /
+>/ 0
+GamePlayers1 <
+{= >
+get? B
+;B C
+setD G
+;G H
+}I J
+=K L
+newM P
+
+DictionaryQ [
+<[ \
+string\ b
+,b c
+ITurnCallbackd q
+>q r
+(r s
+)s t
+;t u
+[ 	
+
+DataMember	 
+] 
+public 
+string 
+IdRoom 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+} 
+} ®
+tC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\FriendshipModel.cs
 	namespace 	&
 ChineseCheckersLogicServer
  $
@@ -6288,140 +11957,75 @@ ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\Friends
   
 {
 
-! "
-private 
-int 
-_idUser 
-; 
-private 
-int 
-	_idFriend 
-; 
-private 
-string 
-_requestStatus %
-;% &
-private 
-string 
-_typeNotification (
-;( )
-private 
-string 
-_idRoom 
-; 
-[ 	
+! "
+[ 	
 
-DataMember	 
-] 
-public 
-int 
-IdUser 
-{ 
-get 
-{  !
-return" (
-_idUser) 0
-;0 1
-}2 3
-set4 7
-{8 9
-_idUser: A
-=B C
-valueD I
-;I J
-}K L
-}M N
-[ 	
+DataMember	 
+] 
+public 
+int 
+IdUser 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+[ 	
 
-DataMember	 
-] 
-public 
-int 
-IdFriend 
-{ 
-get !
-{" #
-return$ *
-	_idFriend+ 4
-;4 5
-}6 7
-set8 ;
-{< =
-	_idFriend> G
-=H I
-valueJ O
-;O P
-}Q R
-}S T
-[ 	
+DataMember	 
+] 
+public 
+int 
+IdFriend 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-RequestStatus #
-{$ %
-get& )
-{* +
-return, 2
-_requestStatus3 A
-;A B
-}C D
-setE H
-{I J
-_requestStatusK Y
-=Z [
-value\ a
-;a b
-}c d
-}e f
-[ 	
+DataMember	 
+] 
+public 
+string 
+RequestStatus #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-TypeNotification &
-{' (
-get) ,
-{- .
-return/ 5
-_typeNotification6 G
-;G H
-}I J
-setK N
-{O P
-_typeNotificationQ b
-=c d
-valuee j
-;j k
-}l m
-}n o
-[ 	
+DataMember	 
+] 
+public 
+string 
+TypeNotification &
+{' (
+get) ,
+;, -
+set. 1
+;1 2
+}3 4
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-IdRoom 
-{ 
-get "
-{# $
-return% +
-_idRoom, 3
-;3 4
-}5 6
-set7 :
-{; <
-_idRoom= D
-=E F
-valueG L
-;L M
-}N O
-}P Q
-} 
-} Á
-VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\ReportModel.cs
+DataMember	 
+] 
+public 
+string 
+IdRoom 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+} 
+}  	
+pC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\ReportModel.cs
 	namespace 	&
 ChineseCheckersLogicServer
  $
@@ -6443,114 +12047,62 @@ VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\ReportM
  
 {
 
- 
-private 
-int 
-_idUser 
-; 
-private 
-string 
-_reason 
-; 
-private 
-DateTime 
-_currentDate %
-;% &
-private 
-DateTime 
-_endDate !
-;! "
-[ 	
+ 
+[ 	
 
-DataMember	 
-] 
-public 
-int 
-IdUser 
-{ 
-get 
-{  !
-return" (
-_idUser) 0
-;0 1
-}2 3
-set4 7
-{8 9
-_idUser: A
-=B C
-valueD I
-;I J
-}K L
-}M N
-[ 	
+DataMember	 
+] 
+public 
+int 
+IdUser 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-Reason 
-{ 
-get "
-{# $
-return% +
-_reason, 3
-;3 4
-}5 6
-set7 :
-{; <
-_reason= D
-=E F
-valueG L
-;L M
-}N O
-}P Q
-[ 	
+DataMember	 
+] 
+public 
+string 
+Reason 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+[ 	
 
-DataMember	 
-] 
-public 
-DateTime 
-CurrentDate #
-{$ %
-get& )
-{* +
-return, 2
-_currentDate3 ?
-;? @
-}A B
-setC F
-{G H
-_currentDateI U
-=V W
-valueX ]
-;] ^
-}_ `
-}a b
-[ 	
+DataMember	 
+] 
+public 
+DateTime 
+CurrentDate #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+[ 	
 
-DataMember	 
-] 
-public 
-DateTime 
-EndDate 
-{  !
-get" %
-{& '
-return( .
-_endDate/ 7
-;7 8
-}9 :
-set; >
-{? @
-_endDateA I
-=J K
-valueL Q
-;Q R
-}S T
-}U V
-} 
-} ¬
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\RoomModel.cs
+DataMember	 
+] 
+public 
+DateTime 
+EndDate 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+} 
+} Ó
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\RoomModel.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -6570,189 +12122,218 @@ TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\RoomMod
 
 class 
 	RoomModel 
-{ 
-private 
-string 
-_idRoom 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-private 
+{ 
+[ 	
 
-Dictionary 
-< 
-string !
-,! "
-IMessageCallback# 3
->3 4
-_players5 =
-=> ?
-new@ C
+DataMember	 
+] 
+public 
+string 
+IdRoom 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+[ 	
 
-DictionaryD N
-<N O
-stringO U
-,U V
-IMessageCallbackW g
->g h
-(h i
-)i j
-;j k
-private 
+DataMember	 
+] 
+public 
 
-Dictionary 
-< 
-string !
-,! " 
-IPlayersRoomCallback# 7
->7 8
-_playersRoom9 E
-=F G
-newH K
+Dictionary 
+< 
+string  
+,  !
+IMessageCallback" 2
+>2 3
+Players4 ;
+{< =
+get> A
+;A B
+setC F
+;F G
+}H I
+=J K
+newL O
 
-DictionaryL V
-<V W
-stringW ]
-,] ^ 
-IPlayersRoomCallback_ s
->s t
-(t u
-)u v
-;v w
-private 
+DictionaryP Z
+<Z [
+string[ a
+,a b
+IMessageCallbackc s
+>s t
+(t u
+)u v
+;v w
+[ 	
 
-Dictionary 
-< 
-string !
-,! "
-IBoardCallback# 1
->1 2
-_boardPlayers3 @
-=A B
-newC F
+DataMember	 
+] 
+public 
 
-DictionaryG Q
-<Q R
-stringR X
-,X Y
-IBoardCallbackZ h
->h i
-(i j
-)j k
-;k l
-[ 	
+Dictionary 
+< 
+string  
+,  ! 
+IPlayersRoomCallback" 6
+>6 7
+PlayersRoom8 C
+{D E
+getF I
+;I J
+setK N
+;N O
+}P Q
+=R S
+newT W
 
-DataMember	 
-] 
-public 
-string 
-IdRoom 
-{ 
-get "
-{# $
-return% +
-_idRoom, 3
-;3 4
-}5 6
-set7 :
-{; <
-_idRoom= D
-=E F
-valueG L
-;L M
-}N O
-}P Q
-[ 	
-
-DataMember	 
-] 
-public 
-
-Dictionary 
-< 
-string  
-,  !
-IMessageCallback" 2
->2 3
-Players4 ;
-{< =
-get> A
-{B C
-returnD J
-_playersK S
-;S T
-}U V
-setW Z
-{[ \
-_players] e
-=f g
-valueh m
-;m n
-}o p
-}q r
-[ 	
-
-DataMember	 
-] 
-public 
-
-Dictionary 
-< 
-string  
-,  ! 
-IPlayersRoomCallback" 6
->6 7
-PlayersRoom8 C
-{D E
-getF I
-{J K
-returnL R
-_playersRoomS _
-;_ `
-}a b
-setc f
-{g h
-_playersRoomi u
-=v w
-valuex }
-;} ~
-}	 Ä
-}
-Å Ç
-[ 	
-
-DataMember	 
-] 
-public 
-
-Dictionary 
-< 
-string  
-,  !
-IBoardCallback" 0
->0 1
-BoardPlayers2 >
-{? @
-getA D
-{E F
-returnG M
-_boardPlayersN [
-;[ \
-}] ^
-set_ b
-{c d
-_boardPlayerse r
-=s t
-valueu z
-;z {
-}| }
-}~ 
-} 
-} ·
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\UserModel.cs
+DictionaryX b
+<b c
+stringc i
+,i j 
+IPlayersRoomCallbackk 
+>	 Ä
+(
+Ä Å
+)
+Å Ç
+;
+Ç É
+public 
+char 
+[ 
+] 
+ColorForTwoPlayers (
+{) *
+get+ .
+;. /
+set0 3
+;3 4
+}5 6
+=7 8
+new9 <
+char= A
+[A B
+]B C
+{D E
+$charF I
+,I J
+$charK N
+}O P
+;P Q
+public 
+char 
+[ 
+]  
+ColorForThreePlayers *
+{+ ,
+get- 0
+;0 1
+set2 5
+;5 6
+}7 8
+=9 :
+new; >
+char? C
+[C D
+]D E
+{F G
+$charH K
+,K L
+$charM P
+,P Q
+$charR U
+}V W
+;W X
+public 
+char 
+[ 
+] 
+ColorForFourPlayers )
+{* +
+get, /
+;/ 0
+set1 4
+;4 5
+}6 7
+=8 9
+new: =
+char> B
+[B C
+]C D
+{E F
+$charG J
+,J K
+$charL O
+,O P
+$charQ T
+,T U
+$charV Y
+}Z [
+;[ \
+public 
+char 
+[ 
+] 
+ColorForFivePlayers )
+{* +
+get, /
+;/ 0
+set1 4
+;4 5
+}6 7
+=8 9
+new: =
+char> B
+[B C
+]C D
+{E F
+$charG J
+,J K
+$charL O
+,O P
+$charQ T
+,T U
+$charV Y
+,Y Z
+$char[ ^
+}_ `
+;` a
+public 
+char 
+[ 
+] 
+ColorForSixPlayers (
+{) *
+get+ .
+;. /
+set0 3
+;3 4
+}5 6
+=7 8
+new9 <
+char= A
+[A B
+]B C
+{D E
+$charF I
+,I J
+$charK N
+,N O
+$charP S
+,S T
+$charU X
+,X Y
+$charZ ]
+,] ^
+$char_ b
+}c d
+;d e
+} 
+} Á
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\UserModel.cs
 	namespace		 	&
 ChineseCheckersLogicServer		
  $
@@ -6772,166 +12353,88 @@ TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\UserMod
 
 class 
 	UserModel 
-{ 
-private 
-int 
-_id 
-; 
-private 
-string 
-	_gamertag  
-;  !
-private 
-string 
-_email 
-; 
-private 
-string 
-	_password  
-;  !
-private 
-string 
-_imageProfile $
-;$ %
-private 
-string 
-_playerStatus $
-;$ %
-[ 	
+{ 
+[ 	
 
-DataMember	 
-] 
-public 
-int 
-Id 
-{ 
-get 
-{ 
-return $
-_id% (
-;( )
-}* +
-set, /
-{0 1
-_id2 5
-=6 7
-value8 =
-;= >
-}? @
-}A B
-[ 	
+DataMember	 
+] 
+public 
+int 
+Id 
+{ 
+get 
+; 
+set  
+;  !
+}" #
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-Gamertag 
-{  
-get! $
-{% &
-return' -
-	_gamertag. 7
-;7 8
-}9 :
-set; >
-{? @
-	_gamertagA J
-=K L
-valueM R
-;R S
-}T U
-}V W
-[ 	
+DataMember	 
+] 
+public 
+string 
+Gamertag 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-Email 
-{ 
-get !
-{" #
-return$ *
-_email+ 1
-;1 2
-}3 4
-set5 8
-{9 :
-_email; A
-=B C
-valueD I
-;I J
-}K L
-}M N
-[ 	
+DataMember	 
+] 
+public 
+string 
+Email 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-Password 
-{  
-get! $
-{% &
-return' -
-	_password. 7
-;7 8
-}9 :
-set; >
-{? @
-	_passwordA J
-=K L
-valueM R
-;R S
-}T U
-}V W
-[ 	
+DataMember	 
+] 
+public 
+string 
+Password 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-ImageProfile "
-{# $
-get% (
-{) *
-return+ 1
-_imageProfile2 ?
-;? @
-}A B
-setC F
-{G H
-_imageProfileI V
-=W X
-valueY ^
-;^ _
-}` a
-}b c
-[ 	
+DataMember	 
+] 
+public 
+string 
+ImageProfile "
+{# $
+get% (
+;( )
+set* -
+;- .
+}/ 0
+[ 	
 
-DataMember	 
-] 
-public 
-string 
-PlayerStatus "
-{# $
-get% (
-{) *
-return, 2
-_playerStatus3 @
-;@ A
-}B C
-setD G
-{H I
-_playerStatusJ W
-=X Y
-valueZ _
-;_ `
-}a b
-}c d
-}   
-}!! á
-\C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Properties\AssemblyInfo.cs
+DataMember	 
+] 
+public 
+string 
+PlayerStatus "
+{# $
+get% (
+;( )
+set* -
+;- .
+}/ 0
+} 
+} °
+vC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Properties\AssemblyInfo.cs
 [ 
 assembly 	
 :	 

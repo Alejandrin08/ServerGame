@@ -1,0 +1,302 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IRoom
+  commentId: T:ChineseCheckersLogicServer.Contracts.IRoom
+  id: IRoom
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom(System.String)
+  - ChineseCheckersLogicServer.Contracts.IRoom.GenerateId
+  - ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer(System.String,System.String)
+  - ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom(System.String)
+  - ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRoom
+  nameWithType: IRoom
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IRoom
+    path: Contracts/IRoom.cs
+    startLine: 10
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IRoom
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IRoom
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom(System.String)
+  id: CreateRoom(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IRoom
+  langs:
+  - csharp
+  - vb
+  name: CreateRoom(String)
+  nameWithType: IRoom.CreateRoom(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: CreateRoom
+    path: Contracts/IRoom.cs
+    startLine: 12
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      string CreateRoom(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Function CreateRoom(gamertag As String) As String
+  overload: ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.GenerateId
+  commentId: M:ChineseCheckersLogicServer.Contracts.IRoom.GenerateId
+  id: GenerateId
+  parent: ChineseCheckersLogicServer.Contracts.IRoom
+  langs:
+  - csharp
+  - vb
+  name: GenerateId()
+  nameWithType: IRoom.GenerateId()
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.GenerateId()
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GenerateId
+    path: Contracts/IRoom.cs
+    startLine: 14
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      string GenerateId()
+    return:
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Function GenerateId As String
+  overload: ChineseCheckersLogicServer.Contracts.IRoom.GenerateId*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer(System.String,System.String)
+  id: RemovePlayer(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IRoom
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayer(String, String)
+  nameWithType: IRoom.RemovePlayer(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: RemovePlayer
+    path: Contracts/IRoom.cs
+    startLine: 16
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void RemovePlayer(string gamertag, string idRoom)
+    parameters:
+    - id: gamertag
+      type: System.String
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub RemovePlayer(gamertag As String, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom(System.String)
+  id: ValidateRoom(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IRoom
+  langs:
+  - csharp
+  - vb
+  name: ValidateRoom(String)
+  nameWithType: IRoom.ValidateRoom(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateRoom
+    path: Contracts/IRoom.cs
+    startLine: 18
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool ValidateRoom(string idRoom)
+    parameters:
+    - id: idRoom
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateRoom(idRoom As String) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom(System.String)
+  id: ValidateBoardRoom(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IRoom
+  langs:
+  - csharp
+  - vb
+  name: ValidateBoardRoom(String)
+  nameWithType: IRoom.ValidateBoardRoom(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateBoardRoom
+    path: Contracts/IRoom.cs
+    startLine: 20
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool ValidateBoardRoom(string idRoom)
+    parameters:
+    - id: idRoom
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateBoardRoom(idRoom As String) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom
+  name: CreateRoom
+  nameWithType: IRoom.CreateRoom
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.CreateRoom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.GenerateId*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IRoom.GenerateId
+  name: GenerateId
+  nameWithType: IRoom.GenerateId
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.GenerateId
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer
+  name: RemovePlayer
+  nameWithType: IRoom.RemovePlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.RemovePlayer
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom
+  name: ValidateRoom
+  nameWithType: IRoom.ValidateRoom
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.ValidateRoom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom
+  name: ValidateBoardRoom
+  nameWithType: IRoom.ValidateBoardRoom
+  fullName: ChineseCheckersLogicServer.Contracts.IRoom.ValidateBoardRoom

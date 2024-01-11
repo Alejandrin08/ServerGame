@@ -1,5 +1,5 @@
-k
-GC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Program.cs 8r	
-‚{
-WC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.csj !"r	
+…
+aC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Program.cs 8r	
+‚•
+qC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\Properties\AssemblyInfo.csj !"r	
 #$

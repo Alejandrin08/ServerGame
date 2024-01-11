@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IMessageCallback
+  commentId: T:ChineseCheckersLogicServer.Contracts.IMessageCallback
+  id: IMessageCallback
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMessageCallback
+  nameWithType: IMessageCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IMessageCallback
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IMessageCallback
+    path: Contracts/IRoom.cs
+    startLine: 32
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IMessageCallback
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IMessageCallback
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback(System.String,System.String)
+  id: SendMessageCallback(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IMessageCallback
+  langs:
+  - csharp
+  - vb
+  name: SendMessageCallback(String, String)
+  nameWithType: IMessageCallback.SendMessageCallback(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: SendMessageCallback
+    path: Contracts/IRoom.cs
+    startLine: 34
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void SendMessageCallback(string message, string gamertag)
+    parameters:
+    - id: message
+      type: System.String
+    - id: gamertag
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub SendMessageCallback(message As String, gamertag As String)
+  overload: ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback
+  name: SendMessageCallback
+  nameWithType: IMessageCallback.SendMessageCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IMessageCallback.SendMessageCallback
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

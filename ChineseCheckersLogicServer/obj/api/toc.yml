@@ -1,0 +1,60 @@
+### YamlMime:TableOfContent
+- uid: ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  items:
+  - uid: ChineseCheckersLogicServer.Contracts.IBoard
+    name: IBoard
+  - uid: ChineseCheckersLogicServer.Contracts.IFriendship
+    name: IFriendship
+  - uid: ChineseCheckersLogicServer.Contracts.IMessage
+    name: IMessage
+  - uid: ChineseCheckersLogicServer.Contracts.IMessageCallback
+    name: IMessageCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IPlayersRoom
+    name: IPlayersRoom
+  - uid: ChineseCheckersLogicServer.Contracts.IPlayersRoomCallback
+    name: IPlayersRoomCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IReport
+    name: IReport
+  - uid: ChineseCheckersLogicServer.Contracts.IRoom
+    name: IRoom
+  - uid: ChineseCheckersLogicServer.Contracts.ITurn
+    name: ITurn
+  - uid: ChineseCheckersLogicServer.Contracts.ITurnCallback
+    name: ITurnCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IUser
+    name: IUser
+  - uid: ChineseCheckersLogicServer.Contracts.IUserCallback
+    name: IUserCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequest
+    name: IUserFriendRequest
+  - uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+    name: IUserFriendRequestCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IUserSession
+    name: IUserSession
+  - uid: ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+    name: IUserSessionCallback
+  - uid: ChineseCheckersLogicServer.Contracts.IUsersManager
+    name: IUsersManager
+- uid: ChineseCheckersLogicServer.Controller
+  name: ChineseCheckersLogicServer.Controller
+  items:
+  - uid: ChineseCheckersLogicServer.Controller.LoggerManager
+    name: LoggerManager
+  - uid: ChineseCheckersLogicServer.Controller.ManagerController
+    name: ManagerController
+  - uid: ChineseCheckersLogicServer.Controller.SingletonClass
+    name: SingletonClass
+- uid: ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  items:
+  - uid: ChineseCheckersLogicServer.Model.BoardModel
+    name: BoardModel
+  - uid: ChineseCheckersLogicServer.Model.FriendshipModel
+    name: FriendshipModel
+  - uid: ChineseCheckersLogicServer.Model.ReportModel
+    name: ReportModel
+  - uid: ChineseCheckersLogicServer.Model.RoomModel
+    name: RoomModel
+  - uid: ChineseCheckersLogicServer.Model.UserModel
+    name: UserModel

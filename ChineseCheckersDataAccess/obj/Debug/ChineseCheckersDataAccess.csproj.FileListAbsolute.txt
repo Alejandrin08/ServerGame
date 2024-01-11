@@ -82,6 +82,8 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckers
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+<<<<<<< HEAD
+=======
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll.config
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.dll
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\bin\Debug\ChineseCheckersDataAccess.pdb
@@ -94,3 +96,4 @@ C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckers
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.csproj.CopyComplete
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.dll
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\obj\Debug\ChineseCheckersDataAccess.pdb
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99

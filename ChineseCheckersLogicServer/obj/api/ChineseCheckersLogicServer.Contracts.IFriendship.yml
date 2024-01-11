@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship
+  commentId: T:ChineseCheckersLogicServer.Contracts.IFriendship
+  id: IFriendship
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  - ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  - ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer(System.Int32,System.Int32,System.String)
+  - ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest(System.Int32,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IFriendship
+  nameWithType: IFriendship
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IFriendship
+    path: Contracts/IFriendship.cs
+    startLine: 9
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IFriendship
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IFriendship
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  id: AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  parent: ChineseCheckersLogicServer.Contracts.IFriendship
+  langs:
+  - csharp
+  - vb
+  name: AddFriendPlayer(FriendshipModel)
+  nameWithType: IFriendship.AddFriendPlayer(FriendshipModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddFriendPlayer
+    path: Contracts/IFriendship.cs
+    startLine: 11
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int AddFriendPlayer(FriendshipModel friendshipModel)
+    parameters:
+    - id: friendshipModel
+      type: ChineseCheckersLogicServer.Model.FriendshipModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function AddFriendPlayer(friendshipModel As FriendshipModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer(System.Int32,System.Int32,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer(System.Int32,System.Int32,System.String)
+  id: UpdateFriendPlayer(System.Int32,System.Int32,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IFriendship
+  langs:
+  - csharp
+  - vb
+  name: UpdateFriendPlayer(Int32, Int32, String)
+  nameWithType: IFriendship.UpdateFriendPlayer(Int32, Int32, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateFriendPlayer
+    path: Contracts/IFriendship.cs
+    startLine: 13
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateFriendPlayer(int idUser, int idFriend, string requestStatus)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    - id: idFriend
+      type: System.Int32
+    - id: requestStatus
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateFriendPlayer(idUser As Integer, idFriend As Integer, requestStatus As String) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  id: DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  parent: ChineseCheckersLogicServer.Contracts.IFriendship
+  langs:
+  - csharp
+  - vb
+  name: DeleteFriendPlayer(FriendshipModel)
+  nameWithType: IFriendship.DeleteFriendPlayer(FriendshipModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: DeleteFriendPlayer
+    path: Contracts/IFriendship.cs
+    startLine: 15
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int DeleteFriendPlayer(FriendshipModel friendshipModel)
+    parameters:
+    - id: friendshipModel
+      type: ChineseCheckersLogicServer.Model.FriendshipModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function DeleteFriendPlayer(friendshipModel As FriendshipModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest(System.Int32,System.Int32,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest(System.Int32,System.Int32,System.String)
+  id: ValidateFriendRequest(System.Int32,System.Int32,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IFriendship
+  langs:
+  - csharp
+  - vb
+  name: ValidateFriendRequest(Int32, Int32, String)
+  nameWithType: IFriendship.ValidateFriendRequest(Int32, Int32, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest(System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateFriendRequest
+    path: Contracts/IFriendship.cs
+    startLine: 17
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int ValidateFriendRequest(int idUser, int idFriend, string requestStatus)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    - id: idFriend
+      type: System.Int32
+    - id: requestStatus
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateFriendRequest(idUser As Integer, idFriend As Integer, requestStatus As String) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer
+  name: AddFriendPlayer
+  nameWithType: IFriendship.AddFriendPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.AddFriendPlayer
+- uid: ChineseCheckersLogicServer.Model.FriendshipModel
+  commentId: T:ChineseCheckersLogicServer.Model.FriendshipModel
+  parent: ChineseCheckersLogicServer.Model
+  name: FriendshipModel
+  nameWithType: FriendshipModel
+  fullName: ChineseCheckersLogicServer.Model.FriendshipModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer
+  name: UpdateFriendPlayer
+  nameWithType: IFriendship.UpdateFriendPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.UpdateFriendPlayer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer
+  name: DeleteFriendPlayer
+  nameWithType: IFriendship.DeleteFriendPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.DeleteFriendPlayer
+- uid: ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest
+  name: ValidateFriendRequest
+  nameWithType: IFriendship.ValidateFriendRequest
+  fullName: ChineseCheckersLogicServer.Contracts.IFriendship.ValidateFriendRequest

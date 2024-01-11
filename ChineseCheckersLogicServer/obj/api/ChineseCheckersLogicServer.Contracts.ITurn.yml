@@ -1,0 +1,327 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.ITurn
+  commentId: T:ChineseCheckersLogicServer.Contracts.ITurn
+  id: ITurn
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String,System.String)
+  - ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String,System.String)
+  - ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)
+  - ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)
+  - ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITurn
+  nameWithType: ITurn
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ITurn
+    path: Contracts/IBoard.cs
+    startLine: 17
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract(CallbackContract = typeof(ITurnCallback))]
+
+      public interface ITurn
+    content.vb: >-
+      <ServiceContract(CallbackContract:=GetType(ITurnCallback))>
+
+      Public Interface ITurn
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: CallbackContract
+      type: System.Type
+      value: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)
+  id: SendToTurn(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurn
+  langs:
+  - csharp
+  - vb
+  name: SendToTurn(String)
+  nameWithType: ITurn.SendToTurn(String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: SendToTurn
+    path: Contracts/IBoard.cs
+    startLine: 19
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void SendToTurn(string idRoom)
+    parameters:
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub SendToTurn(idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String,System.String)
+  id: AddPlayerInGame(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurn
+  langs:
+  - csharp
+  - vb
+  name: AddPlayerInGame(String, String)
+  nameWithType: ITurn.AddPlayerInGame(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddPlayerInGame
+    path: Contracts/IBoard.cs
+    startLine: 21
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void AddPlayerInGame(string gamertag, string idRoom)
+    parameters:
+    - id: gamertag
+      type: System.String
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub AddPlayerInGame(gamertag As String, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String,System.String)
+  id: RemovePlayerFromGame(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurn
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayerFromGame(String, String)
+  nameWithType: ITurn.RemovePlayerFromGame(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: RemovePlayerFromGame
+    path: Contracts/IBoard.cs
+    startLine: 24
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void RemovePlayerFromGame(string gamertag, string idRoom)
+    parameters:
+    - id: gamertag
+      type: System.String
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub RemovePlayerFromGame(gamertag As String, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)
+  id: UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurn
+  langs:
+  - csharp
+  - vb
+  name: UpdateBoard(Point, Point, String)
+  nameWithType: ITurn.UpdateBoard(Point, Point, String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point, System.Windows.Point, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateBoard
+    path: Contracts/IBoard.cs
+    startLine: 26
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void UpdateBoard(Point marble, Point position, string idRoom)
+    parameters:
+    - id: marble
+      type: System.Windows.Point
+    - id: position
+      type: System.Windows.Point
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub UpdateBoard(marble As Point, position As Point, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String,System.String)
+  id: WinningPlayer(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurn
+  langs:
+  - csharp
+  - vb
+  name: WinningPlayer(String, String)
+  nameWithType: ITurn.WinningPlayer(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: WinningPlayer
+    path: Contracts/IBoard.cs
+    startLine: 28
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void WinningPlayer(string idRoom, string gamertag)
+    parameters:
+    - id: idRoom
+      type: System.String
+    - id: gamertag
+      type: System.String
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub WinningPlayer(idRoom As String, gamertag As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn
+  name: SendToTurn
+  nameWithType: ITurn.SendToTurn
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame
+  name: AddPlayerInGame
+  nameWithType: ITurn.AddPlayerInGame
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame
+  name: RemovePlayerFromGame
+  nameWithType: ITurn.RemovePlayerFromGame
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard
+  name: UpdateBoard
+  nameWithType: ITurn.UpdateBoard
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard
+- uid: System.Windows.Point
+  commentId: T:System.Windows.Point
+  parent: System.Windows
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: System.Windows.Point
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+- uid: ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer
+  name: WinningPlayer
+  nameWithType: ITurn.WinningPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer

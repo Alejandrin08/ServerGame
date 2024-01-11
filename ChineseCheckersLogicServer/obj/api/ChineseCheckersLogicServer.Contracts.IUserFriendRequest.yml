@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequest
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUserFriendRequest
+  id: IUserFriendRequest
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IUserFriendRequest
+  nameWithType: IUserFriendRequest
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequest
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUserFriendRequest
+    path: Contracts/IFriendship.cs
+    startLine: 21
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract(CallbackContract = typeof(IUserFriendRequestCallback))]
+
+      public interface IUserFriendRequest
+    content.vb: >-
+      <ServiceContract(CallbackContract:=GetType(IUserFriendRequestCallback))>
+
+      Public Interface IUserFriendRequest
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: CallbackContract
+      type: System.Type
+      value: ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest(System.Int32)
+  id: GetFriendRequest(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUserFriendRequest
+  langs:
+  - csharp
+  - vb
+  name: GetFriendRequest(Int32)
+  nameWithType: IUserFriendRequest.GetFriendRequest(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IFriendship.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetFriendRequest
+    path: Contracts/IFriendship.cs
+    startLine: 23
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void GetFriendRequest(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub GetFriendRequest(idUser As Integer)
+  overload: ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest
+  name: GetFriendRequest
+  nameWithType: IUserFriendRequest.GetFriendRequest
+  fullName: ChineseCheckersLogicServer.Contracts.IUserFriendRequest.GetFriendRequest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

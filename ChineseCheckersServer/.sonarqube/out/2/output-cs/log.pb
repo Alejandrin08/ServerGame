@@ -1,1 +1,1 @@
-Roslyn version: 4.7.0.0Language version: CSharp7_3!Concurrent execution: enabled¡œFile 'C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersServer\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated
+Roslyn version: 4.7.0.0Language version: CSharp7_3!Concurrent execution: enabled»¶File 'C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated

@@ -8,22 +8,15 @@ using System.Threading.Tasks;
 namespace ChineseCheckersLogicServer.Model {
     [DataContract]
     public class FriendshipModel {
-
-        private int _idUser;
-        private int _idFriend;
-        private string _requestStatus;
-        private string _typeNotification;
-        private string _idRoom;
-
         [DataMember]
-        public int IdUser { get { return _idUser; } set { _idUser = value; } }
+        public int IdUser { get; set; }
         [DataMember]
-        public int IdFriend { get { return _idFriend; } set { _idFriend = value; } }
+        public int IdFriend { get; set; }
         [DataMember]
-        public string RequestStatus { get { return _requestStatus; } set { _requestStatus = value; } }
+        public string RequestStatus { get; set; }
         [DataMember]
-        public string TypeNotification { get { return _typeNotification; } set { _typeNotification = value; } }
+        public string TypeNotification { get; set; }
         [DataMember]
-        public string IdRoom { get { return _idRoom; } set { _idRoom = value; } }
+        public string IdRoom { get; set; }
     }
 }

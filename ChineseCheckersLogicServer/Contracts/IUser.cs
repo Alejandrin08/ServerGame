@@ -18,6 +18,8 @@ namespace ChineseCheckersLogicServer.Contracts {
         [OperationContract]
         string GetPlayerImage(string gamertag);
         [OperationContract]
+        int UpdateStatusPlayer(int idUser, bool status);
+        [OperationContract]
         void LogoutUser(int idUser);
         [OperationContract]
         int ValidateEmail(UserModel userModel);
@@ -35,8 +37,17 @@ namespace ChineseCheckersLogicServer.Contracts {
         string GetEmail(string gamertag);
         [OperationContract]
         int GetId(string gamertag);
+        [OperationContract]
+        int UpdateGamesWon(int idUser);
+        [OperationContract]
+        int UpdateTotalGames(int idUser);
+        [OperationContract]
+        int GetTotalGames(int idUser);
+        [OperationContract]
+        int GetGamesWon(int idUser);
+        [OperationContract]
+        Dictionary<string, int> GetGames();
     }
-
 
     [ServiceContract(CallbackContract = typeof(IUserCallback))]
     public interface IUsersManager {

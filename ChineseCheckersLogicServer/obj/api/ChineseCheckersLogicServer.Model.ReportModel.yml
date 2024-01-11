@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Model.ReportModel
+  commentId: T:ChineseCheckersLogicServer.Model.ReportModel
+  id: ReportModel
+  parent: ChineseCheckersLogicServer.Model
+  children:
+  - ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+  - ChineseCheckersLogicServer.Model.ReportModel.EndDate
+  - ChineseCheckersLogicServer.Model.ReportModel.IdUser
+  - ChineseCheckersLogicServer.Model.ReportModel.Reason
+  langs:
+  - csharp
+  - vb
+  name: ReportModel
+  nameWithType: ReportModel
+  fullName: ChineseCheckersLogicServer.Model.ReportModel
+  type: Class
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/ReportModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ReportModel
+    path: Model/ReportModel.cs
+    startLine: 8
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class ReportModel
+    content.vb: >-
+      <DataContract>
+
+      Public Class ReportModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ChineseCheckersLogicServer.Model.ReportModel.IdUser
+  commentId: P:ChineseCheckersLogicServer.Model.ReportModel.IdUser
+  id: IdUser
+  parent: ChineseCheckersLogicServer.Model.ReportModel
+  langs:
+  - csharp
+  - vb
+  name: IdUser
+  nameWithType: ReportModel.IdUser
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.IdUser
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/ReportModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IdUser
+    path: Model/ReportModel.cs
+    startLine: 11
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int IdUser { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property IdUser As Integer
+  overload: ChineseCheckersLogicServer.Model.ReportModel.IdUser*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.ReportModel.Reason
+  commentId: P:ChineseCheckersLogicServer.Model.ReportModel.Reason
+  id: Reason
+  parent: ChineseCheckersLogicServer.Model.ReportModel
+  langs:
+  - csharp
+  - vb
+  name: Reason
+  nameWithType: ReportModel.Reason
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.Reason
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/ReportModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Reason
+    path: Model/ReportModel.cs
+    startLine: 13
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Reason { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Reason As String
+  overload: ChineseCheckersLogicServer.Model.ReportModel.Reason*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+  commentId: P:ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+  id: CurrentDate
+  parent: ChineseCheckersLogicServer.Model.ReportModel
+  langs:
+  - csharp
+  - vb
+  name: CurrentDate
+  nameWithType: ReportModel.CurrentDate
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/ReportModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: CurrentDate
+    path: Model/ReportModel.cs
+    startLine: 15
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public DateTime CurrentDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <DataMember>
+
+      Public Property CurrentDate As Date
+  overload: ChineseCheckersLogicServer.Model.ReportModel.CurrentDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.ReportModel.EndDate
+  commentId: P:ChineseCheckersLogicServer.Model.ReportModel.EndDate
+  id: EndDate
+  parent: ChineseCheckersLogicServer.Model.ReportModel
+  langs:
+  - csharp
+  - vb
+  name: EndDate
+  nameWithType: ReportModel.EndDate
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.EndDate
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/ReportModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: EndDate
+    path: Model/ReportModel.cs
+    startLine: 17
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public DateTime EndDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <DataMember>
+
+      Public Property EndDate As Date
+  overload: ChineseCheckersLogicServer.Model.ReportModel.EndDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Model.ReportModel.IdUser*
+  commentId: Overload:ChineseCheckersLogicServer.Model.ReportModel.IdUser
+  name: IdUser
+  nameWithType: ReportModel.IdUser
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.IdUser
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ChineseCheckersLogicServer.Model.ReportModel.Reason*
+  commentId: Overload:ChineseCheckersLogicServer.Model.ReportModel.Reason
+  name: Reason
+  nameWithType: ReportModel.Reason
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.Reason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ChineseCheckersLogicServer.Model.ReportModel.CurrentDate*
+  commentId: Overload:ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+  name: CurrentDate
+  nameWithType: ReportModel.CurrentDate
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.CurrentDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: ChineseCheckersLogicServer.Model.ReportModel.EndDate*
+  commentId: Overload:ChineseCheckersLogicServer.Model.ReportModel.EndDate
+  name: EndDate
+  nameWithType: ReportModel.EndDate
+  fullName: ChineseCheckersLogicServer.Model.ReportModel.EndDate

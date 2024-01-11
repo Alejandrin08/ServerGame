@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoomModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoomModel
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ChineseCheckersLogicServer.Model.RoomModel">
+  
+  
+  <h1 id="ChineseCheckersLogicServer_Model_RoomModel" data-uid="ChineseCheckersLogicServer.Model.RoomModel" class="text-break">Class RoomModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RoomModel</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ChineseCheckersLogicServer.Model.html">ChineseCheckersLogicServer.Model</a></h6>
+  <h6><strong>Assembly</strong>: ChineseCheckersLogicServer.dll</h6>
+  <h5 id="ChineseCheckersLogicServer_Model_RoomModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+public class RoomModel</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_ColorForFivePlayers.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.ColorForFivePlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L23">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_ColorForFivePlayers_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForFivePlayers*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_ColorForFivePlayers" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForFivePlayers">ColorForFivePlayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] ColorForFivePlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_ColorForFourPlayers.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.ColorForFourPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L22">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_ColorForFourPlayers_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForFourPlayers*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_ColorForFourPlayers" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForFourPlayers">ColorForFourPlayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] ColorForFourPlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_ColorForSixPlayers.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.ColorForSixPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L24">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_ColorForSixPlayers_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForSixPlayers*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_ColorForSixPlayers" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForSixPlayers">ColorForSixPlayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] ColorForSixPlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_ColorForThreePlayers.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.ColorForThreePlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L21">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_ColorForThreePlayers_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForThreePlayers*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_ColorForThreePlayers" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForThreePlayers">ColorForThreePlayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] ColorForThreePlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_ColorForTwoPlayers.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.ColorForTwoPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L20">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_ColorForTwoPlayers_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForTwoPlayers*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_ColorForTwoPlayers" data-uid="ChineseCheckersLogicServer.Model.RoomModel.ColorForTwoPlayers">ColorForTwoPlayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char[] ColorForTwoPlayers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_IdRoom.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.IdRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L13">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_IdRoom_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.IdRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_IdRoom" data-uid="ChineseCheckersLogicServer.Model.RoomModel.IdRoom">IdRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public string IdRoom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_Players.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L15">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_Players_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.Players*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_Players" data-uid="ChineseCheckersLogicServer.Model.RoomModel.Players">Players</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Dictionary&lt;string, IMessageCallback&gt; Players { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="ChineseCheckersLogicServer.Contracts.IMessageCallback.html">IMessageCallback</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel_PlayersRoom.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel.PlayersRoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L17">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Model_RoomModel_PlayersRoom_" data-uid="ChineseCheckersLogicServer.Model.RoomModel.PlayersRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Model_RoomModel_PlayersRoom" data-uid="ChineseCheckersLogicServer.Model.RoomModel.PlayersRoom">PlayersRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Dictionary&lt;string, IPlayersRoomCallback&gt; PlayersRoom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="ChineseCheckersLogicServer.Contracts.IPlayersRoomCallback.html">IPlayersRoomCallback</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Model_RoomModel.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Model.RoomModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Model/RoomModel.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

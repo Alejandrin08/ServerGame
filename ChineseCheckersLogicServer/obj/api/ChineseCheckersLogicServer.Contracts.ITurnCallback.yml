@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  commentId: T:ChineseCheckersLogicServer.Contracts.ITurnCallback
+  id: ITurnCallback
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn(System.String,System.Int32)
+  - ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback(System.Windows.Point,System.Windows.Point)
+  - ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITurnCallback
+  nameWithType: ITurnCallback
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ITurnCallback
+    path: Contracts/IBoard.cs
+    startLine: 32
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface ITurnCallback
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface ITurnCallback
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn(System.String,System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn(System.String,System.Int32)
+  id: GameTurn(System.String,System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  langs:
+  - csharp
+  - vb
+  name: GameTurn(String, Int32)
+  nameWithType: ITurnCallback.GameTurn(String, Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GameTurn
+    path: Contracts/IBoard.cs
+    startLine: 34
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void GameTurn(string turn, int type)
+    parameters:
+    - id: turn
+      type: System.String
+    - id: type
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Sub GameTurn(turn As String, type As Integer)
+  overload: ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback(System.Windows.Point,System.Windows.Point)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback(System.Windows.Point,System.Windows.Point)
+  id: UpdateBoardCallback(System.Windows.Point,System.Windows.Point)
+  parent: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  langs:
+  - csharp
+  - vb
+  name: UpdateBoardCallback(Point, Point)
+  nameWithType: ITurnCallback.UpdateBoardCallback(Point, Point)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback(System.Windows.Point, System.Windows.Point)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateBoardCallback
+    path: Contracts/IBoard.cs
+    startLine: 36
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void UpdateBoardCallback(Point marble, Point position)
+    parameters:
+    - id: marble
+      type: System.Windows.Point
+    - id: position
+      type: System.Windows.Point
+    content.vb: >-
+      <OperationContract>
+
+      Sub UpdateBoardCallback(marble As Point, position As Point)
+  overload: ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback(System.String)
+  id: WinningPlayerCallback(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.ITurnCallback
+  langs:
+  - csharp
+  - vb
+  name: WinningPlayerCallback(String)
+  nameWithType: ITurnCallback.WinningPlayerCallback(String)
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: WinningPlayerCallback
+    path: Contracts/IBoard.cs
+    startLine: 38
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void WinningPlayerCallback(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub WinningPlayerCallback(gamertag As String)
+  overload: ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn
+  name: GameTurn
+  nameWithType: ITurnCallback.GameTurn
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.GameTurn
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback
+  name: UpdateBoardCallback
+  nameWithType: ITurnCallback.UpdateBoardCallback
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.UpdateBoardCallback
+- uid: System.Windows.Point
+  commentId: T:System.Windows.Point
+  parent: System.Windows
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: System.Windows.Point
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+- uid: ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback
+  name: WinningPlayerCallback
+  nameWithType: ITurnCallback.WinningPlayerCallback
+  fullName: ChineseCheckersLogicServer.Contracts.ITurnCallback.WinningPlayerCallback

@@ -4,12 +4,22 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+<<<<<<< HEAD
+      <Diagram DiagramId="68c36e0a1b184550b05a732b2d34e952" Name="Diagram1">
+        <EntityTypeShape EntityType="ChineseCheckersTestModel.FriendPlayer" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChineseCheckersTestModel.Reports" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChineseCheckersTestModel.User" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChineseCheckersTestModel.UserAccount" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="ChineseCheckersTestModel.fk_FriendPlayer_UserAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ChineseCheckersTestModel.fk_UserAccount_Reports" ManuallyRouted="false" />
+=======
       <Diagram DiagramId="0a6f5779b63f43f1a086137d9eff6491" Name="Diagram1">
         <EntityTypeShape EntityType="ChineseCheckersModel.FriendPlayer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.Game" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.Reports" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.User" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ChineseCheckersModel.UserAccount" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

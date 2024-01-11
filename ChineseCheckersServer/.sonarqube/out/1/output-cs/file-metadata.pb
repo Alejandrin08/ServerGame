@@ -1,18 +1,19 @@
-^
-UC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IBoard.csutf-8c
-ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IFriendship.csutf-8_
-VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IReport.csutf-8]
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IRoom.csutf-8]
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IUser.csutf-8h
-_C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\BoardController.csutf-8m
-dC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\FriendshipController.csutf-8i
-`C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\ReportController.csutf-8g
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\RoomController.csutf-8g
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\SingletonClass.csutf-8g
-^C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Controller\UserController.csutf-8c
-ZC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\FriendshipModel.csutf-8_
-VC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\ReportModel.csutf-8]
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\RoomModel.csutf-8]
-TC:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Model\UserModel.csutf-8e
-\C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\Properties\AssemblyInfo.csutf-8â
-~C:\Users\alexs\Desktop\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.csutf-8
+x
+oC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IBoard.csutf-8}
+tC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IFriendship.csutf-8y
+pC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IReport.csutf-8w
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IRoom.csutf-8w
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Contracts\IUser.csutf-8Ç
+yC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\BoardController.csutf-8á
+~C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\FriendshipController.csutf-8É
+zC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\ReportController.csutf-8Å
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\RoomController.csutf-8Å
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\SingletonClass.csutf-8Å
+xC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Controller\UserController.csutf-8x
+oC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\BoardModel.csutf-8}
+tC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\FriendshipModel.csutf-8y
+pC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\ReportModel.csutf-8w
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\RoomModel.csutf-8w
+nC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Model\UserModel.csutf-8
+vC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\Properties\AssemblyInfo.csutf-8§
+òC:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersLogicServer\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.csutf-8

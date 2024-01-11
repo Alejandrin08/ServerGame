@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+  id: IUserSessionCallback
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IUserSessionCallback
+  nameWithType: IUserSessionCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUserSessionCallback
+    path: Contracts/IUser.cs
+    startLine: 69
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IUserSessionCallback
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IUserSessionCallback
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback(System.Boolean)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback(System.Boolean)
+  id: GetSessionPlayerCallback(System.Boolean)
+  parent: ChineseCheckersLogicServer.Contracts.IUserSessionCallback
+  langs:
+  - csharp
+  - vb
+  name: GetSessionPlayerCallback(Boolean)
+  nameWithType: IUserSessionCallback.GetSessionPlayerCallback(Boolean)
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetSessionPlayerCallback
+    path: Contracts/IUser.cs
+    startLine: 71
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void GetSessionPlayerCallback(bool sessionOpened)
+    parameters:
+    - id: sessionOpened
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Sub GetSessionPlayerCallback(sessionOpened As Boolean)
+  overload: ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback
+  name: GetSessionPlayerCallback
+  nameWithType: IUserSessionCallback.GetSessionPlayerCallback
+  fullName: ChineseCheckersLogicServer.Contracts.IUserSessionCallback.GetSessionPlayerCallback
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -16,7 +16,7 @@ namespace ChineseCheckersLogicServer.Contracts {
         [OperationContract]
         int DeleteFriendPlayer(FriendshipModel friendshipModel);
         [OperationContract]
-        int ValidateFriendRequest(int idUser, int idFriend, string resquestStatus);
+        int ValidateFriendRequest(int idUser, int idFriend, string requestStatus);
     }
 
     [ServiceContract(CallbackContract = typeof(IUserFriendRequestCallback))]

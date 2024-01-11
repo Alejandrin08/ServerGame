@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITurn
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITurn
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ChineseCheckersLogicServer.Contracts.ITurn">
+  
+  
+  <h1 id="ChineseCheckersLogicServer_Contracts_ITurn" data-uid="ChineseCheckersLogicServer.Contracts.ITurn" class="text-break">Interface ITurn
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ChineseCheckersLogicServer.Contracts.html">ChineseCheckersLogicServer.Contracts</a></h6>
+  <h6><strong>Assembly</strong>: ChineseCheckersLogicServer.dll</h6>
+  <h5 id="ChineseCheckersLogicServer_Contracts_ITurn_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract(CallbackContract = typeof(ITurnCallback))]
+public interface ITurn</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn_AddPlayerInGame_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L22">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Contracts_ITurn_AddPlayerInGame_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Contracts_ITurn_AddPlayerInGame_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.AddPlayerInGame(System.String,System.String)">AddPlayerInGame(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[OperationContract]
+void AddPlayerInGame(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn_RemovePlayerFromGame_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L25">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Contracts_ITurn_RemovePlayerFromGame_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Contracts_ITurn_RemovePlayerFromGame_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.RemovePlayerFromGame(System.String,System.String)">RemovePlayerFromGame(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[OperationContract]
+void RemovePlayerFromGame(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn_SendToTurn_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L20">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Contracts_ITurn_SendToTurn_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn*"></a>
+  <h4 id="ChineseCheckersLogicServer_Contracts_ITurn_SendToTurn_System_String_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.SendToTurn(System.String)">SendToTurn(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[OperationContract(IsOneWay = true)]
+void SendToTurn(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn_UpdateBoard_System_Windows_Point_System_Windows_Point_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point%2CSystem.Windows.Point%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L27">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Contracts_ITurn_UpdateBoard_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard*"></a>
+  <h4 id="ChineseCheckersLogicServer_Contracts_ITurn_UpdateBoard_System_Windows_Point_System_Windows_Point_System_String_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)">UpdateBoard(Point, Point, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[OperationContract(IsOneWay = true)]
+void UpdateBoard(Point marble, Point position, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.Point</span></td>
+        <td><span class="parametername">marble</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Windows.Point</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn_WinningPlayer_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L29">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Contracts_ITurn_WinningPlayer_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Contracts_ITurn_WinningPlayer_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Contracts.ITurn.WinningPlayer(System.String,System.String)">WinningPlayer(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[OperationContract(IsOneWay = true)]
+void WinningPlayer(string idRoom, string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Contracts_ITurn.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Contracts.ITurn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Contracts/IBoard.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

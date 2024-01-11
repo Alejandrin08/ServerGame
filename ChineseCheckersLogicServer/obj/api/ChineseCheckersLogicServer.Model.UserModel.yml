@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Model.UserModel
+  commentId: T:ChineseCheckersLogicServer.Model.UserModel
+  id: UserModel
+  parent: ChineseCheckersLogicServer.Model
+  children:
+  - ChineseCheckersLogicServer.Model.UserModel.Email
+  - ChineseCheckersLogicServer.Model.UserModel.Gamertag
+  - ChineseCheckersLogicServer.Model.UserModel.Id
+  - ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+  - ChineseCheckersLogicServer.Model.UserModel.Password
+  - ChineseCheckersLogicServer.Model.UserModel.PlayerStatus
+  langs:
+  - csharp
+  - vb
+  name: UserModel
+  nameWithType: UserModel
+  fullName: ChineseCheckersLogicServer.Model.UserModel
+  type: Class
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UserModel
+    path: Model/UserModel.cs
+    startLine: 9
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class UserModel
+    content.vb: >-
+      <DataContract>
+
+      Public Class UserModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ChineseCheckersLogicServer.Model.UserModel.Id
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.Id
+  id: Id
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: UserModel.Id
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Id
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Id
+    path: Model/UserModel.cs
+    startLine: 12
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property Id As Integer
+  overload: ChineseCheckersLogicServer.Model.UserModel.Id*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.UserModel.Gamertag
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.Gamertag
+  id: Gamertag
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: Gamertag
+  nameWithType: UserModel.Gamertag
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Gamertag
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Gamertag
+    path: Model/UserModel.cs
+    startLine: 14
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Gamertag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Gamertag As String
+  overload: ChineseCheckersLogicServer.Model.UserModel.Gamertag*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.UserModel.Email
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.Email
+  id: Email
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: UserModel.Email
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Email
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Email
+    path: Model/UserModel.cs
+    startLine: 16
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Email As String
+  overload: ChineseCheckersLogicServer.Model.UserModel.Email*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.UserModel.Password
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.Password
+  id: Password
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: UserModel.Password
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Password
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: Password
+    path: Model/UserModel.cs
+    startLine: 18
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Password As String
+  overload: ChineseCheckersLogicServer.Model.UserModel.Password*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+  id: ImageProfile
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: ImageProfile
+  nameWithType: UserModel.ImageProfile
+  fullName: ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ImageProfile
+    path: Model/UserModel.cs
+    startLine: 20
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string ImageProfile { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property ImageProfile As String
+  overload: ChineseCheckersLogicServer.Model.UserModel.ImageProfile*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ChineseCheckersLogicServer.Model.UserModel.PlayerStatus
+  commentId: P:ChineseCheckersLogicServer.Model.UserModel.PlayerStatus
+  id: PlayerStatus
+  parent: ChineseCheckersLogicServer.Model.UserModel
+  langs:
+  - csharp
+  - vb
+  name: PlayerStatus
+  nameWithType: UserModel.PlayerStatus
+  fullName: ChineseCheckersLogicServer.Model.UserModel.PlayerStatus
+  type: Property
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Model/UserModel.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: PlayerStatus
+    path: Model/UserModel.cs
+    startLine: 22
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Model
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string PlayerStatus { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property PlayerStatus As String
+  overload: ChineseCheckersLogicServer.Model.UserModel.PlayerStatus*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Model.UserModel.Id*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.Id
+  name: Id
+  nameWithType: UserModel.Id
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ChineseCheckersLogicServer.Model.UserModel.Gamertag*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.Gamertag
+  name: Gamertag
+  nameWithType: UserModel.Gamertag
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Gamertag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ChineseCheckersLogicServer.Model.UserModel.Email*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.Email
+  name: Email
+  nameWithType: UserModel.Email
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Email
+- uid: ChineseCheckersLogicServer.Model.UserModel.Password*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.Password
+  name: Password
+  nameWithType: UserModel.Password
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Password
+- uid: ChineseCheckersLogicServer.Model.UserModel.ImageProfile*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+  name: ImageProfile
+  nameWithType: UserModel.ImageProfile
+  fullName: ChineseCheckersLogicServer.Model.UserModel.ImageProfile
+- uid: ChineseCheckersLogicServer.Model.UserModel.PlayerStatus*
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.PlayerStatus
+  name: PlayerStatus
+  nameWithType: UserModel.PlayerStatus
+  fullName: ChineseCheckersLogicServer.Model.UserModel.PlayerStatus

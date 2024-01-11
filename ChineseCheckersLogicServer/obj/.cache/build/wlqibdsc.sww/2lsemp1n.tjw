@@ -1,0 +1,2606 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ManagerController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ManagerController
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ChineseCheckersLogicServer.Controller.ManagerController">
+  
+  
+  <h1 id="ChineseCheckersLogicServer_Controller_ManagerController" data-uid="ChineseCheckersLogicServer.Controller.ManagerController" class="text-break">Class ManagerController
+  </h1>
+  <div class="markdown level0 summary"><p>Esta Interface incluye los métodos que se ocupan para la funcionalidad del tablero. </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ManagerController</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IBoard.html">IBoard</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.ITurn.html">ITurn</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IFriendship.html">IFriendship</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IUserFriendRequest.html">IUserFriendRequest</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IReport.html">IReport</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IRoom.html">IRoom</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IMessage.html">IMessage</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IPlayersRoom.html">IPlayersRoom</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IUser.html">IUser</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IUsersManager.html">IUsersManager</a></div>
+    <div><a class="xref" href="ChineseCheckersLogicServer.Contracts.IUserSession.html">IUserSession</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ChineseCheckersLogicServer.Controller.html">ChineseCheckersLogicServer.Controller</a></h6>
+  <h6><strong>Assembly</strong>: ChineseCheckersLogicServer.dll</h6>
+  <h5 id="ChineseCheckersLogicServer_Controller_ManagerController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]
+public class ManagerController : IBoard, ITurn, IFriendship, IUserFriendRequest, IReport, IRoom, IMessage, IPlayersRoom, IUser, IUsersManager, IUserSession</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddFriendPlayer_ChineseCheckersLogicServer_Model_FriendshipModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/FriendshipController.cs/#L27">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddFriendPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddFriendPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddFriendPlayer_ChineseCheckersLogicServer_Model_FriendshipModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)">AddFriendPlayer(FriendshipModel)</h4>
+  <div class="markdown level1 summary"><p>Añade una relación de amistad entre dos jugadores</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddFriendPlayer(FriendshipModel friendshipModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.FriendshipModel.html">FriendshipModel</a></td>
+        <td><span class="parametername">friendshipModel</span></td>
+        <td><p>El objeto de tipo FriendshipModel que contiene el id del jugador, el id del amigo y el tipo de notificación</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se añadio correctamente la relación de amistad entre los jugadores</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddPlayer_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddPlayer(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L162">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayer_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayer(System.String,System.String)">AddPlayer(String, String)</h4>
+  <div class="markdown level1 summary"><p>Agrega un jugador al chat de la sala</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPlayer(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>El identificador que el jugador elige</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerInGame_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerInGame(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L124">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerInGame_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerInGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerInGame_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerInGame(System.String,System.String)">AddPlayerInGame(String, String)</h4>
+  <div class="markdown level1 summary"><p>Añade un jugador a la partida. Valida que la partida exista (se encuentre en el diccionario de Rooms)
+y que el jugador no se encuentre en la partida (se encuentre en el diccionario de jugadores en la partida)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPlayerInGame(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del jugador</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerRoom_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerRoom(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L193">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddPlayerRoom_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddPlayerRoom(System.String,System.String)">AddPlayerRoom(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPlayerRoom(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddReport_ChineseCheckersLogicServer_Model_ReportModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddReport(ChineseCheckersLogicServer.Model.ReportModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L27">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddReport_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddReport*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddReport_ChineseCheckersLogicServer_Model_ReportModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddReport(ChineseCheckersLogicServer.Model.ReportModel)">AddReport(ReportModel)</h4>
+  <div class="markdown level1 summary"><p>Añade un reporte a un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddReport(ReportModel reportModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.ReportModel.html">ReportModel</a></td>
+        <td><span class="parametername">reportModel</span></td>
+        <td><p>El objeto de tipo ReportModel que contiene el id del jugador, el motivo del reporte, 
+la fecha actual y la fecha de finalización</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se añadio correctamente el reporte al jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddUserAccount_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L66">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddUserAccount_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddUserAccount*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddUserAccount_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)">AddUserAccount(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que agrega una cuenta de un usuario a la base de datos</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUserAccount(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo UserModel que regresa el gamertag, el email, la contraseña y la imagen de perfil seleccionada por el usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>1 si se agrega correctamente, -1 si ocurre un error </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AddUserGame_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L35">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AddUserGame_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddUserGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AddUserGame_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)">AddUserGame(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que agrega un usuario a la base de datos </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUserGame(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo UserModel que regresa el gamertag y el estado del jugador </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>1 si se agrega correctamente, -1 si ocurre un error </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_AssignColors_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.AssignColors(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L297">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_AssignColors_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AssignColors*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_AssignColors_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.AssignColors(System.String)">AssignColors(String)</h4>
+  <div class="markdown level1 summary"><p>Asigna los colores de las canicas a los jugadores de la sala</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AssignColors(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_CreateRoom_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.CreateRoom(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L28">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_CreateRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.CreateRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_CreateRoom_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.CreateRoom(System.String)">CreateRoom(String)</h4>
+  <div class="markdown level1 summary"><p>Crea una sala para los jugadores</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreateRoom(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>El identificador que el jugador elige</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Retorna una cadena que es el identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_DeleteFriendPlayer_ChineseCheckersLogicServer_Model_FriendshipModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/FriendshipController.cs/#L89">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_DeleteFriendPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.DeleteFriendPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_DeleteFriendPlayer_ChineseCheckersLogicServer_Model_FriendshipModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.DeleteFriendPlayer(ChineseCheckersLogicServer.Model.FriendshipModel)">DeleteFriendPlayer(FriendshipModel)</h4>
+  <div class="markdown level1 summary"><p>Elimina una solicitud de amistad o una invitación a una partida</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeleteFriendPlayer(FriendshipModel friendshipModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.FriendshipModel.html">FriendshipModel</a></td>
+        <td><span class="parametername">friendshipModel</span></td>
+        <td><p>El objeto de tipo FriendshipModel que contiene el id del jugador, el id del amigo y el tipo de notificación</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se elimino correctamente la solicitud de amistad o la invitación a una partida</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_DeleteReport_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.DeleteReport(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L80">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_DeleteReport_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.DeleteReport*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_DeleteReport_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.DeleteReport(System.Int32)">DeleteReport(Int32)</h4>
+  <div class="markdown level1 summary"><p>Elimina un reporte de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeleteReport(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se elimino correctamente el reporte del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_FindGamertag_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.FindGamertag(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L302">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_FindGamertag_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.FindGamertag*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_FindGamertag_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.FindGamertag(System.String,System.String)">FindGamertag(String, String)</h4>
+  <div class="markdown level1 summary"><p>Método que obtiene el gamertag de un usuario al que se trata buscar </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FindGamertag(string currentGamertag, string friendGamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currentGamertag</span></td>
+        <td><p>Gamertag del usuario que trata de buscar </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">friendGamertag</span></td>
+        <td><p>Gamertag del usuario que se trata de encontrar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Retorna un string con el gamertag del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GenerateId.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GenerateId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L47">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GenerateId_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GenerateId*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GenerateId" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GenerateId">GenerateId()</h4>
+  <div class="markdown level1 summary"><p>Genera un identificador a las salas que se crean.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GenerateId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Retorna una cadena que es el identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetDateReport_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetDateReport(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L124">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetDateReport_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetDateReport*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetDateReport_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetDateReport(System.Int32)">GetDateReport(Int32)</h4>
+  <div class="markdown level1 summary"><p>Obtiene la fecha de finalización de un reporte de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime GetDateReport(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>Retorna la fecha de finalización del reporte del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetEmail_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetEmail(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L332">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetEmail_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetEmail*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetEmail_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetEmail(System.String)">GetEmail(String)</h4>
+  <div class="markdown level1 summary"><p>Método para obtener el email de un jugador </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetEmail(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del usuario que se trata buscar su email </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Retorna una cadena con el correo del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetFriendRequest_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetFriendRequest(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/FriendshipController.cs/#L156">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetFriendRequest_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetFriendRequest*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetFriendRequest_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetFriendRequest(System.Int32)">GetFriendRequest(Int32)</h4>
+  <div class="markdown level1 summary"><p>Regresa la lista de amigos de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFriendRequest(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetFriends_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetFriends(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L547">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetFriends_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetFriends*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetFriends_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetFriends(System.String)">GetFriends(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFriends(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetGames.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetGames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L518">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetGames_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetGames*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetGames" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetGames">GetGames()</h4>
+  <div class="markdown level1 summary"><p>Método para obtener los juegos ganados de los jugadores y poder desplegarlos en la clasificación (los primeros 3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, int&gt; GetGames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Retorna un diccionario que contiene el gamertag de los mejores jugadores y un entero que contiene la cantidad de victorias </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetGamesWon_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetGamesWon(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L462">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetGamesWon_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetGamesWon*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetGamesWon_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetGamesWon(System.Int32)">GetGamesWon(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para obtener los juegos ganados de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGamesWon(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata obtener los juegos ganados </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un entero con los juegos ganados del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetId_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L356">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetId_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetId*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetId_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetId(System.String)">GetId(String)</h4>
+  <div class="markdown level1 summary"><p>Método para obtener el id de un jugador </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetId(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del usuario que se trata buscar su id </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un entero con el id del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetNumReports_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetNumReports(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L101">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetNumReports_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetNumReports*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetNumReports_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetNumReports(System.Int32)">GetNumReports(Int32)</h4>
+  <div class="markdown level1 summary"><p>Obtiene la cantidad de reportes de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumReports(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna la cantidad de reportes del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetPlayerImage_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetPlayerImage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L264">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetPlayerImage_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetPlayerImage*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetPlayerImage_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetPlayerImage(System.String)">GetPlayerImage(String)</h4>
+  <div class="markdown level1 summary"><p>Método que obtiene la imagen de perfil de un usuario </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPlayerImage(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del usuario que se trata de obtener la imagen de perfil </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Retorna un string con la ruta de la imagen de perfil </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetPlayersRoom_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetPlayersRoom(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L226">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetPlayersRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetPlayersRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetPlayersRoom_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetPlayersRoom(System.String,System.String)">GetPlayersRoom(String, String)</h4>
+  <div class="markdown level1 summary"><p>Callback encargado de obtener la lista de jugadores de la sala. Retorna una lista de jugadores de la sala.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlayersRoom(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>El identificador que el jugador elige</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetSessionPlayer_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetSessionPlayer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L605">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetSessionPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetSessionPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetSessionPlayer_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetSessionPlayer(System.Int32)">GetSessionPlayer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para obtener la sesión de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSessionPlayer(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata obtener la sesión </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_GetTotalGames_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.GetTotalGames(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L434">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_GetTotalGames_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetTotalGames*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_GetTotalGames_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.GetTotalGames(System.Int32)">GetTotalGames(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para obtener los juegos totales de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalGames(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata obtener los juegos totales </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un entero con los juegos totales del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_InfoUser_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.InfoUser(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L99">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_InfoUser_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.InfoUser*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_InfoUser_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.InfoUser(System.String)">InfoUser(String)</h4>
+  <div class="markdown level1 summary"><p>Método que obtiene la información de un usuario </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserModel InfoUser(string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del usuario que se trata de obtener la información </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><p>Retorna un objeto UserModel </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_IsBanned_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.IsBanned(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L174">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_IsBanned_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.IsBanned*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_IsBanned_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.IsBanned(System.Int32)">IsBanned(Int32)</h4>
+  <div class="markdown level1 summary"><p>Valida si un jugador esta baneado</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBanned(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true sí el jugador esta baneado</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_IsReported_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.IsReported(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L147">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_IsReported_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.IsReported*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_IsReported_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.IsReported(System.Int32)">IsReported(Int32)</h4>
+  <div class="markdown level1 summary"><p>Valida si un jugador esta reportado</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReported(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true sí el jugador esta reportado</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_LogoutUser_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.LogoutUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L287">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_LogoutUser_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.LogoutUser*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_LogoutUser_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.LogoutUser(System.Int32)">LogoutUser(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para poder llevar acabo la desconexión de un usuario</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogoutUser(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayer_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayer(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L76">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayer_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayer(System.String,System.String)">RemovePlayer(String, String)</h4>
+  <div class="markdown level1 summary"><p>Quita a un jugador de la sala</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlayer(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>El identificador que el jugador elige</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerFromGame_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerFromGame(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L152">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerFromGame_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerFromGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerFromGame_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerFromGame(System.String,System.String)">RemovePlayerFromGame(String, String)</h4>
+  <div class="markdown level1 summary"><p>Quita un jugador de la partida. Valida que la partida exista (se encuentre en el diccionario de Rooms)
+Si la cantidad de jugadores en la partida es mayor a 1, se remueve el jugador de la partida, si no, se remueve la partida</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlayerFromGame(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del jugador</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerRoom_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerRoom(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L268">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_RemovePlayerRoom_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.RemovePlayerRoom(System.String,System.String)">RemovePlayerRoom(String, String)</h4>
+  <div class="markdown level1 summary"><p>Quita a un jugador de la sala</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlayerRoom(string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>El identificador que el jugador elige</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_SendMessage_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.SendMessage(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L141">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_SendMessage_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendMessage*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_SendMessage_System_String_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendMessage(System.String,System.String,System.String)">SendMessage(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessage(string message, string gamertag, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_SendToBoard_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.SendToBoard(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L247">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_SendToBoard_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendToBoard*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_SendToBoard_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendToBoard(System.String)">SendToBoard(String)</h4>
+  <div class="markdown level1 summary"><p>Callback encargado de enviar a los jugadores de la sala a la sala de juego.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToBoard(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_SendToTurn_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.SendToTurn(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L69">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_SendToTurn_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendToTurn*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_SendToTurn_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.SendToTurn(System.String)">SendToTurn(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToTurn(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateBoard_System_Windows_Point_System_Windows_Point_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateBoard(System.Windows.Point%2CSystem.Windows.Point%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L102">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateBoard_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateBoard*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateBoard_System_Windows_Point_System_Windows_Point_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateBoard(System.Windows.Point,System.Windows.Point,System.String)">UpdateBoard(Point, Point, String)</h4>
+  <div class="markdown level1 summary"><p>Actualiza el tablero para todos los jugadores de la partida, si uno realiza un movimiento, se actualiza el tablero para todos los jugadores.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBoard(Point marble, Point position, string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.Point</span></td>
+        <td><span class="parametername">marble</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Windows.Point</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Posición a la que se moverá la canica</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateFriendPlayer_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateFriendPlayer(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/FriendshipController.cs/#L63">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateFriendPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateFriendPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateFriendPlayer_System_Int32_System_Int32_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateFriendPlayer(System.Int32,System.Int32,System.String)">UpdateFriendPlayer(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Actualiza una relación de amistad entre dos jugadores. Se ocupa para aceptar o rechazar una solicitud de amistad</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateFriendPlayer(int idUser, int idFriend, string requestStatus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idFriend</span></td>
+        <td><p>El id del amigo</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestStatus</span></td>
+        <td><p>El estado de la solicitud de amistad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se añadio correctamente la relación de amistad entre los jugadores</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateGamesWon_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateGamesWon(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L380">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateGamesWon_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateGamesWon*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateGamesWon_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateGamesWon(System.Int32)">UpdateGamesWon(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para actualizar los juegos ganados de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateGamesWon(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata actualizar los juegos ganados </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 si se logro actualizar correctamente, -1 sí no fue posible realizar la actualización </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateInfoUser_ChineseCheckersLogicServer_Model_UserModel_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L132">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateInfoUser_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateInfoUser*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateInfoUser_ChineseCheckersLogicServer_Model_UserModel_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel,System.String)">UpdateInfoUser(UserModel, String)</h4>
+  <div class="markdown level1 summary"><p>Método que actualiza la información de un usuario </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateInfoUser(UserModel usermodel, string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">usermodel</span></td>
+        <td><p>Objeto de tipo UserModel que se usa para actualizar el gamertag, el email o la imagen de perfil seleccionada por el usuario </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del usuario que se trata de actualizar la información </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 sí se hizo la actualización de manera correcta, -1 si no se logro realizar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdatePassword_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L169">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdatePassword_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdatePassword*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdatePassword_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)">UpdatePassword(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que actualiza la contraseña de un usuario </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdatePassword(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo UserModel que se usa para actualizar la contraseña del usuario </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 sí se hizo la actualización de manera correcta, -1 si no se logro realizar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateReport_ChineseCheckersLogicServer_Model_ReportModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/ReportController.cs/#L54">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateReport_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateReport*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateReport_ChineseCheckersLogicServer_Model_ReportModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)">UpdateReport(ReportModel)</h4>
+  <div class="markdown level1 summary"><p>Actualiza un reporte de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateReport(ReportModel reportModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.ReportModel.html">ReportModel</a></td>
+        <td><span class="parametername">reportModel</span></td>
+        <td><p>El objeto de tipo ReportModel que contiene el id del jugador, el motivo del reporte, 
+la fecha actual y la fecha de finalización</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí se actualizo correctamente el reporte del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateStatusPlayer_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateStatusPlayer(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L491">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateStatusPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateStatusPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateStatusPlayer_System_Int32_System_Boolean_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateStatusPlayer(System.Int32,System.Boolean)">UpdateStatusPlayer(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Método para actualizar el estado de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateStatusPlayer(int idUser, bool status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata actualizar el estado </p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>Estado del jugador </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 si se realizo la actualización del estado del jugador correctamente, -1 si no lo fue. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_UpdateTotalGames_System_Int32_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.UpdateTotalGames(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L407">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateTotalGames_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateTotalGames*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_UpdateTotalGames_System_Int32_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.UpdateTotalGames(System.Int32)">UpdateTotalGames(Int32)</h4>
+  <div class="markdown level1 summary"><p>Método para actualizar los juegos totales de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateTotalGames(int idUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>Id del usuario que se trata actualizar los juegos totales </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 si se logro actualizar correctamente, -1 sí no fue posible realizar la actualización </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoard_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoard(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L45">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoard_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoard*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoard_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoard(System.String)">ValidateBoard(String)</h4>
+  <div class="markdown level1 summary"><p>Valida la cantidad de jugadores del Room así como que esta exista</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateBoard(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true si la sala existe y la cantidad de jugadores es mayor a 1</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoardRoom_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoardRoom(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L117">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoardRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoardRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateBoardRoom_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateBoardRoom(System.String)">ValidateBoardRoom(String)</h4>
+  <div class="markdown level1 summary"><p>Valida si la sala tiene mas de un jugador</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateBoardRoom(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true si la sala tiene mas de un jugador o si es menor o igual a 6 jugadores, sino regresa false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateEmail_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L216">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateEmail_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateEmail*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateEmail_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)">ValidateEmail(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que valida la existencia de un email </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValidateEmail(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo userModel que recibe el email para poder llevar a cabo la validación  </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 sí se hizo la validación, -1 si no se logro realizar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateFriendRequest_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateFriendRequest(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/FriendshipController.cs/#L119">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateFriendRequest_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateFriendRequest*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateFriendRequest_System_Int32_System_Int32_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateFriendRequest(System.Int32,System.Int32,System.String)">ValidateFriendRequest(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Valida las solicitudes de amistad, si existe una solicitud de amistad entre dos jugadores al mismo tiempo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValidateFriendRequest(int idUser, int idFriend, string requestStatus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idUser</span></td>
+        <td><p>El id del jugador</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idFriend</span></td>
+        <td><p>El id del amigo</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestStatus</span></td>
+        <td><p>El estado de la solicitud de amistad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna 1 sí el jugador existe</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateGame_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateGame(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L27">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateGame_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateGame*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateGame_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateGame(System.String)">ValidateGame(String)</h4>
+  <div class="markdown level1 summary"><p>Valida que la partida exista y ternoa true. Si no existe, retorna false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateGame(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true si la sala existe, false si no existe</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateGamertag_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L240">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateGamertag_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateGamertag*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateGamertag_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)">ValidateGamertag(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que valida la existencia de un gamertag </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValidateGamertag(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo userModel que recibe el gamertag para poder llevar a cabo la validación  </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 sí se hizo la validación, -1 si no se logro realizar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateRoom_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateRoom(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/RoomController.cs/#L102">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateRoom_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateRoom*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateRoom_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateRoom(System.String)">ValidateRoom(String)</h4>
+  <div class="markdown level1 summary"><p>Valida si la sala existe</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateRoom(string idRoom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>El identificador de la sala</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Retorna true si la sala existe, sino regresa false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_ValidateUser_ChineseCheckersLogicServer_Model_UserModel_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L192">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateUser_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateUser*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_ValidateUser_ChineseCheckersLogicServer_Model_UserModel_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)">ValidateUser(UserModel)</h4>
+  <div class="markdown level1 summary"><p>Método que valida la existencia de un usuario </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValidateUser(UserModel userModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ChineseCheckersLogicServer.Model.UserModel.html">UserModel</a></td>
+        <td><span class="parametername">userModel</span></td>
+        <td><p>Objeto de tipo userModel que recibe el gamertag y contraseña para poder llevar a cabo la validación  </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Retorna un 1 sí se hizo la validación, -1 si no se logro realizar </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController_WinningPlayer_System_String_System_String_.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController.WinningPlayer(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/BoardController.cs/#L177">View Source</a>
+  </span>
+  <a id="ChineseCheckersLogicServer_Controller_ManagerController_WinningPlayer_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.WinningPlayer*"></a>
+  <h4 id="ChineseCheckersLogicServer_Controller_ManagerController_WinningPlayer_System_String_System_String_" data-uid="ChineseCheckersLogicServer.Controller.ManagerController.WinningPlayer(System.String,System.String)">WinningPlayer(String, String)</h4>
+  <div class="markdown level1 summary"><p>Valida que la partida exista (se encuentre en el diccionario de Rooms) y si la cantidad de jugadores en la partida es 1, 
+se le notifica al jugador que ganó la partida. De igual manera, se le notifica a los demás jugadores quien fue el ganador.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WinningPlayer(string idRoom, string gamertag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idRoom</span></td>
+        <td><p>Id de la sala</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">gamertag</span></td>
+        <td><p>Gamertag del jugador</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IBoard.html">IBoard</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.ITurn.html">ITurn</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IFriendship.html">IFriendship</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IUserFriendRequest.html">IUserFriendRequest</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IReport.html">IReport</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IRoom.html">IRoom</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IMessage.html">IMessage</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IPlayersRoom.html">IPlayersRoom</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IUser.html">IUser</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IUsersManager.html">IUsersManager</a>
+  </div>
+  <div>
+      <a class="xref" href="ChineseCheckersLogicServer.Contracts.IUserSession.html">IUserSession</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/new/master/apiSpec/new?filename=ChineseCheckersLogicServer_Controller_ManagerController.md&amp;value=---%0Auid%3A%20ChineseCheckersLogicServer.Controller.ManagerController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Alejandrin08/ServerGame/blob/master/ChineseCheckersLogicServer/Controller/UserController.cs/#L598" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

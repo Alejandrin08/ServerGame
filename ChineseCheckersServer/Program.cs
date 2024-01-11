@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChineseCheckersServer {
-    internal class Program {
-        static void Main(string[] args) {
+    internal static class Program {
+        public static void Main(string[] args) {
             using (ServiceHost userControllerHost = new ServiceHost(typeof(ChineseCheckersLogicServer.Controller.ManagerController))) {
                 userControllerHost.Open();
                 Console.WriteLine("managerController is running");
@@ -15,4 +15,4 @@ namespace ChineseCheckersServer {
             }
         }
     }
-}
+} 

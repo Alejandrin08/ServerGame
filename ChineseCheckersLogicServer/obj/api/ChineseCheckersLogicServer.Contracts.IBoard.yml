@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IBoard
+  commentId: T:ChineseCheckersLogicServer.Contracts.IBoard
+  id: IBoard
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard(System.String)
+  - ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IBoard
+  nameWithType: IBoard
+  fullName: ChineseCheckersLogicServer.Contracts.IBoard
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IBoard
+    path: Contracts/IBoard.cs
+    startLine: 9
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IBoard
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IBoard
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame(System.String)
+  id: ValidateGame(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IBoard
+  langs:
+  - csharp
+  - vb
+  name: ValidateGame(String)
+  nameWithType: IBoard.ValidateGame(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateGame
+    path: Contracts/IBoard.cs
+    startLine: 11
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool ValidateGame(string idRoom)
+    parameters:
+    - id: idRoom
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateGame(idRoom As String) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard(System.String)
+  id: ValidateBoard(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IBoard
+  langs:
+  - csharp
+  - vb
+  name: ValidateBoard(String)
+  nameWithType: IBoard.ValidateBoard(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IBoard.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateBoard
+    path: Contracts/IBoard.cs
+    startLine: 13
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool ValidateBoard(string idRoom)
+    parameters:
+    - id: idRoom
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateBoard(idRoom As String) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame
+  name: ValidateGame
+  nameWithType: IBoard.ValidateGame
+  fullName: ChineseCheckersLogicServer.Contracts.IBoard.ValidateGame
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard
+  name: ValidateBoard
+  nameWithType: IBoard.ValidateBoard
+  fullName: ChineseCheckersLogicServer.Contracts.IBoard.ValidateBoard

@@ -1,0 +1,417 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IReport
+  commentId: T:ChineseCheckersLogicServer.Contracts.IReport
+  id: IReport
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IReport.AddReport(ChineseCheckersLogicServer.Model.ReportModel)
+  - ChineseCheckersLogicServer.Contracts.IReport.DeleteReport(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IReport.GetDateReport(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IReport.GetNumReports(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IReport.IsBanned(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IReport.IsReported(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IReport.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)
+  langs:
+  - csharp
+  - vb
+  name: IReport
+  nameWithType: IReport
+  fullName: ChineseCheckersLogicServer.Contracts.IReport
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IReport
+    path: Contracts/IReport.cs
+    startLine: 9
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IReport
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IReport
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IReport.AddReport(ChineseCheckersLogicServer.Model.ReportModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.AddReport(ChineseCheckersLogicServer.Model.ReportModel)
+  id: AddReport(ChineseCheckersLogicServer.Model.ReportModel)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: AddReport(ReportModel)
+  nameWithType: IReport.AddReport(ReportModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.AddReport(ChineseCheckersLogicServer.Model.ReportModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddReport
+    path: Contracts/IReport.cs
+    startLine: 11
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int AddReport(ReportModel reportModel)
+    parameters:
+    - id: reportModel
+      type: ChineseCheckersLogicServer.Model.ReportModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function AddReport(reportModel As ReportModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IReport.AddReport*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)
+  id: UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: UpdateReport(ReportModel)
+  nameWithType: IReport.UpdateReport(ReportModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.UpdateReport(ChineseCheckersLogicServer.Model.ReportModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateReport
+    path: Contracts/IReport.cs
+    startLine: 13
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateReport(ReportModel reportModel)
+    parameters:
+    - id: reportModel
+      type: ChineseCheckersLogicServer.Model.ReportModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateReport(reportModel As ReportModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IReport.UpdateReport*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.DeleteReport(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.DeleteReport(System.Int32)
+  id: DeleteReport(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: DeleteReport(Int32)
+  nameWithType: IReport.DeleteReport(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.DeleteReport(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: DeleteReport
+    path: Contracts/IReport.cs
+    startLine: 15
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int DeleteReport(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function DeleteReport(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IReport.DeleteReport*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.GetNumReports(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.GetNumReports(System.Int32)
+  id: GetNumReports(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: GetNumReports(Int32)
+  nameWithType: IReport.GetNumReports(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.GetNumReports(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetNumReports
+    path: Contracts/IReport.cs
+    startLine: 17
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int GetNumReports(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function GetNumReports(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IReport.GetNumReports*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.GetDateReport(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.GetDateReport(System.Int32)
+  id: GetDateReport(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: GetDateReport(Int32)
+  nameWithType: IReport.GetDateReport(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.GetDateReport(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetDateReport
+    path: Contracts/IReport.cs
+    startLine: 19
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      DateTime GetDateReport(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <OperationContract>
+
+      Function GetDateReport(idUser As Integer) As Date
+  overload: ChineseCheckersLogicServer.Contracts.IReport.GetDateReport*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.IsBanned(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.IsBanned(System.Int32)
+  id: IsBanned(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: IsBanned(Int32)
+  nameWithType: IReport.IsBanned(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.IsBanned(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IsBanned
+    path: Contracts/IReport.cs
+    startLine: 21
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool IsBanned(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function IsBanned(idUser As Integer) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IReport.IsBanned*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IReport.IsReported(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IReport.IsReported(System.Int32)
+  id: IsReported(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IReport
+  langs:
+  - csharp
+  - vb
+  name: IsReported(Int32)
+  nameWithType: IReport.IsReported(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.IsReported(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IReport.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IsReported
+    path: Contracts/IReport.cs
+    startLine: 23
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      bool IsReported(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <OperationContract>
+
+      Function IsReported(idUser As Integer) As Boolean
+  overload: ChineseCheckersLogicServer.Contracts.IReport.IsReported*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IReport.AddReport*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.AddReport
+  name: AddReport
+  nameWithType: IReport.AddReport
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.AddReport
+- uid: ChineseCheckersLogicServer.Model.ReportModel
+  commentId: T:ChineseCheckersLogicServer.Model.ReportModel
+  parent: ChineseCheckersLogicServer.Model
+  name: ReportModel
+  nameWithType: ReportModel
+  fullName: ChineseCheckersLogicServer.Model.ReportModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IReport.UpdateReport*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.UpdateReport
+  name: UpdateReport
+  nameWithType: IReport.UpdateReport
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.UpdateReport
+- uid: ChineseCheckersLogicServer.Contracts.IReport.DeleteReport*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.DeleteReport
+  name: DeleteReport
+  nameWithType: IReport.DeleteReport
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.DeleteReport
+- uid: ChineseCheckersLogicServer.Contracts.IReport.GetNumReports*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.GetNumReports
+  name: GetNumReports
+  nameWithType: IReport.GetNumReports
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.GetNumReports
+- uid: ChineseCheckersLogicServer.Contracts.IReport.GetDateReport*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.GetDateReport
+  name: GetDateReport
+  nameWithType: IReport.GetDateReport
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.GetDateReport
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: ChineseCheckersLogicServer.Contracts.IReport.IsBanned*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.IsBanned
+  name: IsBanned
+  nameWithType: IReport.IsBanned
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.IsBanned
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ChineseCheckersLogicServer.Contracts.IReport.IsReported*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IReport.IsReported
+  name: IsReported
+  nameWithType: IReport.IsReported
+  fullName: ChineseCheckersLogicServer.Contracts.IReport.IsReported

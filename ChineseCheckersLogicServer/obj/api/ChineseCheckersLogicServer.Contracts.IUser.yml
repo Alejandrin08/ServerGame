@@ -1,0 +1,1099 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IUser
+  commentId: T:ChineseCheckersLogicServer.Contracts.IUser
+  id: IUser
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)
+  - ChineseCheckersLogicServer.Contracts.IUser.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)
+  - ChineseCheckersLogicServer.Contracts.IUser.FindGamertag(System.String,System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.GetEmail(System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.GetGames
+  - ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IUser.GetId(System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage(System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IUser.InfoUser(System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.LogoutUser(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel,System.String)
+  - ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)
+  - ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer(System.Int32,System.Boolean)
+  - ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames(System.Int32)
+  - ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)
+  - ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)
+  - ChineseCheckersLogicServer.Contracts.IUser.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)
+  langs:
+  - csharp
+  - vb
+  name: IUser
+  nameWithType: IUser
+  fullName: ChineseCheckersLogicServer.Contracts.IUser
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IUser
+    path: Contracts/IUser.cs
+    startLine: 9
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract]
+
+      public interface IUser
+    content.vb: >-
+      <ServiceContract>
+
+      Public Interface IUser
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IUser.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)
+  id: AddUserGame(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: AddUserGame(UserModel)
+  nameWithType: IUser.AddUserGame(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.AddUserGame(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddUserGame
+    path: Contracts/IUser.cs
+    startLine: 11
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int AddUserGame(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function AddUserGame(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.AddUserGame*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)
+  id: AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: AddUserAccount(UserModel)
+  nameWithType: IUser.AddUserAccount(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddUserAccount
+    path: Contracts/IUser.cs
+    startLine: 13
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int AddUserAccount(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function AddUserAccount(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)
+  id: ValidateUser(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: ValidateUser(UserModel)
+  nameWithType: IUser.ValidateUser(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateUser(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateUser
+    path: Contracts/IUser.cs
+    startLine: 15
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int ValidateUser(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateUser(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.ValidateUser*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage(System.String)
+  id: GetPlayerImage(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerImage(String)
+  nameWithType: IUser.GetPlayerImage(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetPlayerImage
+    path: Contracts/IUser.cs
+    startLine: 17
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      string GetPlayerImage(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Function GetPlayerImage(gamertag As String) As String
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer(System.Int32,System.Boolean)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer(System.Int32,System.Boolean)
+  id: UpdateStatusPlayer(System.Int32,System.Boolean)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: UpdateStatusPlayer(Int32, Boolean)
+  nameWithType: IUser.UpdateStatusPlayer(Int32, Boolean)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer(System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateStatusPlayer
+    path: Contracts/IUser.cs
+    startLine: 19
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateStatusPlayer(int idUser, bool status)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    - id: status
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateStatusPlayer(idUser As Integer, status As Boolean) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.LogoutUser(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.LogoutUser(System.Int32)
+  id: LogoutUser(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: LogoutUser(Int32)
+  nameWithType: IUser.LogoutUser(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.LogoutUser(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: LogoutUser
+    path: Contracts/IUser.cs
+    startLine: 21
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void LogoutUser(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Sub LogoutUser(idUser As Integer)
+  overload: ChineseCheckersLogicServer.Contracts.IUser.LogoutUser*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)
+  id: ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: ValidateEmail(UserModel)
+  nameWithType: IUser.ValidateEmail(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateEmail
+    path: Contracts/IUser.cs
+    startLine: 23
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int ValidateEmail(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateEmail(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)
+  id: ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: ValidateGamertag(UserModel)
+  nameWithType: IUser.ValidateGamertag(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: ValidateGamertag
+    path: Contracts/IUser.cs
+    startLine: 25
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int ValidateGamertag(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function ValidateGamertag(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)
+  id: UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: UpdatePassword(UserModel)
+  nameWithType: IUser.UpdatePassword(UserModel)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword(ChineseCheckersLogicServer.Model.UserModel)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdatePassword
+    path: Contracts/IUser.cs
+    startLine: 27
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdatePassword(UserModel userModel)
+    parameters:
+    - id: userModel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdatePassword(userModel As UserModel) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.InfoUser(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.InfoUser(System.String)
+  id: InfoUser(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: InfoUser(String)
+  nameWithType: IUser.InfoUser(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.InfoUser(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: InfoUser
+    path: Contracts/IUser.cs
+    startLine: 29
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      UserModel InfoUser(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    return:
+      type: ChineseCheckersLogicServer.Model.UserModel
+    content.vb: >-
+      <OperationContract>
+
+      Function InfoUser(gamertag As String) As UserModel
+  overload: ChineseCheckersLogicServer.Contracts.IUser.InfoUser*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel,System.String)
+  id: UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: UpdateInfoUser(UserModel, String)
+  nameWithType: IUser.UpdateInfoUser(UserModel, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser(ChineseCheckersLogicServer.Model.UserModel, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateInfoUser
+    path: Contracts/IUser.cs
+    startLine: 31
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateInfoUser(UserModel usermodel, string gamertag)
+    parameters:
+    - id: usermodel
+      type: ChineseCheckersLogicServer.Model.UserModel
+    - id: gamertag
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateInfoUser(usermodel As UserModel, gamertag As String) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.FindGamertag(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.FindGamertag(System.String,System.String)
+  id: FindGamertag(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: FindGamertag(String, String)
+  nameWithType: IUser.FindGamertag(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.FindGamertag(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: FindGamertag
+    path: Contracts/IUser.cs
+    startLine: 33
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      string FindGamertag(string currentGamertag, string friendGamertag)
+    parameters:
+    - id: currentGamertag
+      type: System.String
+    - id: friendGamertag
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Function FindGamertag(currentGamertag As String, friendGamertag As String) As String
+  overload: ChineseCheckersLogicServer.Contracts.IUser.FindGamertag*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetEmail(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetEmail(System.String)
+  id: GetEmail(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetEmail(String)
+  nameWithType: IUser.GetEmail(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetEmail(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetEmail
+    path: Contracts/IUser.cs
+    startLine: 35
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      string GetEmail(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Function GetEmail(gamertag As String) As String
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetEmail*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetId(System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetId(System.String)
+  id: GetId(System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetId(String)
+  nameWithType: IUser.GetId(String)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetId(System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetId
+    path: Contracts/IUser.cs
+    startLine: 37
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int GetId(string gamertag)
+    parameters:
+    - id: gamertag
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function GetId(gamertag As String) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetId*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon(System.Int32)
+  id: UpdateGamesWon(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: UpdateGamesWon(Int32)
+  nameWithType: IUser.UpdateGamesWon(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateGamesWon
+    path: Contracts/IUser.cs
+    startLine: 39
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateGamesWon(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateGamesWon(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames(System.Int32)
+  id: UpdateTotalGames(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: UpdateTotalGames(Int32)
+  nameWithType: IUser.UpdateTotalGames(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: UpdateTotalGames
+    path: Contracts/IUser.cs
+    startLine: 41
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int UpdateTotalGames(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function UpdateTotalGames(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames(System.Int32)
+  id: GetTotalGames(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetTotalGames(Int32)
+  nameWithType: IUser.GetTotalGames(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetTotalGames
+    path: Contracts/IUser.cs
+    startLine: 43
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int GetTotalGames(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function GetTotalGames(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon(System.Int32)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon(System.Int32)
+  id: GetGamesWon(System.Int32)
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetGamesWon(Int32)
+  nameWithType: IUser.GetGamesWon(Int32)
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetGamesWon
+    path: Contracts/IUser.cs
+    startLine: 45
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      int GetGamesWon(int idUser)
+    parameters:
+    - id: idUser
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <OperationContract>
+
+      Function GetGamesWon(idUser As Integer) As Integer
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetGames
+  commentId: M:ChineseCheckersLogicServer.Contracts.IUser.GetGames
+  id: GetGames
+  parent: ChineseCheckersLogicServer.Contracts.IUser
+  langs:
+  - csharp
+  - vb
+  name: GetGames()
+  nameWithType: IUser.GetGames()
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetGames()
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IUser.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: GetGames
+    path: Contracts/IUser.cs
+    startLine: 47
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      Dictionary<string, int> GetGames()
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    content.vb: >-
+      <OperationContract>
+
+      Function GetGames As Dictionary(Of String, Integer)
+  overload: ChineseCheckersLogicServer.Contracts.IUser.GetGames*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IUser.AddUserGame*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.AddUserGame
+  name: AddUserGame
+  nameWithType: IUser.AddUserGame
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.AddUserGame
+- uid: ChineseCheckersLogicServer.Model.UserModel
+  commentId: T:ChineseCheckersLogicServer.Model.UserModel
+  parent: ChineseCheckersLogicServer.Model
+  name: UserModel
+  nameWithType: UserModel
+  fullName: ChineseCheckersLogicServer.Model.UserModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ChineseCheckersLogicServer.Model
+  commentId: N:ChineseCheckersLogicServer.Model
+  name: ChineseCheckersLogicServer.Model
+  nameWithType: ChineseCheckersLogicServer.Model
+  fullName: ChineseCheckersLogicServer.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount
+  name: AddUserAccount
+  nameWithType: IUser.AddUserAccount
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.AddUserAccount
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateUser*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.ValidateUser
+  name: ValidateUser
+  nameWithType: IUser.ValidateUser
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateUser
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage
+  name: GetPlayerImage
+  nameWithType: IUser.GetPlayerImage
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetPlayerImage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer
+  name: UpdateStatusPlayer
+  nameWithType: IUser.UpdateStatusPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateStatusPlayer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ChineseCheckersLogicServer.Contracts.IUser.LogoutUser*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.LogoutUser
+  name: LogoutUser
+  nameWithType: IUser.LogoutUser
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.LogoutUser
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail
+  name: ValidateEmail
+  nameWithType: IUser.ValidateEmail
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateEmail
+- uid: ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag
+  name: ValidateGamertag
+  nameWithType: IUser.ValidateGamertag
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.ValidateGamertag
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword
+  name: UpdatePassword
+  nameWithType: IUser.UpdatePassword
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdatePassword
+- uid: ChineseCheckersLogicServer.Contracts.IUser.InfoUser*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.InfoUser
+  name: InfoUser
+  nameWithType: IUser.InfoUser
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.InfoUser
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser
+  name: UpdateInfoUser
+  nameWithType: IUser.UpdateInfoUser
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateInfoUser
+- uid: ChineseCheckersLogicServer.Contracts.IUser.FindGamertag*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.FindGamertag
+  name: FindGamertag
+  nameWithType: IUser.FindGamertag
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.FindGamertag
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetEmail*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetEmail
+  name: GetEmail
+  nameWithType: IUser.GetEmail
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetEmail
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetId*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetId
+  name: GetId
+  nameWithType: IUser.GetId
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetId
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon
+  name: UpdateGamesWon
+  nameWithType: IUser.UpdateGamesWon
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateGamesWon
+- uid: ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames
+  name: UpdateTotalGames
+  nameWithType: IUser.UpdateTotalGames
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.UpdateTotalGames
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames
+  name: GetTotalGames
+  nameWithType: IUser.GetTotalGames
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetTotalGames
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon
+  name: GetGamesWon
+  nameWithType: IUser.GetGamesWon
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetGamesWon
+- uid: ChineseCheckersLogicServer.Contracts.IUser.GetGames*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IUser.GetGames
+  name: GetGames
+  nameWithType: IUser.GetGames
+  fullName: ChineseCheckersLogicServer.Contracts.IUser.GetGames
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Int32>
+  nameWithType: Dictionary<String, Int32>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Int32>
+  nameWithType.vb: Dictionary(Of String, Int32)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Int32)
+  name.vb: Dictionary(Of String, Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

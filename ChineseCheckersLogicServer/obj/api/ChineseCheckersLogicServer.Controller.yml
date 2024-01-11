@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Controller
+  commentId: N:ChineseCheckersLogicServer.Controller
+  id: ChineseCheckersLogicServer.Controller
+  children:
+  - ChineseCheckersLogicServer.Controller.LoggerManager
+  - ChineseCheckersLogicServer.Controller.ManagerController
+  - ChineseCheckersLogicServer.Controller.SingletonClass
+  langs:
+  - csharp
+  - vb
+  name: ChineseCheckersLogicServer.Controller
+  nameWithType: ChineseCheckersLogicServer.Controller
+  fullName: ChineseCheckersLogicServer.Controller
+  type: Namespace
+  assemblies:
+  - ChineseCheckersLogicServer
+references:
+- uid: ChineseCheckersLogicServer.Controller.ManagerController
+  commentId: T:ChineseCheckersLogicServer.Controller.ManagerController
+  name: ManagerController
+  nameWithType: ManagerController
+  fullName: ChineseCheckersLogicServer.Controller.ManagerController
+- uid: ChineseCheckersLogicServer.Controller.LoggerManager
+  commentId: T:ChineseCheckersLogicServer.Controller.LoggerManager
+  parent: ChineseCheckersLogicServer.Controller
+  name: LoggerManager
+  nameWithType: LoggerManager
+  fullName: ChineseCheckersLogicServer.Controller.LoggerManager
+- uid: ChineseCheckersLogicServer.Controller.SingletonClass
+  commentId: T:ChineseCheckersLogicServer.Controller.SingletonClass
+  parent: ChineseCheckersLogicServer.Controller
+  name: SingletonClass
+  nameWithType: SingletonClass
+  fullName: ChineseCheckersLogicServer.Controller.SingletonClass
+- uid: ChineseCheckersLogicServer.Controller
+  commentId: N:ChineseCheckersLogicServer.Controller
+  name: ChineseCheckersLogicServer.Controller
+  nameWithType: ChineseCheckersLogicServer.Controller
+  fullName: ChineseCheckersLogicServer.Controller

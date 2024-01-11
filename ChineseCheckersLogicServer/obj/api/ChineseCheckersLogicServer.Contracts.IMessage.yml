@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: ChineseCheckersLogicServer.Contracts.IMessage
+  commentId: T:ChineseCheckersLogicServer.Contracts.IMessage
+  id: IMessage
+  parent: ChineseCheckersLogicServer.Contracts
+  children:
+  - ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer(System.String,System.String)
+  - ChineseCheckersLogicServer.Contracts.IMessage.SendMessage(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMessage
+  nameWithType: IMessage
+  fullName: ChineseCheckersLogicServer.Contracts.IMessage
+  type: Interface
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: IMessage
+    path: Contracts/IRoom.cs
+    startLine: 24
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [ServiceContract(CallbackContract = typeof(IMessageCallback))]
+
+      public interface IMessage
+    content.vb: >-
+      <ServiceContract(CallbackContract:=GetType(IMessageCallback))>
+
+      Public Interface IMessage
+  attributes:
+  - type: System.ServiceModel.ServiceContractAttribute
+    ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: CallbackContract
+      type: System.Type
+      value: ChineseCheckersLogicServer.Contracts.IMessageCallback
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ChineseCheckersLogicServer.Contracts.IMessage.SendMessage(System.String,System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IMessage.SendMessage(System.String,System.String,System.String)
+  id: SendMessage(System.String,System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IMessage
+  langs:
+  - csharp
+  - vb
+  name: SendMessage(String, String, String)
+  nameWithType: IMessage.SendMessage(String, String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IMessage.SendMessage(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: SendMessage
+    path: Contracts/IRoom.cs
+    startLine: 26
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract(IsOneWay = true)]
+
+      void SendMessage(string message, string gamertag, string idRoom)
+    parameters:
+    - id: message
+      type: System.String
+    - id: gamertag
+      type: System.String
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract(IsOneWay:=True)>
+
+      Sub SendMessage(message As String, gamertag As String, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.IMessage.SendMessage*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsOneWay
+      type: System.Boolean
+      value: true
+- uid: ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer(System.String,System.String)
+  commentId: M:ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer(System.String,System.String)
+  id: AddPlayer(System.String,System.String)
+  parent: ChineseCheckersLogicServer.Contracts.IMessage
+  langs:
+  - csharp
+  - vb
+  name: AddPlayer(String, String)
+  nameWithType: IMessage.AddPlayer(String, String)
+  fullName: ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: ChineseCheckersLogicServer/Contracts/IRoom.cs
+      branch: master
+      repo: https://github.com/Alejandrin08/ServerGame.git
+    id: AddPlayer
+    path: Contracts/IRoom.cs
+    startLine: 28
+  assemblies:
+  - ChineseCheckersLogicServer
+  namespace: ChineseCheckersLogicServer.Contracts
+  syntax:
+    content: >-
+      [OperationContract]
+
+      void AddPlayer(string gamertag, string idRoom)
+    parameters:
+    - id: gamertag
+      type: System.String
+    - id: idRoom
+      type: System.String
+    content.vb: >-
+      <OperationContract>
+
+      Sub AddPlayer(gamertag As String, idRoom As String)
+  overload: ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer*
+  attributes:
+  - type: System.ServiceModel.OperationContractAttribute
+    ctor: System.ServiceModel.OperationContractAttribute.#ctor
+    arguments: []
+references:
+- uid: ChineseCheckersLogicServer.Contracts
+  commentId: N:ChineseCheckersLogicServer.Contracts
+  name: ChineseCheckersLogicServer.Contracts
+  nameWithType: ChineseCheckersLogicServer.Contracts
+  fullName: ChineseCheckersLogicServer.Contracts
+- uid: ChineseCheckersLogicServer.Contracts.IMessage.SendMessage*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IMessage.SendMessage
+  name: SendMessage
+  nameWithType: IMessage.SendMessage
+  fullName: ChineseCheckersLogicServer.Contracts.IMessage.SendMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer*
+  commentId: Overload:ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer
+  name: AddPlayer
+  nameWithType: IMessage.AddPlayer
+  fullName: ChineseCheckersLogicServer.Contracts.IMessage.AddPlayer

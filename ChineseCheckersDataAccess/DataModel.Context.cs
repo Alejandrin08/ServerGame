@@ -26,7 +26,6 @@ namespace ChineseCheckersDataAccess
         }
     
         public virtual DbSet<FriendPlayer> FriendPlayer { get; set; }
-        public virtual DbSet<Game> Game { get; set; }
         public virtual DbSet<Reports> Reports { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserAccount> UserAccount { get; set; }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ChineseCheckersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ChineseCheckersTestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="FriendPlayer">
           <Key>
             <PropertyRef Name="Id" />
@@ -15,15 +15,6 @@
           <Property Name="RequestStatus" Type="nvarchar" MaxLength="255" />
           <Property Name="TypeNotification" Type="nvarchar" MaxLength="255" />
         </EntityType>
-        <EntityType Name="Game">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Players" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="WinnerUser" Type="nvarchar" MaxLength="255" />
-          <Property Name="GamertagUser" Type="nvarchar" MaxLength="50" />
-        </EntityType>
         <EntityType Name="Reports">
           <Key>
             <PropertyRef Name="Id" />
@@ -31,8 +22,8 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Reason" Type="nvarchar" MaxLength="255" />
           <Property Name="IdUser" Type="int" />
-          <Property Name="DateCurrent" Type="date" />
-          <Property Name="DateFinish" Type="date" />
+          <Property Name="DateCurrent" Type="datetime" />
+          <Property Name="DateFinish" Type="datetime" />
           <Property Name="Counter" Type="int" />
         </EntityType>
         <EntityType Name="User">
@@ -40,7 +31,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Gamertag" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Gamertag" Type="nvarchar" MaxLength="50" />
           <Property Name="PlayerStatus" Type="nvarchar" MaxLength="50" />
           <Property Name="GamesWon" Type="int" />
           <Property Name="NumberGames" Type="int" />
@@ -50,29 +41,61 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Email" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="150" />
           <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="GamertagUser" Type="nvarchar" MaxLength="50" />
           <Property Name="ImageProfile" Type="nvarchar" MaxLength="100" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6035: La relación 'fk_UserAccount_Game' tiene columnas que no forman parte de la clave de la tabla en el lado principal de la relación. Se excluyó la relación.
-        <Association Name="fk_UserAccount_Game" />-->
+        <Association Name="fk_FriendPlayer_UserAccount">
+          <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="FriendPlayer" Type="Self.FriendPlayer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserAccount">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FriendPlayer">
+              <PropertyRef Name="IdPlayer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_UserAccount_Reports">
+          <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserAccount">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Reports">
+              <PropertyRef Name="IdUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <!--Errores durante la generación:
 advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forman parte de la clave de la tabla en el lado principal de la relación. Se excluyó la relación.
         <Association Name="fk_UserAccount_User" />-->
-        <EntityContainer Name="ChineseCheckersModelStoreContainer">
+        <EntityContainer Name="ChineseCheckersTestModelStoreContainer">
           <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Game" EntityType="Self.Game" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Reports" EntityType="Self.Reports" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserAccount" EntityType="Self.UserAccount" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_FriendPlayer_UserAccount" Association="Self.fk_FriendPlayer_UserAccount">
+            <End Role="UserAccount" EntitySet="UserAccount" />
+            <End Role="FriendPlayer" EntitySet="FriendPlayer" />
+          </AssociationSet>
+          <AssociationSet Name="fk_UserAccount_Reports" Association="Self.fk_UserAccount_Reports">
+            <End Role="UserAccount" EntitySet="UserAccount" />
+            <End Role="Reports" EntitySet="Reports" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="ChineseCheckersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="ChineseCheckersTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="FriendPlayer">
           <Key>
             <PropertyRef Name="Id" />
@@ -82,15 +105,7 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
           <Property Name="IdFriend" Type="Int32" Nullable="false" />
           <Property Name="RequestStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Game">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Players" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="WinnerUser" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="UserAccount" Relationship="Self.fk_FriendPlayer_UserAccount" FromRole="FriendPlayer" ToRole="UserAccount" />
         </EntityType>
         <EntityType Name="Reports">
           <Key>
@@ -99,16 +114,17 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="IdUser" Type="Int32" />
-          <Property Name="DateCurrent" Type="DateTime" Precision="0" />
-          <Property Name="DateFinish" Type="DateTime" Precision="0" />
+          <Property Name="DateCurrent" Type="DateTime" Precision="3" />
+          <Property Name="DateFinish" Type="DateTime" Precision="3" />
           <Property Name="Counter" Type="Int32" />
+          <NavigationProperty Name="UserAccount" Relationship="Self.fk_UserAccount_Reports" FromRole="Reports" ToRole="UserAccount" />
         </EntityType>
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Gamertag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gamertag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PlayerStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GamesWon" Type="Int32" />
           <Property Name="NumberGames" Type="Int32" />
@@ -118,26 +134,63 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="GamertagUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ImageProfile" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="FriendPlayer" Relationship="Self.fk_FriendPlayer_UserAccount" FromRole="UserAccount" ToRole="FriendPlayer" />
+          <NavigationProperty Name="Reports" Relationship="Self.fk_UserAccount_Reports" FromRole="UserAccount" ToRole="Reports" />
         </EntityType>
+        <Association Name="fk_FriendPlayer_UserAccount">
+          <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="FriendPlayer" Type="Self.FriendPlayer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserAccount">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="FriendPlayer">
+              <PropertyRef Name="IdPlayer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_UserAccount_Reports">
+          <End Role="UserAccount" Type="Self.UserAccount" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserAccount">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Reports">
+              <PropertyRef Name="IdUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ChineseCheckersEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" />
-          <EntitySet Name="Game" EntityType="Self.Game" />
           <EntitySet Name="Reports" EntityType="Self.Reports" />
           <EntitySet Name="User" EntityType="Self.User" />
           <EntitySet Name="UserAccount" EntityType="Self.UserAccount" />
+          <AssociationSet Name="fk_FriendPlayer_UserAccount" Association="Self.fk_FriendPlayer_UserAccount">
+            <End Role="UserAccount" EntitySet="UserAccount" />
+            <End Role="FriendPlayer" EntitySet="FriendPlayer" />
+          </AssociationSet>
+          <AssociationSet Name="fk_UserAccount_Reports" Association="Self.fk_UserAccount_Reports">
+            <End Role="UserAccount" EntitySet="UserAccount" />
+            <End Role="Reports" EntitySet="Reports" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ChineseCheckersModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
+        <EntityContainerMapping StorageEntityContainer="ChineseCheckersTestModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
           <EntitySetMapping Name="FriendPlayer">
-            <EntityTypeMapping TypeName="ChineseCheckersModel.FriendPlayer">
+            <EntityTypeMapping TypeName="ChineseCheckersTestModel.FriendPlayer">
               <MappingFragment StoreEntitySet="FriendPlayer">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdPlayer" ColumnName="IdPlayer" />
@@ -147,18 +200,8 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Game">
-            <EntityTypeMapping TypeName="ChineseCheckersModel.Game">
-              <MappingFragment StoreEntitySet="Game">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Players" ColumnName="Players" />
-                <ScalarProperty Name="WinnerUser" ColumnName="WinnerUser" />
-                <ScalarProperty Name="GamertagUser" ColumnName="GamertagUser" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Reports">
-            <EntityTypeMapping TypeName="ChineseCheckersModel.Reports">
+            <EntityTypeMapping TypeName="ChineseCheckersTestModel.Reports">
               <MappingFragment StoreEntitySet="Reports">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Reason" ColumnName="Reason" />
@@ -170,7 +213,7 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="User">
-            <EntityTypeMapping TypeName="ChineseCheckersModel.User">
+            <EntityTypeMapping TypeName="ChineseCheckersTestModel.User">
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Gamertag" ColumnName="Gamertag" />
@@ -181,7 +224,7 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="UserAccount">
-            <EntityTypeMapping TypeName="ChineseCheckersModel.UserAccount">
+            <EntityTypeMapping TypeName="ChineseCheckersTestModel.UserAccount">
               <MappingFragment StoreEntitySet="UserAccount">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Email" ColumnName="Email" />

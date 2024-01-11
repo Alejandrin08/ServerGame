@@ -20,5 +20,7 @@ namespace ChineseCheckersDataAccess
         public Nullable<System.DateTime> DateCurrent { get; set; }
         public Nullable<System.DateTime> DateFinish { get; set; }
         public Nullable<int> Counter { get; set; }
+    
+        public virtual UserAccount UserAccount { get; set; }
     }
 }

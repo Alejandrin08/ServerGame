@@ -43,12 +43,17 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\ChineseCheckersServer\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\ChineseCheckersServer\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +70,7 @@
     <Compile Include="Contracts\IUser.cs" />
     <Compile Include="Controller\BoardController.cs" />
     <Compile Include="Controller\FriendshipController.cs" />
+    <Compile Include="Controller\LoggerManager.cs" />
     <Compile Include="Controller\ReportController.cs" />
     <Compile Include="Controller\RoomController.cs" />
     <Compile Include="Controller\SingletonClass.cs" />
@@ -77,8 +83,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="api\index.md" />
     <None Include="App.config" />
+    <None Include="articles\intro.md" />
+    <None Include="articles\toc.md" />
+    <None Include="docfx.json" />
+    <None Include="index.md" />
     <None Include="packages.config" />
+    <None Include="toc.yml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChineseCheckersDataAccess\ChineseCheckersDataAccess.csproj">
@@ -93,6 +105,8 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\ChineseCheckersServer\packages\docfx.console.2.59.4\build\docfx.console.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\ChineseCheckersServer\packages\docfx.console.2.59.4\build\docfx.console.targets'))" />
   </Target>
   <Import Project="..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\ChineseCheckersServer\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\ChineseCheckersServer\packages\docfx.console.2.59.4\build\docfx.console.targets" Condition="Exists('..\ChineseCheckersServer\packages\docfx.console.2.59.4\build\docfx.console.targets')" />
 </Project>

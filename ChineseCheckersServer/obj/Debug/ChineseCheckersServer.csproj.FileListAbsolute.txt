@@ -144,12 +144,20 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckers
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersLogicServer.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\EntityFramework.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\EntityFramework.SqlServer.dll
+<<<<<<< HEAD
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\log4net.dll
+=======
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersDataAccess.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\BCrypt.Net.dll
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersLogicServer.pdb
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersLogicServer.dll.config
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\EntityFramework.xml
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\EntityFramework.SqlServer.xml
+<<<<<<< HEAD
+C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\log4net.xml
+=======
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersDataAccess.pdb
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersDataAccess.dll.config
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\BCrypt.Net.xml
@@ -158,6 +166,8 @@ C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckers
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.csproj.CopyComplete
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.exe
 C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.pdb
+<<<<<<< HEAD
+=======
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersServer.exe.config
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersServer.exe
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\bin\Debug\ChineseCheckersServer.pdb
@@ -178,3 +188,4 @@ C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckers
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.csproj.CopyComplete
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.exe
 C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersServer\obj\Debug\ChineseCheckersServer.pdb
+>>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
