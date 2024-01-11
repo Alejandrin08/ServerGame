@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Palom\Desktop\Final\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.edmx'. 
+=======
+<<<<<<< HEAD
 ﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\alexs\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.edmx'. 
 =======
 ﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Palom\Desktop\JuegoTecno (2)\JuegoTecno\ChineseCheckers\ChineseCheckersDataAccess\DataModel.edmx'. 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

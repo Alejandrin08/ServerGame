@@ -1,6 +1,10 @@
 {
   "homepages": [],
+<<<<<<< HEAD
+  "source_base_path": "C:/Users/Palom/Desktop/Final/JuegoTecno (2)/JuegoTecno/ChineseCheckers/ChineseCheckersLogicServer",
+=======
   "source_base_path": "C:/Users/alexs/Desktop/JuegoTecno (2)/JuegoTecno/ChineseCheckers/ChineseCheckersLogicServer",
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -285,10 +289,17 @@
       "output": {
         ".html": {
           "relative_path": "api/ChineseCheckersLogicServer.Controller.ManagerController.html",
+<<<<<<< HEAD
+          "hash": "Z97zE4vJHKMmibE5X+qFZ/cmhhbr9iiHE3CKEfZ7AyA="
+        }
+      },
+      "is_incremental": false,
+=======
           "hash": "6hrusCbWrDxZnsM4U0sywRsKNraOrWK2o2rvlu9t0ic="
         }
       },
       "is_incremental": true,
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
       "version": ""
     },
     {
@@ -312,7 +323,11 @@
           "hash": "dkdcRvRsXbrO9bNsNPSrgavXoQNLrXjtxm2PofN+Rys="
         }
       },
+<<<<<<< HEAD
+      "is_incremental": false,
+=======
       "is_incremental": true,
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
       "version": ""
     },
     {
@@ -369,7 +384,11 @@
       "output": {
         ".html": {
           "relative_path": "api/ChineseCheckersLogicServer.Model.UserModel.html",
+<<<<<<< HEAD
+          "hash": "Ocz96I42/GxXSkRE8r5H5rjpXmEkcYBvbjinqzlVVKo="
+=======
           "hash": "cUHBnq6Th//obErb/pjR8jv7xjKSW6K7b38vtlhwubk="
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         }
       },
       "is_incremental": true,
@@ -431,7 +450,11 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 28,
+<<<<<<< HEAD
+          "skipped_file_count": 27
+=======
           "skipped_file_count": 28
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

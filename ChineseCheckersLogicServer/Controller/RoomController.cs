@@ -51,6 +51,14 @@ namespace ChineseCheckersLogicServer.Controller {
                 const string CHARACTERS = "0123456789";
                 const int MAX_PLAYERS = 6;
                 StringBuilder id = new StringBuilder();
+<<<<<<< HEAD
+
+                using (var randomGenerator = RandomNumberGenerator.Create()) {
+                    byte[] data = new byte[MAX_PLAYERS];
+
+                    randomGenerator.GetBytes(data);
+
+=======
 
                 using (var randomGenerator = RandomNumberGenerator.Create()) {
                     byte[] data = new byte[MAX_PLAYERS];
@@ -58,10 +66,13 @@ namespace ChineseCheckersLogicServer.Controller {
                     randomGenerator.GetBytes(data);
 
 <<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     for (int i = 0; i < MAX_PLAYERS; i++) {
                         int index = data[i] % CHARACTERS.Length;
                         id.Append(CHARACTERS[index]);
                     }
+<<<<<<< HEAD
+=======
 =======
                 if (room.Players.Count > 1) {
                     room.Players.Remove(gamertag);
@@ -71,6 +82,7 @@ namespace ChineseCheckersLogicServer.Controller {
                     _playersInRoom.Remove(idRoom);
                     _rooms.Remove(idRoom);
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                 }
                 result = id.ToString();
             } catch (CommunicationException ex) {
@@ -105,6 +117,9 @@ namespace ChineseCheckersLogicServer.Controller {
             }
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         /**
             * <summary>
             * Valida si la sala existe
@@ -112,6 +127,8 @@ namespace ChineseCheckersLogicServer.Controller {
             * <param name="idRoom">El identificador de la sala</param>   
             * <returns>Retorna true si la sala existe, sino regresa false</returns>                                                                
             */
+<<<<<<< HEAD
+=======
         public bool ValidateRoom(string idRoom) {
             bool result = false;
             try { 
@@ -140,13 +157,38 @@ namespace ChineseCheckersLogicServer.Controller {
             return result;
 =======
 
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         public bool ValidateRoom(string idRoom) {
-            return _rooms.Contains(idRoom);
+            bool result = false;
+            try { 
+                result = _rooms.Contains(idRoom);
+            } catch (CommunicationException ex) {
+                LoggerManager.Instance.LogFatal("Error al validar la sala: ", ex);
+            }
+            return result;
         }
-
+        /**
+            * <summary>
+            * Valida si la sala tiene mas de un jugador
+            * </summary> 
+            * <param name="idRoom">El identificador de la sala</param>   
+            * <returns>Retorna true si la sala tiene mas de un jugador o si es menor o igual a 6 jugadores, sino regresa false</returns>                                                                
+            */
         public bool ValidateBoardRoom(string idRoom) {
+<<<<<<< HEAD
+            bool result = false;
+            try {
+                const int MAX_PLAYERS = 6;
+                const int MIN_PLAYERS = 1;
+                result = _playersRoom.ContainsKey(idRoom) && _playersRoom[idRoom].PlayersRoom.Count > MIN_PLAYERS && _playersRoom[idRoom].PlayersRoom.Count <= MAX_PLAYERS;
+            } catch (CommunicationException ex) {
+                LoggerManager.Instance.LogFatal("Error al validar la sala: ", ex);
+            }
+            return result;
+=======
             return _playersRoom.ContainsKey(idRoom) && _playersRoom[idRoom].PlayersRoom.Count > 1;
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         }
     }
     /// <summary>
@@ -206,6 +248,9 @@ namespace ChineseCheckersLogicServer.Controller {
     /// </summary>
     public partial class ManagerController : IPlayersRoom {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         /**
             * <summary>
             * Callback encargado de añadir un jugador a la sala. Retorna una lista de jugadores de la sala.
@@ -213,6 +258,10 @@ namespace ChineseCheckersLogicServer.Controller {
             * <param name="gamertag">El identificador que el jugador elige</param>
             * <param name="idRoom">El identificador de la sala</param>                                                                  
             */
+<<<<<<< HEAD
+        private static readonly Dictionary<string, RoomModel> _playersRoom = new Dictionary<string, RoomModel>();
+        private static readonly Dictionary<string, List<String>> _playersRoomDictionary = new Dictionary<string, List<String>>();
+=======
         private static readonly Dictionary<string, RoomModel> _playersRoom = new Dictionary<string, RoomModel>();
         private static readonly Dictionary<string, List<String>> _playersRoomDictionary = new Dictionary<string, List<String>>();
 =======
@@ -221,6 +270,7 @@ namespace ChineseCheckersLogicServer.Controller {
         private static readonly Dictionary<string, List<String>> _playersRoomDictionary = new Dictionary<string, List<String>>();
 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         public void AddPlayerRoom(string gamertag, string idRoom) {
             try {
                 IPlayersRoomCallback context = OperationContext.Current.GetCallbackChannel<IPlayersRoomCallback>();
@@ -243,8 +293,11 @@ namespace ChineseCheckersLogicServer.Controller {
                         _playersRoomDictionary.Add(idRoom, listPlayers);
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     }
                 }
             } catch (CommunicationException ex) {
@@ -271,6 +324,8 @@ namespace ChineseCheckersLogicServer.Controller {
                 }
             } catch (CommunicationException ex) {
                 LoggerManager.Instance.LogFatal("Error al obtener los jugadores de la sala: ", ex);
+<<<<<<< HEAD
+=======
             }
         }
         /**
@@ -363,9 +418,15 @@ namespace ChineseCheckersLogicServer.Controller {
                 }
             } catch (CommunicationException ex) {
                 LoggerManager.Instance.LogFatal("Error al asignar los colores: ", ex);
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
             }
         }
-
+        /**
+            * <summary>
+            * Callback encargado de enviar a los jugadores de la sala a la sala de juego.
+            * </summary> 
+            * <param name="idRoom">El identificador de la sala</param>                                                                  
+            */   
         public void SendToBoard(string idRoom) {
             try {
                 if (_playersRoom.ContainsKey(idRoom)) {
@@ -377,36 +438,50 @@ namespace ChineseCheckersLogicServer.Controller {
                     }
                 }
             } catch (CommunicationException ex) {
-                MessageBox.Show($"Error al obtener la solicitud de amistad: {ex.Message}");
+                LoggerManager.Instance.LogFatal("Error al enviar a los jugadores a la sala de juego: ", ex);
             }
         }
-
+        /**
+            * <summary>
+            * Quita a un jugador de la sala
+            * </summary> 
+            * <param name="gamertag">El identificador que el jugador elige</param>
+            * <param name="idRoom">El identificador de la sala</param>                                                             
+            */
         public void RemovePlayerRoom(string gamertag, string idRoom) {
-            if (_playersRoom.ContainsKey(idRoom)) {
-                RoomModel room = _playersRoom[idRoom];
+            try {
+                const int MIN_PLAYERS = 1;
+                if (_playersRoom.ContainsKey(idRoom)) {
+                    RoomModel room = _playersRoom[idRoom];
 
-                if (_playersRoomDictionary.ContainsKey(idRoom)) {
-                    List<string> listPlayers = _playersRoomDictionary[idRoom];
-                    listPlayers.Remove(gamertag);
-                    _playersRoomDictionary[idRoom] = listPlayers;
+                    if (_playersRoomDictionary.ContainsKey(idRoom)) {
+                        List<string> listPlayers = _playersRoomDictionary[idRoom];
+                        listPlayers.Remove(gamertag);
+                        _playersRoomDictionary[idRoom] = listPlayers;
+                    }
+                    if (room.PlayersRoom.Count > MIN_PLAYERS) {
+                        room.PlayersRoom.Remove(gamertag);
+                    } else {
+                        room.Players.Remove(gamertag);
+                        _playersRoom.Remove(idRoom);
+                        _rooms.Remove(idRoom);
+                    }
                 }
-                if (room.PlayersRoom.Count > 1) {
-                    room.PlayersRoom.Remove(gamertag);
-                } else {
-                    room.Players.Remove(gamertag);
-                    _playersRoom.Remove(idRoom);
-                    _rooms.Remove(idRoom);
-                }
+            } catch (CommunicationException ex) {
+                LoggerManager.Instance.LogFatal("Error al quitar al jugador de la sala: ", ex);
             }
         }
-
+        /**
+            * <summary>
+            * Asigna los colores de las canicas a los jugadores de la sala
+            * </summary> 
+            * <param name="idRoom">El identificador de la sala</param>                                                             
+            */
         public void AssignColors(string idRoom) {
             Dictionary<string, char> dictionaryPlayersColor = new Dictionary<string, char>();
-            char[] colors = null;
-
-            if (_playersRoom.ContainsKey(idRoom)) {
-                RoomModel room = _playersRoom[idRoom];
-                if (room != null && room.PlayersRoom != null) {
+            try {
+                if (_playersRoom.TryGetValue(idRoom, out var room) && room != null && room.PlayersRoom != null) {
+                    char[] colors = null;
                     switch (room.PlayersRoom.Count) {
                         case 2:
                             colors = room.ColorForTwoPlayers;
@@ -426,17 +501,16 @@ namespace ChineseCheckersLogicServer.Controller {
                     }
                     if (colors != null) {
                         foreach (var playerKey in room.PlayersRoom.Keys) {
-                            char colorType = colors[dictionaryPlayersColor.Keys.Count];
+                            char colorType = colors[dictionaryPlayersColor.Count];
                             dictionaryPlayersColor.Add(playerKey, colorType);
                         }
-                        if (room != null && room.PlayersRoom != null) {
-                            foreach (var players in room.PlayersRoom.Values) {
-                                players.AssignColorsCallback(dictionaryPlayersColor);
-                            }
+                        foreach (var players in room.PlayersRoom.Values) {
+                            players.AssignColorsCallback(dictionaryPlayersColor);
                         }
-                        
                     }
                 }
+            } catch (CommunicationException ex) {
+                LoggerManager.Instance.LogFatal("Error al asignar los colores: ", ex);
             }
         }
     }

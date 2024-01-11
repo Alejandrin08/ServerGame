@@ -27,7 +27,11 @@ namespace ChineseCheckersLogicServer.Controller {
         public int AddFriendPlayer(FriendshipModel friendshipModel) {
             int result = 0;
             try {
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     bool friendshipExists = context.FriendPlayer.Any(friendPlayer =>
                         friendPlayer.IdPlayer == friendshipModel.IdUser &&
                         friendPlayer.IdFriend == friendshipModel.IdFriend &&
@@ -62,7 +66,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int UpdateFriendPlayer(int idUser, int idFriend, string requestStatus) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var friendPlayer = context.FriendPlayer
                         .FirstOrDefault(friend =>
                             friend.IdPlayer == idUser && friend.IdFriend == idFriend);
@@ -87,7 +91,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int DeleteFriendPlayer(FriendshipModel friendshipModel) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var friendPlayer = context.FriendPlayer
                         .FirstOrDefault(friend =>
                             friend.IdPlayer == friendshipModel.IdUser &&
@@ -118,7 +122,11 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 lock (validationLock) {
+<<<<<<< HEAD
+                    using (var context = new ChineseCheckersTestEntities()) {
+=======
                     using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                         bool isValidatedRequest = context.FriendPlayer
                             .Any(userFriend => userFriend.IdPlayer == idUser &&
                                                userFriend.IdFriend == idFriend &&
@@ -146,7 +154,11 @@ namespace ChineseCheckersLogicServer.Controller {
             Dictionary<string, (string, string, string)> friendsDictionary = new Dictionary<string, (string, string, string)>();
             try {
                 const string FRIEND_REQUEST = "Pending";
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var friendData = (from friend in context.FriendPlayer
                                       join user in context.UserAccount on friend.IdPlayer equals user.Id
                                       where friend.RequestStatus == FRIEND_REQUEST && friend.IdFriend == idUser

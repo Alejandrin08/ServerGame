@@ -18,6 +18,9 @@ namespace ChineseCheckersLogicServer.Controller {
     /// </summary>
     public partial class ManagerController : IReport {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         /**
             * <summary>
             * Añade un reporte a un jugador
@@ -28,6 +31,12 @@ namespace ChineseCheckersLogicServer.Controller {
             */
         public int AddReport(ReportModel reportModel) {
             int result = 0;
+<<<<<<< HEAD
+            try {
+                const int INITIAL_COUNTER = 1;
+
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
 =======
 
         public int AddReport(ReportModel reportModel) { 
@@ -36,6 +45,7 @@ namespace ChineseCheckersLogicServer.Controller {
                 const int INITIAL_COUNTER = 1;
 
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     using (var dbContextTransaction = context.Database.BeginTransaction(System.Data.IsolationLevel.Serializable)) {
                         try {
                             var reportUser = new Reports {
@@ -61,9 +71,13 @@ namespace ChineseCheckersLogicServer.Controller {
 <<<<<<< HEAD
                 LoggerManager.Instance.LogFatal("Error al agregar el reporte: ", ex);
 =======
+<<<<<<< HEAD
+                LoggerManager.Instance.LogFatal("Error al agregar el reporte: ", ex);
+=======
                 MessageBox.Show($"Error al agregar el reporte: {ex.Message}");
                 return -1;
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
             }
             return result;
         }
@@ -78,7 +92,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int UpdateReport(ReportModel reportModel) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var userReport = context.Reports
                         .Where(user => user.IdUser == reportModel.IdUser)
                         .FirstOrDefault();
@@ -94,9 +108,13 @@ namespace ChineseCheckersLogicServer.Controller {
 <<<<<<< HEAD
                 LoggerManager.Instance.LogFatal("Error al actualizar el reporte: ", ex);
 =======
+<<<<<<< HEAD
+                LoggerManager.Instance.LogFatal("Error al actualizar el reporte: ", ex);
+=======
                 MessageBox.Show($"Error al actualizar el reporte: {ex.Message}"); 
                 return -1;
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
             }
             return result;
         }
@@ -111,6 +129,12 @@ namespace ChineseCheckersLogicServer.Controller {
 <<<<<<< HEAD
             int result = 0;
             try {
+                using (var context = new ChineseCheckersTestEntities()) {
+                    var reportToDelete = context.Reports.FirstOrDefault(report => report.IdUser == idUser);
+=======
+<<<<<<< HEAD
+            int result = 0;
+            try {
                 using (var context = new ChineseCheckersEntities()) {
                     var reportToDelete = context.Reports.FirstOrDefault(report => report.IdUser == idUser);
 =======
@@ -118,6 +142,7 @@ namespace ChineseCheckersLogicServer.Controller {
                 using (var context = new ChineseCheckersEntities()) {
                     var reportToDelete = context.Reports.FirstOrDefault(r => r.IdUser == idUser);
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     if (reportToDelete != null) {
                         context.Reports.Remove(reportToDelete);
                     }
@@ -127,9 +152,13 @@ namespace ChineseCheckersLogicServer.Controller {
 <<<<<<< HEAD
                 LoggerManager.Instance.LogFatal("Error al eliminar el reporte: ", ex);
 =======
+<<<<<<< HEAD
+                LoggerManager.Instance.LogFatal("Error al eliminar el reporte: ", ex);
+=======
                 MessageBox.Show($"Error al eliminar el reporte: {ex.Message}");
                 return -1; 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
             }
             return result;
         }
@@ -144,7 +173,7 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 int numReports = -1;
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var counterValues = context.Reports
                         .FirstOrDefault(counter => counter.IdUser == idUser);
                     if (counterValues != null) {
@@ -153,6 +182,11 @@ namespace ChineseCheckersLogicServer.Controller {
                     result = numReports;
                 }
             } catch (EntityException ex) {
+<<<<<<< HEAD
+                LoggerManager.Instance.LogFatal("Error al obtener el número de reportes: ", ex);
+            }
+            return result;
+=======
 <<<<<<< HEAD
                 LoggerManager.Instance.LogFatal("Error al obtener el número de reportes: ", ex);
 =======
@@ -234,23 +268,81 @@ namespace ChineseCheckersLogicServer.Controller {
                 LoggerManager.Instance.LogFatal("Error al validar el baneo: ", ex);
             }
             return result;
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         }
-
+        /**
+            * <summary>
+            * Obtiene la fecha de finalización de un reporte de un jugador
+            * </summary>
+            * <param name="idUser">El id del jugador</param>
+            * <returns>Retorna la fecha de finalización del reporte del jugador</returns>                                                                  
+            */
         public DateTime GetDateReport(int idUser) {
+            DateTime result = DateTime.Now;
             try {
                 DateTime dateTime = DateTime.Now;
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var dateValues = context.Reports
                         .FirstOrDefault(date => date.IdUser == idUser);
                     if (dateValues != null) {
                         dateTime = (DateTime)dateValues.DateFinish;
                     }
-                    return dateTime;
+                    result = dateTime;
                 }
             } catch (EntityException ex) {
-                MessageBox.Show($"Error al validar la fecha: {ex.Message}");
-                return DateTime.Now;
+                LoggerManager.Instance.LogFatal("Error al obtener la fecha del reporte: ", ex);
+               
             }
+            return result;
+        }
+        /**
+            * <summary>
+            * Valida si un jugador esta reportado
+            * </summary>
+            * <param name="idUser">El id del jugador</param>
+            * <returns>Retorna true sí el jugador esta reportado</returns>                                                                  
+            */
+        public bool IsReported(int idUser) {
+            bool result = true;
+            try {
+                DateTime dateTime;
+                using (var context = new ChineseCheckersTestEntities()) {
+                    var dateValues = context.Reports
+                        .FirstOrDefault(date => date.IdUser == idUser);
+                    if (dateValues != null) {
+                        dateTime = (DateTime)dateValues.DateFinish;
+                        if (dateTime > DateTime.Now) {
+                            result = false;
+                        }
+                    };
+                }
+            } catch (EntityException ex) {
+                LoggerManager.Instance.LogFatal("Error al validar el reporte: ", ex);
+            }
+            return result;  
+        }
+        /**
+            * <summary>
+            * Valida si un jugador esta baneado
+            * </summary>
+            * <param name="idUser">El id del jugador</param>
+            * <returns>Retorna true sí el jugador esta baneado</returns>                                                                  
+            */
+        public bool IsBanned(int idUser) {
+            bool result = false;
+            try {
+                const string BANNED = "0";
+                using (var context = new ChineseCheckersTestEntities()) {
+                    var userBanned = context.User
+                        .FirstOrDefault(banned => banned.Id == idUser);
+                    if (userBanned != null && userBanned.PlayerStatus.Equals(BANNED)) {
+                        result = true;
+                    }
+                }
+            } catch (EntityException ex) {
+                LoggerManager.Instance.LogFatal("Error al validar el baneo: ", ex);
+            }
+            return result;
         }
     }
 }

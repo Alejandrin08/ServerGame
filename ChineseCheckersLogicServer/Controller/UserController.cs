@@ -26,6 +26,9 @@ namespace ChineseCheckersLogicServer.Controller {
     /// </summary>
     public partial class ManagerController : IUser {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         /** 
             * <summary> 
             * Método que agrega un usuario a la base de datos 
@@ -35,17 +38,22 @@ namespace ChineseCheckersLogicServer.Controller {
             */
         public int AddUserGame(UserModel userModel) {
             int result = 0;
+<<<<<<< HEAD
+            try {
+                using (var context = new ChineseCheckersTestEntities())
+=======
 =======
 
         public int AddUserGame(UserModel userModel) { 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
             try {
                 using (var context = new ChineseCheckersEntities())
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                 using (var transaction = context.Database.BeginTransaction()) {
                     var userGame = new User {
                         Gamertag = userModel.Gamertag,
                         PlayerStatus = userModel.PlayerStatus,
-                    }; 
+                    };
                     context.User.Add(userGame);
                     try {
                         result = context.SaveChanges();
@@ -70,7 +78,11 @@ namespace ChineseCheckersLogicServer.Controller {
         public int AddUserAccount(UserModel userModel) {
             int result = 0;
             try {
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities())
+=======
                 using (var context = new ChineseCheckersEntities())
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                 using (var transaction = context.Database.BeginTransaction()) {
                     var userAccountGame = new UserAccount {
                         GamertagUser = userModel.Gamertag,
@@ -91,9 +103,13 @@ namespace ChineseCheckersLogicServer.Controller {
 <<<<<<< HEAD
                 LoggerManager.Instance.LogFatal("Error al agregar la cuenta de usuario: ", ex);
 =======
+<<<<<<< HEAD
+                LoggerManager.Instance.LogFatal("Error al agregar la cuenta de usuario: ", ex);
+=======
                 MessageBox.Show($"Error al agregar una cuenta de usuario: {ex.Message}");
                 return -1; 
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
             }
             return result;
         }
@@ -107,7 +123,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public UserModel InfoUser(string gamertag) {
             UserModel userModel = null;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var userFound = context.UserAccount
                         .Where(user => user.GamertagUser == gamertag)
                         .Select(user => new {
@@ -139,7 +155,11 @@ namespace ChineseCheckersLogicServer.Controller {
         public int UpdateInfoUser(UserModel usermodel, string gamertag) {
             int result = 0;
             try {
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities())
+=======
                 using (var context = new ChineseCheckersEntities())
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                 using (var transaction = context.Database.BeginTransaction()) {
                     try {
                         var user = context.UserAccount
@@ -174,7 +194,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int UpdatePassword(UserModel userModel) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var userAccountUpdate = context.UserAccount
                                         .Where(user => user.Email == userModel.Email)
                                         .FirstOrDefault();
@@ -198,7 +218,11 @@ namespace ChineseCheckersLogicServer.Controller {
         public int ValidateUser(UserModel userModel) {
             int result = 0;
             try {
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var validateUser = (from user in context.UserAccount
                                         where string.Equals(user.GamertagUser, userModel.Gamertag)
                                         select user).FirstOrDefault();
@@ -221,7 +245,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int ValidateEmail(UserModel userModel) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var validatedEmail = (from user in context.UserAccount
                                           where user.Email == userModel.Email
                                           select user).FirstOrDefault();
@@ -235,6 +259,9 @@ namespace ChineseCheckersLogicServer.Controller {
             return result;
         }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         /** 
             * <summary> 
             * Método que valida la existencia de un gamertag 
@@ -242,13 +269,16 @@ namespace ChineseCheckersLogicServer.Controller {
             * <param name="userModel"> Objeto de tipo userModel que recibe el gamertag para poder llevar a cabo la validación  </param>
             * <returns> Retorna un 1 sí se hizo la validación, -1 si no se logro realizar </returns>
             */
+<<<<<<< HEAD
+=======
 =======
          
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         public int ValidateGamertag(UserModel userModel) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var validatedEmail = (from user in context.UserAccount
                                           where user.GamertagUser == userModel.Gamertag
                                           select user).FirstOrDefault();
@@ -271,7 +301,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public string GetPlayerImage(string gamertag) {
             string result = null;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var playerImage = (from user in context.UserAccount
                                        where string.Equals(user.GamertagUser, gamertag)
                                        select user).FirstOrDefault();
@@ -309,7 +339,11 @@ namespace ChineseCheckersLogicServer.Controller {
             string result = null;
             try {
                 const string FRIEND_REQUEST = "Accepted";
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var currentUser = context.UserAccount.FirstOrDefault(user => user.GamertagUser == currentGamertag);
                     var friendUser = context.UserAccount.FirstOrDefault(user => user.GamertagUser == friendGamertag);
 
@@ -338,7 +372,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public string GetEmail(string gamertag) {
             string result = null;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var user = context.UserAccount
                         .FirstOrDefault(userEmail => userEmail.GamertagUser == gamertag);
 
@@ -361,7 +395,7 @@ namespace ChineseCheckersLogicServer.Controller {
         public int GetId(string gamertag) {
             int result = 0;
             try {
-                using (var context = new ChineseCheckersEntities()) {
+                using (var context = new ChineseCheckersTestEntities()) {
                     var user = context.UserAccount
                         .FirstOrDefault(userId => userId.GamertagUser == gamertag);
 
@@ -385,7 +419,11 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 const int MIN_GAMES = 1;
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var user = context.User
                         .FirstOrDefault(userId => userId.Id == idUser);
                     if (user != null) {
@@ -413,7 +451,11 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 const int MIN_GAMES = 1;
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var user = context.User
                         .FirstOrDefault(userId => userId.Id == idUser);
                     if (user != null) {
@@ -441,7 +483,11 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 const int MIN_GAMES = 0;
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var user = context.User
                         .FirstOrDefault(userId => userId.Id == idUser);
                     if (user != null) {
@@ -468,7 +514,11 @@ namespace ChineseCheckersLogicServer.Controller {
             int result = 0;
             try {
                 const int MIN_GAMES = 0;
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var user = context.User
                         .FirstOrDefault(userId => userId.Id == idUser);
                     if (user != null) {
@@ -497,7 +547,11 @@ namespace ChineseCheckersLogicServer.Controller {
             try {
                 const string PLAYER_STATUS_BANNED = "0";
                 const string PLAYER_STATUS_ACTIVE = "1";
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var user = context.User
                         .FirstOrDefault(userId => userId.Id == idUser);
                     if (user != null) {
@@ -524,7 +578,11 @@ namespace ChineseCheckersLogicServer.Controller {
             Dictionary<string, int> _bestPlayers = new Dictionary<string, int>();
             try {
                 const int BEST_PLAYERS = 3;
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     var bestPlayers = context.User
                         .Where(user => user.GamesWon != null)
                         .OrderByDescending(user => user.GamesWon)
@@ -553,7 +611,11 @@ namespace ChineseCheckersLogicServer.Controller {
             Dictionary<string, Tuple<string, bool>> friendsDictionary = new Dictionary<string, Tuple<string, bool>>();
             try {
                 const string FRIEND_REQUEST = "Accepted";
+<<<<<<< HEAD
+                using (var context = new ChineseCheckersTestEntities()) {
+=======
                 using (var context = new ChineseCheckersEntities()) {
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
                     int userId = context.UserAccount
                         .Where(user => user.GamertagUser == gamertag)
                         .Select(user => user.Id)

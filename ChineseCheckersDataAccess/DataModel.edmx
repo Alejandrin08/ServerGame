@@ -12,7 +12,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IdPlayer" Type="int" Nullable="false" />
           <Property Name="IdFriend" Type="int" Nullable="false" />
-          <Property Name="RequestStatus" Type="nvarchar" MaxLength="255" />
+          <Property Name="RequestStatus" Type="nvarchar" MaxLength="55" />
           <Property Name="TypeNotification" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="Reports">
@@ -103,7 +103,7 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdPlayer" Type="Int32" Nullable="false" />
           <Property Name="IdFriend" Type="Int32" Nullable="false" />
-          <Property Name="RequestStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RequestStatus" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
           <Property Name="TypeNotification" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="UserAccount" Relationship="Self.fk_FriendPlayer_UserAccount" FromRole="FriendPlayer" ToRole="UserAccount" />
         </EntityType>
@@ -169,7 +169,11 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
             </Dependent>
           </ReferentialConstraint>
         </Association>
+<<<<<<< HEAD
+        <EntityContainer Name="ChineseCheckersTestEntities" annotation:LazyLoadingEnabled="true">
+=======
         <EntityContainer Name="ChineseCheckersEntities" annotation:LazyLoadingEnabled="true">
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
           <EntitySet Name="FriendPlayer" EntityType="Self.FriendPlayer" />
           <EntitySet Name="Reports" EntityType="Self.Reports" />
           <EntitySet Name="User" EntityType="Self.User" />
@@ -188,7 +192,11 @@ advertencia 6035: La relación 'fk_UserAccount_User' tiene columnas que no forma
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+<<<<<<< HEAD
+        <EntityContainerMapping StorageEntityContainer="ChineseCheckersTestModelStoreContainer" CdmEntityContainer="ChineseCheckersTestEntities">
+=======
         <EntityContainerMapping StorageEntityContainer="ChineseCheckersTestModelStoreContainer" CdmEntityContainer="ChineseCheckersEntities">
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
           <EntitySetMapping Name="FriendPlayer">
             <EntityTypeMapping TypeName="ChineseCheckersTestModel.FriendPlayer">
               <MappingFragment StoreEntitySet="FriendPlayer">

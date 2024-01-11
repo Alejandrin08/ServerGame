@@ -22,5 +22,26 @@ namespace ChineseCheckersLogicServer.Model {
         public string ImageProfile { get; set; }
         [DataMember]
         public string PlayerStatus { get; set; }
+<<<<<<< HEAD
+
+        public override bool Equals(object obj) {
+            if (obj == null || GetType() != obj.GetType()) {
+                return false;
+            }
+
+            UserModel other = (UserModel)obj;
+
+
+            return Gamertag == other.Gamertag &&
+                   Email == other.Email &&
+                   ImageProfile == other.ImageProfile;
+        }
+
+        public override int GetHashCode() {
+
+            return base.GetHashCode();
+        }
+=======
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
     }
 }

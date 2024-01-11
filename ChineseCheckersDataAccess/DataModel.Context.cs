@@ -13,10 +13,10 @@ namespace ChineseCheckersDataAccess
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ChineseCheckersEntities : DbContext
+    public partial class ChineseCheckersTestEntities : DbContext
     {
-        public ChineseCheckersEntities()
-            : base("name=ChineseCheckersEntities")
+        public ChineseCheckersTestEntities()
+            : base("name=ChineseCheckersTestEntities")
         {
         }
     

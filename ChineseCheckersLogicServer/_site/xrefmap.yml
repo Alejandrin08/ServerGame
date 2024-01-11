@@ -2078,6 +2078,22 @@ references:
   isSpec: "True"
   fullName: ChineseCheckersLogicServer.Model.UserModel.Email
   nameWithType: UserModel.Email
+<<<<<<< HEAD
+- uid: ChineseCheckersLogicServer.Model.UserModel.Equals(System.Object)
+  name: Equals(Object)
+  href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_Equals_System_Object_
+  commentId: M:ChineseCheckersLogicServer.Model.UserModel.Equals(System.Object)
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Equals(System.Object)
+  nameWithType: UserModel.Equals(Object)
+- uid: ChineseCheckersLogicServer.Model.UserModel.Equals*
+  name: Equals
+  href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_Equals_
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.Equals
+  isSpec: "True"
+  fullName: ChineseCheckersLogicServer.Model.UserModel.Equals
+  nameWithType: UserModel.Equals
+=======
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
 - uid: ChineseCheckersLogicServer.Model.UserModel.Gamertag
   name: Gamertag
   href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_Gamertag
@@ -2091,6 +2107,22 @@ references:
   isSpec: "True"
   fullName: ChineseCheckersLogicServer.Model.UserModel.Gamertag
   nameWithType: UserModel.Gamertag
+<<<<<<< HEAD
+- uid: ChineseCheckersLogicServer.Model.UserModel.GetHashCode
+  name: GetHashCode()
+  href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_GetHashCode
+  commentId: M:ChineseCheckersLogicServer.Model.UserModel.GetHashCode
+  fullName: ChineseCheckersLogicServer.Model.UserModel.GetHashCode()
+  nameWithType: UserModel.GetHashCode()
+- uid: ChineseCheckersLogicServer.Model.UserModel.GetHashCode*
+  name: GetHashCode
+  href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_GetHashCode_
+  commentId: Overload:ChineseCheckersLogicServer.Model.UserModel.GetHashCode
+  isSpec: "True"
+  fullName: ChineseCheckersLogicServer.Model.UserModel.GetHashCode
+  nameWithType: UserModel.GetHashCode
+=======
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
 - uid: ChineseCheckersLogicServer.Model.UserModel.Id
   name: Id
   href: api/ChineseCheckersLogicServer.Model.UserModel.html#ChineseCheckersLogicServer_Model_UserModel_Id

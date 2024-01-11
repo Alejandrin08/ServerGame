@@ -837,7 +837,11 @@ items:
       repo: https://github.com/Alejandrin08/ServerGame.git
     id: IsReported
     path: Controller/ReportController.cs
+<<<<<<< HEAD
+    startLine: 165
+=======
     startLine: 164
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
   assemblies:
   - ChineseCheckersLogicServer
   namespace: ChineseCheckersLogicServer.Controller
@@ -878,7 +882,11 @@ items:
       repo: https://github.com/Alejandrin08/ServerGame.git
     id: IsBanned
     path: Controller/ReportController.cs
+<<<<<<< HEAD
+    startLine: 191
+=======
     startLine: 190
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
   assemblies:
   - ChineseCheckersLogicServer
   namespace: ChineseCheckersLogicServer.Controller

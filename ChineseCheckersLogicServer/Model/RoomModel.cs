@@ -11,6 +11,8 @@ namespace ChineseCheckersLogicServer.Model {
     public class RoomModel {
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
         [DataMember]
         public string IdRoom { get; set; }
         [DataMember]
@@ -41,12 +43,23 @@ namespace ChineseCheckersLogicServer.Model {
         public char[] ColorForFivePlayers { get { return _colorsForFivePlayers; } set { _colorsForFivePlayers = value; } }
         public char[] ColorForSixPlayers { get { return _colorsForSixPlayers; } set { _colorsForSixPlayers = value; } }
 
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
         [DataMember]
-        public string IdRoom { get { return _idRoom; } set { _idRoom = value; } }
+        public string IdRoom { get; set; }
         [DataMember]
-        public Dictionary<string, IMessageCallback> Players { get { return _players; } set { _players = value; } }
+        public Dictionary<string, IMessageCallback> Players { get; set; } = new Dictionary<string, IMessageCallback>();
         [DataMember]
+<<<<<<< HEAD
+        public Dictionary<string, IPlayersRoomCallback> PlayersRoom { get; set; } = new Dictionary<string, IPlayersRoomCallback>();
+
+        public char[] ColorForTwoPlayers { get; set; } = new char[] { 'B', 'G' };
+        public char[] ColorForThreePlayers { get; set; } = new char[] { 'B', 'G', 'Y' };
+        public char[] ColorForFourPlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O' };
+        public char[] ColorForFivePlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O', 'P' };
+        public char[] ColorForSixPlayers { get; set; } = new char[] { 'B', 'G', 'Y', 'O', 'P', 'R' };
+=======
         public Dictionary<string, IPlayersRoomCallback> PlayersRoom { get { return _playersRoom; } set { _playersRoom = value; } }
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
     }
 }

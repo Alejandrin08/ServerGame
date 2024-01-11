@@ -174,7 +174,13 @@
   "ChineseCheckersLogicServer.Model.RoomModel.PlayersRoom": "ChineseCheckersLogicServer.Model.RoomModel.yml",
   "ChineseCheckersLogicServer.Model.UserModel": "ChineseCheckersLogicServer.Model.UserModel.yml",
   "ChineseCheckersLogicServer.Model.UserModel.Email": "ChineseCheckersLogicServer.Model.UserModel.yml",
+<<<<<<< HEAD
+  "ChineseCheckersLogicServer.Model.UserModel.Equals(System.Object)": "ChineseCheckersLogicServer.Model.UserModel.yml",
   "ChineseCheckersLogicServer.Model.UserModel.Gamertag": "ChineseCheckersLogicServer.Model.UserModel.yml",
+  "ChineseCheckersLogicServer.Model.UserModel.GetHashCode": "ChineseCheckersLogicServer.Model.UserModel.yml",
+=======
+  "ChineseCheckersLogicServer.Model.UserModel.Gamertag": "ChineseCheckersLogicServer.Model.UserModel.yml",
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
   "ChineseCheckersLogicServer.Model.UserModel.Id": "ChineseCheckersLogicServer.Model.UserModel.yml",
   "ChineseCheckersLogicServer.Model.UserModel.ImageProfile": "ChineseCheckersLogicServer.Model.UserModel.yml",
   "ChineseCheckersLogicServer.Model.UserModel.Password": "ChineseCheckersLogicServer.Model.UserModel.yml",

@@ -4,7 +4,11 @@
 <<<<<<< HEAD
     <ProjectView>ProjectFiles</ProjectView>
 =======
+<<<<<<< HEAD
+    <ProjectView>ProjectFiles</ProjectView>
+=======
     <ProjectView>ShowAllFiles</ProjectView>
 >>>>>>> 403ac95cfb24f03fb87fd61aacab824e0c286b99
+>>>>>>> b733c43e37b95c6332a872f74e83a7f40a471adb
   </PropertyGroup>
 </Project>

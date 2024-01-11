@@ -1,0 +1,115 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="ChineseCheckersLogicServer.Contracts.html" name="" title="ChineseCheckersLogicServer.Contracts">ChineseCheckersLogicServer.Contracts</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IBoard.html" name="" title="IBoard">IBoard</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IFriendship.html" name="" title="IFriendship">IFriendship</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IMessage.html" name="" title="IMessage">IMessage</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IMessageCallback.html" name="" title="IMessageCallback">IMessageCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IPlayersRoom.html" name="" title="IPlayersRoom">IPlayersRoom</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IPlayersRoomCallback.html" name="" title="IPlayersRoomCallback">IPlayersRoomCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IReport.html" name="" title="IReport">IReport</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IRoom.html" name="" title="IRoom">IRoom</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.ITurn.html" name="" title="ITurn">ITurn</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.ITurnCallback.html" name="" title="ITurnCallback">ITurnCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUser.html" name="" title="IUser">IUser</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUserCallback.html" name="" title="IUserCallback">IUserCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUserFriendRequest.html" name="" title="IUserFriendRequest">IUserFriendRequest</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUserFriendRequestCallback.html" name="" title="IUserFriendRequestCallback">IUserFriendRequestCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUserSession.html" name="" title="IUserSession">IUserSession</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUserSessionCallback.html" name="" title="IUserSessionCallback">IUserSessionCallback</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Contracts.IUsersManager.html" name="" title="IUsersManager">IUsersManager</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="ChineseCheckersLogicServer.Controller.html" name="" title="ChineseCheckersLogicServer.Controller">ChineseCheckersLogicServer.Controller</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Controller.LoggerManager.html" name="" title="LoggerManager">LoggerManager</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Controller.ManagerController.html" name="" title="ManagerController">ManagerController</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Controller.SingletonClass.html" name="" title="SingletonClass">SingletonClass</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="ChineseCheckersLogicServer.Model.html" name="" title="ChineseCheckersLogicServer.Model">ChineseCheckersLogicServer.Model</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Model.BoardModel.html" name="" title="BoardModel">BoardModel</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Model.FriendshipModel.html" name="" title="FriendshipModel">FriendshipModel</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Model.ReportModel.html" name="" title="ReportModel">ReportModel</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Model.RoomModel.html" name="" title="RoomModel">RoomModel</a>
+                          </li>
+                          <li>
+                              <a href="ChineseCheckersLogicServer.Model.UserModel.html" name="" title="UserModel">UserModel</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
